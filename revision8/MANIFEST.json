@@ -1,0 +1,72 @@
+[
+  {
+    "path": "revision8/FREYA_Engineering_Study_Revision_8_Fully_Integrated.docx",
+    "bytes": 1293447,
+    "sha256": "4ead641c78dd80fdb71e4426c835522e96d1bc455937a1f93d095e7654d6c229"
+  },
+  {
+    "path": "revision8/FREYA_Engineering_Study_Revision_8_Fully_Integrated.pdf",
+    "bytes": 1982051,
+    "sha256": "25115e6402cf08058254552dfb525f18b3d9a9760f356a6b0bfccc270c767e6a"
+  },
+  {
+    "path": "revision8/FREYA_Revision_8_Sites_3D_Project_Zoom.zip",
+    "bytes": 2775175,
+    "sha256": "a82ba87e40da5c17a4b1d5687507634094f6c865448bfb3175c833ebb87ba5a9"
+  },
+  {
+    "path": "revision8/WEBSITE_SPECIFICATION.md",
+    "bytes": 755,
+    "sha256": "05edc7490dec90364a5c1ce2e42e76e15038427a00795a0febfb000d29701a09"
+  },
+  {
+    "path": "revision8/index.html",
+    "bytes": 44933,
+    "sha256": "c4f8256480bcd7a3d31e9a94187e34862daf8ac3fa4a8141585c6107e27d502b"
+  },
+  {
+    "path": "revision8/markdown/FREYA_Engineering_Study_Revision_8_Fully_Integrated.docx.md",
+    "bytes": 425376,
+    "sha256": "5f12f73434163e29833dee3093329c2606adbc3d2da5bac463b66c42a6358afa"
+  },
+  {
+    "path": "revision8/markdown/FREYA_Engineering_Study_Revision_8_Fully_Integrated.pdf.md",
+    "bytes": 424199,
+    "sha256": "54ff2240e85cfde098218f94f0fcdc5ad57f215d50f9ed3a3d780a74a6a3027c"
+  },
+  {
+    "path": "revision8/markdown/FREYA_Revision_8_Sites_3D_Project_Zoom.zip.md",
+    "bytes": 312,
+    "sha256": "9a04eff2bfa3ee9e470a53e2d34c121bc566334ea4bc0f355e9dbba11178b787"
+  },
+  {
+    "path": "revision8/markdown/WEBSITE_SPECIFICATION.md.md",
+    "bytes": 839,
+    "sha256": "990897d28baa2dd485d2c72385c2a05687668ecc85267aca9d7c943c5304416e"
+  },
+  {
+    "path": "revision8/markdown/index.html.md",
+    "bytes": 44981,
+    "sha256": "b40360daddc74ba02f9444be5805d8cc0e720e246343211c47c008f11e6727c4"
+  },
+  {
+    "path": "revision8/markdown/package.json.md",
+    "bytes": 209,
+    "sha256": "d2cc77fbadbd15ffdbe0da7fd14eb3ef792ff2f0a2d14229d466f8c58f7ddbd7"
+  },
+  {
+    "path": "revision8/markdown/revision8.test.mjs.md",
+    "bytes": 2287,
+    "sha256": "aa0504d811cf8a8447587f5414be452112e4bf6bd5f25da6c9681e552e998ff2"
+  },
+  {
+    "path": "revision8/package.json",
+    "bytes": 159,
+    "sha256": "e8baa948320b5c42a06d029aa36318b0b219a89cd9befc65459f971ac6bea1bf"
+  },
+  {
+    "path": "revision8/revision8.test.mjs",
+    "bytes": 2231,
+    "sha256": "cb0f3945dab9374830413b4e072c44eacd72674a4591c5db8f26010d0817b8da"
+  }
+]

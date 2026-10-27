@@ -1,0 +1,16 @@
+# package.json
+
+Complete source text.
+
+````
+{
+  "name": "freya-revision-8",
+  "version": "8.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test revision8.test.mjs"
+  }
+}
+
+````
