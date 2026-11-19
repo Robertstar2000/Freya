@@ -1,5 +1,5 @@
-import {entry,structural,sampling,link,closure} from './review7.js?v=45af70b8d000';
-import {DEFAULT_TRADE,design,trade,thermal,power,impact,orbit,twoKg} from './trade.js?v=45af70b8d000';
+import {entry,structural,sampling,link,closure} from './review7.js?v=256072640f6f';
+import {DEFAULT_TRADE,design,trade,thermal,power,impact,orbit,twoKg} from './trade.js?v=256072640f6f';
 const $=s=>document.getElementById(s),num=id=>Number($(id).value),f=(v,n=2)=>Number(v).toFixed(n);
 const data=window.FREYA_DATA||await fetch('./data/reassessment.json').then(r=>{if(!r.ok)throw Error('Could not load project data');return r.json()});
 const fields=[['diameter','Outer diameter mm',70,30,100,1],['wall','Steel wall mm',2.5,.5,8,.1],['scienceDensity','Science envelope density kg/L (unsourced)',2,.1,5,.1],['ancillaryL','Ancillary volume L (legacy 0.12 optimistic)',.12,.01,2,.01],['potFraction','Potting fraction',.25,0,.6,.01],['freeFraction','Reserved space fraction',.10,0,.5,.01],['potDensity','Potting density kg/L',1.10,.8,3,.05],['batteryKg','Battery mass kg',.45,.01,30,.01],['usableWhKg','Usable battery Wh/kg',150,20,400,5],['cableM','Cable length m',5,0,50,.5],['cableGm','Cable mass g/m',10,1,100,1],['contingency','Mass contingency fraction',.25,0,.6,.01]];

@@ -1,4 +1,4 @@
-import {MARS,interpolateRows,gasUsage} from './flight-model.mjs?v=45af70b8d000';
+import {MARS,interpolateRows,gasUsage} from './flight-model.mjs?v=256072640f6f';
 export const SOIL_DEFAULTS={impactDiameterM:.05,probeLengthM:.2,impactTiltDeg:0,sandResistanceMPa:.2,sandDensity:1600,sandCd:.8,soilResistanceMPa:3,soilDensity:2000,soilCd:1,sandstoneResistanceMPa:25,sandstoneDensity:2300,sandstoneCd:1.2};
 export const SOIL_CASES=[{id:'sand',name:'Soft sand',color:'#ffcd82'},{id:'soil',name:'Hard soil',color:'#72dfca'},{id:'sandstone',name:'Sandstone',color:'#ccafff'}];
 // Poncelet screen: F(v)=a+b*v². R is effective bearing resistance, not UCS.

@@ -1,4 +1,4 @@
-import {interpolateRows} from './flight-model.mjs?v=45af70b8d000';
+import {interpolateRows} from './flight-model.mjs?v=256072640f6f';
 const n=(v,d=1)=>Number.isFinite(v)?v.toFixed(d):'—';
 export function thermalState(f,time){
  if(!f?.entry||!f?.times)return null;

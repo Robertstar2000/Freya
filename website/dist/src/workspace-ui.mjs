@@ -1,6 +1,6 @@
-import {requirementRoute,applyRequirementRoute} from './requirement-navigation.mjs?v=45af70b8d000';
-import {blockById,blockRequirements,lensForBlock} from './architecture-links.mjs?v=45af70b8d000';
-import {CALCULATIONS} from './calculation-catalog.mjs?v=45af70b8d000';
+import {requirementRoute,applyRequirementRoute} from './requirement-navigation.mjs?v=256072640f6f';
+import {blockById,blockRequirements,lensForBlock} from './architecture-links.mjs?v=256072640f6f';
+import {CALCULATIONS} from './calculation-catalog.mjs?v=256072640f6f';
 const esc=x=>String(x??'Not specified').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const initialWorkspaceHash=hash=>hash&&hash!=='#'?hash:'#screen-mission';
 export function screenForTarget(id,ownerDocument=document){

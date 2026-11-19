@@ -1,4 +1,4 @@
-import {temperatureStep} from './flight-model.mjs?v=45af70b8d000';
+import {temperatureStep} from './flight-model.mjs?v=256072640f6f';
 export function cgScreen({diameterM,cgD,neutralPointsD,sigmaD,marginD}){
  if(![diameterM,cgD,sigmaD,marginD,...neutralPointsD].every(Number.isFinite)||diameterM<=0||cgD<0||sigmaD<0||marginD<0||neutralPointsD.length!==3)throw new RangeError('Invalid CG assumptions');
  const limitingNeutralD=Math.min(...neutralPointsD)-3*sigmaD,maxCgD=limitingNeutralD-marginD;

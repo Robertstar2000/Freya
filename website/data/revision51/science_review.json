@@ -437,7 +437,7 @@
     },
     {
       "file": "src/trade-studies-ui.mjs",
-      "sha256": "742ba1bf2618d3b1a96c66915c7b0fc1bc82237a2f2f04e18cb8c17e955073a9"
+      "sha256": "98b7e0bd3fe197f28f4ff2c4f57f9de003f0fb96864b353b6e3b57c2cca365ba"
     },
     {
       "file": "src/trade-studies-worker.mjs",

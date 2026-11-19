@@ -1,10 +1,10 @@
-import {STUDIES} from './trade-studies-model.mjs?v=45af70b8d000';
-import {MODEL_CALCULATIONS,MODELED_SEARCH,EVIDENCE_CALCULATIONS} from './trade-calculations.mjs?v=45af70b8d000';
-import {linkedTradeInputs,ENTRY_IDS} from './trade-inputs.mjs?v=45af70b8d000';
-import {getFlightInspection} from './flight-ui.mjs?v=45af70b8d000';
-import {getSoilInputs} from './mission-trade-ui.mjs?v=45af70b8d000';
-import {screenForTarget} from './workspace-ui.mjs?v=45af70b8d000';
-import {CLOSURE_CRITERIA, compareEvidence, requirementStudies, searchEvidence} from './trade-evidence.mjs?v=45af70b8d000';
+import {STUDIES} from './trade-studies-model.mjs?v=256072640f6f';
+import {MODEL_CALCULATIONS,MODELED_SEARCH,EVIDENCE_CALCULATIONS} from './trade-calculations.mjs?v=256072640f6f';
+import {linkedTradeInputs,ENTRY_IDS} from './trade-inputs.mjs?v=256072640f6f';
+import {getFlightInspection} from './flight-ui.mjs?v=256072640f6f';
+import {getSoilInputs} from './mission-trade-ui.mjs?v=256072640f6f';
+import {screenForTarget} from './workspace-ui.mjs?v=256072640f6f';
+import {CLOSURE_CRITERIA, compareEvidence, requirementStudies, searchEvidence} from './trade-evidence.mjs?v=256072640f6f';
 
 const byId=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -71,7 +71,7 @@ function sourceContext(study,linked){
 }
 
 function workerRequest(payload,onComplete) {
-  const worker=new Worker(new URL('./trade-studies-worker.mjs?v=45af70b8d000',import.meta.url),{type:'module'});
+  const worker=new Worker(new URL('./trade-studies-worker.mjs?v=256072640f6f',import.meta.url),{type:'module'});
   worker.onmessage=({data})=>{worker.terminate();onComplete(data);};
   worker.onerror=()=>{worker.terminate();onComplete({error:'The model worker could not run.'});};
   worker.postMessage(payload);
@@ -256,6 +256,7 @@ function renderRequirements() {
     const links=requirementStudies(requirement).map(id=>`<a href="#${models.has(id)?'study-':''}${id}">${esc(models.get(id)?.title??id+' · '+closures.get(id).title)}</a>`);
     detail.innerHTML=`<summary>${requirement.id} · ${esc(requirement.subsystem)}</summary>
       <p>${esc(requirement.text)}</p><p><strong>Acceptance criteria</strong> ${esc(requirement.acceptance)}</p>
+      <p><strong>Assumed solution.</strong> ${esc(requirement.assumedSolution)}</p>
       <p>${esc(requirement.verification)} · ${esc(requirement.applies)} · Verification open</p>
       <p>${links.join(' · ')}</p><p><a href="current-requirements.html#${requirement.id}">Specification and allocation</a>${requirement.architectureBlock?` · <a href="block-data.html#${esc(requirement.architectureBlock)}">Block calculations and interfaces</a>`:''}</p>
       <form><div class="fields"><label>Review outcome<select name="outcome"><option>Evidence pending</option><option>Ready for review</option><option>Shortfall identified</option></select></label>

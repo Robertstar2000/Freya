@@ -1,8 +1,11 @@
 from pathlib import Path
-import json,html,csv,hashlib,re
+import json,html,csv,re
 from docx import Document
-from docx.shared import Inches,Pt
-from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,PageBreak,Table,TableStyle
+from docx.shared import Pt
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,PageBreak
+from reportlab.platypus.tableofcontents import TableOfContents
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 R=Path('.');B=json.loads((R/'data/requirements/default-baseline.json').read_text());req=[]
@@ -17,13 +20,13 @@ mission=[
 ('Reference orbit','Mission trajectory planning shall use a 400 km circular Mars-orbit initial reference for both default configurations and explicitly record off-default orbit trades.','Default capture shall report 400 km; mission analysis shall replace the reference with a host-provided state and covariance before release.'),
 ('Wet mass','The mission shall close the wet-mass budget at or below 20 kg per A vehicle and 50 kg per B vehicle, counting propulsion, nitrogen, all retained vehicles and reserves once.','Weighed flight configuration plus approved uncertainty shall meet the configuration limit; current proportional budgets are allocations, not weigh-test evidence.'),
 ('Science delivery','The mission shall deliver independently operable probes and preserve sample location, acquisition depth, acquisition time and environmental provenance for each returned science record.','End-to-end deployment, acquisition and record-recovery test shall retain all required provenance fields for each functioning probe.'),
-('Sequence','The mission shall execute separation, attitude acquisition, retroburn, heat-shield alignment, module jettison, passive entry, cover release, carrier extraction, probe release, science acquisition and data return in a gated sequence.','State-transition tests shall show the recorded pitch delivery order with the added pre-entry alignment and module release interlocks; no downstream event shall bypass its required gate.'),
+('Sequence','The mission shall execute separation, attitude acquisition, retroburn, heat-shield alignment, module jettison, passive entry, cover release, carrier extraction, probe release, science acquisition and data return in a gated sequence.','State-transition tests shall show the specified delivery order including pre-entry alignment and module release interlocks; no downstream event shall bypass its required gate.'),
 ('Independent operation','Each B vehicle and each released probe shall retain independent identity, mission state and failure reporting.','Fault injection into one vehicle or probe shall not falsify another vehicle or probe confirmation record.'),
 ('Entry readiness','The mission shall establish an entry corridor, accepted attitude/rate envelope and verified module separation before authorizing entry readiness.','Six-degree-of-freedom dispersed trajectory and separation analysis shall close TBD-02 and TBD-03; animation orientation is not evidence.'),
 ('Relay access','The mission shall obtain an approved orbiter relay service and RF interface before claiming a supported Earth-return path.','Relay-provider acceptance and end-to-end protocol test shall close TBD-04; a link-budget screen alone shall not constitute access approval.'),
 ('Science time','The mission shall budget 24 hours of probe operations for A and 72 hours for B as the current design goals.','Measured power and selected assay schedule shall demonstrate the applicable duration or trigger a controlled requirement change; the proposed 1–5-sol assay duration remains an unresolved conflict.'),
 ('Verification closure','The mission shall close all applicable flight requirements and departures before committing a vehicle to flight.','Verification matrix shall contain approved evidence and disposition for each applicable requirement; software model passes alone shall not close hardware verification.'),
-('Presentation configuration','The mission shall record the exact pitch filename, revision, slide numbering and checksum used for requirements allocation.','Reconcile the original latest deck against the recorded 10-slide phase map and close TBD-00; no latest-deck incorporation claim shall be made before this occurs.')]
+('Presentation configuration','The mission shall record the exact pitch filename, revision, slide numbering and checksum used for requirements allocation.','Verify the presentation configuration record against the approved phase allocation and close TBD-00.')]
 for i,(sub,text,acc) in enumerate(mission,1):add(f'FR-MIS-{i:03}', 'Mission',sub,text,acc,'Current defaults; Rev09 mission family; recorded pitch phase map',closure=['TBD-00'] if i==12 else [])
 
 # Each of the 72 infographic blocks receives an allocated, verifiable requirement.
@@ -162,22 +165,22 @@ for i,(sub,text,acc) in enumerate(bio,1):add(f'FR-BIO-{i:03}','Science payload',
 # Consolidate supported pitch details into the governing main-body requirements.
 # The appendix retains source wording, provenance and reconciliation decisions.
 merged={
-'FR-MIS-002':('The mission shall define and verify a host upper-stage mechanical, electrical, deployment-envelope and release-command interface before flight integration. The recorded pitch names Terran R as a candidate only; host selection shall remain unconfirmed until interface and delivery agreements are approved.','Approved interface control document and host acceptance test shall close TBD-01; the pitch candidate shall not substitute for a confirmed host agreement.'),
-'FR-PRB-HW-001':('The probe sample-acquisition subsystem shall deliver a traceable sample to the selected experiment chamber and distinguish nose penetration, accessible source depth, recovered volume and recovered mass. If the recorded gas/trap option is selected, the design shall demonstrate the proposed 2–5 cm accessible source zone and 0.25 cubic centimetres per vessel; if the extraction option is selected, it shall demonstrate approximately 1 g recovered soil with an approved tolerance.','Measure source depth, volume, mass and recovery after representative impacts for the selected option; close TBD-05 and TBD-06. Do not equate nose depth with accessible source depth or convert volume to mass without measured density.'),
-'FR-PRB-HW-009':('The probe shall provide a self-contained antenna structure and RF feed that permit independent buffered science downlink after release and impact. The independent antenna and drogue architecture shall supersede the recorded pitch description of an antenna supported by retained parachute shrouds; no connecting tether is allocated.','Post-impact RF tests in representative burial, canopy and antenna orientations shall demonstrate TBD-04 without relying on an unselected shroud-supported antenna geometry.'),
-'FR-BIO-001':('The science design shall select and configuration-control its experiment suite before assay integration. The two available recorded pitch workflows shall remain explicit alternatives: slide 4 sealed gas/trap assay and slide 3 incubation/extraction concept. Neither shall be silently combined with the other or with incompatible Benner extraction conditions.','Reconcile the selected workflow to the original slides and Benner source; identify sample quantity, channels, fluids, controls and detector method under TBD-00 and TBD-06. The filename reference to three science categories shall not be treated as evidence of an unavailable third workflow.'),
-'FR-BIO-003':('The selected experiment shall measure and record temperature, pressure, hydration history and relevant water-activity conditions. If the recorded slide 4 option is selected, the controlled reference procedure shall specify no added water, sealed and dark incubation at -10 to 0 degrees C for 1–5 sols. If the recorded slide 3 extraction option is selected, it shall specify near-Mars-ambient pressure and proposed 0–5 degrees C incubation, with fluid additions identified by process step.','Validate the selected condition envelope, tolerance and sensor capability under TBD-06 and TBD-08. These recorded reference conditions are proposed assay options, not evidence of compatibility or a universal Martian water-activity threshold.'),
+'FR-MIS-002':('The mission shall define and verify a host upper-stage mechanical, electrical, deployment-envelope and release-command interface before flight integration. Host selection shall remain provisional until interface and delivery agreements are approved.','Approved interface control document and host acceptance test shall close TBD-01; the host agreement shall identify the selected interface and delivery conditions.'),
+'FR-PRB-HW-001':('The probe sample-acquisition subsystem shall deliver a traceable sample to the selected experiment chamber and distinguish nose penetration, accessible source depth, recovered volume and recovered mass. If the sealed gas/trap option is selected, the design shall demonstrate the proposed 2–5 cm accessible source zone and 0.25 cubic centimetres per vessel; if the extraction option is selected, it shall demonstrate approximately 1 g recovered soil with an approved tolerance.','Measure source depth, volume, mass and recovery after representative impacts for the selected option; close TBD-05 and TBD-06. Do not equate nose depth with accessible source depth or convert volume to mass without measured density.'),
+'FR-PRB-HW-009':('The probe shall provide a self-contained antenna structure and RF feed that permit independent buffered science downlink after release and impact. The antenna and drogue shall be independent, with no connecting tether.','Post-impact RF tests in representative burial, canopy and antenna orientations shall demonstrate TBD-04 without relying on an unselected shroud-supported antenna geometry.'),
+'FR-BIO-001':('The science design shall select and configuration-control its experiment suite before assay integration. The sealed gas/trap assay and incubation/extraction assay shall remain separate alternatives with independently defined conditions.','Record the selected workflow, sample quantity, channels, fluids, controls and detector method under TBD-00 and TBD-06.'),
+'FR-BIO-003':('The selected experiment shall measure and record temperature, pressure, hydration history and relevant water-activity conditions. If the sealed gas/trap option is selected, the controlled reference procedure shall specify no added water, sealed and dark incubation at -10 to 0 degrees C for 1–5 sols. If the incubation/extraction option is selected, it shall specify near-Mars-ambient pressure and proposed 0–5 degrees C incubation, with fluid additions identified by process step.','Validate the selected condition envelope, tolerance and sensor capability under TBD-06 and TBD-08. Qualification shall document the selected condition envelope and method-specific limits.'),
 'FR-BIO-007':('The selected science workflow shall reconcile sample handling, incubation duration, detector, valve and heater loads and data-return reserve to the vehicle resource budget before selection. A 1–5-sol gas/trap procedure shall not be credited within the 24-hour A or 72-hour B operation goals unless an approved revised procedure or resource allocation demonstrates closure.','Test the selected end-to-end schedule and measured energy profile under TBD-07; record any changed incubation endpoint and its scientific validity. Do not substitute compressed playback duration for physical assay duration.'),
 'FR-SYS-014':('Engineering analyses shall record inputs, units, source revision, solver version, assumptions and validity limits for each output. Mission software and verification shall use physical time and approved event gates rather than animation or compressed presentation-event durations.','Reproduce website defaults and exports from the source fingerprint; test time/event mappings and distinguish numerical agreement, illustrative playback and physical validation.')
 }
 for q in req:
  if q['id'] in merged:
   q['text'],q['acceptance']=merged[q['id']]
-  q['source']+='; recorded pitch extraction reconciled into main body (original-deck confirmation open)'
+  q['source']+='; see Appendix A for the phase and science-workflow allocation'
   q['closure']=sorted(set(re.findall(r'TBD-\d{2}',q['text']+' '+q['acceptance'])))
 
 closures=[
-('TBD-00','Latest pitch original and selected science suite','Project / science lead','Provide original deck, checksum and slide-by-slide reconciliation; recorded extraction only is available.'),
+('TBD-00','Presentation configuration and selected science suite','Project / science lead','Approve the configuration manifest, slide-to-requirement allocation and selected science workflow.'),
 ('TBD-01','Host interface envelope','Mission interfaces','Approved ICD, loads, deployment envelope, electrical and commanding limits.'),
 ('TBD-02','Entry attitude, CG and dynamic stability','GNC / aerodynamics','Mach-dependent coefficients, damping, CG/inertia tolerances, pointing/rate/corridor limits and dispersed 6-DOF validation.'),
 ('TBD-03','Structural, opening, impact and separation loads','Structures / mechanisms','Approved loads, factors, clearances, separation dispersion and shock environments.'),
@@ -211,7 +214,6 @@ for s in B['sourceRequirements']:
  if '300 km' in s['text']:change='Current reference orbit is 400 km; source 300 km statement is historical.'
  sourceMap.append(dict(sourceId=s['id'],sourceText=s['text'],currentRequirementIds=linked,disposition=change))
 conflicts=[
-('Presentation revision','Original latest pitch is absent; the recorded 10-slide extraction is the only presentation evidence.','TBD-00'),
 ('Orbit','Archived 300 km initial orbit becomes current 400 km reference.','FR-MIS-003'),
 ('Precursor impulse','Archived 1,280 N s baseline becomes current 2,000 N s A assumption.','FR-REM-HW-003'),
 ('Probe mass','Source A 2.00 kg becomes 1.999266924 kg derived allocation; B retains 2.00 kg source input.','FR-SYS-002'),
@@ -222,7 +224,7 @@ conflicts=[
 ('Science duration','1–5-sol gas/trap incubation is not closed against A 24-hour and B 72-hour goals.','FR-BIO-007'),
 ('Probe architecture','Independent drogue and antenna structure; no connecting tether allocated.','FR-PRB-HW-007'),
 ('Software','Eight diagrams describe functional allocation; no flight firmware or dedicated capsule processor selected.','TBD-17')]
-D=dict(revision=B['revision'],date=B['date'],status=B['status'],scope='Mission, capsule, probe, carrier, reentry module, their hardware subsystems, software, interfaces and science functions',authority='Working design requirements based on current website defaults and user instructions; no formal approval inferred. Original 91 source requirements remain archived. Current allocation governs this draft where differences are listed.',presentationAvailability=B['presentation']['availability'],baseline='data/requirements/default-baseline.json',requirements=req,closures=[dict(id=a,title=b,proposedOwner=c,closureEvidence=d,status='Open') for a,b,c,d in closures],conflicts=[dict(topic=a,disposition=b,reference=c) for a,b,c in conflicts],sourceCrosswalk=sourceMap,edition='Consolidated main body with retained appendices')
+D=dict(revision=B['revision'],date=B['date'],status='Working requirements draft; verification open',scope='Mission, capsule, probe, carrier, reentry module, their hardware subsystems, software, interfaces and science functions',authority='Working design requirements based on current website defaults and user instructions; no formal approval inferred. Original 91 source requirements remain archived. Current allocation governs this draft where differences are listed.',baseline='data/requirements/default-baseline.json',requirements=req,closures=[dict(id=a,title=b,proposedOwner=c,closureEvidence=d,status='Open') for a,b,c,d in closures],conflicts=[dict(topic=a,disposition=b,reference=c) for a,b,c in conflicts],sourceCrosswalk=sourceMap,edition='Consolidated main body with retained appendices')
 phaseAllocations={
 'rideshare':['FR-MIS-002','FR-REM-SW-001','FR-REM-SW-002'],
 'orient':['FR-REM-HW-001','FR-REM-SW-003','FR-REM-SW-004'],
@@ -241,85 +243,314 @@ pitchNotes=[
 'The recorded delivery phase describes an antenna integrated with retained parachute shrouds. Later user direction specifies an independent antenna structure and drogue with no connecting tether. The current requirement is FR-PRB-HW-009; shroud support is not assumed.',
 'The recorded pitch names a proposed Terran R rideshare. Host selection, trajectory delivery, separation interface and launch agreement are not confirmed; FR-MIS-002 and TBD-01 control the interface.',
 'The old phase-map scope says Rev09 mass and geometry unchanged. Current user-approved direction supersedes that extraction scope for the 400 km orbit, 2,000 N s A impulse and NASA-angle convention; current values come from the executable default snapshot.',
-'The filename mentions three science categories, but only two workflow alternatives are available in the extracted phase map. A third category cannot be reconstructed from the filename and remains pending original-deck review.',
-'Playback event durations are compressed review intervals, not physical maneuver, assay or communication durations. Physical limits and time budgets derive from the flight model and measured hardware requirements.',
-'This appendix reconciles the recorded extraction only. It does not certify that the latest original slide deck has been reviewed; TBD-00 remains open.'
+'Playback event durations are compressed review intervals, not physical maneuver, assay or communication durations. Physical limits and time budgets derive from the flight model and measured hardware requirements.'
 ]
-D['pitchReconciliation']={'source':B['presentation']['sourceFile'],'sourceSlideCount':B['presentation']['slideCount'],'scope':'Recorded extraction only; original latest deck unavailable','phaseTrace':[dict(id=x['id'],title=x['title'],source=x['source'],recordedDescription=x['description'],currentRequirementIds=phaseAllocations[x['id']]) for x in B['presentation']['phases']],'scienceAlternatives':B['presentation']['scienceProtocols'],'differencesAndLimits':pitchNotes}
-
-(R/'data/requirements/current-specification.json').write_text(json.dumps(D,indent=2)+'\n')
-with (R/'data/requirements/verification-matrix.csv').open('w') as f:
- w=csv.writer(f,lineterminator="\n");w.writerow(['ID','Allocation','Subsystem','Applies','Requirement','Acceptance','Verification','Source','Parents','Block','Status'])
- for q in req:w.writerow([q['id'],q['group'],q['subsystem'],q['applies'],q['text'],q['acceptance'],q['verification'],q['source'],';'.join(q['parentIds']),q['architectureBlock'] or '',q['status']])
+D['pitchReconciliation']={'source':B['presentation']['sourceFile'],'sourceSlideCount':B['presentation']['slideCount'],'scope':'Delivery phase and science-option allocation','phaseTrace':[dict(id=x['id'],title=x['title'],source=x['source'],recordedDescription=x['description'],currentRequirementIds=phaseAllocations[x['id']]) for x in B['presentation']['phases']],'scienceAlternatives':B['presentation']['scienceProtocols'],'differencesAndLimits':pitchNotes}
 
 A=B['configurations']['A'];C=B['configurations']['B'];baseRows=[
 ('Mission vehicles / probes per vehicle','1 / 3','2 / 7','Current configuration'),('Vehicle wet-mass ceiling','20 kg','50 kg','Design allocation'),('Initial circular orbit','400 km','400 km','Current initial reference'),('Vacuum periapsis proxy','50 km','50 km','Screening assumption, not entry corridor'),('Aeroshell base diameter','0.800 m','0.800 m','Reference geometry'),('Forebody cone half-angle','70 degrees from axis','70 degrees from axis','User-selected NASA convention'),('Provisional total envelope',f"{A['mission']['heightM']:.6f} m",f"{C['mission']['heightM']:.6f} m",'0.75D backshell + (D/2)tan20; CAD open'),('Complete probe allocation',f"{A['mission']['probeKg']:.9f} kg",'2.000000000 kg','A derived; B source assumption'),('Carrier retained dry mass',f"{A['flight']['carrierDryA']:.9f} kg",'8.000 kg','A derived; B flight-model assumption'),('Carrier canopy / probe canopy','1.5 / 0.5 m','2.0 / 0.5 m','Opening and descent qualification open'),('Operation goal','24 h','72 h','Science/power closure open'),('Initial nitrogen','0.100 kg','0.100 kg','Ideal-gas reference: 200 bar, 293 K'),('Three gas maneuvers','0.2 m/s separation; 90 / 180 degree slews','Same reference sequence','Angles/inertia require GNC validation'),('Retro thrust / duration','100 N / 20 s','Sized thrust / 12.8 s','Motor or engine not selected'),('Retro impulse / Isp','2,000 N s / 225 s','Sized impulse / 250 s','Generic propulsion assumptions'),('Entry interface / extraction','125 km / 10 km','125 km / 10 km','Model boundary and editable gate'),('Probe release / cadence','5 km / 2 s','5 km / 2 s','Unqualified deployment reference'),('TPS model thickness / material','15 mm; generic constants','15 mm; generic constants','rho 250 kg/m3, Cp 1200 J/(kg K), k 0.15 W/(m K)'),('UHF / range / peak RF','400 MHz / 400 km / 10 W','Same','Receiver -120 dBm assumption; access open'),('Probe usable energy / mean load','20 Wh / 0.2 W','Same','Assumptions; heaters/assay not closed'),('Transmit duty / source buffer','1 s per 60 s / 64 MB','1 s per 60 s / 256 MB','Storage ownership and overhead open')]
-intro=['This is the single consolidated requirements specification. The main body merges the supported recorded pitch content with current website defaults, vehicle allocations, subsystems and software requirements. Appendix A retains the pitch reconciliation; Appendix B preserves the source crosswalk. Appendices provide traceability and do not create a competing requirements baseline.',D['authority'],'Presentation provenance: '+D['presentationAvailability'],'The recorded deck is FREYA_Pitch_Expanded_Science_Three_Categories.pptx, 10 slides. Its slide 7 delivery order and slides 3–4 science alternatives are retained via the existing phase map. Original slide wording, figures and latest revision cannot be verified without the deck.','Terminology: capsule = entry aeroshell/heat shield/cover; carrier = extracted platform retaining and releasing probes; probe = independent impact/science node; reentry module = detachable retro propulsion and cold-gas assembly. A software function may execute on shared retained avionics; allocation does not imply a separate processor.','All requirements below are proposed working requirements with verification open. Numeric defaults are identified as design allocations, references or analysis assumptions. No approval, hardware qualification, life-detection sensitivity or mission probability is inferred. A shall statement defines intended acceptance, not demonstrated capability.']
-sections=[]
-sections.append('<section><h2>Configuration authority and source status</h2>'+''.join('<p>'+E(x)+'</p>' for x in intro)+'</section>')
-sections.append('<section><h2>Current A/B default baseline</h2><p>Generated from executable source defaults and the same A proportional mass allocation as the live app. Source hashes and full values are in the downloadable baseline.</p><div class="mount-table"><table><thead><tr><th>Parameter</th><th>A</th><th>B</th><th>Meaning / limitation</th></tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+E(x)+'</td>' for x in row)+'</tr>' for row in baseRows)+'</tbody></table></div></section>')
-sections.append('<section><h2>Changes and unresolved conflicts</h2>'+''.join('<p><strong>'+E(a)+':</strong> '+E(b)+' <code>'+E(c)+'</code></p>' for a,b,c in conflicts)+'</section>')
+abstract = (
+ 'FREYA is a Mars surface-science mission that delivers independent penetrator probes from orbit. '
+ 'The late-2028 precursor concept uses one 20 kg vehicle with three probes. The 2031 concept uses two '
+ '50 kg vehicles with seven probes each. From a 400 km circular reference orbit, each retro module separates '
+ 'from the host, targets and executes a deorbit maneuver, aligns the heat shield, and jettisons before entry. '
+ 'The capsule protects the carrier during passive entry. The carrier is extracted under parachute, releases '
+ 'probes one at a time, and reports deployment status independently. Each probe descends under its own drogue, '
+ 'acquires a traceable sample after impact, and queues science and health records for relay through a Mars orbiter. '
+ 'The science package evaluates candidate assays and controls for interpretable measurements in the Martian near-surface environment.'
+)
+elements = [
+ ('Aeroshell', 'The aeroshell is the entry capsule assembly of forebody heat shield, backshell, restraints and top cover. '
+  'It supports passive drag deceleration and protects the stowed carrier until extraction. The reference is a 0.800 m diameter '
+  'sphere-cone with a 70° half-angle. The shell and cover are discarded as the carrier begins independent descent.'),
+ ('Retro module', 'The detachable reentry module contains retro propulsion, nitrogen attitude and separation jets, '
+  'guidance, power and release hardware. It performs the retroburn and establishes heat-shield-forward attitude before '
+  'transferring state to the retained avionics and separating before the 125 km reference entry interface.'),
+ ('Carrier', 'The carrier holds the probe bays, sequencing hardware, parachute, avionics, and independent power and status radio. '
+  'It is extracted at a 10 km reference altitude, then releases probes sequentially beginning at a 5 km reference and a 2 s '
+  'nominal cadence. The reference canopies are 1.5 m on A and 2.0 m on B.'),
+ ('Probe', 'Each approximately 2 kg probe has a 0.50 m drogue, impact-resistant body, sample intake, science chamber, '
+  'sensors, storage, and separate antenna and battery. It records sampling location, time, depth and environmental conditions, '
+  'and transmits buffered records during relay contacts. Nominal surface-operation goals are 24 h on A and 72 h on B.'),
+]
+notice = ('This working draft separates proposed requirements and acceptance criteria from assumed solutions. '
+          'The solution paragraphs and numerical values support concept sizing, trade studies and test planning. '
+          'Verification remains open. Exercise each assumption against the applicable closure evidence before adopting a flight value.')
+provenance = [
+ 'The governing register combines the current FREYA vehicle and software allocations with Rev09 source requirements and the phase allocation below.',
+ 'The executable configuration snapshot and source hashes are recorded in data/requirements/default-baseline.json. The canonical exported register is data/requirements/current-specification.json.',
+ 'Presentation artifact: '+D['pitchReconciliation']['source']+'. The phase map uses '+str(D['pitchReconciliation']['sourceSlideCount'])+' numbered slides. Slide 7 describes delivery order and slides 3–4 describe science alternatives.',
+ 'Assumed solutions in this edition use model references where applicable and engineering planning values where selection or test data is still open. The source ledger preserves earlier evidence without transferring qualification.',
+]
+solutions = {}
+for line in (R/'data/requirements/assumed-solutions.tsv').read_text().splitlines():
+ id, paragraph = line.split('\t',1)
+ if id in solutions or not re.search(r'\d',paragraph):
+  raise ValueError('Invalid or duplicate assumed solution for '+id)
+ solutions[id] = paragraph
+if solutions.keys() != {q['id'] for q in req}:
+ raise ValueError('Assumed solution IDs must match the current requirements exactly.')
+for q in req:
+ q['assumedSolution'] = solutions[q['id']]
+D.update(abstract=abstract,elements=[dict(name=name,description=description) for name,description in elements],
+         authority=notice,edition='Requirements and assumed solutions',provenance=provenance)
+
+def group_anchor(group):
+ return 'spec-'+group.lower().replace(' ','-')
+
 groups=list(dict.fromkeys(q['group'] for q in req))
+contents=[
+ ('mission-abstract','Mission abstract'),('mission-elements','Mission elements'),
+ ('configuration-baseline','Default A/B configuration'),
+ *[(group_anchor(group),group) for group in groups],
+ ('open-items','Closure register'),
+ ('pitch-reconciliation','Appendix A · Provenance and phase allocation'),
+ ('source-crosswalk','Appendix B · Archived source crosswalk'),
+]
+D['contents']=[dict(anchor=anchor,title=title) for anchor,title in contents]
+(R/'data/requirements/current-specification.json').write_text(json.dumps(D,indent=2,ensure_ascii=False)+'\n')
+with (R/'data/requirements/verification-matrix.csv').open('w',newline='') as f:
+ w=csv.writer(f,lineterminator='\n')
+ w.writerow(['ID','Allocation','Subsystem','Applies','Requirement','Acceptance','Verification','Source','Parents','Block','Status','Assumed solution'])
+ for q in req:
+  w.writerow([q['id'],q['group'],q['subsystem'],q['applies'],q['text'],q['acceptance'],q['verification'],
+              q['source'],';'.join(q['parentIds']),q['architectureBlock'] or '',q['status'],q['assumedSolution']])
+
+def section(anchor, title, body):
+ return f'<section id="{anchor}"><h2>{E(title)}</h2>{body}</section>'
+
+def p(text):
+ return '<p>'+E(text)+'</p>'
+
+def trace(q):
+ return 'Source: '+q['source']+' | Parents: '+(', '.join(q['parentIds']) or 'Mission-level need')
+
+def links(ids):
+ return ', '.join(f'<a href="#{id}">{id}</a>' for id in ids)
+
+head='''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FREYA Requirements Specification · Rev 10</title><link rel="stylesheet" href="src/workspace.css">
+<style>
+main{max-width:1100px;margin:auto;padding:2rem}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #38536a;padding:.6rem;text-align:left}
+article{margin:1rem 0;padding:1rem;border:1px solid #38536a;border-radius:10px}p{line-height:1.6}a{color:#72dfca}
+.current-req[hidden]{display:none}.spec-filters{display:flex;flex-wrap:wrap;gap:1rem}.spec-filters input,.spec-filters select{padding:.6rem;max-width:100%}
+.spec-contents ol{columns:2;column-gap:2rem;padding-left:1.5rem}.spec-contents li{break-inside:avoid;margin-bottom:.3rem}
+.spec-solution{padding:.75rem 1rem;border-left:3px solid #72dfca;background:#122b38}@media(max-width:650px){.spec-contents ol{columns:1}}
+</style>'''
+nav='<nav class="spec-contents" aria-label="Specification table of contents"><h2>Table of contents</h2><ol>'+''.join(f'<li><a href="#{anchor}">{E(title)}</a></li>' for anchor,title in contents)+'</ol></nav>'
+sections=[
+ section('mission-abstract','Mission abstract',p(abstract)),
+ section('mission-elements','Mission elements',''.join('<h3>'+E(name)+'</h3>'+p(description) for name,description in elements)),
+ section('configuration-baseline','Default A/B configuration',p(notice)+
+ '<div class="mount-table"><table><thead><tr><th>Parameter</th><th>A</th><th>B</th><th>Meaning / limitation</th></tr></thead><tbody>'+
+ ''.join('<tr>'+''.join('<td>'+E(x)+'</td>' for x in row)+'</tr>' for row in baseRows)+'</tbody></table></div>'),
+]
+downloads='<p><a href="documents/FREYA_Requirements_Specification_Rev10.docx">Word specification</a> · <a href="documents/FREYA_Requirements_Specification_Rev10.pdf">PDF specification</a> · <a href="data/requirements/current-specification.json">Requirements JSON</a> · <a href="data/requirements/verification-matrix.csv">Verification matrix CSV</a></p>'
+filters='<div class="spec-filters"><label>Find requirement <input id="specSearch" type="search" placeholder="ID, subsystem or keyword"></label><label>Allocation <select id="specGroup"><option value="">All allocations</option>'+''.join('<option>'+g+'</option>' for g in groups)+'</select></label></div><p id="specCount" aria-live="polite">'+str(len(req))+' requirements</p>'
+sections.append(downloads+filters)
 for group in groups:
  cards=[]
  for q in [q for q in req if q['group']==group]:
-  block=q['architectureBlock'];link='<a href="index.html#block-'+E(block)+'">Open interactive block data</a>' if block else ''
-  cards.append('<article class="req current-req" id="'+q['id']+'" data-group="'+E(group)+'"><h3>'+q['id']+' · '+E(q['subsystem'])+'</h3><p><strong>'+E(q['text'])+'</strong></p><p><b>Acceptance:</b> '+E(q['acceptance'])+'</p><p><b>Method:</b> '+E(q['verification'])+' · <b>Applies:</b> '+q['applies']+' · <b>Status:</b> verification open</p><p><b>Trace:</b> '+E(q['source'])+' · <b>Parents:</b> '+E(', '.join(q['parentIds']) or 'Mission-level need')+'</p>'+link+' <a href="./#'+q['id']+'">Trade studies and evidence record</a></article>')
- sections.append('<section id="spec-'+group.lower().replace(' ','-')+'"><h2>'+E(group)+'</h2>'+''.join(cards)+'</section>')
-sections.append('<section id="open-items"><h2>Closure register</h2><p>Owners below are proposed disciplines, not assigned individuals. Quantitative acceptance tolerances must be approved before verification closure.</p>'+''.join('<article id="'+a+'"><h3>'+a+' · '+E(b)+'</h3><p>'+E(c)+' · Open</p><p>'+E(d)+'</p><p><a href="./#'+a+'">Open closure trade</a></p></article>' for a,b,c,d in closures)+'</section>')
-sections.append('<section id="pitch-reconciliation"><h2>Appendix A · Recorded pitch reconciliation</h2><p>Original latest-deck review remains open. The mapping below uses the recorded extraction, not a new reading of the slide file.</p>'+''.join('<article><h3>'+E(x['title'])+'</h3><p>'+E(x['source'])+'</p><p>'+E(x['recordedDescription'])+'</p><p>Allocated requirements: '+', '.join('<a href="#'+id+'">'+id+'</a>' for id in x['currentRequirementIds'])+'</p></article>' for x in D['pitchReconciliation']['phaseTrace'])+''.join('<p>'+E(x)+'</p>' for x in pitchNotes)+'</section>')
-sections.append('<section id="source-crosswalk"><h2>Appendix B · All 91 archived source requirements</h2><p>This ledger preserves every source identifier. Related current requirements are allocations or assurance obligations; the mapping does not assert unchanged acceptance criteria or inherited qualification.</p>'+''.join('<details><summary>'+E(x['sourceId'])+' · '+E(x['disposition'])+'</summary><p>'+E(x['sourceText'])+'</p><p>Current allocation: '+', '.join('<a href="#'+id+'">'+id+'</a>' for id in x['currentRequirementIds'])+'</p></details>' for x in sourceMap)+'</section>')
-head='<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FREYA Requirements Specification · Rev 10</title><link rel="stylesheet" href="src/workspace.css"><style>main{max-width:1100px;margin:auto;padding:2rem}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #38536a;padding:.6rem;text-align:left}article{margin:1rem 0;padding:1rem;border:1px solid #38536a;border-radius:10px}p{line-height:1.6}a{color:#72dfca}.current-req[hidden]{display:none}.spec-filters{display:flex;flex-wrap:wrap;gap:1rem}.spec-filters input,.spec-filters select{padding:.6rem;max-width:100%}</style>'
-nav='<p>'+ ' · '.join('<a href="#spec-'+g.lower().replace(' ','-')+'">'+g+'</a>' for g in groups)+' · <a href="#open-items">Open items</a> · <a href="#pitch-reconciliation">Pitch reconciliation</a> · <a href="#source-crosswalk">Source crosswalk</a></p>'
-downloads='<p><a href="documents/FREYA_Requirements_Specification_Rev10.docx">Word specification</a> · <a href="documents/FREYA_Requirements_Specification_Rev10.pdf">PDF specification</a> · <a href="data/requirements/current-specification.json">Requirements JSON</a> · <a href="data/requirements/verification-matrix.csv">Verification matrix CSV</a> · <a href="data/requirements/default-baseline.json">Full source-default baseline</a></p>'
-filters='<div class="spec-filters"><label>Find requirement <input id="specSearch" type="search" placeholder="ID, subsystem, source or keyword"></label><label>Allocation <select id="specGroup"><option value="">All allocations</option>'+''.join('<option>'+g+'</option>' for g in groups)+'</select></label></div><p id="specCount" aria-live="polite">'+str(len(req))+' requirements</p>'
-js="""<script>const search=document.getElementById('specSearch'),group=document.getElementById('specGroup'),cards=[...document.querySelectorAll('.current-req')];function filter(){let count=0;for(const card of cards){card.hidden=Boolean((group.value&&card.dataset.group!==group.value)||!card.textContent.toLowerCase().includes(search.value.toLowerCase()));if(!card.hidden)count++;}document.getElementById('specCount').textContent=count+' of '+cards.length+' requirements';}search.oninput=filter;group.onchange=filter;</script>"""
-(R/'current-requirements.html').write_text('<!doctype html><html><head>'+head+'</head><body><main><div class="eyebrow">FR-RS-010 · 19 November 2026 · working draft</div><h1>FREYA Requirements Specification</h1><p>'+str(len(req))+' current requirements · 72 architecture blocks · 91 archived source records · 21 open closure items</p>'+downloads+nav+filters+''.join(sections)+js+'</main></body></html>')
-# Word and PDF derive from this same canonical register.
-doc=Document();sec=doc.sections[0];sec.header.paragraphs[0].text='FREYA · FR-RS-010 · WORKING DRAFT · 19 November 2026';normal=doc.styles['Normal'];normal.font.name='Calibri';normal.font.size=Pt(10)
-doc.add_heading('FREYA Requirements Specification',0);doc.add_paragraph('Revision 10 · 19 November 2026\nMission, vehicles, hardware subsystems and software\n'+str(len(req))+' current requirements; verification open')
-for x in intro:doc.add_paragraph(x)
-doc.add_heading('Default configuration baseline',1);t=doc.add_table(rows=1,cols=4);t.style='Light Shading Accent 1'
-for c,v in zip(t.rows[0].cells,['Parameter','A','B','Meaning / limitation']):c.text=v
+  id=q['id']
+  block=q['architectureBlock']
+  blockLink=f'<a href="index.html#block-{E(block)}">Open interactive block data</a> · ' if block else ''
+  cards.append(f'<article class="req current-req" id="{id}" data-group="{E(group)}"><h3>{id} · {E(q["subsystem"])}</h3>'
+    f'<p><strong>{E(q["text"])}</strong></p><p><b>Acceptance</b> {E(q["acceptance"])}</p>'
+    f'<p><b>Method</b> {E(q["verification"])} · <b>Applies</b> {E(q["applies"])} · <b>Status</b> Verification open</p>'
+    f'<p class="spec-solution"><b>Assumed solution.</b> {E(q["assumedSolution"])}</p>'
+    f'<p>{blockLink}<a href="./#{id}">Trade studies and evidence record</a> · '
+    f'<a href="#trace-{id}">Source and allocation trace</a></p></article>')
+ sections.append(section(group_anchor(group),group,''.join(cards)))
+sections.append(section('open-items','Closure register',p('Owners are proposed disciplines. Approve quantitative acceptance limits before verification closure.')+
+ ''.join(f'<article id="{a}"><h3>{a} · {E(b)}</h3>{p(c+" · Open")}{p(d)}<p><a href="./#{a}">Open closure trade</a></p></article>' for a,b,c,d in closures)))
+sections.append(section('pitch-reconciliation','Appendix A · Provenance and phase allocation',
+ ''.join(map(p,provenance))+'<p><a href="data/requirements/default-baseline.json">Download executable baseline and source hashes</a></p>'+
+ '<h3>Source changes and unresolved conflicts</h3>'+''.join(p(a+' — '+b+' ['+c+']') for a,b,c in conflicts)+
+ '<h3>Phase allocation</h3>'+''.join('<article><h4>'+E(x['title'])+'</h4>'+p(x['source'])+
+ p(x['recordedDescription'])+'<p>Allocated requirements '+links(x['currentRequirementIds'])+'</p></article>' for x in D['pitchReconciliation']['phaseTrace'])+
+ ''.join(map(p,pitchNotes))+'<h3>Requirement provenance</h3>'+
+ ''.join(f'<p id="trace-{q["id"]}">{links([q["id"]])} · {E(trace(q))}</p>' for q in req)))
+sections.append(section('source-crosswalk','Appendix B · Archived source crosswalk',
+ p('This ledger preserves all 91 source identifiers and their current allocations.')+
+ ''.join('<details><summary>'+E(x['sourceId'])+' · '+E(x['disposition'])+'</summary>'+p(x['sourceText'])+
+ '<p>Current allocation '+links(x['currentRequirementIds'])+'</p></details>' for x in sourceMap)))
+js="""<script>const search=document.getElementById('specSearch'),group=document.getElementById('specGroup'),cards=[...document.querySelectorAll('.current-req')];function filter(){let count=0;for(const card of cards){card.hidden=Boolean((group.value&&card.dataset.group!==group.value)||!card.textContent.toLowerCase().includes(search.value.toLowerCase()));if(!card.hidden)count++;}document.getElementById('specCount').textContent=count+' of '+cards.length+' requirements';}search.oninput=filter;group.onchange=filter;window.addEventListener('hashchange',()=>{const target=document.getElementById(location.hash.slice(1));if(target?.matches('.current-req[hidden]')){search.value='';group.value='';filter();target.scrollIntoView();}});</script>"""
+(R/'current-requirements.html').write_text('<!doctype html><html lang="en"><head>'+head+'</head><body><main><div class="eyebrow">FR-RS-010 · 19 November 2026 · working draft</div><h1>FREYA Requirements Specification</h1>'+nav+''.join(sections)+js+'</main></body></html>')
+
+# Word links use stable bookmarks so the contents work without field updates.
+def word_anchor(anchor):
+ return anchor.replace('-','_')
+
+def word_link(paragraph, anchor, title):
+ link=OxmlElement('w:hyperlink')
+ link.set(qn('w:anchor'),word_anchor(anchor))
+ run=OxmlElement('w:r')
+ props=OxmlElement('w:rPr')
+ style=OxmlElement('w:rStyle')
+ style.set(qn('w:val'),'Hyperlink')
+ props.append(style)
+ value=OxmlElement('w:t')
+ value.text=title
+ run.extend([props,value])
+ link.append(run)
+ paragraph._p.append(link)
+
+doc=Document()
+doc.sections[0].header.paragraphs[0].text='FREYA · FR-RS-010 · WORKING DRAFT · 19 November 2026'
+doc.styles['Normal'].font.size=Pt(10)
+doc.add_heading('FREYA Requirements Specification',0)
+doc.add_paragraph('Revision 10 · 19 November 2026 · Working draft')
+doc.add_heading('Table of contents',1)
+for anchor,title in contents:
+ word_link(doc.add_paragraph(),anchor,title)
+doc.add_page_break()
+bookmark_id=0
+
+def word_heading(title,anchor):
+ global bookmark_id
+ bookmark_id+=1
+ heading=doc.add_heading(title,1)
+ start=OxmlElement('w:bookmarkStart')
+ start.set(qn('w:id'),str(bookmark_id))
+ start.set(qn('w:name'),word_anchor(anchor))
+ end=OxmlElement('w:bookmarkEnd')
+ end.set(qn('w:id'),str(bookmark_id))
+ heading._p.insert(1,start)
+ heading._p.append(end)
+
+def word_solution(text):
+ paragraph=doc.add_paragraph()
+ paragraph.add_run('Assumed solution. ').bold=True
+ paragraph.add_run(text)
+
+word_heading('Mission abstract','mission-abstract')
+doc.add_paragraph(abstract)
+word_heading('Mission elements','mission-elements')
+for name,description in elements:
+ doc.add_heading(name,2)
+ doc.add_paragraph(description)
+word_heading('Default A/B configuration','configuration-baseline')
+doc.add_paragraph(notice)
+t=doc.add_table(rows=1,cols=4)
+t.style='Light Shading Accent 1'
+for cells, row in [(t.rows[0].cells,('Parameter','A','B','Meaning / limitation'))]+[(t.add_row().cells,row) for row in baseRows]:
+ for cell,value in zip(cells,row):
+  cell.text=value
+for group in groups:
+ word_heading(group,group_anchor(group))
+ for q in [q for q in req if q['group']==group]:
+  doc.add_heading(q['id']+' · '+q['subsystem'],2)
+  doc.add_paragraph(q['text'])
+  doc.add_paragraph('Acceptance: '+q['acceptance'])
+  doc.add_paragraph('Verification: '+q['verification']+' | Applies: '+q['applies']+' | Status: Open')
+  word_solution(q['assumedSolution'])
+word_heading('Closure register','open-items')
+for a,b,c,d in closures:
+ doc.add_heading(a+' · '+b,2)
+ doc.add_paragraph(c+' · Open. '+d)
+word_heading('Appendix A · Provenance and phase allocation','pitch-reconciliation')
+for text in provenance:
+ doc.add_paragraph(text)
+doc.add_heading('Source changes and unresolved conflicts',2)
+for a,b,c in conflicts:
+ doc.add_paragraph(a+' — '+b+' ['+c+']')
+doc.add_heading('Phase allocation',2)
+for x in D['pitchReconciliation']['phaseTrace']:
+ doc.add_heading(x['title'],3)
+ doc.add_paragraph(x['source']+'. '+x['recordedDescription'])
+ doc.add_paragraph('Current allocation: '+', '.join(x['currentRequirementIds']))
+for text in pitchNotes:
+ doc.add_paragraph(text)
+doc.add_heading('Requirement provenance',2)
+for q in req:
+ doc.add_paragraph(q['id']+' · '+trace(q))
+word_heading('Appendix B · Archived source crosswalk','source-crosswalk')
+for x in sourceMap:
+ doc.add_paragraph(x['sourceId']+' · '+x['sourceText']+' '+x['disposition']+' Current allocation: '+', '.join(x['currentRequirementIds']))
+doc.save(R/'documents/FREYA_Requirements_Specification_Rev10.docx')
+
+styles=getSampleStyleSheet()
+styles['BodyText'].fontSize=9
+styles['BodyText'].leading=12
+story=[]
+def para(text,style='BodyText',prefix=''):
+ story.append(Paragraph(prefix+E(text).replace('₀','<sub>0</sub>'),styles[style]))
+ if style=='BodyText':
+  story.append(Spacer(1,5))
+
+def pdf_heading(anchor,title):
+ heading=Paragraph(E(title),styles['Heading1'])
+ heading.contents_anchor=anchor
+ story.append(heading)
+
+class SpecificationPdf(SimpleDocTemplate):
+ def afterFlowable(self,flowable):
+  anchor=getattr(flowable,'contents_anchor',None)
+  if anchor:
+   title=flowable.getPlainText()
+   self.canv.bookmarkPage(anchor)
+   self.canv.addOutlineEntry(title,anchor,level=0)
+   self.notify('TOCEntry',(0,title,self.page,anchor))
+
+para('FREYA Requirements Specification','Title')
+para('FR-RS-010 · 19 November 2026 · Working draft')
+para('Table of contents','Heading1')
+toc=TableOfContents()
+toc.levelStyles=[styles['Normal']]
+story.extend([toc,PageBreak()])
+pdf_heading('mission-abstract','Mission abstract')
+para(abstract)
+pdf_heading('mission-elements','Mission elements')
+for name,description in elements:
+ para(name,'Heading2')
+ para(description)
+pdf_heading('configuration-baseline','Default A/B configuration')
+para(notice)
 for row in baseRows:
- for c,v in zip(t.add_row().cells,row):c.text=v
-for a,b,c in conflicts:doc.add_paragraph(a+': '+b+' ['+c+']')
+ para(row[0]+' | A: '+row[1]+' | B: '+row[2]+' | '+row[3])
 for group in groups:
- doc.add_heading(group,1)
+ story.append(PageBreak())
+ pdf_heading(group_anchor(group),group)
  for q in [q for q in req if q['group']==group]:
-  doc.add_heading(q['id']+' · '+q['subsystem'],2);doc.add_paragraph(q['text']);doc.add_paragraph('Acceptance: '+q['acceptance']);doc.add_paragraph('Verification: '+q['verification']+' | Applies: '+q['applies']+' | Status: Open');doc.add_paragraph('Trace: '+q['source']+' | Parents: '+(', '.join(q['parentIds']) or 'Mission-level need'))
-doc.add_heading('Open closure items',1)
-for a,b,c,d in closures:doc.add_heading(a+' · '+b,2);doc.add_paragraph(c+' · Open. '+d)
-doc.add_heading('Appendix A · Recorded pitch reconciliation',1)
+  para(q['id']+' · '+q['subsystem'],'Heading2')
+  para(q['text'])
+  para('Acceptance: '+q['acceptance'])
+  para('Verification: '+q['verification']+' | Applies: '+q['applies']+' | Status: Open')
+  para(q['assumedSolution'],prefix='<b>Assumed solution.</b> ')
+story.append(PageBreak())
+pdf_heading('open-items','Closure register')
+for a,b,c,d in closures:
+ para(a+' · '+b,'Heading2')
+ para(c+' · Open. '+d)
+story.append(PageBreak())
+pdf_heading('pitch-reconciliation','Appendix A · Provenance and phase allocation')
+for text in provenance:
+ para(text)
+para('Source changes and unresolved conflicts','Heading2')
+for a,b,c in conflicts:
+ para(a+' — '+b+' ['+c+']')
+para('Phase allocation','Heading2')
 for x in D['pitchReconciliation']['phaseTrace']:
- doc.add_heading(x['title'],2);doc.add_paragraph(x['source']+'. '+x['recordedDescription']);doc.add_paragraph('Current allocation: '+', '.join(x['currentRequirementIds']))
-for x in pitchNotes:doc.add_paragraph(x)
-doc.add_heading('Appendix B · Archived source crosswalk',1)
-for x in sourceMap:doc.add_paragraph(x['sourceId']+': '+x['disposition']+' Current: '+', '.join(x['currentRequirementIds']))
-doc.add_heading('Provenance and reproducibility',1);doc.add_paragraph('Current executable baseline and all hashes: data/requirements/default-baseline.json. Canonical register: data/requirements/current-specification.json. Source base: published website version 31. Latest original pitch remains unavailable; reconciliation open. No old source evidence marks are inherited as current qualification.');doc.save(R/'documents/FREYA_Requirements_Specification_Rev10.docx')
-styles=getSampleStyleSheet();styles['BodyText'].fontSize=9;styles['BodyText'].leading=12;story=[]
-def para(text,style='BodyText'):
- story.append(Paragraph(E(text),styles[style]))
- if style=='BodyText':story.append(Spacer(1,5))
-para('FREYA Requirements Specification','Title');para('FR-RS-010 · 19 November 2026 · WORKING DRAFT');para(f'{len(req)} requirements; verification open')
-for x in intro:para(x)
-para('Default configuration baseline','Heading1')
-for row in baseRows:para(row[0]+' | A: '+row[1]+' | B: '+row[2]+' | '+row[3])
-para('Changes and unresolved conflicts','Heading1')
-for a,b,c in conflicts:para(a+': '+b+' ['+c+']')
-for group in groups:
- story.append(PageBreak());para(group,'Heading1')
- for q in [q for q in req if q['group']==group]:
-  para(q['id']+' · '+q['subsystem'],'Heading2');para(q['text']);para('Acceptance: '+q['acceptance']);para('Verification: '+q['verification']+' | Applies: '+q['applies']+' | Status: Open');para('Trace: '+q['source']+' | Parents: '+(', '.join(q['parentIds']) or 'Mission-level need'))
-story.append(PageBreak());para('Open closure items','Heading1')
-for a,b,c,d in closures:para(a+' · '+b,'Heading2');para(c+' · Open. '+d)
-para('Appendix A · Recorded pitch reconciliation','Heading1')
-for x in D['pitchReconciliation']['phaseTrace']:
- para(x['title'],'Heading2');para(x['source']+'. '+x['recordedDescription']);para('Current allocation: '+', '.join(x['currentRequirementIds']))
-for x in pitchNotes:para(x)
-para('Appendix B · Archived source crosswalk','Heading1')
-for x in sourceMap:para(x['sourceId']+': '+x['disposition']+' Current: '+', '.join(x['currentRequirementIds']))
-para('Provenance','Heading1');para('Full source hashes and executable default snapshot are in data/requirements/default-baseline.json. Canonical register is data/requirements/current-specification.json. Source base: published website version 31. Latest original pitch remains unavailable; reconciliation open. Old source evidence does not establish current qualification.')
-def footer(c,d):c.saveState();c.setFont('Helvetica',8);c.drawString(36,24,'FREYA FR-RS-010 · Working draft · 19 November 2026');c.drawRightString(575,24,str(d.page));c.restoreState()
-SimpleDocTemplate(str(R/'documents/FREYA_Requirements_Specification_Rev10.pdf'),leftMargin=42,rightMargin=42,topMargin=42,bottomMargin=42).build(story,onFirstPage=footer,onLaterPages=footer)
-print(f'Built {len(req)} requirements, {len(sourceMap)} source dispositions, HTML / Word / PDF / JSON / CSV')
+ para(x['title'],'Heading3')
+ para(x['source']+'. '+x['recordedDescription'])
+ para('Current allocation: '+', '.join(x['currentRequirementIds']))
+for text in pitchNotes:
+ para(text)
+para('Requirement provenance','Heading2')
+for q in req:
+ para(q['id']+' · '+trace(q))
+story.append(PageBreak())
+pdf_heading('source-crosswalk','Appendix B · Archived source crosswalk')
+for x in sourceMap:
+ para(x['sourceId']+' · '+x['sourceText']+' '+x['disposition']+' Current allocation: '+', '.join(x['currentRequirementIds']))
+
+def footer(canvas,document):
+ canvas.saveState()
+ canvas.setFont('Helvetica',8)
+ canvas.drawString(36,24,'FREYA FR-RS-010 · Working draft · 19 November 2026')
+ canvas.drawRightString(575,24,str(document.page))
+ canvas.restoreState()
+
+SpecificationPdf(str(R/'documents/FREYA_Requirements_Specification_Rev10.pdf'),
+ leftMargin=42,rightMargin=42,topMargin=42,bottomMargin=42).multiBuild(story,onFirstPage=footer,onLaterPages=footer)
+print(f'Built {len(req)} requirements with assumed solutions, {len(sourceMap)} source dispositions, HTML / Word / PDF / JSON / CSV')

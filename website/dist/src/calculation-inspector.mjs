@@ -1,4 +1,4 @@
-import {CALCULATIONS,inputGroup,outputGroup} from './calculation-catalog.mjs?v=45af70b8d000';
+import {CALCULATIONS,inputGroup,outputGroup} from './calculation-catalog.mjs?v=256072640f6f';
 const esc=v=>String(v??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const display=v=>typeof v==='number'?(Number.isFinite(v)?v.toLocaleString(undefined,{maximumSignificantDigits:10}):'Unavailable'):typeof v==='boolean'?String(v):v??'Unavailable';
 const related={wetKg:['engine','gas','entry','descent'],count:['descent','status'],probeKg:['descent','impact'],diameterM:['entry','thermal'],orbitKm:['target','engine'],periapsisKm:['engine'],rho:['entry','thermal','descent'],cd:['descent'],probeChuteM:['descent'],pcmChuteM:['descent'],inertia:['slew'],jetN:['slew'],leverM:['slew']};

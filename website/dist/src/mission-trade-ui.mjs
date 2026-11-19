@@ -1,6 +1,6 @@
-import {depthUncertainty,depthUncertaintyExplanation} from './penetration-uncertainty.mjs?v=45af70b8d000';
-import {penetrationEvidenceMarkup} from './penetration-evidence.mjs?v=45af70b8d000';
-import {SOIL_DEFAULTS,SOIL_CASES,impactEstimate,missionTelemetry} from './mission-telemetry.mjs?v=45af70b8d000';
+import {depthUncertainty,depthUncertaintyExplanation} from './penetration-uncertainty.mjs?v=256072640f6f';
+import {penetrationEvidenceMarkup} from './penetration-evidence.mjs?v=256072640f6f';
+import {SOIL_DEFAULTS,SOIL_CASES,impactEstimate,missionTelemetry} from './mission-telemetry.mjs?v=256072640f6f';
 const tradeNode=id=>document.getElementById(id),tradeNumber=(v,n=2)=>Number.isFinite(v)?v.toLocaleString(undefined,{maximumFractionDigits:n}):'—';
 let soilInputs={...SOIL_DEFAULTS},tradeChange=()=>{},lastCurve='',lastProbeCount=0;
 export function initMissionTradePanel(onChange){tradeChange=onChange;

@@ -1,9 +1,9 @@
-import {aeroshellHeight} from './aeroshell-geometry.mjs?v=45af70b8d000';
-import {INITIAL_ORBIT_KM,INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=45af70b8d000';
+import {aeroshellHeight} from './aeroshell-geometry.mjs?v=256072640f6f';
+import {INITIAL_ORBIT_KM,INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=256072640f6f';
 export function getFlightInspection(){return {options:{...flightOptions},inputs:{...flightInputs},result:flightResult,comparisons:flightComparisons,comparisonInputs:Object.fromEntries(['A','B'].map(k=>[k,comparisonInputs(k)])),position:flightPosition,time:flightResult?.times?physicalTime():null};}
-import {runFlight} from './flight-sampling.mjs?v=45af70b8d000';
-import {FLIGHT_DEFAULTS,interpolateRows,gasUsage} from './flight-model.mjs?v=45af70b8d000';
-import {CONFIGS,DEFAULTS} from './revision51-model.mjs?v=45af70b8d000';
+import {runFlight} from './flight-sampling.mjs?v=256072640f6f';
+import {FLIGHT_DEFAULTS,interpolateRows,gasUsage} from './flight-model.mjs?v=256072640f6f';
+import {CONFIGS,DEFAULTS} from './revision51-model.mjs?v=256072640f6f';
 const flightEl=id=>document.getElementById(id), nf=(v,n=2)=>Number.isFinite(v)?Number(v).toLocaleString(undefined,{maximumFractionDigits:n}):'—', durationLabel=t=>`${Math.floor(t/3600)} h ${Math.floor(t%3600/60)} m ${nf(t%60,1)} s`;
 const flightListeners=new Set();
 export function getCurrentFlight(){return flightResult;}

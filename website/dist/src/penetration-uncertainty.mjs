@@ -1,4 +1,4 @@
-import {impactEstimate} from './mission-telemetry.mjs?v=45af70b8d000';
+import {impactEstimate} from './mission-telemetry.mjs?v=256072640f6f';
 // Independent lognormal inputs; current controls are medians, not fitted measurements.
 export const DEPTH_UNCERTAINTY={method:'First-order propagation in log(depth), then exp(log(depth) ± 3 sigma_log_depth)',sigma:3,oneSigmaFactors:{bearingResistance:1.35,density:1.10,inertialCoefficient:1.25,mass:1.05,diameter:1.03},interpretation:'Approximate central 99.73% interval only under the assumed independent lognormal inputs and local log-linear response. Not measured scatter, a confidence interval, a worst-case bound or a validated Mars prediction.',scope:'Conditional on the x-axis downward speed, selected obliquity and Poncelet model. Trajectory, model discrepancy, layering, shape change, fracture and survival uncertainty are excluded. A zero inertial coefficient remains exactly zero.'};
 export function depthUncertainty(speed,mass,material,options={}){

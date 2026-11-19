@@ -256,6 +256,7 @@ function renderRequirements() {
     const links=requirementStudies(requirement).map(id=>`<a href="#${models.has(id)?'study-':''}${id}">${esc(models.get(id)?.title??id+' · '+closures.get(id).title)}</a>`);
     detail.innerHTML=`<summary>${requirement.id} · ${esc(requirement.subsystem)}</summary>
       <p>${esc(requirement.text)}</p><p><strong>Acceptance criteria</strong> ${esc(requirement.acceptance)}</p>
+      <p><strong>Assumed solution.</strong> ${esc(requirement.assumedSolution)}</p>
       <p>${esc(requirement.verification)} · ${esc(requirement.applies)} · Verification open</p>
       <p>${links.join(' · ')}</p><p><a href="current-requirements.html#${requirement.id}">Specification and allocation</a>${requirement.architectureBlock?` · <a href="block-data.html#${esc(requirement.architectureBlock)}">Block calculations and interfaces</a>`:''}</p>
       <form><div class="fields"><label>Review outcome<select name="outcome"><option>Evidence pending</option><option>Ready for review</option><option>Shortfall identified</option></select></label>

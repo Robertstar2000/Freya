@@ -1,4 +1,4 @@
-import {design} from './trade.js?v=45af70b8d000';
+import {design} from './trade.js?v=256072640f6f';
 export function entry(dv=61.55673249575966,mass=45,altKm=250,interfaceKm=125,isp=225){
  if(![dv,mass,altKm,interfaceKm,isp].every(Number.isFinite)||dv<0||mass<=0||altKm<=interfaceKm||interfaceKm<0||isp<=0)throw Error('Invalid entry inputs');
  const mu=4.282837e13,R=3389500,ra=R+altKm*1000,r=R+interfaceKm*1000,vc=Math.sqrt(mu/ra),vt=vc-dv;
