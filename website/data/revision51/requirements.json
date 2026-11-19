@@ -1,0 +1,639 @@
+[
+  {
+    "id": "MIS-001",
+    "applies": "A",
+    "text": "The mission shall deliver three independent 2.00 kg probes to the Martian surface.  (Established)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-002",
+    "applies": "B",
+    "text": "The mission shall deliver two independent aeroshell vehicles, each carrying seven 2.00 kg probes.  (Established)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-003",
+    "applies": "Both",
+    "text": "Each vehicle shall remain mechanically and electrically compatible with the approved host upper-stage separation interface.  (Proposed)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-004",
+    "applies": "Both",
+    "text": "Each vehicle shall execute a defined separation, orbit determination, deorbit, entry, descent and probe-release sequence.  (Proposed)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-005",
+    "applies": "Both",
+    "text": "The mission shall document allowable launch, cruise, orbit and atmospheric entry environments before design freeze.  (Proposed)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-006",
+    "applies": "Both",
+    "text": "The mission shall define target landing regions, delivery dispersion and science-site acceptance criteria.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume an initial 100 km-radius target region for A and 50 km-radius for each B vehicle, with 95% of Monte Carlo landings within the respective region; exclude scientifically prohibited terrain.",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-007",
+    "applies": "Both",
+    "text": "The program shall maintain independent mass, power, volume, thermal and delta-v budgets with margins approved at PDR.  (Proposed)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "MIS-008",
+    "applies": "Both",
+    "text": "The flight system shall implement autonomous safe-state and abort/inhibit logic for premature motor ignition and pyrotechnic deployment.  (Proposed)",
+    "section": "Mission and interfaces",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-001",
+    "applies": "A",
+    "text": "The nominal aeroshell outer diameter shall be 800 mm.  (Established)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-002",
+    "applies": "A",
+    "text": "The assembled aeroshell height shall be 600 mm, subject to confirmation of datum and inclusion of the upper cover.  (Established / clarify)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-003",
+    "applies": "A",
+    "text": "The lower heat shield shall retain the current baseline contour and include a nominal 70 mm radius transition to the upper-shell profile.  (Established / drawing needed)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-004",
+    "applies": "A",
+    "text": "The upper shell shall use aluminum alloy; grade, thickness, insulation and joint design shall be selected by structural and aerothermal analysis.  (Established / derived)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-005",
+    "applies": "A",
+    "text": "The lower heat shield shall use a qualified ablative thermal-protection system, with material and thickness verified for the orbital-entry trajectory.  (Proposed)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-006",
+    "applies": "Both",
+    "text": "The carrier and all stowed probes shall fit within the aeroshell with verified deployment clearance and launch-load restraint.  (Proposed)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-007",
+    "applies": "A",
+    "text": "The upper cover opening shall provide unobstructed passage of the loaded probe carrier during ejection.  (Established)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-008",
+    "applies": "Both",
+    "text": "The aeroshell shall withstand launch, separation, deorbit, entry and deployment load cases with documented positive structural margins.  (Proposed)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "STR-009",
+    "applies": "Both",
+    "text": "All attachments across the heat shield shall preserve TPS integrity; sacrificial external DOM connections shall not require through-holes in the heat shield.  (Established / derived)",
+    "section": "Geometry and structures",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-001",
+    "applies": "A",
+    "text": "The deorbit module shall use one J-class solid rocket motor in the baseline configuration.  (Established)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-002",
+    "applies": "A",
+    "text": "The vehicle shall provide four reaction wheels for attitude control, with wheel-axis geometry and independent controllability verified.  (Established / verify)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-003",
+    "applies": "A",
+    "text": "The attitude solution shall fuse inertial MEMS gyro measurements with camera-derived Mars limb or feature observations and available Sun observations.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-004",
+    "applies": "Both",
+    "text": "The vehicle shall inhibit deorbit firing unless attitude, estimated orbit state, predicted entry corridor and propulsion readiness satisfy approved limits.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-005",
+    "applies": "Both",
+    "text": "The deorbit propulsion system shall provide the trajectory-specific required impulse and delta-v with defined dispersions and margin.  (Proposed assumption; verify by analysis and test) Planning baseline: For the assumed 300 km orbit and 50 km vacuum-periapsis proxy, use 60.3 m/s ideal delta-v, with 25% planning margin (75.4 m/s). At 50 kg B wet mass, the impulse-equivalent planning value is 3.77 kN s; actual delivered impulse must be calculated with rocket equation and a motor thrust curve.",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-006",
+    "applies": "A",
+    "text": "The sacrificial DOM shall mount beneath the heat shield without compromising the thermal-protection barrier.  (Established)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-007",
+    "applies": "B",
+    "text": "The hybrid-engine trade shall evaluate paraffin fuel, N2O oxidizer, tankage, feed system and ignition against the A solid-motor architecture.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-008",
+    "applies": "B",
+    "text": "If selected, the cold-gas attitude system shall include all thrusters, valves, plumbing, regulator and usable N2O/N2 gas mass in the budget.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-009",
+    "applies": "Both",
+    "text": "Attitude control shall account for momentum buildup, wheel saturation, deorbit disturbances and the absence or availability of desaturation actuators.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-010",
+    "applies": "Both",
+    "text": "Orbit and attitude estimation shall demonstrate observability during camera occultation, low-light conditions and changing Mars viewing geometry.  (Proposed)",
+    "section": "Deorbit and guidance",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-001",
+    "applies": "A",
+    "text": "The reference entry trajectory shall originate from approximately 300 km Mars orbit; actual entry interface and flight-path angle shall be determined by trajectory design.  (Established / derived)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-002",
+    "applies": "Both",
+    "text": "The aeroshell shall maintain a thermally and dynamically acceptable entry attitude throughout peak heating and deceleration.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-003",
+    "applies": "Both",
+    "text": "TPS sizing shall use trajectory-dependent convective and radiative heating, heat soak, ablation and aluminum-shell temperature limits.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-004",
+    "applies": "Both",
+    "text": "Parachute deployment shall occur only within verified Mach number, dynamic pressure and altitude envelopes.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-005",
+    "applies": "A",
+    "text": "The PCM recovery parachute shall have nominal 1.5 m diameter, pending Mars deployment and descent qualification.  (Established / verify)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-006",
+    "applies": "B",
+    "text": "The PCM recovery parachute shall use the 2.0 m candidate diameter pending vehicle-level mass and deployment analysis.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-007",
+    "applies": "Both",
+    "text": "The system shall safely separate the heat shield and upper cover in the commanded sequence without collision with the PCM or probes.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-008",
+    "applies": "Both",
+    "text": "The descent system shall determine probe release altitude using a qualified sensing and estimation method with defined uncertainty.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-009",
+    "applies": "Both",
+    "text": "Each probe shall deploy a nominal 0.5 m parachute, subject to terminal-speed and stability verification.  (Established / verify)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "EDL-010",
+    "applies": "Both",
+    "text": "The EDL analysis shall account for the low density and variability of the Martian atmosphere, winds, and landing-site elevation.  (Proposed)",
+    "section": "Entry and descent",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-001",
+    "applies": "A",
+    "text": "The PCM shall restrain three probes in vertical stowage until commanded release.  (Established)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-002",
+    "applies": "B",
+    "text": "Each PCM shall restrain seven probes in vertical stowage until commanded release.  (Established probe count; assumed packaging envelope) Planning baseline: Assume seven vertically stowed probes in a 3+3+1 arrangement. Verify fit inside the 800 mm diameter shell with a CAD swept-volume extraction study and positive clearance at maximum tolerance.",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-003",
+    "applies": "Both",
+    "text": "The PCM shall release probes individually, without mechanical interference, following an altitude-gated release schedule.  (Established / derived)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-004",
+    "applies": "Both",
+    "text": "The PCM shall remain retained through entry until its extraction conditions are met.  (Proposed)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-005",
+    "applies": "Both",
+    "text": "The carrier ejection system shall demonstrate cover clearance, parachute extraction and no contact with critical spacecraft elements.  (Proposed)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-006",
+    "applies": "Both",
+    "text": "Any pyrotechnic separation device shall have independent electrical inhibits and ground-safe handling provisions.  (Proposed)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PCM-007",
+    "applies": "Both",
+    "text": "Release sequencing shall provide an adjustable interval and shall be validated against descent rate, wind drift and probe separation.  (Proposed)",
+    "section": "Probe carrier and deployment",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-001",
+    "applies": "Both",
+    "text": "Each probe shall have a nominal overall length of 200 mm and main-body diameter of 50 mm.  (Established)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-002",
+    "applies": "Both",
+    "text": "Each probe shall include an upper shoulder of nominal 75 mm diameter over approximately the upper third of its length.  (Established)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-003",
+    "applies": "Both",
+    "text": "Each probe flight mass shall be 2.00 kg including science payload, power, structure, radio, parachute and consumables.  (Established)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-004",
+    "applies": "Both",
+    "text": "Each probe shall retain a pointed lower penetration head and deploy in an attitude that supports near-vertical surface penetration.  (Established / derived)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-005",
+    "applies": "Both",
+    "text": "Each probe shall provide a tether-integrated antenna connection from the center of its upper end.  (Established)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-006",
+    "applies": "Both",
+    "text": "The probe shall protect the science sample and sample pathway from contamination introduced by spacecraft materials or entry heating.  (Proposed)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-007",
+    "applies": "B",
+    "text": "The science system shall execute a documented life-detection measurement protocol with controls, blanks and decision thresholds.  (Proposed)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-008",
+    "applies": "B",
+    "text": "The science system shall obtain, transfer and analyze Martian material with demonstrated sample mass, depth, integrity and instrument sensitivity.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a 0.5 g minimum collected sample from 20-100 mm below the local surface per probe, with 80% transfer efficiency and duplicate blank/control measurements. These are science-planning targets requiring laboratory validation.",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-009",
+    "applies": "Both",
+    "text": "The probe shall provide energy storage and environmental protection sufficient for the approved post-landing operating duration.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume 24 h A and 72 h B surface operation, with a 20% usable energy margin after temperature derating and communications duty cycle.",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-010",
+    "applies": "Both",
+    "text": "The science and communications system shall operate under defined dust deposition, temperature and illumination cases.  (Proposed)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "PRB-011",
+    "applies": "Both",
+    "text": "The probe shall demonstrate survival of the predicted impact loads across the defined regolith and ice mechanical-property envelope.  (Proposed)",
+    "section": "Probe and science",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-001",
+    "applies": "Both",
+    "text": "The mission shall define an end-to-end telecommunications path, link budget, data storage and expected data return to Earth.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a Mars-orbit relay link using a UHF compatible transceiver, onboard buffering of at least 64 MB A / 256 MB B per probe, and at least 95% data retention until relay opportunity; final interoperability depends on relay provider agreement.",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-002",
+    "applies": "Both",
+    "text": "Each probe shall provide unique identification, health telemetry and time-tagged science data.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-003",
+    "applies": "Both",
+    "text": "The program shall determine applicable Mars planetary-protection classification with the responsible authority before flight hardware processing.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-004",
+    "applies": "B",
+    "text": "Life-detection sample-contacting hardware shall meet the approved biological contamination and recontamination prevention requirements.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-005",
+    "applies": "Both",
+    "text": "The program shall maintain bidirectional traceability from mission objectives through requirements, design, test evidence and anomalies.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-006",
+    "applies": "Both",
+    "text": "Each flight-critical release, ignition, attitude and descent function shall be verified by analysis and representative integrated testing.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-007",
+    "applies": "Both",
+    "text": "The program shall perform thermal-vacuum, vibration, shock, deployment and impact qualification at documented environments.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "SYS-008",
+    "applies": "Both",
+    "text": "The program shall approve a fault tree and hazard controls for propulsion, pressure vessels, pyrotechnics and inadvertent Mars impact.  (Proposed)",
+    "section": "Communications, protection and verification",
+    "verification": "See source requirement and Section 9; evidence pending"
+  },
+  {
+    "id": "GNC-01",
+    "applies": "Both; independently scale B",
+    "text": "Provide calibrated camera measurements of the Mars limb/horizon, apparent disk size and identifiable large-scale surface features when visible; estimate attitude and orbital/ground-track state with uncertainty.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Hardware-in-the-loop image sequences, camera calibration and navigation-error budget."
+  },
+  {
+    "id": "GNC-02",
+    "applies": "Both; independently scale B",
+    "text": "Observe the Sun when within the camera field of view and safe sensor exposure limits; fuse Sun-direction observations with Mars observations and inertial data.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Illumination, occultation and Sun-avoidance simulation; attitude observability analysis."
+  },
+  {
+    "id": "GNC-03",
+    "applies": "Both; independently scale B",
+    "text": "Use a MEMS gyroscope/IMU to propagate attitude between optical observations; estimate gyro bias and bound drift when Mars and Sun are temporarily unavailable.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Sensor calibration, thermal drift tests and outage simulations."
+  },
+  {
+    "id": "GNC-04",
+    "applies": "Both; independently scale B",
+    "text": "Run deterministic guidance, navigation and control on a Raspberry Pi-class processor, with ML-assisted Mars limb / landmark detection; safety-critical control shall not rely solely on unverified ML output.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Processor latency, worst-case execution time, fault injection and independently checked state-estimation performance."
+  },
+  {
+    "id": "GNC-05",
+    "applies": "Both; independently scale B",
+    "text": "Control spacecraft attitude using six independently commanded cold-gas thrusters, with verified torque authority about three axes and fault-tolerant command inhibits.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Thruster geometry and torque matrix, impulse-bit, propellant budget and closed-loop simulations."
+  },
+  {
+    "id": "GNC-06",
+    "applies": "Both; independently scale B",
+    "text": "Verify attitude and orbital-state confidence before deorbit ignition; inhibit ignition if navigation confidence, pointing error or thruster health is outside approved limits.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Monte Carlo deorbit targeting, timing, safe-mode and inhibit tests."
+  },
+  {
+    "id": "GNC-07",
+    "applies": "Both; independently scale B",
+    "text": "Define six-thruster implementation as a proposed architecture change. Reconcile against the existing four-reaction-wheel baseline and Configuration B hybrid oxidizer / cold-gas supply; do not assume N2O thrusters share a tank without regulator, phase-state and compatibility qualification.",
+    "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+    "verification": "Signed trade study and updated P&ID, mass, power and propulsion interface control documents."
+  },
+  {
+    "id": "EDL-01",
+    "applies": "Both; independently scale B",
+    "text": "Establish the entry corridor, worst-case heating rate, integrated heat load, dynamic pressure, deceleration, aero-moments and center-of-pressure movement for dispersions in Mars atmosphere and vehicle properties.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Trajectory/CFD/aerothermal analyses with stated margins and uncertainties."
+  },
+  {
+    "id": "EDL-02",
+    "applies": "Both; independently scale B",
+    "text": "Size and qualify the ablative heat shield, insulation and aluminum backshell for peak and integrated heat exposure; maintain internal electronics, batteries, PCM and probe temperatures within qualified limits.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Thermal network model, material response, thermal-vacuum and representative heating tests."
+  },
+  {
+    "id": "EDL-03",
+    "applies": "Both; independently scale B",
+    "text": "Maintain positive structural margins for peak aerodynamic pressure, deceleration, vibration, thermal gradients, fastener and joint loads, including the 70 mm heat-shield-to-backshell transition.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Finite-element load cases, structural proof and coupled thermal-stress assessment."
+  },
+  {
+    "id": "EDL-04",
+    "applies": "Both; independently scale B",
+    "text": "Ensure the external deorbit/hybrid propulsion module does not penetrate the heat shield and that sacrificial attachments cannot cause unacceptable TPS damage, destabilization or debris impact during entry.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Interface drawings, separation dynamics and TPS continuity inspection."
+  },
+  {
+    "id": "EDL-05",
+    "applies": "Both; independently scale B",
+    "text": "Demonstrate stable heat-shield-forward entry and adequate control authority before atmospheric interface; prohibit reliance on active cold-gas control after its external hardware is sacrificed.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Six-degree-of-freedom entry stability and control-transition simulations."
+  },
+  {
+    "id": "EDL-06",
+    "applies": "Both; independently scale B",
+    "text": "Verify cover release, parachute deployment and PCM ejection only after thermal, dynamic-pressure and deceleration conditions are inside qualified release envelopes.",
+    "section": "7A.2 Reentry aerothermal and structural load management",
+    "verification": "Event sequencing tests, entry/descent Monte Carlo and separation tests."
+  },
+  {
+    "id": "COM-01",
+    "applies": "Both; independently scale B",
+    "text": "Integrate a low-average-duty-cycle, high-peak-power radio transmitter and energy buffer within the probe carrier, with a defined antenna, receiver/relay target and link budget.",
+    "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+    "verification": "RF link analysis including Mars distance, geometry, antenna pointing and peak power draw."
+  },
+  {
+    "id": "COM-02",
+    "applies": "Both; independently scale B",
+    "text": "Transmit the nine-bit cumulative mission-status payload nominally once per 60 seconds; queue events between transmissions and repeat the latest status until carrier power is exhausted or mission complete.",
+    "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+    "verification": "Packet encoding and timing tests, outage and reset tests."
+  },
+  {
+    "id": "COM-03",
+    "applies": "Both; independently scale B",
+    "text": "Provide independent energy storage sized for transmitter peak power without browning out avionics or release actuators; limit average consumption by duty cycling.",
+    "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+    "verification": "Power integrity, pulse load and battery thermal tests."
+  },
+  {
+    "id": "COM-04",
+    "applies": "Both; independently scale B",
+    "text": "Record event time and confidence locally, protect the latched status word against resets, and distinguish command issuance from sensor-confirmed completion.",
+    "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+    "verification": "Fault injection and event confirmation tests."
+  },
+  {
+    "id": "COM-05",
+    "applies": "Both; independently scale B",
+    "text": "Do not credit reception during entry plasma blackout, antenna occlusion or carrier tumbling without validated link analysis; store and retransmit status when a link becomes available.",
+    "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+    "verification": "End-to-end link availability and missed-pass analysis."
+  },
+  {
+    "id": "DER-001",
+    "applies": "Both",
+    "text": "The program shall produce a 6-DOF Mars orbit-to-surface trajectory Monte Carlo, including atmospheric dispersions, prior to propulsion selection. Verification: Analysis.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Analysis."
+  },
+  {
+    "id": "DER-002",
+    "applies": "A",
+    "text": "The propulsion design shall demonstrate delivered delta-v and pointing error with a 20 kg initial mass and explicit propulsion margin. Verification: Analysis + test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Analysis + test."
+  },
+  {
+    "id": "DER-003",
+    "applies": "Both",
+    "text": "The aeroshell shall have a validated coupled aerothermal and structural model including 600 mm upper shell, aluminum thermal limits, and 70 mm transition. Verification: Analysis + test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Analysis + test."
+  },
+  {
+    "id": "DER-004",
+    "applies": "Both",
+    "text": "The descent system shall meet qualified deployment Mach, dynamic-pressure, altitude and inflation-load limits; nominal chute diameters alone are not acceptance criteria. Verification: Analysis + test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Analysis + test."
+  },
+  {
+    "id": "DER-005",
+    "applies": "Both",
+    "text": "Each probe shall meet defined impact speed, attitude, penetration-depth and survival envelopes over specified soil/ice conditions. Verification: Test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Test."
+  },
+  {
+    "id": "DER-006",
+    "applies": "Both",
+    "text": "The navigation system shall quantify covariance and observability across periods without camera or Sun visibility. Verification: Simulation + test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Simulation + test."
+  },
+  {
+    "id": "DER-007",
+    "applies": "B",
+    "text": "Each life-detection measurement shall have documented blanks, contamination budgets, calibration, detection limits and false-positive controls. Verification: Test + review.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Test + review."
+  },
+  {
+    "id": "DER-008",
+    "applies": "Both",
+    "text": "The spacecraft shall demonstrate positive power and communication margins for the selected operating duration and geometry. Verification: Analysis + test.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Analysis + test."
+  },
+  {
+    "id": "DER-009",
+    "applies": "Both",
+    "text": "The program shall approve an end-to-end planetary protection implementation plan before hardware exposure to flight environments. Verification: Review.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Review."
+  },
+  {
+    "id": "DER-010",
+    "applies": "Both",
+    "text": "A complete requirement verification matrix shall define objective pass/fail criteria, owners and evidence for every MIS/STR/GNC/EDL/PCM/PRB/SYS/DER item. Verification: Inspection.",
+    "section": "9 Verification qualification and acceptance",
+    "verification": "Inspection."
+  }
+]

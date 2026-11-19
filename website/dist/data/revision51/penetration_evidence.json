@@ -1,0 +1,105 @@
+{
+  "accessed": "2026-11-17",
+  "paper": {
+    "citation": "Spacek et al. (2026), IMPRESS: A Planetary Penetrator Network for Astrobiology, Prospecting, and Exploration of Mars. Astrobiology 26(9), 688–699.",
+    "doi": "https://doi.org/10.1177/15311074261471218",
+    "preprint": "https://impressmars.com/files/preprints/impress-planetary-penetrator-network-preprint-2026-08-02.pdf",
+    "supplement": "https://impressmars.com/files/preprints/impress-preprint-supplementary-tables-s1-s2-s3-2026-07-09.pdf"
+  },
+  "impress": {
+    "depthM": [
+      0.2,
+      1
+    ],
+    "depthStatus": "Mission concept emplacement range; not measured FREYA penetration",
+    "diameterM": 0.05,
+    "testArticleKg": 1,
+    "plannedImpactMps": 115,
+    "plannedDecelerationG": 5200,
+    "location": "Main author preprint, sections 3.1 and 3.2.1 (PDF pages 11–14); emplacement range also in published abstract",
+    "status": "Planned test conditions, not reported impact results"
+  },
+  "references": [
+    {
+      "id": "metnet",
+      "name": "MetNet",
+      "massKg": [
+        24,
+        24
+      ],
+      "speedMps": [
+        50,
+        70
+      ],
+      "depthM": [
+        0.542,
+        0.542
+      ],
+      "status": "Built/tested program; table summary, not a matched shot record",
+      "location": "Table S1, PDF page 2",
+      "primary": "https://doi.org/10.5194/gi-6-103-2017"
+    },
+    {
+      "id": "lunar-a",
+      "name": "LUNAR-A",
+      "massKg": [
+        12,
+        13
+      ],
+      "speedMps": [
+        300,
+        300
+      ],
+      "depthM": [
+        1,
+        2
+      ],
+      "status": "Built/tested program; table summary, not a matched shot record",
+      "location": "Table S1, PDF page 3",
+      "primary": "https://doi.org/10.1016/j.asr.2007.08.022"
+    },
+    {
+      "id": "moonlite",
+      "name": "MoonLITE",
+      "massKg": [
+        13,
+        13
+      ],
+      "speedMps": [
+        300,
+        300
+      ],
+      "depthM": [
+        2,
+        5
+      ],
+      "status": "Full-scale trials reported; table range, not individual measurements",
+      "location": "Table S1, PDF page 3",
+      "primary": "https://doi.org/10.1016/j.pss.2007.11.005"
+    },
+    {
+      "id": "ds2",
+      "name": "Deep Space 2",
+      "massKg": [
+        2.4,
+        2.4
+      ],
+      "forebodyKg": 0.67,
+      "speedMps": [
+        190,
+        190
+      ],
+      "depthM": [
+        0.6,
+        0.6
+      ],
+      "status": "Design/reference depth; no recovered Mars impact telemetry",
+      "location": "Table S1, PDF page 2",
+      "primary": "https://doi.org/10.1016/S0032-0633(00)00016-7"
+    }
+  ],
+  "calibration": {
+    "applied": false,
+    "reason": "The sources do not supply matched FREYA geometry/material/velocity/depth shot records for the three soil cases. Aggregate mission ranges cannot identify both Poncelet coefficients. No scaling of reference depths by probe mass or speed is applied."
+  }
+}

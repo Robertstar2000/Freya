@@ -1,0 +1,4489 @@
+{
+  "revision": "FREYA-RS-010",
+  "date": "2026-11-19",
+  "status": "Working requirements draft; hardware acceptance and presentation reconciliation open",
+  "scope": "Mission, capsule, probe, carrier, reentry module, their hardware subsystems, software, interfaces and science functions",
+  "authority": "Working design requirements based on current website defaults and user instructions; no formal approval inferred. Original 91 source requirements remain archived. Current allocation governs this draft where differences are listed.",
+  "presentationAvailability": "Recorded extracted phase map only; original slide deck not available in this workspace or located in connected Drive. Latest pitch revision not independently verified.",
+  "baseline": "data/requirements/default-baseline.json",
+  "requirements": [
+    {
+      "id": "FR-MIS-001",
+      "group": "Mission",
+      "subsystem": "Mission configurations",
+      "applies": "A and B",
+      "text": "The mission shall support configuration A as one late-2028 precursor vehicle with three probes, and configuration B as two 2031 science vehicles with seven probes per vehicle.",
+      "acceptance": "Configuration inspection shall show 3 A probes or 14 B probes across two independent B vehicles; launch dates remain planning targets.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-002",
+      "group": "Mission",
+      "subsystem": "Host and deployment",
+      "applies": "A and B",
+      "text": "The mission shall define and verify a host upper-stage mechanical, electrical, deployment-envelope and release-command interface before flight integration. The recorded pitch names Terran R as a candidate only; host selection shall remain unconfirmed until interface and delivery agreements are approved.",
+      "acceptance": "Approved interface control document and host acceptance test shall close TBD-01; the pitch candidate shall not substitute for a confirmed host agreement.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-01"
+      ]
+    },
+    {
+      "id": "FR-MIS-003",
+      "group": "Mission",
+      "subsystem": "Reference orbit",
+      "applies": "A and B",
+      "text": "Mission trajectory planning shall use a 400 km circular Mars-orbit initial reference for both default configurations and explicitly record off-default orbit trades.",
+      "acceptance": "Default capture shall report 400 km; mission analysis shall replace the reference with a host-provided state and covariance before release.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-004",
+      "group": "Mission",
+      "subsystem": "Wet mass",
+      "applies": "A and B",
+      "text": "The mission shall close the wet-mass budget at or below 20 kg per A vehicle and 50 kg per B vehicle, counting propulsion, nitrogen, all retained vehicles and reserves once.",
+      "acceptance": "Weighed flight configuration plus approved uncertainty shall meet the configuration limit; current proportional budgets are allocations, not weigh-test evidence.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-005",
+      "group": "Mission",
+      "subsystem": "Science delivery",
+      "applies": "A and B",
+      "text": "The mission shall deliver independently operable probes and preserve sample location, acquisition depth, acquisition time and environmental provenance for each returned science record.",
+      "acceptance": "End-to-end deployment, acquisition and record-recovery test shall retain all required provenance fields for each functioning probe.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-006",
+      "group": "Mission",
+      "subsystem": "Sequence",
+      "applies": "A and B",
+      "text": "The mission shall execute separation, attitude acquisition, retroburn, heat-shield alignment, module jettison, passive entry, cover release, carrier extraction, probe release, science acquisition and data return in a gated sequence.",
+      "acceptance": "State-transition tests shall show the recorded pitch delivery order with the added pre-entry alignment and module release interlocks; no downstream event shall bypass its required gate.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-007",
+      "group": "Mission",
+      "subsystem": "Independent operation",
+      "applies": "A and B",
+      "text": "Each B vehicle and each released probe shall retain independent identity, mission state and failure reporting.",
+      "acceptance": "Fault injection into one vehicle or probe shall not falsify another vehicle or probe confirmation record.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-008",
+      "group": "Mission",
+      "subsystem": "Entry readiness",
+      "applies": "A and B",
+      "text": "The mission shall establish an entry corridor, accepted attitude/rate envelope and verified module separation before authorizing entry readiness.",
+      "acceptance": "Six-degree-of-freedom dispersed trajectory and separation analysis shall close TBD-02 and TBD-03; animation orientation is not evidence.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02",
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-MIS-009",
+      "group": "Mission",
+      "subsystem": "Relay access",
+      "applies": "A and B",
+      "text": "The mission shall obtain an approved orbiter relay service and RF interface before claiming a supported Earth-return path.",
+      "acceptance": "Relay-provider acceptance and end-to-end protocol test shall close TBD-04; a link-budget screen alone shall not constitute access approval.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-04"
+      ]
+    },
+    {
+      "id": "FR-MIS-010",
+      "group": "Mission",
+      "subsystem": "Science time",
+      "applies": "A and B",
+      "text": "The mission shall budget 24 hours of probe operations for A and 72 hours for B as the current design goals.",
+      "acceptance": "Measured power and selected assay schedule shall demonstrate the applicable duration or trigger a controlled requirement change; the proposed 1\u20135-sol assay duration remains an unresolved conflict.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-011",
+      "group": "Mission",
+      "subsystem": "Verification closure",
+      "applies": "A and B",
+      "text": "The mission shall close all applicable flight requirements and departures before committing a vehicle to flight.",
+      "acceptance": "Verification matrix shall contain approved evidence and disposition for each applicable requirement; software model passes alone shall not close hardware verification.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-MIS-012",
+      "group": "Mission",
+      "subsystem": "Presentation configuration",
+      "applies": "A and B",
+      "text": "The mission shall record the exact pitch filename, revision, slide numbering and checksum used for requirements allocation.",
+      "acceptance": "Reconcile the original latest deck against the recorded 10-slide phase map and close TBD-00; no latest-deck incorporation claim shall be made before this occurs.",
+      "verification": "Inspection + analysis + test",
+      "source": "Current defaults; Rev09 mission family; recorded pitch phase map",
+      "parentIds": [],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-00"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-001",
+      "group": "Probe",
+      "subsystem": "Hardware / Sample acquisition",
+      "applies": "A and B",
+      "text": "The probe sample-acquisition subsystem shall deliver a traceable sample to the selected experiment chamber and distinguish nose penetration, accessible source depth, recovered volume and recovered mass. If the recorded gas/trap option is selected, the design shall demonstrate the proposed 2\u20135 cm accessible source zone and 0.25 cubic centimetres per vessel; if the extraction option is selected, it shall demonstrate approximately 1 g recovered soil with an approved tolerance.",
+      "acceptance": "Measure source depth, volume, mass and recovery after representative impacts for the selected option; close TBD-05 and TBD-06. Do not equate nose depth with accessible source depth or convert volume to mass without measured density.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-01; PRB-004, PRB-006, PRB-008; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-01",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-05",
+        "TBD-06"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-002",
+      "group": "Probe",
+      "subsystem": "Hardware / Chambers + fluid paths",
+      "applies": "A and B",
+      "text": "The probe chamber and fluid subsystem shall isolate test, blank and control channels and contain the selected gases, liquids and reagents.",
+      "acceptance": "Leak, cross-contamination and recovery tests under the selected pressure/temperature envelope; close TBD-06.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-02; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-02",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-06"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-003",
+      "group": "Probe",
+      "subsystem": "Hardware / Battery + power bus",
+      "applies": "A and B",
+      "text": "The probe power subsystem shall provide regulated rails and peak-current capability through impact, acquisition, incubation, extraction and data return.",
+      "acceptance": "Load-profile test shall include heater, valves, SiPM bias and RF peaks plus an approved data-return reserve; close TBD-07.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-03; PRB-003, PRB-009",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-004",
+      "group": "Probe",
+      "subsystem": "Hardware / Environment sensors",
+      "applies": "A and B",
+      "text": "The probe environment-sensing subsystem shall record sample and detector temperatures, chamber pressure and hydration history with validity flags.",
+      "acceptance": "Calibrated sensor tests shall retain measured values, time and validity at the approved sample rate; close TBD-08.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-04; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-04",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-08"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-005",
+      "group": "Probe",
+      "subsystem": "Hardware / Detector + analog front end",
+      "applies": "A and B",
+      "text": "The probe detector subsystem shall measure scintillation signals with calibrated background, live time, temperature and bias dependence.",
+      "acceptance": "Calibration shall establish efficiency, saturation, dead time and isotope-response behavior for the selected geometry; close TBD-09.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-05; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-05",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-006",
+      "group": "Probe",
+      "subsystem": "Hardware / Probe controller + memory",
+      "applies": "A and B",
+      "text": "The probe controller and storage subsystem shall retain raw science and health records across the specified impact, reset and power-interruption environments.",
+      "acceptance": "Impact and power-cycle tests shall recover committed records with identity, integrity checks and reset cause; close TBD-10.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-06; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-06",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-10"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-007",
+      "group": "Probe",
+      "subsystem": "Hardware / Drogue chute + structure",
+      "applies": "A and B",
+      "text": "The probe shall include an independent drogue chute and a structural load path from canopy attachments to the impact-resistant probe body.",
+      "acceptance": "Opening-load, clearance and impact tests shall meet TBD-03; canopy reference diameter is 0.5 m, subject to qualification.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-07; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-07",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-008",
+      "group": "Probe",
+      "subsystem": "Hardware / Thermal enclosure",
+      "applies": "A and B",
+      "text": "The probe thermal enclosure shall maintain the sample and detector within separately specified operating limits throughout the selected experiment.",
+      "acceptance": "Transient thermal-vacuum and experiment tests shall demonstrate each limit including heater energy; close TBD-07 and TBD-11.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-08; STR-003, STR-004, STR-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-08",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07",
+        "TBD-11"
+      ]
+    },
+    {
+      "id": "FR-PRB-HW-009",
+      "group": "Probe",
+      "subsystem": "Hardware / Antenna structure + UHF",
+      "applies": "A and B",
+      "text": "The probe shall provide a self-contained antenna structure and RF feed that permit independent buffered science downlink after release and impact. The independent antenna and drogue architecture shall supersede the recorded pitch description of an antenna supported by retained parachute shrouds; no connecting tether is allocated.",
+      "acceptance": "Post-impact RF tests in representative burial, canopy and antenna orientations shall demonstrate TBD-04 without relying on an unselected shroud-supported antenna geometry.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture probe-hardware-09; SYS-001, SYS-002, COM-01; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-hardware-09",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-04"
+      ]
+    },
+    {
+      "id": "FR-PRB-SW-001",
+      "group": "Probe",
+      "subsystem": "Software / Boot + identity",
+      "applies": "A and B",
+      "text": "Probe boot software shall record probe identity, firmware version, calibration identity, reset cause and a monotonic record-time origin.",
+      "acceptance": "Cold boot and reset tests shall populate each field and reject invalid configuration.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-01; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-01",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-002",
+      "group": "Probe",
+      "subsystem": "Software / Health + experiment gates",
+      "applies": "A and B",
+      "text": "Probe health software shall inhibit experiment actuation when configured energy, containment or required-sensor validity gates are unsatisfied.",
+      "acceptance": "Inject each invalid gate and verify actuation is inhibited and the reason logged.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-02; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-02",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-003",
+      "group": "Probe",
+      "subsystem": "Software / Schedule + power manager",
+      "applies": "A and B",
+      "text": "Probe power-management software shall schedule the selected assay within the measured energy budget while preserving the allocated data-return reserve.",
+      "acceptance": "Worst-case task-load tests shall produce a stop, pause or rejected schedule before the configured reserve is consumed.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-03; PRB-003, PRB-009",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-03",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-004",
+      "group": "Probe",
+      "subsystem": "Software / Sample / control registry",
+      "applies": "A and B",
+      "text": "Probe registry software shall associate every sample, control and extracted fraction with source channel, acquisition time, mass and processing history.",
+      "acceptance": "Trace test shall recover the association for every generated record, including rejected samples.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-04; PRB-004, PRB-006, PRB-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-04",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-005",
+      "group": "Probe",
+      "subsystem": "Software / Assay state machine",
+      "applies": "A and B",
+      "text": "Probe assay software shall implement an explicit, reset-safe state machine for preparation, baseline, incubation, extraction and measurement.",
+      "acceptance": "Exercise valid transitions, illegal transitions, interruption and recovery without duplicate irreversible dosing.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-05; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-05",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-006",
+      "group": "Probe",
+      "subsystem": "Software / Signal acquisition service",
+      "applies": "A and B",
+      "text": "Probe acquisition software shall store raw counts or spectra together with sensor validity, live time, detector bias and detector temperature.",
+      "acceptance": "Known-signal tests shall recover raw data and acquisition metadata without treating invalid intervals as zero signal.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-06; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-06",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-007",
+      "group": "Probe",
+      "subsystem": "Software / Calibration + reduction",
+      "applies": "A and B",
+      "text": "Probe reduction software shall apply only identified calibration, blank and recovery corrections and retain their versions and uncertainties.",
+      "acceptance": "Reference datasets shall reproduce approved calculations; missing or ill-conditioned calibration shall result in qualified outputs, not an isotope estimate.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-07; PRB-003, PRB-006, PRB-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-07",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-008",
+      "group": "Probe",
+      "subsystem": "Software / Persistent science journal",
+      "applies": "A and B",
+      "text": "Probe storage software shall maintain a checksum-protected, reset-safe science journal and preserve raw records when derived products change.",
+      "acceptance": "Interrupted-write and bit-corruption tests shall distinguish committed, incomplete and corrupt records.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-08; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-08",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-PRB-SW-009",
+      "group": "Probe",
+      "subsystem": "Software / Packet + relay service",
+      "applies": "A and B",
+      "text": "Probe communication software shall identify and sequence science packets, queue unsent records and distinguish transmission attempts from confirmed delivery.",
+      "acceptance": "Loss, duplicate and out-of-order packet tests shall recover identity and sequence without falsely confirming reception.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture probe-software-09; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "probe-software-09",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-HW-001",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Optical + inertial sensing",
+      "applies": "A and B",
+      "text": "The reentry module attitude sensors shall supply a validity-qualified estimate of orientation and angular rate for each controlled maneuver.",
+      "acceptance": "Sensor and estimator tests under the accepted environment shall meet TBD-02; simulated perfect attitude is not evidence.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-01; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-01",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-002",
+      "group": "Reentry module",
+      "subsystem": "Hardware / GNC compute split",
+      "applies": "A and B",
+      "text": "The reentry module controller shall command propulsion and paired jets through independently inhibited actuator interfaces.",
+      "acceptance": "Hardware-in-the-loop tests shall demonstrate valid commands, inhibits, sensor fault responses and independent hardware ignition barriers.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-02; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-02",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-HW-003",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Main deorbit propulsion",
+      "applies": "A and B",
+      "text": "The reentry module propulsion subsystem shall provide the configuration-specific retroburn with a thrust load path to the primary vehicle structure.",
+      "acceptance": "A reference is 100 N for 20 s and 2,000 N s at assumed Isp 225 s; B uses a 250 s Isp hybrid sizing model with 12.8 s burn. Selected motor curves and structural loads shall close TBD-12.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-03; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-12"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-004",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Nitrogen tank + feed",
+      "applies": "A and B",
+      "text": "The reentry module shall provide a pressure vessel, regulator and plumbing compatible with 0.100 kg initial nitrogen at the reference 200 bar and 293 K.",
+      "acceptance": "Pressure-system design and tests shall establish the operating and qualification envelopes under TBD-13; the ideal-gas storage volume is a reference, not a tank drawing.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-04; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-04",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-13"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-005",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Six cold-gas jets",
+      "applies": "A and B",
+      "text": "The reentry module six-jet cold-gas subsystem shall retain separate gas allocations for upper-stage separation, retroburn alignment and heat-shield entry alignment.",
+      "acceptance": "Gas-accounting test shall show all three withdrawals, leakage and minimum-pressure reserve once, with no gas credited after jettison. Initial screening uses 0.1 N per jet, 0.25 m lever arm and 65 s Isp; qualify the selected jet geometry and performance under TBD-02 and TBD-13.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-05; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-05",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02",
+        "TBD-13"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-006",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Ignition + jettison barriers",
+      "applies": "A and B",
+      "text": "The reentry module shall provide independent ignition and jettison inhibits with release-state sensing.",
+      "acceptance": "Hardware barrier and fault-injection tests shall prevent premature ignition or jettison and close TBD-14.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-06; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-06",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-14"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-007",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Module power + harness",
+      "applies": "A and B",
+      "text": "The reentry module power subsystem shall support propulsion control, sensing, actuators and handover through confirmed jettison.",
+      "acceptance": "Worst-case electrical load and disconnect testing shall maintain required functions until handover completes; close TBD-07.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-07; ",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-07",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-008",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Mechanical attachment",
+      "applies": "A and B",
+      "text": "The reentry module mechanical interface shall release all mechanical and electrical connections without damaging the retained capsule or extraction path.",
+      "acceptance": "Dispersed separation analysis and representative release tests shall demonstrate positive clearance and disconnected harnesses; close TBD-03. Verify thrust load transfer, motor heat isolation and plume/contamination clearance under TBD-11 and TBD-12.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-08; STR-004, STR-006, STR-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-08",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03",
+        "TBD-11",
+        "TBD-12"
+      ]
+    },
+    {
+      "id": "FR-REM-HW-009",
+      "group": "Reentry module",
+      "subsystem": "Hardware / Capsule handover interface",
+      "applies": "A and B",
+      "text": "The reentry module status interface shall transfer measured burn, attitude, gas and release information to the retained mission avionics before loss of connection.",
+      "acceptance": "Handover test shall recover records with validity and confirmation source; command issuance shall not substitute for measured confirmation.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture retro-hardware-09; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-hardware-09",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-SW-001",
+      "group": "Reentry module",
+      "subsystem": "Software / Boot + host separation gate",
+      "applies": "A and B",
+      "text": "Reentry-module initialization software shall load the correct A/B configuration and validate sensor, actuator, clock and power readiness.",
+      "acceptance": "Wrong-configuration and invalid-sensor tests shall inhibit maneuver arming.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-01; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-01",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-SW-002",
+      "group": "Reentry module",
+      "subsystem": "Software / Maneuver 1: separation",
+      "applies": "A and B",
+      "text": "Reentry-module separation software shall perform the upper-stage clearance maneuver and verify the configured release conditions.",
+      "acceptance": "Test the 0.2 m/s reference separation impulse and 20 m clearance assumption with independent sensing criteria under TBD-03.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-02; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-02",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-REM-SW-003",
+      "group": "Reentry module",
+      "subsystem": "Software / Navigation + target planner",
+      "applies": "A and B",
+      "text": "Reentry-module navigation and planning software shall estimate the vehicle state and identify an approved retroburn opportunity from mission navigation and target data.",
+      "acceptance": "Known-state and invalid-navigation tests shall distinguish a valid target opportunity from the website nearest-candidate screen; attitude/target tolerances and flight navigation authority shall close TBD-02.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-03; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02"
+      ]
+    },
+    {
+      "id": "FR-REM-SW-004",
+      "group": "Reentry module",
+      "subsystem": "Software / Maneuver 2: burn alignment",
+      "applies": "A and B",
+      "text": "Reentry-module attitude software shall execute the retroburn-alignment maneuver within its accepted pointing and rate limits.",
+      "acceptance": "Evaluate the current 90-degree reference slew, saturation and gas demand in hardware-in-the-loop tests; close TBD-02.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-04; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-04",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02"
+      ]
+    },
+    {
+      "id": "FR-REM-SW-005",
+      "group": "Reentry module",
+      "subsystem": "Software / Retroburn state machine",
+      "applies": "A and B",
+      "text": "Reentry-module burn software shall authorize, time and monitor the burn only after valid attitude, time and hardware-enable gates.",
+      "acceptance": "Gate-failure and interrupted-burn tests shall show inhibited ignition or defined fault response; delivered impulse requires motor evidence.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-05; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-05",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-SW-006",
+      "group": "Reentry module",
+      "subsystem": "Software / Maneuver 3: entry alignment",
+      "applies": "A and B",
+      "text": "Reentry-module entry-alignment software shall orient the heat shield for entry before module release.",
+      "acceptance": "Evaluate the current 180-degree reference slew and completion evidence; a changed mount shall require re-derived signed attitudes and gas budgets.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-06; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-06",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-SW-007",
+      "group": "Reentry module",
+      "subsystem": "Software / Fault / inhibit supervisor",
+      "applies": "A and B",
+      "text": "Reentry-module fault software shall distinguish sensor invalidity, actuator nonresponse, incomplete burn and incomplete release and execute approved responses.",
+      "acceptance": "Fault injection shall exercise each state without generating false completion bits; close TBD-14 for approved responses.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-07; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-07",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-14"
+      ]
+    },
+    {
+      "id": "FR-REM-SW-008",
+      "group": "Reentry module",
+      "subsystem": "Software / Mass + gas accounting",
+      "applies": "A and B",
+      "text": "Reentry-module resource software shall account for separation, retroburn alignment and entry alignment gas independently and flag a reserve deficit.",
+      "acceptance": "Reference-vector tests shall close nitrogen mass and pressure accounting including leakage and minimum regulator pressure.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-08; GNC-002, GNC-003, GNC-004",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-08",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-REM-SW-009",
+      "group": "Reentry module",
+      "subsystem": "Software / Handover + jettison",
+      "applies": "A and B",
+      "text": "Reentry-module handover software shall commit confirmed mission state before jettison and remove authority over absent actuators after separation.",
+      "acceptance": "Disconnect tests shall preserve retained event history and reject post-jettison module actuator commands.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture retro-software-09; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "retro-software-09",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-HW-001",
+      "group": "Capsule",
+      "subsystem": "Hardware / Aeroshell + heat shield",
+      "applies": "A and B",
+      "text": "The capsule forebody shall use a 70-degree sphere-cone half-angle measured from the symmetry axis, equivalent to 20 degrees from the heat-shield plane.",
+      "acceptance": "CAD inspection shall verify the angle convention at a 0.8 m reference base diameter; nose/shoulder blend geometry and tolerances shall close TBD-15. The 0.745588 m total envelope is provisional packaging geometry.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-01; STR-003, STR-005, STR-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-01",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-15"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-002",
+      "group": "Capsule",
+      "subsystem": "Hardware / Entry sensing + avionics",
+      "applies": "A and B",
+      "text": "The capsule sensing subsystem shall provide validity-qualified entry acceleration and thermal records to the retained avionics.",
+      "acceptance": "Calibrated environmental sensor tests shall meet TBD-08 and preserve measurements through extraction handover.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-02; STR-003, STR-005, STR-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-02",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-08"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-003",
+      "group": "Capsule",
+      "subsystem": "Hardware / Carrier restraint interface",
+      "applies": "A and B",
+      "text": "The capsule restraint subsystem shall retain the loaded carrier during launch, burn and entry until commanded extraction.",
+      "acceptance": "Structural and release tests shall demonstrate the approved load envelope and release margin under TBD-03.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-03; STR-004, STR-006, STR-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-004",
+      "group": "Capsule",
+      "subsystem": "Hardware / Cover + release mechanism",
+      "applies": "A and B",
+      "text": "The capsule top-cover mechanism shall provide independent release inhibits and positive cover-clear evidence.",
+      "acceptance": "Latch, timeout, partial-release and obstructed-path tests shall prevent unconfirmed cover clearance from enabling extraction.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-04; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-04",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-HW-005",
+      "group": "Capsule",
+      "subsystem": "Hardware / Passive entry configuration",
+      "applies": "A and B",
+      "text": "The capsule mass distribution and aerodynamic configuration shall meet approved static and dynamic stability criteria over the complete entry envelope.",
+      "acceptance": "Obtain Mach/angle-dependent coefficients, damping, as-built CG/inertia and dispersed six-degree-of-freedom results; close TBD-02. The website 0.19D illustrative bound is not a flight CG limit.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-05; STR-003, STR-005, STR-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-05",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-02"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-006",
+      "group": "Capsule",
+      "subsystem": "Hardware / Extraction chute interface",
+      "applies": "A and B",
+      "text": "The capsule extraction-chute interface shall transfer opening loads and extract the loaded carrier through a demonstrated clear path.",
+      "acceptance": "Representative extraction tests shall verify opening loads, cover clearance and carrier separation under TBD-03.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-06; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-06",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-007",
+      "group": "Capsule",
+      "subsystem": "Hardware / Retro attachment plane",
+      "applies": "A and B",
+      "text": "The capsule retro attachment shall connect to a verified structural load path and leave a qualified retained entry surface after module release.",
+      "acceptance": "Demonstrate structure, thermal continuity and separation for the selected mount; top-side bridge preference remains an unselected trade under TBD-16.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-07; STR-004, STR-006, STR-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-07",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-16"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-008",
+      "group": "Capsule",
+      "subsystem": "Hardware / Power + event handover",
+      "applies": "A and B",
+      "text": "The capsule power and event interface shall maintain event continuity across retro release and carrier extraction without duplicated avionics mass credit.",
+      "acceptance": "Interface test shall verify time, state and power continuity with execution ownership closed under TBD-17.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-08; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-08",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-17"
+      ]
+    },
+    {
+      "id": "FR-CAP-HW-009",
+      "group": "Capsule",
+      "subsystem": "Hardware / Discarded aeroshell",
+      "applies": "A and B",
+      "text": "The capsule discard configuration shall clear the extracted carrier and released probes without crediting further capsule control or telemetry.",
+      "acceptance": "Dispersed discard-clearance study and representative separation test shall close TBD-03.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture capsule-hardware-09; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-hardware-09",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAP-SW-001",
+      "group": "Capsule",
+      "subsystem": "Software / Receive retro handover",
+      "applies": "A and B",
+      "text": "Capsule handover software shall accept retro status only with source identity, validity, time continuity and module-detached evidence.",
+      "acceptance": "Test lost, corrupt and inconsistent handover records and verify readiness remains unconfirmed.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-01; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-01",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-002",
+      "group": "Capsule",
+      "subsystem": "Software / Entry monitoring function",
+      "applies": "A and B",
+      "text": "Capsule monitoring software shall time-tag available acceleration and thermal measurements and their validity throughout entry.",
+      "acceptance": "Replay calibrated and failed-sensor data and verify records remain distinguishable from estimated values.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-02; STR-003, STR-005, STR-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-02",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-003",
+      "group": "Capsule",
+      "subsystem": "Software / Entry phase estimator",
+      "applies": "A and B",
+      "text": "Capsule phase-estimation software shall determine deployment readiness from approved physical sensor/state gates.",
+      "acceptance": "Replay dispersed trajectories and sensor faults; animation progress or compressed review time shall never trigger deployment.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-03; STR-003, STR-005, STR-008",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-03",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-004",
+      "group": "Capsule",
+      "subsystem": "Software / Deployment inhibit logic",
+      "applies": "A and B",
+      "text": "Capsule deployment software shall inhibit cover and extraction actuation outside the approved deployment envelope or without required readiness gates.",
+      "acceptance": "Boundary and fault tests shall exercise each gate and independent hardware barrier; close TBD-18.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-04; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-04",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-18"
+      ]
+    },
+    {
+      "id": "FR-CAP-SW-005",
+      "group": "Capsule",
+      "subsystem": "Software / Cover-release sequence",
+      "applies": "A and B",
+      "text": "Capsule cover-release software shall command release, await measured clearance and execute an approved timeout response.",
+      "acceptance": "Partial-release and no-response tests shall not advance extraction state without required confirmation.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-05; GNC-004, EDL-007, PCM-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-05",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-006",
+      "group": "Capsule",
+      "subsystem": "Software / Carrier extraction sequence",
+      "applies": "A and B",
+      "text": "Capsule extraction software shall command carrier extraction only after cover clearance and shall record carrier-separation confirmation.",
+      "acceptance": "Test nominal and failed extraction without conflicting actuation or false separation bits.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-06; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-06",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-007",
+      "group": "Capsule",
+      "subsystem": "Software / Event + diagnostic recorder",
+      "applies": "A and B",
+      "text": "Capsule diagnostic software shall preserve command, measurement, confirmation and fault histories for transfer to the retained carrier.",
+      "acceptance": "Disconnect and reset tests shall retain all committed upstream events and source identities.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-07; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-07",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAP-SW-008",
+      "group": "Capsule",
+      "subsystem": "Software / Ownership / power boundary",
+      "applies": "A and B",
+      "text": "Capsule software allocation shall identify the processor, power source and authority for each entry and extraction function.",
+      "acceptance": "Architecture review shall close TBD-17; no dedicated capsule computer shall be assumed without an explicit mass/power allocation.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-08; STR-004, STR-006, STR-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-08",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-17"
+      ]
+    },
+    {
+      "id": "FR-CAP-SW-009",
+      "group": "Capsule",
+      "subsystem": "Software / End-of-service handling",
+      "applies": "A and B",
+      "text": "Capsule end-of-service software shall mark capsule discard and cease credit for further capsule measurements or actuator availability.",
+      "acceptance": "Replay shall show carrier/probe independence after discard and no post-discard capsule telemetry claims.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture capsule-software-09; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "capsule-software-09",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-HW-001",
+      "group": "Carrier",
+      "subsystem": "Hardware / Carrier frame + probe bays",
+      "applies": "A and B",
+      "text": "The carrier frame shall accommodate three A probe bays or seven B probe bays with restraints and accessible release paths.",
+      "acceptance": "Fit and mass-property inspection plus load test shall meet TBD-03; reference retained dry masses are the derived A allocation and 8 kg for B.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-01; STR-004, STR-006, STR-007",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-01",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAR-HW-002",
+      "group": "Carrier",
+      "subsystem": "Hardware / Release actuators + sensing",
+      "applies": "A and B",
+      "text": "Each carrier probe-release mechanism shall have a defined actuation and positive release-sensing path.",
+      "acceptance": "Release tests shall distinguish commanded, partial, failed and completed drops and prevent adjacent probe contact.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-02; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-02",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-HW-003",
+      "group": "Carrier",
+      "subsystem": "Hardware / Carrier parachute + risers",
+      "applies": "A and B",
+      "text": "The carrier parachute and risers shall support extraction and descent of the loaded carrier in the approved envelope.",
+      "acceptance": "Opening-load and descent tests shall qualify the 1.5 m A / 2.0 m B reference canopy diameters or control a design change; close TBD-03.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-03; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAR-HW-004",
+      "group": "Carrier",
+      "subsystem": "Hardware / Altitude / descent sensing",
+      "applies": "A and B",
+      "text": "The carrier shall estimate release altitude and descent state with validity sufficient for the selected release sequence.",
+      "acceptance": "Sensor and estimator tests shall demonstrate TBD-08 and TBD-18; the 5 km release reference shall not imply a qualified threshold.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-04; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-04",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-08",
+        "TBD-18"
+      ]
+    },
+    {
+      "id": "FR-CAR-HW-005",
+      "group": "Carrier",
+      "subsystem": "Hardware / Carrier MCU + event memory",
+      "applies": "A and B",
+      "text": "The carrier avionics shall retain upstream event history and independently latched probe-drop confirmations through descent and reset.",
+      "acceptance": "Reset and interrupted-write tests shall preserve committed confirmations without clearing cumulative history.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-05; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-05",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-HW-006",
+      "group": "Carrier",
+      "subsystem": "Hardware / Radio + antenna",
+      "applies": "A and B",
+      "text": "The carrier radio and antenna subsystem shall transmit identifiable cumulative mission status independently of probe science transmissions.",
+      "acceptance": "RF and framing tests shall verify source identity, status mapping and TBD-04 relay compatibility.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-06; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-06",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-04"
+      ]
+    },
+    {
+      "id": "FR-CAR-HW-007",
+      "group": "Carrier",
+      "subsystem": "Hardware / Independent power + buffer",
+      "applies": "A and B",
+      "text": "The carrier power subsystem shall supply descent, release actuation, recording and repeated status transmissions with reserve.",
+      "acceptance": "Measured load-profile test shall close TBD-07; probe battery allocations shall not be substituted for carrier energy.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-07; PRB-003, PRB-009",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-07",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-CAR-HW-008",
+      "group": "Carrier",
+      "subsystem": "Hardware / Harness + data handover",
+      "applies": "A and B",
+      "text": "The carrier harness and separation interfaces shall disconnect safely from the capsule and each released probe while preserving required state.",
+      "acceptance": "Representative disconnect tests shall demonstrate no retained hazardous connections and correct post-release power/data ownership.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-08; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-08",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-HW-009",
+      "group": "Carrier",
+      "subsystem": "Hardware / Released independent probes",
+      "applies": "A and B",
+      "text": "The carrier probe interfaces shall permit each released probe to continue power, sensing, science control, storage and communications independently.",
+      "acceptance": "Representative release/disconnect tests shall verify no required carrier power or command dependence after release; probe impact survival remains separate under TBD-03.",
+      "verification": "Inspection + analysis + test",
+      "source": "Architecture carrier-hardware-09; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-hardware-09",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03"
+      ]
+    },
+    {
+      "id": "FR-CAR-SW-001",
+      "group": "Carrier",
+      "subsystem": "Software / Boot + history reconciliation",
+      "applies": "A and B",
+      "text": "Carrier initialization software shall restore transferred mission history, configuration and vehicle identity before independent descent.",
+      "acceptance": "Handover and reset tests shall recover valid state and reject invalid or mismatched configuration.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-01; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-01",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-SW-002",
+      "group": "Carrier",
+      "subsystem": "Software / Descent / release estimator",
+      "applies": "A and B",
+      "text": "Carrier descent software shall estimate altitude and release readiness with explicit sensor validity.",
+      "acceptance": "Dispersed descent and invalid-sensor tests shall inhibit drops outside the approved envelope under TBD-18.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-02; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-02",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-18"
+      ]
+    },
+    {
+      "id": "FR-CAR-SW-003",
+      "group": "Carrier",
+      "subsystem": "Software / Release scheduler",
+      "applies": "A and B",
+      "text": "Carrier release scheduling software shall release probes in the approved order and separation cadence.",
+      "acceptance": "Evaluate the default 5 km release altitude and 2 s cadence with collision/dispersion testing; close TBD-03 and TBD-18.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-03; EDL-004, EDL-005, EDL-006",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-03",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-03",
+        "TBD-18"
+      ]
+    },
+    {
+      "id": "FR-CAR-SW-004",
+      "group": "Carrier",
+      "subsystem": "Software / Cumulative status machine",
+      "applies": "A and B",
+      "text": "Carrier event software shall latch the core mission confirmations and each applicable probe-drop event without clearing prior confirmations.",
+      "acceptance": "Packet mapping tests shall reproduce 9 A core bits and the 13-position B map while marking unused A positions not applicable.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-04; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-04",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-SW-005",
+      "group": "Carrier",
+      "subsystem": "Software / Confirmation / fault journal",
+      "applies": "A and B",
+      "text": "Carrier confirmation software shall retain time-tagged command, sensed-drop and fault evidence for each probe bay.",
+      "acceptance": "Reset, stuck-actuator and duplicate-command tests shall preserve prior confirmations and distinguish failed or unknown release from a measured drop.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-05; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-05",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-SW-006",
+      "group": "Carrier",
+      "subsystem": "Software / Packet and retry service",
+      "applies": "A and B",
+      "text": "Carrier telemetry software shall frame the cumulative status with identity, time, integrity and sequence information.",
+      "acceptance": "Decode reference packets and corrupted packets; payload bits shall be distinguished from packet overhead.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-06; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-06",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-SW-007",
+      "group": "Carrier",
+      "subsystem": "Software / Power + peak-buffer manager",
+      "applies": "A and B",
+      "text": "Carrier resource software shall schedule release and repeated status transmissions within the carrier energy and storage budget.",
+      "acceptance": "Worst-case queue and energy tests shall preserve safety-critical records and configured reserve.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-07; PRB-003, PRB-009",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-07",
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-CAR-SW-008",
+      "group": "Carrier",
+      "subsystem": "Software / Contact / blackout policy",
+      "applies": "A and B",
+      "text": "Carrier contact-policy software shall buffer status through relay blackout and retry only within the approved access and energy policy.",
+      "acceptance": "Loss-of-contact, restored-contact and low-energy tests shall preserve queued records without claiming reception; close TBD-04 and TBD-07.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-08; SYS-001, SYS-002, COM-01",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-08",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-04",
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-CAR-SW-009",
+      "group": "Carrier",
+      "subsystem": "Software / Surface status operations",
+      "applies": "A and B",
+      "text": "Carrier surface-status software shall manage repeated status reporting and actuator safing if the carrier remains operational after descent.",
+      "acceptance": "Ground/contact, timeout and energy-depletion tests shall verify the approved terminal policy under TBD-14; neither carrier survival nor surface RF coverage is assumed.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Architecture carrier-software-09; GNC-001, GNC-004, GNC-005",
+      "parentIds": [
+        "FR-MIS-006"
+      ],
+      "architectureBlock": "carrier-software-09",
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-14"
+      ]
+    },
+    {
+      "id": "FR-SYS-001",
+      "group": "System assurance",
+      "subsystem": "Mass ledger",
+      "applies": "A and B",
+      "text": "The system mass ledger shall distinguish wet mass, consumed propellant, gas withdrawals, jettisoned mass and retained entry mass at each mission boundary.",
+      "acceptance": "Mass-conservation review and test vectors shall balance each boundary without duplicated propulsion or carrier mass.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-002",
+      "group": "System assurance",
+      "subsystem": "Mass allocation",
+      "applies": "A and B",
+      "text": "The A mass ledger shall derive probe and carrier allocations from the current propulsion replacement and proportional non-propulsion scaling formula.",
+      "acceptance": "At default settings verify 0.906414 kg motor propellant, 0.100 kg nitrogen, 1.5 kg assumed motor/module dry mass, 1.999267 kg per probe and 2.998900 kg retained carrier dry allocation.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-003",
+      "group": "System assurance",
+      "subsystem": "RF baseline",
+      "applies": "A and B",
+      "text": "The reference link budget shall explicitly identify the 400 MHz, 400 km, 10 W RF, 0 dBi transmitter gain, 6 dBi receiver gain, 6 dB losses and \u2212120 dBm receiver-threshold assumptions.",
+      "acceptance": "Reproduce link calculations in SI/dB units; antenna deployment and orbiter access require independent evidence under TBD-04.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-04"
+      ]
+    },
+    {
+      "id": "FR-SYS-004",
+      "group": "System assurance",
+      "subsystem": "Energy baseline",
+      "applies": "A and B",
+      "text": "The probe power budget shall distinguish the 20 Wh usable-energy assumption, 0.2 W average-load assumption and 1 s transmission burst per 60 s from validated science load measurements.",
+      "acceptance": "Measured experiment and communication profile shall close TBD-07; a mean-load arithmetic endurance estimate shall not establish assay readiness.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-SYS-005",
+      "group": "System assurance",
+      "subsystem": "Memory allocation",
+      "applies": "A and B",
+      "text": "The carrier data architecture shall allocate the reference 64 MB A and 256 MB B buffers explicitly to packet and science storage owners.",
+      "acceptance": "Worst-case data-volume and write-rate test shall close TBD-19; source buffer values are not automatically installed probe memory.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-19"
+      ]
+    },
+    {
+      "id": "FR-SYS-006",
+      "group": "System assurance",
+      "subsystem": "Thermal protection",
+      "applies": "A and B",
+      "text": "The capsule TPS design shall meet selected material, bondline and residual-thickness criteria under a dispersed heating/pressure history through the relevant exposure and soak interval.",
+      "acceptance": "Material-response/ablation analysis and arc-jet testing shall close TBD-11; the 15 mm flight-model input and 60 mm illustrative sweep result shall not constitute a released thickness.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-11"
+      ]
+    },
+    {
+      "id": "FR-SYS-007",
+      "group": "System assurance",
+      "subsystem": "Penetration evidence",
+      "applies": "A and B",
+      "text": "The penetration design shall distinguish predicted nose depth, accessible sample depth and post-impact instrument operation.",
+      "acceptance": "Instrumented material tests correlated to a site/material envelope shall close TBD-05; uncalibrated Poncelet results and three-sigma shading shall not be treated as measured scatter.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-05"
+      ]
+    },
+    {
+      "id": "FR-SYS-008",
+      "group": "System assurance",
+      "subsystem": "Interface ownership",
+      "applies": "A and B",
+      "text": "Each mechanical, power, data and command boundary among reentry module, capsule, carrier and probe shall have one accountable owner and an interface control record.",
+      "acceptance": "For every architecture edge, identify units, connector/release state, time origin, ownership and fault behavior; close TBD-17.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-17"
+      ]
+    },
+    {
+      "id": "FR-SYS-009",
+      "group": "System assurance",
+      "subsystem": "Software configuration",
+      "applies": "A and B",
+      "text": "Flight software shall use versioned configuration and calibration records with range checks and explicit A/B applicability.",
+      "acceptance": "Invalid, stale or cross-configuration records shall be rejected or safely qualified; test each irreversible-actuation gate.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-010",
+      "group": "System assurance",
+      "subsystem": "Command versus evidence",
+      "applies": "A and B",
+      "text": "Flight software shall represent commanded, measured, estimated, inferred, unknown and failed states distinctly.",
+      "acceptance": "Fault tests shall never turn a transmitted command or animation event into measured release, burn or science confirmation.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-011",
+      "group": "System assurance",
+      "subsystem": "Time and reset",
+      "applies": "A and B",
+      "text": "Flight software shall maintain consistent event time and reset provenance across all retained vehicle handovers.",
+      "acceptance": "Clock discontinuity, rollover and reset tests shall preserve event ordering or mark uncertainty under TBD-20.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-20"
+      ]
+    },
+    {
+      "id": "FR-SYS-012",
+      "group": "System assurance",
+      "subsystem": "Data integrity",
+      "applies": "A and B",
+      "text": "Mission data products shall preserve raw values, units, source vehicle, configuration, time, calibration version and quality flags.",
+      "acceptance": "End-to-end known-record tests shall verify transport integrity and prevent silent replacement of missing measurements with zero.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-013",
+      "group": "System assurance",
+      "subsystem": "Software assurance",
+      "applies": "A and B",
+      "text": "Flight software releases shall have reviewed requirements traceability, unit/integration testing, hardware-in-the-loop testing and controlled release records.",
+      "acceptance": "Every implemented safety or science-critical requirement shall link to its test and software build; unresolved anomalies require disposition.",
+      "verification": "Review + software-in-the-loop + hardware-in-the-loop test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-014",
+      "group": "System assurance",
+      "subsystem": "Simulation provenance",
+      "applies": "A and B",
+      "text": "Engineering analyses shall record inputs, units, source revision, solver version, assumptions and validity limits for each output. Mission software and verification shall use physical time and approved event gates rather than animation or compressed presentation-event durations.",
+      "acceptance": "Reproduce website defaults and exports from the source fingerprint; test time/event mappings and distinguish numerical agreement, illustrative playback and physical validation.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-SYS-015",
+      "group": "System assurance",
+      "subsystem": "Fault closure",
+      "applies": "A and B",
+      "text": "The integrated system shall define safe/abort responses to failed separation, incomplete burn, missed deployment gates, power deficit and data corruption.",
+      "acceptance": "An approved fault tree and hardware-in-the-loop campaign shall close TBD-14; timeout duration and fallback behavior shall not be improvised at flight time.",
+      "verification": "Inspection + analysis + test",
+      "source": "Website defaults, calculation model and architecture interfaces",
+      "parentIds": [
+        "FR-MIS-011"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-14"
+      ]
+    },
+    {
+      "id": "FR-BIO-001",
+      "group": "Science payload",
+      "subsystem": "Selected experiment",
+      "applies": "A and B",
+      "text": "The science design shall select and configuration-control its experiment suite before assay integration. The two available recorded pitch workflows shall remain explicit alternatives: slide 4 sealed gas/trap assay and slide 3 incubation/extraction concept. Neither shall be silently combined with the other or with incompatible Benner extraction conditions.",
+      "acceptance": "Reconcile the selected workflow to the original slides and Benner source; identify sample quantity, channels, fluids, controls and detector method under TBD-00 and TBD-06. The filename reference to three science categories shall not be treated as evidence of an unavailable third workflow.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-00",
+        "TBD-06"
+      ]
+    },
+    {
+      "id": "FR-BIO-002",
+      "group": "Science payload",
+      "subsystem": "Controls",
+      "applies": "A and B",
+      "text": "The selected assay shall include time-zero, reagent/no-soil, matrix, killed and recovery controls capable of distinguishing specified abiotic alternatives.",
+      "acceptance": "Blinded terrestrial and simulant campaigns shall quantify false detections and recovery under TBD-09; retained radiolabel alone shall not constitute life detection.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    },
+    {
+      "id": "FR-BIO-003",
+      "group": "Science payload",
+      "subsystem": "Water state",
+      "applies": "A and B",
+      "text": "The selected experiment shall measure and record temperature, pressure, hydration history and relevant water-activity conditions. If the recorded slide 4 option is selected, the controlled reference procedure shall specify no added water, sealed and dark incubation at -10 to 0 degrees C for 1\u20135 sols. If the recorded slide 3 extraction option is selected, it shall specify near-Mars-ambient pressure and proposed 0\u20135 degrees C incubation, with fluid additions identified by process step.",
+      "acceptance": "Validate the selected condition envelope, tolerance and sensor capability under TBD-06 and TBD-08. These recorded reference conditions are proposed assay options, not evidence of compatibility or a universal Martian water-activity threshold.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-06",
+        "TBD-08"
+      ]
+    },
+    {
+      "id": "FR-BIO-004",
+      "group": "Science payload",
+      "subsystem": "Tracer accounting",
+      "applies": "A and B",
+      "text": "The radiotracer experiment shall account for initial and recovered isotope activity in gas, liquid, solid and loss fractions.",
+      "acceptance": "Calibrated recovery and isotope-exchange controls shall close TBD-09; unlabeled nutrients and exchangeable tritium shall be identified.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    },
+    {
+      "id": "FR-BIO-005",
+      "group": "Science payload",
+      "subsystem": "Isotope discrimination",
+      "applies": "A and B",
+      "text": "Any tritium/carbon-14 separation claim shall use a calibrated, identifiable response matrix and propagate its uncertainty.",
+      "acceptance": "Mixed-isotope and matrix tests shall demonstrate efficiency and cross-talk limits under TBD-09; photon-burst size alone is not sufficient.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    },
+    {
+      "id": "FR-BIO-006",
+      "group": "Science payload",
+      "subsystem": "Detection limits",
+      "applies": "A and B",
+      "text": "The science measurement plan shall predeclare blank thresholds, detection/quantification limits, replicate counts and false-positive/false-negative decision criteria.",
+      "acceptance": "Blind controls and spiked samples shall meet TBD-09 before a detection-performance claim.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    },
+    {
+      "id": "FR-BIO-007",
+      "group": "Science payload",
+      "subsystem": "Energy-duration closure",
+      "applies": "A and B",
+      "text": "The selected science workflow shall reconcile sample handling, incubation duration, detector, valve and heater loads and data-return reserve to the vehicle resource budget before selection. A 1\u20135-sol gas/trap procedure shall not be credited within the 24-hour A or 72-hour B operation goals unless an approved revised procedure or resource allocation demonstrates closure.",
+      "acceptance": "Test the selected end-to-end schedule and measured energy profile under TBD-07; record any changed incubation endpoint and its scientific validity. Do not substitute compressed playback duration for physical assay duration.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134; recorded pitch extraction reconciled into main body (original-deck confirmation open)",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-07"
+      ]
+    },
+    {
+      "id": "FR-BIO-008",
+      "group": "Science payload",
+      "subsystem": "Interpretation",
+      "applies": "A and B",
+      "text": "The probe shall return measurements and qualified analysis products rather than an unqualified autonomous life/no-life verdict.",
+      "acceptance": "Review packet schema and classification logic; negative measurements shall retain environmental and sensitivity limitations.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": []
+    },
+    {
+      "id": "FR-BIO-009",
+      "group": "Science payload",
+      "subsystem": "Containment and contamination",
+      "applies": "A and B",
+      "text": "The payload shall define containment, cleanliness and carryover limits for all selected reagents and sample-contacting materials.",
+      "acceptance": "Contamination budget, compatibility and cross-channel tests shall close TBD-06 before experiment integration.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-06"
+      ]
+    },
+    {
+      "id": "FR-BIO-010",
+      "group": "Science payload",
+      "subsystem": "Alternative chemistry",
+      "applies": "A and B",
+      "text": "Any oxidant-screen experiment shall identify the product/selectivity controls needed to distinguish molecular oxygen, peroxide and superoxide interpretations.",
+      "acceptance": "Interferent and positive/negative-control tests shall close TBD-09; a nonspecific color or fluorescence change shall not uniquely identify a species.",
+      "verification": "Inspection + analysis + test",
+      "source": "Benner supplied outline 2026-11-12; scientific review; recorded pitch slides 3\u20134",
+      "parentIds": [
+        "FR-MIS-005"
+      ],
+      "architectureBlock": null,
+      "status": "Proposed requirement; verification open",
+      "closure": [
+        "TBD-09"
+      ]
+    }
+  ],
+  "closures": [
+    {
+      "id": "TBD-00",
+      "title": "Latest pitch original and selected science suite",
+      "proposedOwner": "Project / science lead",
+      "closureEvidence": "Provide original deck, checksum and slide-by-slide reconciliation; recorded extraction only is available.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-01",
+      "title": "Host interface envelope",
+      "proposedOwner": "Mission interfaces",
+      "closureEvidence": "Approved ICD, loads, deployment envelope, electrical and commanding limits.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-02",
+      "title": "Entry attitude, CG and dynamic stability",
+      "proposedOwner": "GNC / aerodynamics",
+      "closureEvidence": "Mach-dependent coefficients, damping, CG/inertia tolerances, pointing/rate/corridor limits and dispersed 6-DOF validation.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-03",
+      "title": "Structural, opening, impact and separation loads",
+      "proposedOwner": "Structures / mechanisms",
+      "closureEvidence": "Approved loads, factors, clearances, separation dispersion and shock environments.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-04",
+      "title": "RF / orbiter service",
+      "proposedOwner": "Communications",
+      "closureEvidence": "Approved relay compatibility, antenna pattern, coding, packet service, access and measured receiver performance.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-05",
+      "title": "Sampling and penetration",
+      "proposedOwner": "Probe / science",
+      "closureEvidence": "Site/material envelope, accessible sample depth/mass and validated impact acquisition/survival.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-06",
+      "title": "Selected assay and containment",
+      "proposedOwner": "Science / fluidics",
+      "closureEvidence": "Chosen channels, reagents, pressure/temperature envelope, leakage/carryover and contamination limits.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-07",
+      "title": "Energy and operating duration",
+      "proposedOwner": "Power / science",
+      "closureEvidence": "Measured peak/average profiles, battery derating, heater budget and data-return reserve for each vehicle.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-08",
+      "title": "Sensors",
+      "proposedOwner": "Avionics",
+      "closureEvidence": "Accuracy, rate, calibration, latency and validity criteria for each sensing function.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-09",
+      "title": "Detector and scientific decision limits",
+      "proposedOwner": "Science instrumentation",
+      "closureEvidence": "Efficiency, response matrix, blanks, LOD/LOQ, replicates, interferents and false-detection criteria.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-10",
+      "title": "Impact/reset data retention",
+      "proposedOwner": "Probe avionics",
+      "closureEvidence": "Qualified impact spectrum, memory integrity and permitted interrupted-record loss.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-11",
+      "title": "Thermal design",
+      "proposedOwner": "TPS / thermal / science",
+      "closureEvidence": "Selected materials, ablation/recession, bondline/sample/detector limits, soak and test qualification.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-12",
+      "title": "Selected retro propulsion",
+      "proposedOwner": "Propulsion",
+      "closureEvidence": "Motor/engine identity, certified thrust curve, total impulse, Isp and uncertainty; current values are assumptions.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-13",
+      "title": "Pressure system",
+      "proposedOwner": "Propulsion / pressure systems",
+      "closureEvidence": "Pressure, temperature, proof/burst, regulator, leakage and usable-gas envelope.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-14",
+      "title": "Fault response",
+      "proposedOwner": "Systems / software",
+      "closureEvidence": "Approved inhibit/abort/safe-state paths and timeout values for each failure.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-15",
+      "title": "Released geometry",
+      "proposedOwner": "Mechanical / aerodynamics",
+      "closureEvidence": "Nose radius, shoulder blend, backshell/cover envelope and manufacturing tolerances.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-16",
+      "title": "Retro mounting selection",
+      "proposedOwner": "Structures / TPS / GNC",
+      "closureEvidence": "Top bridge versus heat-shield mount selected by closed loads, TPS continuity, clearance and mass trades.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-17",
+      "title": "Function and interface ownership",
+      "proposedOwner": "Systems avionics",
+      "closureEvidence": "Processor, power and event authority at every handover and architecture edge.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-18",
+      "title": "Deployment envelope",
+      "proposedOwner": "EDL / GNC",
+      "closureEvidence": "Approved altitude/speed/pressure/attitude gates, cadence, descent dispersions and collision margins.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-19",
+      "title": "Data capacity",
+      "proposedOwner": "Data handling",
+      "closureEvidence": "Measured volumes/rates, packet overhead, storage ownership and retention priorities.",
+      "status": "Open"
+    },
+    {
+      "id": "TBD-20",
+      "title": "Time system",
+      "proposedOwner": "Avionics / software",
+      "closureEvidence": "Clock accuracy, synchronization, reset behavior and allowable ordering uncertainty.",
+      "status": "Open"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Presentation revision",
+      "disposition": "Original latest pitch is absent; the recorded 10-slide extraction is the only presentation evidence.",
+      "reference": "TBD-00"
+    },
+    {
+      "topic": "Orbit",
+      "disposition": "Archived 300 km initial orbit becomes current 400 km reference.",
+      "reference": "FR-MIS-003"
+    },
+    {
+      "topic": "Precursor impulse",
+      "disposition": "Archived 1,280 N s baseline becomes current 2,000 N s A assumption.",
+      "reference": "FR-REM-HW-003"
+    },
+    {
+      "topic": "Probe mass",
+      "disposition": "Source A 2.00 kg becomes 1.999266924 kg derived allocation; B retains 2.00 kg source input.",
+      "reference": "FR-SYS-002"
+    },
+    {
+      "topic": "Geometry",
+      "disposition": "70 degrees means NASA forebody half-angle from the axis; 0.745588 m envelope is a packaging assumption, not NASA dimensions.",
+      "reference": "FR-CAP-HW-001"
+    },
+    {
+      "topic": "Retro mount",
+      "disposition": "Website preference for top structural bridge does not select it; current illustration remains bottom-mounted.",
+      "reference": "TBD-16"
+    },
+    {
+      "topic": "CG",
+      "disposition": "0.19D maximum is an illustrative static screen; no approved safe CG or dynamic damping envelope.",
+      "reference": "TBD-02"
+    },
+    {
+      "topic": "TPS thickness",
+      "disposition": "15 mm is a live model assumption; 60 mm is first sampled candidate under illustrative 1.5x heating/300 s soak/temperature limits, not a flight requirement.",
+      "reference": "TBD-11"
+    },
+    {
+      "topic": "Science duration",
+      "disposition": "1\u20135-sol gas/trap incubation is not closed against A 24-hour and B 72-hour goals.",
+      "reference": "FR-BIO-007"
+    },
+    {
+      "topic": "Probe architecture",
+      "disposition": "Independent drogue and antenna structure; no connecting tether allocated.",
+      "reference": "FR-PRB-HW-007"
+    },
+    {
+      "topic": "Software",
+      "disposition": "Eight diagrams describe functional allocation; no flight firmware or dedicated capsule processor selected.",
+      "reference": "TBD-17"
+    }
+  ],
+  "sourceCrosswalk": [
+    {
+      "sourceId": "MIS-001",
+      "sourceText": "The mission shall deliver three independent 2.00 kg probes to the Martian surface.  (Established)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Updated A mass treatment: source says three 2.00 kg probes; current design allocation derives 1.999266924 kg per probe. Flight mass remains to be measured."
+    },
+    {
+      "sourceId": "MIS-002",
+      "sourceText": "The mission shall deliver two independent aeroshell vehicles, each carrying seven 2.00 kg probes.  (Established)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-003",
+      "sourceText": "Each vehicle shall remain mechanically and electrically compatible with the approved host upper-stage separation interface.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-004",
+      "sourceText": "Each vehicle shall execute a defined separation, orbit determination, deorbit, entry, descent and probe-release sequence.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-005",
+      "sourceText": "The mission shall document allowable launch, cruise, orbit and atmospheric entry environments before design freeze.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-006",
+      "sourceText": "The mission shall define target landing regions, delivery dispersion and science-site acceptance criteria.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume an initial 100 km-radius target region for A and 50 km-radius for each B vehicle, with 95% of Monte Carlo landings within the respective region; exclude scientifically prohibited terrain.",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-007",
+      "sourceText": "The program shall maintain independent mass, power, volume, thermal and delta-v budgets with margins approved at PDR.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "MIS-008",
+      "sourceText": "The flight system shall implement autonomous safe-state and abort/inhibit logic for premature motor ignition and pyrotechnic deployment.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-MIS-001",
+        "FR-MIS-002",
+        "FR-MIS-003",
+        "FR-MIS-004",
+        "FR-MIS-005",
+        "FR-MIS-006",
+        "FR-MIS-007",
+        "FR-MIS-008",
+        "FR-MIS-009",
+        "FR-MIS-010",
+        "FR-MIS-011",
+        "FR-MIS-012"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-001",
+      "sourceText": "The nominal aeroshell outer diameter shall be 800 mm.  (Established)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-002",
+      "sourceText": "The assembled aeroshell height shall be 600 mm, subject to confirmation of datum and inclusion of the upper cover.  (Established / clarify)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-003",
+      "sourceText": "The lower heat shield shall retain the current baseline contour and include a nominal 70 mm radius transition to the upper-shell profile.  (Established / drawing needed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-008",
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-005",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-004",
+      "sourceText": "The upper shell shall use aluminum alloy; grade, thickness, insulation and joint design shall be selected by structural and aerothermal analysis.  (Established / derived)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-008",
+        "FR-REM-HW-008",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-007",
+        "FR-CAP-SW-008",
+        "FR-CAR-HW-001"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-005",
+      "sourceText": "The lower heat shield shall use a qualified ablative thermal-protection system, with material and thickness verified for the orbital-entry trajectory.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-008",
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-005",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-006",
+      "sourceText": "The carrier and all stowed probes shall fit within the aeroshell with verified deployment clearance and launch-load restraint.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-008",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-007",
+        "FR-CAP-SW-008",
+        "FR-CAR-HW-001"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-007",
+      "sourceText": "The upper cover opening shall provide unobstructed passage of the loaded probe carrier during ejection.  (Established)",
+      "currentRequirementIds": [
+        "FR-REM-HW-008",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-007",
+        "FR-CAP-SW-008",
+        "FR-CAR-HW-001"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-008",
+      "sourceText": "The aeroshell shall withstand launch, separation, deorbit, entry and deployment load cases with documented positive structural margins.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-005",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "STR-009",
+      "sourceText": "All attachments across the heat shield shall preserve TPS integrity; sacrificial external DOM connections shall not require through-holes in the heat shield.  (Established / derived)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-001",
+      "sourceText": "The deorbit module shall use one J-class solid rocket motor in the baseline configuration.  (Established)",
+      "currentRequirementIds": [
+        "FR-PRB-SW-001",
+        "FR-REM-HW-003",
+        "FR-REM-HW-009",
+        "FR-REM-SW-005",
+        "FR-REM-SW-009",
+        "FR-CAP-HW-008",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-005",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-002",
+      "sourceText": "The vehicle shall provide four reaction wheels for attitude control, with wheel-axis geometry and independent controllability verified.  (Established / verify)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-006",
+        "FR-REM-SW-008"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-003",
+      "sourceText": "The attitude solution shall fuse inertial MEMS gyro measurements with camera-derived Mars limb or feature observations and available Sun observations.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-006",
+        "FR-REM-SW-008"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-004",
+      "sourceText": "The vehicle shall inhibit deorbit firing unless attitude, estimated orbit state, predicted entry corridor and propulsion readiness satisfy approved limits.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-008",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-005",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-005",
+      "sourceText": "The deorbit propulsion system shall provide the trajectory-specific required impulse and delta-v with defined dispersions and margin.  (Proposed assumption; verify by analysis and test) Planning baseline: For the assumed 300 km orbit and 50 km vacuum-periapsis proxy, use 60.3 m/s ideal delta-v, with 25% planning margin (75.4 m/s). At 50 kg B wet mass, the impulse-equivalent planning value is 3.77 kN s; actual delivered impulse must be calculated with rocket equation and a motor thrust curve.",
+      "currentRequirementIds": [
+        "FR-PRB-SW-001",
+        "FR-REM-HW-003",
+        "FR-REM-HW-009",
+        "FR-REM-SW-005",
+        "FR-REM-SW-009",
+        "FR-CAP-HW-008",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-005",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Current reference orbit is 400 km; source 300 km statement is historical."
+    },
+    {
+      "sourceId": "GNC-006",
+      "sourceText": "The sacrificial DOM shall mount beneath the heat shield without compromising the thermal-protection barrier.  (Established)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-007",
+      "sourceText": "The hybrid-engine trade shall evaluate paraffin fuel, N2O oxidizer, tankage, feed system and ignition against the A solid-motor architecture.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-008",
+      "sourceText": "If selected, the cold-gas attitude system shall include all thrusters, valves, plumbing, regulator and usable N2O/N2 gas mass in the budget.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-009",
+      "sourceText": "Attitude control shall account for momentum buildup, wheel saturation, deorbit disturbances and the absence or availability of desaturation actuators.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-010",
+      "sourceText": "Orbit and attitude estimation shall demonstrate observability during camera occultation, low-light conditions and changing Mars viewing geometry.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-001",
+      "sourceText": "The reference entry trajectory shall originate from approximately 300 km Mars orbit; actual entry interface and flight-path angle shall be determined by trajectory design.  (Established / derived)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Current reference orbit is 400 km; source 300 km statement is historical."
+    },
+    {
+      "sourceId": "EDL-002",
+      "sourceText": "The aeroshell shall maintain a thermally and dynamically acceptable entry attitude throughout peak heating and deceleration.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-003",
+      "sourceText": "TPS sizing shall use trajectory-dependent convective and radiative heating, heat soak, ablation and aluminum-shell temperature limits.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-004",
+      "sourceText": "Parachute deployment shall occur only within verified Mach number, dynamic pressure and altitude envelopes.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-007",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-006",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-005",
+      "sourceText": "The PCM recovery parachute shall have nominal 1.5 m diameter, pending Mars deployment and descent qualification.  (Established / verify)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-007",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-006",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-006",
+      "sourceText": "The PCM recovery parachute shall use the 2.0 m candidate diameter pending vehicle-level mass and deployment analysis.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-007",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-006",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-007",
+      "sourceText": "The system shall safely separate the heat shield and upper cover in the commanded sequence without collision with the PCM or probes.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-SW-002",
+        "FR-REM-HW-006",
+        "FR-REM-SW-001",
+        "FR-REM-SW-007",
+        "FR-CAP-HW-004",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-008",
+      "sourceText": "The descent system shall determine probe release altitude using a qualified sensing and estimation method with defined uncertainty.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-009",
+      "sourceText": "Each probe shall deploy a nominal 0.5 m parachute, subject to terminal-speed and stability verification.  (Established / verify)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-010",
+      "sourceText": "The EDL analysis shall account for the low density and variability of the Martian atmosphere, winds, and landing-site elevation.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-001",
+      "sourceText": "The PCM shall restrain three probes in vertical stowage until commanded release.  (Established)",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-002",
+      "sourceText": "Each PCM shall restrain seven probes in vertical stowage until commanded release.  (Established probe count; assumed packaging envelope) Planning baseline: Assume seven vertically stowed probes in a 3+3+1 arrangement. Verify fit inside the 800 mm diameter shell with a CAD swept-volume extraction study and positive clearance at maximum tolerance.",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-003",
+      "sourceText": "The PCM shall release probes individually, without mechanical interference, following an altitude-gated release schedule.  (Established / derived)",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-004",
+      "sourceText": "The PCM shall remain retained through entry until its extraction conditions are met.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-005",
+      "sourceText": "The carrier ejection system shall demonstrate cover clearance, parachute extraction and no contact with critical spacecraft elements.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-006",
+      "sourceText": "Any pyrotechnic separation device shall have independent electrical inhibits and ground-safe handling provisions.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-SW-002",
+        "FR-REM-HW-006",
+        "FR-REM-SW-001",
+        "FR-REM-SW-007",
+        "FR-CAP-HW-004",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PCM-007",
+      "sourceText": "Release sequencing shall provide an adjustable interval and shall be validated against descent rate, wind drift and probe separation.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-001",
+      "sourceText": "Each probe shall have a nominal overall length of 200 mm and main-body diameter of 50 mm.  (Established)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-007",
+        "FR-PRB-HW-008",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-002",
+      "sourceText": "Each probe shall include an upper shoulder of nominal 75 mm diameter over approximately the upper third of its length.  (Established)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-007",
+        "FR-PRB-HW-008",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-003",
+      "sourceText": "Each probe flight mass shall be 2.00 kg including science payload, power, structure, radio, parachute and consumables.  (Established)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-CAR-HW-007",
+        "FR-CAR-SW-007"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-004",
+      "sourceText": "Each probe shall retain a pointed lower penetration head and deploy in an attitude that supports near-vertical surface penetration.  (Established / derived)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-SW-004"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-005",
+      "sourceText": "Each probe shall provide a tether-integrated antenna connection from the center of its upper end.  (Established)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-007",
+        "FR-PRB-HW-008",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-006",
+      "sourceText": "The probe shall protect the science sample and sample pathway from contamination introduced by spacecraft materials or entry heating.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-007",
+      "sourceText": "The science system shall execute a documented life-detection measurement protocol with controls, blanks and decision thresholds.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-008",
+      "sourceText": "The science system shall obtain, transfer and analyze Martian material with demonstrated sample mass, depth, integrity and instrument sensitivity.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a 0.5 g minimum collected sample from 20-100 mm below the local surface per probe, with 80% transfer efficiency and duplicate blank/control measurements. These are science-planning targets requiring laboratory validation.",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-SW-004"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-009",
+      "sourceText": "The probe shall provide energy storage and environmental protection sufficient for the approved post-landing operating duration.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume 24 h A and 72 h B surface operation, with a 20% usable energy margin after temperature derating and communications duty cycle.",
+      "currentRequirementIds": [
+        "FR-PRB-HW-003",
+        "FR-PRB-SW-003",
+        "FR-CAR-HW-007",
+        "FR-CAR-SW-007"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-010",
+      "sourceText": "The science and communications system shall operate under defined dust deposition, temperature and illumination cases.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-007",
+        "FR-PRB-HW-008",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "PRB-011",
+      "sourceText": "The probe shall demonstrate survival of the predicted impact loads across the defined regolith and ice mechanical-property envelope.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-001",
+        "FR-PRB-HW-002",
+        "FR-PRB-HW-003",
+        "FR-PRB-HW-004",
+        "FR-PRB-HW-005",
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-007",
+        "FR-PRB-HW-008",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-001",
+        "FR-PRB-SW-002",
+        "FR-PRB-SW-003",
+        "FR-PRB-SW-004",
+        "FR-PRB-SW-005",
+        "FR-PRB-SW-006",
+        "FR-PRB-SW-007",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-001",
+      "sourceText": "The mission shall define an end-to-end telecommunications path, link budget, data storage and expected data return to Earth.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a Mars-orbit relay link using a UHF compatible transceiver, onboard buffering of at least 64 MB A / 256 MB B per probe, and at least 95% data retention until relay opportunity; final interoperability depends on relay provider agreement.",
+      "currentRequirementIds": [
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-008",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-008"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-002",
+      "sourceText": "Each probe shall provide unique identification, health telemetry and time-tagged science data.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-008",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-008"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-003",
+      "sourceText": "The program shall determine applicable Mars planetary-protection classification with the responsible authority before flight hardware processing.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-004",
+      "sourceText": "Life-detection sample-contacting hardware shall meet the approved biological contamination and recontamination prevention requirements.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-005",
+      "sourceText": "The program shall maintain bidirectional traceability from mission objectives through requirements, design, test evidence and anomalies.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-006",
+      "sourceText": "Each flight-critical release, ignition, attitude and descent function shall be verified by analysis and representative integrated testing.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-007",
+      "sourceText": "The program shall perform thermal-vacuum, vibration, shock, deployment and impact qualification at documented environments.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "SYS-008",
+      "sourceText": "The program shall approve a fault tree and hazard controls for propulsion, pressure vessels, pyrotechnics and inadvertent Mars impact.  (Proposed)",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-01",
+      "sourceText": "Provide calibrated camera measurements of the Mars limb/horizon, apparent disk size and identifiable large-scale surface features when visible; estimate attitude and orbital/ground-track state with uncertainty.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-02",
+      "sourceText": "Observe the Sun when within the camera field of view and safe sensor exposure limits; fuse Sun-direction observations with Mars observations and inertial data.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-03",
+      "sourceText": "Use a MEMS gyroscope/IMU to propagate attitude between optical observations; estimate gyro bias and bound drift when Mars and Sun are temporarily unavailable.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-04",
+      "sourceText": "Run deterministic guidance, navigation and control on a Raspberry Pi-class processor, with ML-assisted Mars limb / landmark detection; safety-critical control shall not rely solely on unverified ML output.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-05",
+      "sourceText": "Control spacecraft attitude using six independently commanded cold-gas thrusters, with verified torque authority about three axes and fault-tolerant command inhibits.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-06",
+      "sourceText": "Verify attitude and orbital-state confidence before deorbit ignition; inhibit ignition if navigation confidence, pointing error or thruster health is outside approved limits.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "GNC-07",
+      "sourceText": "Define six-thruster implementation as a proposed architecture change. Reconcile against the existing four-reaction-wheel baseline and Configuration B hybrid oxidizer / cold-gas supply; do not assume N2O thrusters share a tank without regulator, phase-state and compatibility qualification.",
+      "currentRequirementIds": [
+        "FR-REM-HW-001",
+        "FR-REM-HW-002",
+        "FR-REM-HW-003",
+        "FR-REM-HW-004",
+        "FR-REM-HW-005",
+        "FR-REM-HW-006",
+        "FR-REM-HW-007",
+        "FR-REM-HW-008",
+        "FR-REM-HW-009",
+        "FR-REM-SW-001",
+        "FR-REM-SW-002",
+        "FR-REM-SW-003",
+        "FR-REM-SW-004",
+        "FR-REM-SW-005",
+        "FR-REM-SW-006",
+        "FR-REM-SW-007",
+        "FR-REM-SW-008",
+        "FR-REM-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-01",
+      "sourceText": "Establish the entry corridor, worst-case heating rate, integrated heat load, dynamic pressure, deceleration, aero-moments and center-of-pressure movement for dispersions in Mars atmosphere and vehicle properties.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-02",
+      "sourceText": "Size and qualify the ablative heat shield, insulation and aluminum backshell for peak and integrated heat exposure; maintain internal electronics, batteries, PCM and probe temperatures within qualified limits.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-03",
+      "sourceText": "Maintain positive structural margins for peak aerodynamic pressure, deceleration, vibration, thermal gradients, fastener and joint loads, including the 70 mm heat-shield-to-backshell transition.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-04",
+      "sourceText": "Ensure the external deorbit/hybrid propulsion module does not penetrate the heat shield and that sacrificial attachments cannot cause unacceptable TPS damage, destabilization or debris impact during entry.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-05",
+      "sourceText": "Demonstrate stable heat-shield-forward entry and adequate control authority before atmospheric interface; prohibit reliance on active cold-gas control after its external hardware is sacrificed.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "EDL-06",
+      "sourceText": "Verify cover release, parachute deployment and PCM ejection only after thermal, dynamic-pressure and deceleration conditions are inside qualified release envelopes.",
+      "currentRequirementIds": [
+        "FR-CAP-HW-001",
+        "FR-CAP-HW-002",
+        "FR-CAP-HW-003",
+        "FR-CAP-HW-004",
+        "FR-CAP-HW-005",
+        "FR-CAP-HW-006",
+        "FR-CAP-HW-007",
+        "FR-CAP-HW-008",
+        "FR-CAP-HW-009",
+        "FR-CAP-SW-001",
+        "FR-CAP-SW-002",
+        "FR-CAP-SW-003",
+        "FR-CAP-SW-004",
+        "FR-CAP-SW-005",
+        "FR-CAP-SW-006",
+        "FR-CAP-SW-007",
+        "FR-CAP-SW-008",
+        "FR-CAP-SW-009",
+        "FR-CAR-HW-001",
+        "FR-CAR-HW-002",
+        "FR-CAR-HW-003",
+        "FR-CAR-HW-004",
+        "FR-CAR-HW-005",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-007",
+        "FR-CAR-HW-008",
+        "FR-CAR-HW-009",
+        "FR-CAR-SW-001",
+        "FR-CAR-SW-002",
+        "FR-CAR-SW-003",
+        "FR-CAR-SW-004",
+        "FR-CAR-SW-005",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-007",
+        "FR-CAR-SW-008",
+        "FR-CAR-SW-009"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "COM-01",
+      "sourceText": "Integrate a low-average-duty-cycle, high-peak-power radio transmitter and energy buffer within the probe carrier, with a defined antenna, receiver/relay target and link budget.",
+      "currentRequirementIds": [
+        "FR-PRB-HW-006",
+        "FR-PRB-HW-009",
+        "FR-PRB-SW-008",
+        "FR-PRB-SW-009",
+        "FR-CAR-HW-006",
+        "FR-CAR-HW-008",
+        "FR-CAR-SW-006",
+        "FR-CAR-SW-008"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "COM-02",
+      "sourceText": "Transmit the nine-bit cumulative mission-status payload nominally once per 60 seconds; queue events between transmissions and repeat the latest status until carrier power is exhausted or mission complete.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "COM-03",
+      "sourceText": "Provide independent energy storage sized for transmitter peak power without browning out avionics or release actuators; limit average consumption by duty cycling.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "COM-04",
+      "sourceText": "Record event time and confidence locally, protect the latched status word against resets, and distinguish command issuance from sensor-confirmed completion.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "COM-05",
+      "sourceText": "Do not credit reception during entry plasma blackout, antenna occlusion or carrier tumbling without validated link analysis; store and retransmit status when a link becomes available.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-001",
+      "sourceText": "The program shall produce a 6-DOF Mars orbit-to-surface trajectory Monte Carlo, including atmospheric dispersions, prior to propulsion selection. Verification: Analysis.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-002",
+      "sourceText": "The propulsion design shall demonstrate delivered delta-v and pointing error with a 20 kg initial mass and explicit propulsion margin. Verification: Analysis + test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-003",
+      "sourceText": "The aeroshell shall have a validated coupled aerothermal and structural model including 600 mm upper shell, aluminum thermal limits, and 70 mm transition. Verification: Analysis + test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-004",
+      "sourceText": "The descent system shall meet qualified deployment Mach, dynamic-pressure, altitude and inflation-load limits; nominal chute diameters alone are not acceptance criteria. Verification: Analysis + test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-005",
+      "sourceText": "Each probe shall meet defined impact speed, attitude, penetration-depth and survival envelopes over specified soil/ice conditions. Verification: Test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-006",
+      "sourceText": "The navigation system shall quantify covariance and observability across periods without camera or Sun visibility. Verification: Simulation + test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-007",
+      "sourceText": "Each life-detection measurement shall have documented blanks, contamination budgets, calibration, detection limits and false-positive controls. Verification: Test + review.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-008",
+      "sourceText": "The spacecraft shall demonstrate positive power and communication margins for the selected operating duration and geometry. Verification: Analysis + test.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-009",
+      "sourceText": "The program shall approve an end-to-end planetary protection implementation plan before hardware exposure to flight environments. Verification: Review.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    },
+    {
+      "sourceId": "DER-010",
+      "sourceText": "A complete requirement verification matrix shall define objective pass/fail criteria, owners and evidence for every MIS/STR/GNC/EDL/PCM/PRB/SYS/DER item. Verification: Inspection.",
+      "currentRequirementIds": [
+        "FR-SYS-001",
+        "FR-SYS-002",
+        "FR-SYS-003",
+        "FR-SYS-004",
+        "FR-SYS-005",
+        "FR-SYS-006",
+        "FR-SYS-007",
+        "FR-SYS-008",
+        "FR-SYS-009",
+        "FR-SYS-010",
+        "FR-SYS-011",
+        "FR-SYS-012",
+        "FR-SYS-013",
+        "FR-SYS-014",
+        "FR-SYS-015"
+      ],
+      "disposition": "Retained source; reallocated by current requirements. Exact text and old evidence remain archived; no automatic qualification transfer."
+    }
+  ],
+  "edition": "Consolidated main body with retained appendices",
+  "pitchReconciliation": {
+    "source": "FREYA_Pitch_Expanded_Science_Three_Categories.pptx",
+    "sourceSlideCount": 10,
+    "scope": "Recorded extraction only; original latest deck unavailable",
+    "phaseTrace": [
+      {
+        "id": "rideshare",
+        "title": "01 Rideshare",
+        "source": "Presentation slide 7 \u00b7 step 01",
+        "recordedDescription": "Show FREYA carried by the host second stage, then capsule separation. Cold-gas hardware remains on the detachable reentry module.",
+        "currentRequirementIds": [
+          "FR-MIS-002",
+          "FR-REM-SW-001",
+          "FR-REM-SW-002"
+        ]
+      },
+      {
+        "id": "orient",
+        "title": "02 Orient",
+        "source": "Presentation slide 7 \u00b7 step 02",
+        "recordedDescription": "Acquire the burn attitude with optical/MEMS estimation and cold-gas control, then start vehicle telemetry.",
+        "currentRequirementIds": [
+          "FR-REM-HW-001",
+          "FR-REM-SW-003",
+          "FR-REM-SW-004"
+        ]
+      },
+      {
+        "id": "deorbit",
+        "title": "03 Deorbit",
+        "source": "Presentation slide 7 \u00b7 step 03",
+        "recordedDescription": "Perform the retrograde burn, confirm its completion and detach the expendable reentry module.",
+        "currentRequirementIds": [
+          "FR-REM-HW-003",
+          "FR-REM-SW-005",
+          "FR-REM-SW-006",
+          "FR-REM-SW-009"
+        ]
+      },
+      {
+        "id": "entry",
+        "title": "04 Entry",
+        "source": "Presentation slide 7 \u00b7 step 04",
+        "recordedDescription": "The heat shield, aerodynamic shape and low center of gravity support passive entry and deceleration. Do not credit cold-gas control after module jettison.",
+        "currentRequirementIds": [
+          "FR-CAP-HW-001",
+          "FR-CAP-HW-005",
+          "FR-CAP-SW-001",
+          "FR-CAP-SW-002",
+          "FR-SYS-006"
+        ]
+      },
+      {
+        "id": "extraction",
+        "title": "05 Carrier extraction",
+        "source": "Presentation slide 7 \u00b7 step 05",
+        "recordedDescription": "Remove the cover, deploy the carrier parachute, extract the carrier and discard the aeroshell. Begin the independent carrier telemetry sequence.",
+        "currentRequirementIds": [
+          "FR-CAP-HW-004",
+          "FR-CAP-HW-006",
+          "FR-CAP-SW-004",
+          "FR-CAP-SW-005",
+          "FR-CAP-SW-006"
+        ]
+      },
+      {
+        "id": "release",
+        "title": "06 Probe release",
+        "source": "Presentation slide 7 \u00b7 step 06",
+        "recordedDescription": "Descend to the release gate. Release every probe individually, deploying its own smaller parachute for descent and stabilization.",
+        "currentRequirementIds": [
+          "FR-CAR-HW-002",
+          "FR-CAR-SW-002",
+          "FR-CAR-SW-003",
+          "FR-CAR-SW-005",
+          "FR-PRB-HW-007"
+        ]
+      },
+      {
+        "id": "delivery",
+        "title": "07 Probe delivery",
+        "source": "Presentation slide 7 \u00b7 step 07",
+        "recordedDescription": "Show nose-first impact and schematic emplacement for every probe. Activate instruments and telemetry using the antenna integrated with retained parachute shrouds.",
+        "currentRequirementIds": [
+          "FR-PRB-HW-001",
+          "FR-PRB-HW-006",
+          "FR-PRB-HW-009",
+          "FR-SYS-007"
+        ]
+      },
+      {
+        "id": "science",
+        "title": "08 Science operations",
+        "source": "Presentation slides 3\u20134 \u00b7 proposed experiments",
+        "recordedDescription": "Acquire soil, run blanks and controls, apply the selected proposed protocol, and inspect detector readout and interpretation. The two source protocols remain alternatives.",
+        "currentRequirementIds": [
+          "FR-MIS-005",
+          "FR-PRB-SW-004",
+          "FR-PRB-SW-005",
+          "FR-BIO-001",
+          "FR-BIO-002",
+          "FR-BIO-007"
+        ]
+      },
+      {
+        "id": "return",
+        "title": "09 Data return",
+        "source": "Presentation slide 7 \u00b7 probe telemetry; Rev09 SYS-001 and COM-01\u201305",
+        "recordedDescription": "Buffer science and engineering records, repeat the carrier status word, and illustrate an assumed orbiter relay and onward return to Earth.",
+        "currentRequirementIds": [
+          "FR-MIS-009",
+          "FR-PRB-SW-008",
+          "FR-PRB-SW-009",
+          "FR-CAR-SW-006",
+          "FR-CAR-SW-008",
+          "FR-SYS-012"
+        ]
+      }
+    ],
+    "scienceAlternatives": {
+      "gas-trap": {
+        "name": "Slide 4 \u00b7 sealed gas and trap assay",
+        "source": "Presentation slide 4 embedded workflow",
+        "sample": "0.25 cm\u00b3 per vessel; proposed 2\u20135 cm source depth",
+        "conditions": "No water added; sealed and dark at \u221210 to 0 \u00b0C for 1\u20135 sols",
+        "steps": [
+          [
+            "sample",
+            "Soil into test and control vessels",
+            "Illustrate acquiring soil from the proposed 2\u20135 cm source zone and loading 0.25 cm\u00b3 into each vessel. This does not demonstrate sample acquisition."
+          ],
+          [
+            "blank",
+            "Seal vessels and read blanks",
+            "Show no-soil controls and baseline counts, O\u2082 and pressure before dosing; keep controls distinct from the test vessel."
+          ],
+          [
+            "dose",
+            "Add labeled gas",
+            "Illustrate separate \u00b3H\u2082 and \u00b9\u2074CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled."
+          ],
+          [
+            "incubate",
+            "Incubation and continuous counts",
+            "Show a compressed incubation review segment: no water added, dark, \u221210 to 0 \u00b0C, 1\u20135 sols proposed. Playback seconds are not incubation time."
+          ],
+          [
+            "trap",
+            "Gas and product trap readout",
+            "Show gas counting and transfer to cold-water/CO\u2082 trap detectors. Counts identify retained label; they do not identify a molecule or prove biology."
+          ],
+          [
+            "retained",
+            "Check retained-label balance",
+            "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products."
+          ],
+          [
+            "controls",
+            "Compare controls and qualify interpretation",
+            "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life."
+          ]
+        ]
+      },
+      "extract": {
+        "name": "Slide 3 \u00b7 incubation and extraction concept",
+        "source": "Presentation slide 3 proposed labeled-gas experiment",
+        "sample": "Approximately 1 g soil; sample provenance and controls required",
+        "conditions": "Near Mars ambient pressure; proposed 0\u20135 \u00b0C incubation",
+        "steps": [
+          [
+            "sample",
+            "Acquire soil and prepare controls",
+            "Illustrate approximately 1 g soil alongside heat-treated, no-soil and known-microbe control concepts. These are proposed validation steps."
+          ],
+          [
+            "blank",
+            "Record blanks and baseline",
+            "Record baseline detector and environmental observations and keep controls separate from the unmodified test sample."
+          ],
+          [
+            "dose",
+            "Introduce proposed labeled reactants",
+            "Illustrate candidate \u00b9\u2074CO\u2082, \u00b9\u2074CO, \u00b3H\u2082 or \u00b3H\u2082O channels. These are alternative experimental inputs, not a selected flight recipe."
+          ],
+          [
+            "incubate",
+            "Incubate under proposed conditions",
+            "Illustrate near-ambient-pressure incubation at 0\u20135 \u00b0C. Do not merge this temperature or water assumption into the slide 4 gas/trap concept."
+          ],
+          [
+            "extract",
+            "Flush gas and examine extracts",
+            "Illustrate excess-gas removal, carbonate-control acidification and water-soluble versus oil-soluble extraction concepts. Hardware and sample transfer remain unverified."
+          ],
+          [
+            "detect",
+            "Scintillation and SiPM readout",
+            "Show detector acquisition for retained label in separate fractions, with sensitivity and interference still requiring laboratory validation."
+          ],
+          [
+            "controls",
+            "Compare fractions and controls",
+            "Compare test/control and hydrophobic/hydrophilic behavior. Abiotic incorporation, chemical interference and contamination must be considered before any biological interpretation."
+          ]
+        ]
+      }
+    },
+    "differencesAndLimits": [
+      "Recorded slide 4 gas/trap option: 0.25 cubic centimetres per vessel, proposed 2\u20135 cm source depth, no added water, sealed/dark incubation at -10 to 0 degrees C for 1\u20135 sols. These are option parameters, not the selected flight assay.",
+      "Recorded slide 3 extraction option: approximately 1 g soil, near-Mars-ambient pressure and proposed 0\u20135 degrees C incubation, followed by flushing/extraction and scintillation/SiPM readout. It is not interchangeable with the slide 4 workflow.",
+      "The 0.25 cubic centimetre sample cannot be converted to 1 g without a measured density. Accessible 2\u20135 cm sampling depth is an acquisition target, not the predicted probe nose depth.",
+      "The supplied Benner outline is a separate attributed science source. Its extraction alternatives, added fluids and detector controls must be traded explicitly against the sealed no-added-water option. Do not merge incompatible conditions into one untested procedure.",
+      "The recorded delivery phase describes an antenna integrated with retained parachute shrouds. Later user direction specifies an independent antenna structure and drogue with no connecting tether. The current requirement is FR-PRB-HW-009; shroud support is not assumed.",
+      "The recorded pitch names a proposed Terran R rideshare. Host selection, trajectory delivery, separation interface and launch agreement are not confirmed; FR-MIS-002 and TBD-01 control the interface.",
+      "The old phase-map scope says Rev09 mass and geometry unchanged. Current user-approved direction supersedes that extraction scope for the 400 km orbit, 2,000 N s A impulse and NASA-angle convention; current values come from the executable default snapshot.",
+      "The filename mentions three science categories, but only two workflow alternatives are available in the extracted phase map. A third category cannot be reconstructed from the filename and remains pending original-deck review.",
+      "Playback event durations are compressed review intervals, not physical maneuver, assay or communication durations. Physical limits and time budgets derive from the flight model and measured hardware requirements.",
+      "This appendix reconciles the recorded extraction only. It does not certify that the latest original slide deck has been reviewed; TBD-00 remains open."
+    ]
+  }
+}

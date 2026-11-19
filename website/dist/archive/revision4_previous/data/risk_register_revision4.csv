@@ -1,0 +1,23 @@
+id,name,category,likelihood,impact,score,priority,blocker,mitigation
+R01,Penetration-model validation,Subsurface,5,5,25,CRITICAL,true,"Instrumented cold ice/rock impact trials spanning geometry, obliquity and fracture; fit dynamic force law."
+R02,Sandstone depth without breakup,Subsurface,4,5,20,CRITICAL,true,Demonstrate >=1.5 m in representative competent sandstone; consider drilling or lower burial depth.
+R03,Probe attitude at impact,EDL,4,5,20,CRITICAL,true,"6-DOF aero/spin testing, spin stabilization or fins; validate angle and tumble envelope."
+R04,Drogue deployment envelope,EDL,4,5,20,CRITICAL,true,"Mach-q deployment map, inflation loads, subscale low-density testing and opening shock."
+R05,Deorbit targeting & guidance,Orbit,4,5,20,CRITICAL,true,Propagate finite burn + J2 + atmospheric dispersions; tie orbit and entry states with navigation covariance.
+R06,Thermal-protection sizing,TPS,3,5,15,HIGH,true,"CFD and radiative aeroheating, FIAT/PATO thermal response, bondline/temp/soak margin and arcjet tests."
+R07,Penetrator instrument survival,Avionics,4,5,20,CRITICAL,true,"Qualification shock spectra and pulse width; potting, staking, encapsulated die, strain relief and functional re-test."
+R08,Battery impact and cold operation,Power,4,5,20,CRITICAL,true,"Custom-cased primary cells, current-limited harness, shock+thermal testing and isolation after impact."
+R09,45 kg mass closure,System,4,5,20,CRITICAL,true,Detailed TPS/structure/dispenser/chutes/power budgets with growth margin; charge propulsion to proper stage.
+R10,Buried communications link,Comms,4,4,16,HIGH,true,Test UHF attenuation through wet/dry/ice strata; use surface antenna/aftbody linked by impact-rated tether.
+R11,Release separation collisions,EDL,4,4,16,HIGH,false,Coupled six-body dispersions and actuator energy/timing with 6-DOF wake interaction.
+R12,Site surface heterogeneity,Geology,5,4,20,CRITICAL,false,"High-resolution terrain maps and prior orbital spectroscopy; model rocks, layers, regolith and ice."
+R13,Dynamic stability after releases,EDL,4,4,16,HIGH,false,Time-varying mass/CG/inertia and aerodynamic stability through all six separations.
+R14,Planetary protection classification,Mission,4,5,20,CRITICAL,true,"Obtain formal Mars category and special-region/site concurrence before design freeze; define biological/organic contamination limits, assays and documentation."
+R15,Power after cold cruise,Power,3,4,12,MEDIUM,false,"Storage, battery activation and heater budgeting over 5–7 month cruise and descent."
+R16,Thermal structural interface,TPS,3,4,12,MEDIUM,false,"Thermomechanical bondline stress, ply/tile joints and heat-shield release qualification."
+R17,Attached canopy on surface impact,EDL,5,5,25,CRITICAL,true,"Impact with flight-representative attached inflated chute: quantify riser torque, canopy collapse, line snagging, line severance, impact attitude, and burial obstruction."
+R18,Higher velocity at 4 kg,Subsurface,4,5,20,CRITICAL,true,Retest 4 kg flight-like shape at target speeds in cryogenic ice and competent sandstone; verify structural margins.
+R19,Aeroshell mass transfer allocation,System,3,5,15,HIGH,true,Allocate all freed 6 kg to named carrier/TPS hardware; verify attached drogue/retention hardware inside each 4 kg probe mass and close growth allowance.
+R20,Irradiation versus batteries and electronics,Power,4,5,20,CRITICAL,true,"Qualify full-assembly processing dose tolerance for battery chemistry, controller TID, memory, sensor calibration, seals, adhesives and potting; functional cold/shock tests after exposure."
+R21,Shielded embedded bioburden,Planetary protection,4,5,20,CRITICAL,true,"Map minimum and maximum absorbed dose across dense tip, sealed cavities and potted PCB; assay encapsulated bioburden with representative witness/test articles."
+R22,Recontamination after irradiation,Planetary protection,4,5,20,CRITICAL,true,"Validate clean process handling, sterile barrier, storage, late-test controls, transport and deployment interface integration; document microbiological acceptance."

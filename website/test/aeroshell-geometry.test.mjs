@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {aeroshellHeight,forebodyRise} from '../src/aeroshell-geometry.mjs';
+test('NASA forebody half-angle and independent backshell envelope',()=>{for(const d of [.4,.8,2]){assert.ok(Math.abs(Math.atan2(d/2,forebodyRise(d))*180/Math.PI-70)<1e-10);assert.ok(Math.abs(aeroshellHeight(d)-forebodyRise(d)-.75*d)<1e-10);}assert.ok(Math.abs(aeroshellHeight(.8)-.7455880937)<1e-9);for(const d of [0,-1,NaN,Infinity])assert.throws(()=>aeroshellHeight(d));});

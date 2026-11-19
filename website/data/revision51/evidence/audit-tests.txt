@@ -1,0 +1,28 @@
+
+> freya-mars-penetrator-lab@5.1.0 test
+> node --test test/*.test.mjs
+
+✔ test/aeroshell-geometry.test.mjs (75.061264ms)
+✔ test/audit.test.mjs (404.088825ms)
+✔ test/calculation-inspector.test.mjs (104.65747ms)
+✔ test/current-requirements.test.mjs (86.254626ms)
+✔ test/entry-design.test.mjs (222.859497ms)
+✔ test/flight-model.test.mjs (299.469292ms)
+✔ test/mission-dashboard.test.mjs (1036.465271ms)
+✔ test/mission-trade.test.mjs (160.036903ms)
+✔ test/mount-trade.test.mjs (69.88032ms)
+✔ test/presentation-phases.test.mjs (100.159657ms)
+✔ test/reassessment.test.mjs (76.111009ms)
+✔ test/requirement-evidence.test.mjs (227.214141ms)
+✔ test/review7.test.mjs (71.999434ms)
+✔ test/revision51.test.mjs (80.382857ms)
+✔ test/revision8.test.mjs (186.66109ms)
+✔ test/workspace.test.mjs (161.524752ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3391.11299

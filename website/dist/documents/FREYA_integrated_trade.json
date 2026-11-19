@@ -1,0 +1,443 @@
+{
+  "label": "FREYA integrated preliminary trade screen, not flight qualified",
+  "date": "2026-11-10",
+  "inputs": {
+    "entryKg": 45,
+    "count": 6,
+    "carrierKg": 16,
+    "marginPct": 15,
+    "diamMm": 70,
+    "lengthMm": 480,
+    "wallMm": 2.5,
+    "noseFrac": 1.2,
+    "noseSetback": 0.25,
+    "noseReference": 0.75,
+    "angle": 0,
+    "disturbance": 0,
+    "scienceMass": 0.75,
+    "samplerMass": 0.5,
+    "sampleVolume": 5,
+    "samplerPower": 5,
+    "samplerTime": 12,
+    "sciencePower": 2.5,
+    "scienceTime": 30,
+    "material": 0,
+    "steelDensity": 7850,
+    "cfrpDensity": 1600,
+    "hybridFraction": 0.7,
+    "noseMass": 0.65,
+    "frameMass": 0.35,
+    "pottingKg": 0.45,
+    "pottingDensity": 1200,
+    "harnessKg": 0.15,
+    "shockLimit": 10000,
+    "shockTrans": 0.65,
+    "impactV": 150,
+    "velocitySigma": 8,
+    "rhoAtmos": 0.016,
+    "scaleHeight": 11,
+    "releaseAlt": 5,
+    "cd": 0.8,
+    "chuteArea": 0.08,
+    "targetResistance": 28,
+    "penetrationEfficiency": 0.25,
+    "targetFactor": 1,
+    "radialSpread": 4,
+    "surfaceTemp": -65,
+    "operatingTemp": -10,
+    "thermalCond": 0.18,
+    "thermalFactor": 0.5,
+    "insulation": 9,
+    "sleepHours": 12,
+    "batterySpecific": 120,
+    "batteryMargin": 25,
+    "standbyW": 0.35,
+    "tetherLength": 1.7,
+    "tetherLinear": 18,
+    "surfaceRadioKg": 0.35,
+    "radioPeakW": 2,
+    "radioTime": 30,
+    "txPower": 30,
+    "txGain": 1,
+    "rxGain": 8,
+    "frequency": 400,
+    "rangeKm": 600,
+    "receiverFloor": -124,
+    "miscLoss": 10,
+    "linkRequired": 6,
+    "ppMass": 0.2,
+    "ppProcess": 0,
+    "ppPowerPenalty": 0.3,
+    "ppRetain": 92,
+    "reliability": 80,
+    "terrainSuccess": 70,
+    "sampleSuccess": 70,
+    "scienceSuccess": 80
+  },
+  "outputs": {
+    "area": 0.0038484510006474974,
+    "shellVolume": 0.00025446900494077333,
+    "steelShell": 1.9975816887850706,
+    "hybridShell": 0.8842797921691874,
+    "shell": 1.9975816887850706,
+    "structural": 2.9975816887850706,
+    "tether": 0.0306,
+    "processMass": 0,
+    "batteryMass": 0.15334569209039547,
+    "batteryWh": 18.401483050847457,
+    "energyWh": 14.721186440677965,
+    "heaterW": 0.6059322033898304,
+    "thermalR": 59,
+    "probeMass": 5.581527380875466,
+    "systemMass": 49.4891642852528,
+    "systemWithMargin": 56.91253892804071,
+    "residual": -11.91253892804071,
+    "nominalEnergy": 62792.18303484899,
+    "depth": 0.1456805585645374,
+    "scienceDepth": 0,
+    "referenceAccess": 0.5,
+    "meanG": 7874.63166605008,
+    "instrumentG": 5118.510582932552,
+    "rho": 0.01015578270304451,
+    "dragForce": 7.663919835145061,
+    "decel": 1.373086489086249,
+    "termV": 196.4382134200083,
+    "fallTime": 51.9174131651165,
+    "spread": 207.669652660466,
+    "fspl": 140.04422483423212,
+    "rx": -111.04422483423212,
+    "linkMargin": 12.955775165767875,
+    "linkReserve": 6.955775165767875,
+    "pProbe": 0,
+    "pAny": 0,
+    "gSurvival": 1,
+    "depthProbability": 0,
+    "linkProbability": 0.8477887582883937,
+    "ppRetained": 0.92,
+    "components": [
+      [
+        "Steel nose",
+        0.65
+      ],
+      [
+        "Body shell",
+        1.9975816887850706
+      ],
+      [
+        "Internal structure",
+        0.35
+      ],
+      [
+        "Science instruments",
+        0.75
+      ],
+      [
+        "Sampling",
+        0.5
+      ],
+      [
+        "Potting",
+        0.45
+      ],
+      [
+        "Wiring",
+        0.15
+      ],
+      [
+        "Tether",
+        0.0306
+      ],
+      [
+        "Surface radio",
+        0.35
+      ],
+      [
+        "Battery",
+        0.15334569209039547
+      ],
+      [
+        "Protection",
+        0.2
+      ]
+    ]
+  },
+  "assumptions": [
+    {
+      "id": "E01",
+      "title": "Mission geometry / intake",
+      "kind": "Mission design input",
+      "data": "Nose penetration target 0.75 m, inlet setback 0.25 m, giving nominal 0.50 m access at zero tilt.",
+      "formula": "Dscience = max(0, d cosθ − setback − disturbance)",
+      "source": "FREYA Revision 8 project specification (user design constraints)",
+      "status": "Design assumption; no qualified impact result"
+    },
+    {
+      "id": "E02",
+      "title": "Entry mass / probe count",
+      "kind": "Mission design input",
+      "data": "45 kg entry system, six nominal probes. No fixed 4 kg or 1 kg instrument requirement.",
+      "formula": "Msystem = N Mprobe + Mcarrier; Mbudget = Msystem(1+margin)",
+      "source": "FREYA Revision 8 project specification",
+      "status": "Mission constraint and adjustable trades"
+    },
+    {
+      "id": "E03",
+      "title": "Mars atmosphere",
+      "kind": "NASA reference data",
+      "data": "Reference surface density roughly 0.016 kg/m³ and scale height ~11 km.",
+      "formula": "ρ(h)=ρ0 exp(−h/H)",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+      "status": "Literature reference; no seasonal atmospheric simulation"
+    },
+    {
+      "id": "E04",
+      "title": "Mars gravity",
+      "kind": "NASA reference data",
+      "data": "Mars surface gravity approximately 3.71 m/s².",
+      "formula": "vterminal = √(2mg/(ρCdA))",
+      "source": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/mars/",
+      "status": "Literature reference; terminal speed approximate"
+    },
+    {
+      "id": "E05",
+      "title": "Penetration evidence",
+      "kind": "Sandia / Young literature",
+      "data": "Empirical penetration models exist for earth and rock targets, but scaling and target coefficients for small Mars sandstone probes are unqualified.",
+      "formula": "Site-screen energy model d=η mv²/(2R A); calibrate with target tests",
+      "source": "https://www.sandia.gov/research/publications/details/penetration-equations-1997-10-01/",
+      "status": "Dashboard surrogate — NOT the Sandia prediction"
+    },
+    {
+      "id": "E06",
+      "title": "Astrobiology rationale",
+      "kind": "ESA / ExoMars",
+      "data": "Rosalind Franklin targets sampling as deep as 2 m to reduce exposure; this does not establish sufficient biological preservation at FREYA 0.5 m.",
+      "formula": "Depth is geometric access, not biomarker survival guarantee",
+      "source": "https://www.esa.int/media/drilling-into-mars",
+      "status": "Context; 0.5 m is provisional design target"
+    },
+    {
+      "id": "E07",
+      "title": "Structural / CFRP",
+      "kind": "Preliminary design calculation",
+      "data": "Density-based shell mass only. Impact delamination, stability, joints, buckling and thermal/PP compatibility require tests.",
+      "formula": "Vshell=π(r²−ri²)L; Mshell=Vρeffective",
+      "source": "User adjustable density and geometry",
+      "status": "Assumed material properties; no certified 10,000 g survival"
+    },
+    {
+      "id": "E08",
+      "title": "Shock",
+      "kind": "Constant average deceleration surrogate",
+      "data": "Peak shock, impact pulse, jerk, bending, off-axis modes, and internal packaging response not modeled.",
+      "formula": "gmean = v²/(2dgEarth); ginstrument = gmean × transmission",
+      "source": "Newtonian kinematics",
+      "status": "Calculated average only; high uncertainty"
+    },
+    {
+      "id": "E09",
+      "title": "Communications",
+      "kind": "Free-space link approximation",
+      "data": "Radio gains, receiver sensitivity, path and non-space losses adjustable. Fresnel obstruction, antenna attitude and surface burial not closed.",
+      "formula": "FSPL[dB]=32.44+20log10(fMHz)+20log10(Rkm)",
+      "source": "Standard free-space path-loss relation",
+      "status": "Engineering screen"
+    },
+    {
+      "id": "E10",
+      "title": "Thermal / power",
+      "kind": "Lumped thermal-resistance estimate",
+      "data": "Heater power and battery size computed from adjustable thermal inputs, duty cycle and specific energy. No transient conduction or chemistry qualification.",
+      "formula": "Pheater=ΔT/Rth × attenuationFactor; E=Σ(P×hours); Mbatt=E/Whkg",
+      "source": "Model derivation with assumed inputs",
+      "status": "Unqualified engineering estimate"
+    },
+    {
+      "id": "E11",
+      "title": "Sample & PP",
+      "kind": "User adjustable engineering assumptions",
+      "data": "Sampling success and process retention are conditional assumed inputs; category-specific PP decision is unmade.",
+      "formula": "Pprobe=Π(conditional factors); Pany=1−(1−Pprobe)^N",
+      "source": "Mission study assumptions; no contamination control verification",
+      "status": "Probability illustrative, not statistical certification"
+    },
+    {
+      "id": "E12",
+      "title": "Delivery / dispersion",
+      "kind": "Simplified ballistic kinematics",
+      "data": "Release fall time ignores drag; lateral dispersion speed × fall time. Entry and deploy/chute trajectory not integrated.",
+      "formula": "t≈√(2h/gMars); spacing≈vLateral t",
+      "source": "Newtonian kinematics",
+      "status": "Illustrative only"
+    },
+    {
+      "id": "E13",
+      "title": "FREYA historical audit",
+      "kind": "Revision 8 original site",
+      "data": "Earlier worked structural mass examples: 5.488 kg steel and 4.473 kg hybrid. Not mission-closed, and not used to hard-code current geometry.",
+      "formula": "Current model recomputes from live inputs instead of old fixed masses",
+      "source": "FREYA_Sites_Standalone_Revision_8.html, project source",
+      "status": "Historical reference"
+    }
+  ],
+  "traceability": [
+    [
+      "Eight headline KPIs",
+      "Complete live model() output",
+      "E01, E02, E05, E08, E09, E11",
+      "Mass, depth, instrument shock, radio reserve, and success terms"
+    ],
+    [
+      "Mass component plot",
+      "components in model(), kg",
+      "E02, E07, E10, E11",
+      "Cylinder-shell volume × density; sum all components including battery and PP"
+    ],
+    [
+      "Impact depth versus velocity",
+      "Recalculate model() at impact speeds 60–330 m/s",
+      "E01, E05, E08",
+      "Energy-balance surrogate; inlet setback and tilt applied; 0.5 m threshold"
+    ],
+    [
+      "System budget table",
+      "probeMass, systemMass, systemWithMargin, residual",
+      "E02, E07, E10",
+      "One probe is sum of eleven components; multiply by count; add carrier; add margin"
+    ],
+    [
+      "Thermal and radio table",
+      "heaterW, energyWh, batteryWh, fspl, rx, linkReserve",
+      "E09, E10",
+      "Lumped resistance, duty-cycle energy, free-space path loss and link budget"
+    ],
+    [
+      "Steel/CFRP comparison and plot",
+      "model() run twice: material=0 and material=1",
+      "E07, E08",
+      "Only cylindrical shell density changes; steel nose retained"
+    ],
+    [
+      "Sensitivity table",
+      "Each input increased by 10% with all others held fixed",
+      "E02, E05, E07, E09, E10, E11",
+      "Finite differences from same baseline, not a global uncertainty analysis"
+    ],
+    [
+      "Mission phase animation",
+      "Fixed six phases with schematic interpolated positions",
+      "E08, E12",
+      "Illustrative, no validated entry/deployment/impact trajectory"
+    ],
+    [
+      "Science and PP table",
+      "Science mass, intake geometry, PP path and conditional factors",
+      "E01, E06, E11",
+      "Geometric science access vs 0.5 m, independent-probe success heuristic"
+    ]
+  ],
+  "sensitivity": [
+    {
+      "id": "scienceMass",
+      "deltaProbeMass": 0.07500000000000107,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "samplerMass",
+      "deltaProbeMass": 0.05000000000000071,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "diamMm",
+      "deltaProbeMass": 0.21002660234432025,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "lengthMm",
+      "deltaProbeMass": 0.20262815164511583,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "wallMm",
+      "deltaProbeMass": 0.191619873109385,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "impactV",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "targetResistance",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "penetrationEfficiency",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "noseSetback",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "pottingKg",
+      "deltaProbeMass": 0.04500000000000082,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "thermalCond",
+      "deltaProbeMass": 0.0028699827666072153,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "insulation",
+      "deltaProbeMass": -0.0011380195806571791,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "tetherLinear",
+      "deltaProbeMass": 0.0030599999999996186,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "rangeKm",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": -0.827853703164493
+    },
+    {
+      "id": "receiverFloor",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 12.400000000000006
+    },
+    {
+      "id": "radialSpread",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    },
+    {
+      "id": "reliability",
+      "deltaProbeMass": 0,
+      "deltaScienceDepth": 0,
+      "deltaLinkReserve": 0
+    }
+  ]
+}

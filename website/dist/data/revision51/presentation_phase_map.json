@@ -1,0 +1,1425 @@
+{
+  "sourceFile": "FREYA_Pitch_Expanded_Science_Three_Categories.pptx",
+  "library_file_id": "libfile_351f23462f5081919b6715a2aad9610a",
+  "slideCount": 10,
+  "phaseAuthority": "Slide 7 delivery order; slides 3–4 proposed science alternatives",
+  "scope": "Mission phase extension only; Rev09 mass and geometry unchanged; no Aeolus source incorporation",
+  "phases": [
+    {
+      "id": "rideshare",
+      "title": "01 Rideshare",
+      "source": "Presentation slide 7 · step 01",
+      "description": "Show FREYA carried by the host second stage, then capsule separation. Cold-gas hardware remains on the detachable reentry module."
+    },
+    {
+      "id": "orient",
+      "title": "02 Orient",
+      "source": "Presentation slide 7 · step 02",
+      "description": "Acquire the burn attitude with optical/MEMS estimation and cold-gas control, then start vehicle telemetry."
+    },
+    {
+      "id": "deorbit",
+      "title": "03 Deorbit",
+      "source": "Presentation slide 7 · step 03",
+      "description": "Perform the retrograde burn, confirm its completion and detach the expendable reentry module."
+    },
+    {
+      "id": "entry",
+      "title": "04 Entry",
+      "source": "Presentation slide 7 · step 04",
+      "description": "The heat shield, aerodynamic shape and low center of gravity support passive entry and deceleration. Do not credit cold-gas control after module jettison."
+    },
+    {
+      "id": "extraction",
+      "title": "05 Carrier extraction",
+      "source": "Presentation slide 7 · step 05",
+      "description": "Remove the cover, deploy the carrier parachute, extract the carrier and discard the aeroshell. Begin the independent carrier telemetry sequence."
+    },
+    {
+      "id": "release",
+      "title": "06 Probe release",
+      "source": "Presentation slide 7 · step 06",
+      "description": "Descend to the release gate. Release every probe individually, deploying its own smaller parachute for descent and stabilization."
+    },
+    {
+      "id": "delivery",
+      "title": "07 Probe delivery",
+      "source": "Presentation slide 7 · step 07",
+      "description": "Show nose-first impact and schematic emplacement for every probe. Activate instruments and telemetry using the antenna integrated with retained parachute shrouds."
+    },
+    {
+      "id": "science",
+      "title": "08 Science operations",
+      "source": "Presentation slides 3–4 · proposed experiments",
+      "description": "Acquire soil, run blanks and controls, apply the selected proposed protocol, and inspect detector readout and interpretation. The two source protocols remain alternatives."
+    },
+    {
+      "id": "return",
+      "title": "09 Data return",
+      "source": "Presentation slide 7 · probe telemetry; Rev09 SYS-001 and COM-01–05",
+      "description": "Buffer science and engineering records, repeat the carrier status word, and illustrate an assumed orbiter relay and onward return to Earth."
+    }
+  ],
+  "scienceProtocols": {
+    "gas-trap": {
+      "name": "Slide 4 · sealed gas and trap assay",
+      "source": "Presentation slide 4 embedded workflow",
+      "sample": "0.25 cm³ per vessel; proposed 2–5 cm source depth",
+      "conditions": "No water added; sealed and dark at −10 to 0 °C for 1–5 sols",
+      "steps": [
+        [
+          "sample",
+          "Soil into test and control vessels",
+          "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition."
+        ],
+        [
+          "blank",
+          "Seal vessels and read blanks",
+          "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel."
+        ],
+        [
+          "dose",
+          "Add labeled gas",
+          "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled."
+        ],
+        [
+          "incubate",
+          "Incubation and continuous counts",
+          "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time."
+        ],
+        [
+          "trap",
+          "Gas and product trap readout",
+          "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology."
+        ],
+        [
+          "retained",
+          "Check retained-label balance",
+          "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products."
+        ],
+        [
+          "controls",
+          "Compare controls and qualify interpretation",
+          "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life."
+        ]
+      ]
+    },
+    "extract": {
+      "name": "Slide 3 · incubation and extraction concept",
+      "source": "Presentation slide 3 proposed labeled-gas experiment",
+      "sample": "Approximately 1 g soil; sample provenance and controls required",
+      "conditions": "Near Mars ambient pressure; proposed 0–5 °C incubation",
+      "steps": [
+        [
+          "sample",
+          "Acquire soil and prepare controls",
+          "Illustrate approximately 1 g soil alongside heat-treated, no-soil and known-microbe control concepts. These are proposed validation steps."
+        ],
+        [
+          "blank",
+          "Record blanks and baseline",
+          "Record baseline detector and environmental observations and keep controls separate from the unmodified test sample."
+        ],
+        [
+          "dose",
+          "Introduce proposed labeled reactants",
+          "Illustrate candidate ¹⁴CO₂, ¹⁴CO, ³H₂ or ³H₂O channels. These are alternative experimental inputs, not a selected flight recipe."
+        ],
+        [
+          "incubate",
+          "Incubate under proposed conditions",
+          "Illustrate near-ambient-pressure incubation at 0–5 °C. Do not merge this temperature or water assumption into the slide 4 gas/trap concept."
+        ],
+        [
+          "extract",
+          "Flush gas and examine extracts",
+          "Illustrate excess-gas removal, carbonate-control acidification and water-soluble versus oil-soluble extraction concepts. Hardware and sample transfer remain unverified."
+        ],
+        [
+          "detect",
+          "Scintillation and SiPM readout",
+          "Show detector acquisition for retained label in separate fractions, with sensitivity and interference still requiring laboratory validation."
+        ],
+        [
+          "controls",
+          "Compare fractions and controls",
+          "Compare test/control and hydrophobic/hydrophilic behavior. Abiotic incorporation, chemical interference and contamination must be considered before any biological interpretation."
+        ]
+      ]
+    }
+  },
+  "exampleA": [
+    {
+      "id": "health",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Vehicle health check",
+      "duration": 3,
+      "start": 0,
+      "end": 3,
+      "detail": "Review initialization and confirm the demonstrated avionics self-test.",
+      "bit": 0
+    },
+    {
+      "id": "host-carried",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Rideshare on host second stage",
+      "duration": 7,
+      "start": 3,
+      "end": 10,
+      "detail": "The presentation names a Terran R rideshare; host and delivery agreement remain proposed."
+    },
+    {
+      "id": "host-separation",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Capsule separates from second stage",
+      "duration": 7,
+      "start": 10,
+      "end": 17,
+      "detail": "Show physical separation while the expendable module remains attached.",
+      "bit": 1
+    },
+    {
+      "id": "cold-gas-slew",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Cold-gas burn-attitude acquisition",
+      "duration": 10,
+      "start": 17,
+      "end": 27,
+      "detail": "Animate proposed cold-gas torque while the external module is attached."
+    },
+    {
+      "id": "attitude-confirmed",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Burn attitude confirmed",
+      "duration": 4,
+      "start": 27,
+      "end": 31,
+      "detail": "Demonstration confidence gate for optical/MEMS attitude estimation.",
+      "bit": 2
+    },
+    {
+      "id": "vehicle-telemetry",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Vehicle telemetry begins",
+      "duration": 4,
+      "start": 31,
+      "end": 35,
+      "detail": "Show a vehicle status transmission attempt; no receiver acknowledgement is modeled."
+    },
+    {
+      "id": "retro-burn",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Retrograde burn",
+      "duration": 10,
+      "start": 35,
+      "end": 45,
+      "detail": "Animate the retrograde propulsion burn. Display timing is illustrative."
+    },
+    {
+      "id": "burn-confirmed",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Reentry burn confirmed",
+      "duration": 3,
+      "start": 45,
+      "end": 48,
+      "detail": "Distinguish confirmed burn evidence from an ignition command.",
+      "bit": 3
+    },
+    {
+      "id": "module-jettison",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Expendable reentry module detaches",
+      "duration": 6,
+      "start": 48,
+      "end": 54,
+      "detail": "Separate the external motor/control hardware before passive atmospheric entry."
+    },
+    {
+      "id": "entry-interface",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Atmospheric entry interface",
+      "duration": 7,
+      "start": 54,
+      "end": 61,
+      "detail": "The capsule enters heat-shield forward; trajectory is schematic."
+    },
+    {
+      "id": "entry-heating",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Heat-shield heating",
+      "duration": 10,
+      "start": 61,
+      "end": 71,
+      "detail": "Show thermal glow on the forebody; no heat-flux prediction is implied."
+    },
+    {
+      "id": "entry-deceleration",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Passive aerodynamic deceleration",
+      "duration": 8,
+      "start": 71,
+      "end": 79,
+      "detail": "Aerodynamic shape and mass distribution support passive entry; no cold-gas jet credit."
+    },
+    {
+      "id": "cover-release",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Top cover ejected",
+      "duration": 5,
+      "start": 79,
+      "end": 84,
+      "detail": "Move the removable cover clear of the carrier extraction path."
+    },
+    {
+      "id": "carrier-chute",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Carrier parachute deploys",
+      "duration": 7,
+      "start": 84,
+      "end": 91,
+      "detail": "Open the larger carrier canopy; dimensions remain the Rev09 A/B assumptions."
+    },
+    {
+      "id": "carrier-extraction",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Parachute extracts the carrier",
+      "duration": 7,
+      "start": 91,
+      "end": 98,
+      "detail": "Separate the loaded probe carrier from the aeroshell.",
+      "bit": 4
+    },
+    {
+      "id": "aeroshell-discard",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Aeroshell falls away",
+      "duration": 5,
+      "start": 98,
+      "end": 103,
+      "detail": "Show the spent aeroshell on a separate path clear of carrier and probes."
+    },
+    {
+      "id": "carrier-telemetry",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Carrier telemetry begins",
+      "duration": 4,
+      "start": 103,
+      "end": 107,
+      "detail": "The detached carrier uses independent energy, antenna and transferred event history."
+    },
+    {
+      "id": "release-gate",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Carrier reaches release gate",
+      "duration": 5,
+      "start": 107,
+      "end": 112,
+      "detail": "An approved altitude/condition gate is required; playback does not compute that altitude."
+    },
+    {
+      "id": "probe-1-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 1 released",
+      "duration": 4,
+      "start": 112,
+      "end": 116,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 5,
+      "probe": 1,
+      "kind": "release"
+    },
+    {
+      "id": "probe-1-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 1 parachute opens",
+      "duration": 4,
+      "start": 116,
+      "end": 120,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 1,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-2-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 2 released",
+      "duration": 4,
+      "start": 120,
+      "end": 124,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 6,
+      "probe": 2,
+      "kind": "release"
+    },
+    {
+      "id": "probe-2-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 2 parachute opens",
+      "duration": 4,
+      "start": 124,
+      "end": 128,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 2,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-3-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 3 released",
+      "duration": 4,
+      "start": 128,
+      "end": 132,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 7,
+      "probe": 3,
+      "kind": "release"
+    },
+    {
+      "id": "probe-3-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 3 parachute opens",
+      "duration": 4,
+      "start": 132,
+      "end": 136,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 3,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-1-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 stabilizes nose first",
+      "duration": 4,
+      "start": 136,
+      "end": 140,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 1,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-1-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 impacts and emplaces",
+      "duration": 4,
+      "start": 140,
+      "end": 144,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 1,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-1-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 science and telemetry activate",
+      "duration": 3,
+      "start": 144,
+      "end": 147,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 1,
+      "kind": "online"
+    },
+    {
+      "id": "probe-2-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 stabilizes nose first",
+      "duration": 4,
+      "start": 147,
+      "end": 151,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 2,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-2-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 impacts and emplaces",
+      "duration": 4,
+      "start": 151,
+      "end": 155,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 2,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-2-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 science and telemetry activate",
+      "duration": 3,
+      "start": 155,
+      "end": 158,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 2,
+      "kind": "online"
+    },
+    {
+      "id": "probe-3-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 stabilizes nose first",
+      "duration": 4,
+      "start": 158,
+      "end": 162,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 3,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-3-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 impacts and emplaces",
+      "duration": 4,
+      "start": 162,
+      "end": 166,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 3,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-3-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 science and telemetry activate",
+      "duration": 3,
+      "start": 166,
+      "end": 169,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 3,
+      "kind": "online"
+    },
+    {
+      "id": "carrier-landing",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Carrier reaches the surface",
+      "duration": 4,
+      "start": 169,
+      "end": 173,
+      "detail": "Review carrier landing confirmation and latched history.",
+      "bit": 8
+    },
+    {
+      "id": "science-sample",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Soil into test and control vessels",
+      "duration": 6,
+      "start": 173,
+      "end": 179,
+      "detail": "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition.",
+      "scienceStage": "sample",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-blank",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Seal vessels and read blanks",
+      "duration": 6,
+      "start": 179,
+      "end": 185,
+      "detail": "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel.",
+      "scienceStage": "blank",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-dose",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Add labeled gas",
+      "duration": 6,
+      "start": 185,
+      "end": 191,
+      "detail": "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled.",
+      "scienceStage": "dose",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-incubate",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Incubation and continuous counts",
+      "duration": 12,
+      "start": 191,
+      "end": 203,
+      "detail": "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time.",
+      "scienceStage": "incubate",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-trap",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Gas and product trap readout",
+      "duration": 6,
+      "start": 203,
+      "end": 209,
+      "detail": "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology.",
+      "scienceStage": "trap",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-retained",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Check retained-label balance",
+      "duration": 6,
+      "start": 209,
+      "end": 215,
+      "detail": "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products.",
+      "scienceStage": "retained",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-controls",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Compare controls and qualify interpretation",
+      "duration": 6,
+      "start": 215,
+      "end": 221,
+      "detail": "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life.",
+      "scienceStage": "controls",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "data-buffer",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Buffer science and engineering data",
+      "duration": 5,
+      "start": 221,
+      "end": 226,
+      "detail": "Store per-probe identifiers, measurement records and confirmation history."
+    },
+    {
+      "id": "carrier-repeat",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Repeat carrier status telemetry",
+      "duration": 4,
+      "start": 226,
+      "end": 230,
+      "detail": "Repeat the cumulative carrier word when power and geometry permit; packet overhead is additional."
+    },
+    {
+      "id": "orbiter-relay",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "UHF relay to an assumed Mars orbiter",
+      "duration": 7,
+      "start": 230,
+      "end": 237,
+      "detail": "Show a conceptual orbiter link; access, compatibility and actual reception remain unverified."
+    },
+    {
+      "id": "earth-return",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Relay records onward to Earth",
+      "duration": 7,
+      "start": 237,
+      "end": 244,
+      "detail": "Illustrate onward data return without claiming a demonstrated Earth link or latency."
+    },
+    {
+      "id": "mission-complete",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Mission walkthrough complete",
+      "duration": 3,
+      "start": 244,
+      "end": 247,
+      "detail": "All presentation delivery phases and the selected science workflow have been reviewed."
+    }
+  ],
+  "exampleB": [
+    {
+      "id": "health",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Vehicle health check",
+      "duration": 3,
+      "start": 0,
+      "end": 3,
+      "detail": "Review initialization and confirm the demonstrated avionics self-test.",
+      "bit": 0
+    },
+    {
+      "id": "host-carried",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Rideshare on host second stage",
+      "duration": 7,
+      "start": 3,
+      "end": 10,
+      "detail": "The presentation names a Terran R rideshare; host and delivery agreement remain proposed."
+    },
+    {
+      "id": "host-separation",
+      "group": "rideshare",
+      "phase": "01 Rideshare",
+      "label": "Capsule separates from second stage",
+      "duration": 7,
+      "start": 10,
+      "end": 17,
+      "detail": "Show physical separation while the expendable module remains attached.",
+      "bit": 1
+    },
+    {
+      "id": "cold-gas-slew",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Cold-gas burn-attitude acquisition",
+      "duration": 10,
+      "start": 17,
+      "end": 27,
+      "detail": "Animate proposed cold-gas torque while the external module is attached."
+    },
+    {
+      "id": "attitude-confirmed",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Burn attitude confirmed",
+      "duration": 4,
+      "start": 27,
+      "end": 31,
+      "detail": "Demonstration confidence gate for optical/MEMS attitude estimation.",
+      "bit": 2
+    },
+    {
+      "id": "vehicle-telemetry",
+      "group": "orient",
+      "phase": "02 Orient",
+      "label": "Vehicle telemetry begins",
+      "duration": 4,
+      "start": 31,
+      "end": 35,
+      "detail": "Show a vehicle status transmission attempt; no receiver acknowledgement is modeled."
+    },
+    {
+      "id": "retro-burn",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Retrograde burn",
+      "duration": 10,
+      "start": 35,
+      "end": 45,
+      "detail": "Animate the retrograde propulsion burn. Display timing is illustrative."
+    },
+    {
+      "id": "burn-confirmed",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Reentry burn confirmed",
+      "duration": 3,
+      "start": 45,
+      "end": 48,
+      "detail": "Distinguish confirmed burn evidence from an ignition command.",
+      "bit": 3
+    },
+    {
+      "id": "module-jettison",
+      "group": "deorbit",
+      "phase": "03 Deorbit",
+      "label": "Expendable reentry module detaches",
+      "duration": 6,
+      "start": 48,
+      "end": 54,
+      "detail": "Separate the external motor/control hardware before passive atmospheric entry."
+    },
+    {
+      "id": "entry-interface",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Atmospheric entry interface",
+      "duration": 7,
+      "start": 54,
+      "end": 61,
+      "detail": "The capsule enters heat-shield forward; trajectory is schematic."
+    },
+    {
+      "id": "entry-heating",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Heat-shield heating",
+      "duration": 10,
+      "start": 61,
+      "end": 71,
+      "detail": "Show thermal glow on the forebody; no heat-flux prediction is implied."
+    },
+    {
+      "id": "entry-deceleration",
+      "group": "entry",
+      "phase": "04 Entry",
+      "label": "Passive aerodynamic deceleration",
+      "duration": 8,
+      "start": 71,
+      "end": 79,
+      "detail": "Aerodynamic shape and mass distribution support passive entry; no cold-gas jet credit."
+    },
+    {
+      "id": "cover-release",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Top cover ejected",
+      "duration": 5,
+      "start": 79,
+      "end": 84,
+      "detail": "Move the removable cover clear of the carrier extraction path."
+    },
+    {
+      "id": "carrier-chute",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Carrier parachute deploys",
+      "duration": 7,
+      "start": 84,
+      "end": 91,
+      "detail": "Open the larger carrier canopy; dimensions remain the Rev09 A/B assumptions."
+    },
+    {
+      "id": "carrier-extraction",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Parachute extracts the carrier",
+      "duration": 7,
+      "start": 91,
+      "end": 98,
+      "detail": "Separate the loaded probe carrier from the aeroshell.",
+      "bit": 4
+    },
+    {
+      "id": "aeroshell-discard",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Aeroshell falls away",
+      "duration": 5,
+      "start": 98,
+      "end": 103,
+      "detail": "Show the spent aeroshell on a separate path clear of carrier and probes."
+    },
+    {
+      "id": "carrier-telemetry",
+      "group": "extraction",
+      "phase": "05 Carrier extraction",
+      "label": "Carrier telemetry begins",
+      "duration": 4,
+      "start": 103,
+      "end": 107,
+      "detail": "The detached carrier uses independent energy, antenna and transferred event history."
+    },
+    {
+      "id": "release-gate",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Carrier reaches release gate",
+      "duration": 5,
+      "start": 107,
+      "end": 112,
+      "detail": "An approved altitude/condition gate is required; playback does not compute that altitude."
+    },
+    {
+      "id": "probe-1-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 1 released",
+      "duration": 4,
+      "start": 112,
+      "end": 116,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 5,
+      "probe": 1,
+      "kind": "release"
+    },
+    {
+      "id": "probe-1-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 1 parachute opens",
+      "duration": 4,
+      "start": 116,
+      "end": 120,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 1,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-2-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 2 released",
+      "duration": 4,
+      "start": 120,
+      "end": 124,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 6,
+      "probe": 2,
+      "kind": "release"
+    },
+    {
+      "id": "probe-2-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 2 parachute opens",
+      "duration": 4,
+      "start": 124,
+      "end": 128,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 2,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-3-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 3 released",
+      "duration": 4,
+      "start": 128,
+      "end": 132,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 7,
+      "probe": 3,
+      "kind": "release"
+    },
+    {
+      "id": "probe-3-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 3 parachute opens",
+      "duration": 4,
+      "start": 132,
+      "end": 136,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 3,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-4-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 4 released",
+      "duration": 4,
+      "start": 136,
+      "end": 140,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 9,
+      "probe": 4,
+      "kind": "release"
+    },
+    {
+      "id": "probe-4-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 4 parachute opens",
+      "duration": 4,
+      "start": 140,
+      "end": 144,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 4,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-5-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 5 released",
+      "duration": 4,
+      "start": 144,
+      "end": 148,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 10,
+      "probe": 5,
+      "kind": "release"
+    },
+    {
+      "id": "probe-5-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 5 parachute opens",
+      "duration": 4,
+      "start": 148,
+      "end": 152,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 5,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-6-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 6 released",
+      "duration": 4,
+      "start": 152,
+      "end": 156,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 11,
+      "probe": 6,
+      "kind": "release"
+    },
+    {
+      "id": "probe-6-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 6 parachute opens",
+      "duration": 4,
+      "start": 156,
+      "end": 160,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 6,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-7-release",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 7 released",
+      "duration": 4,
+      "start": 160,
+      "end": 164,
+      "detail": "Release one probe independently, with positive carrier clearance.",
+      "bit": 12,
+      "probe": 7,
+      "kind": "release"
+    },
+    {
+      "id": "probe-7-chute",
+      "group": "release",
+      "phase": "06 Probe release",
+      "label": "Probe 7 parachute opens",
+      "duration": 4,
+      "start": 164,
+      "end": 168,
+      "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+      "probe": 7,
+      "kind": "chute"
+    },
+    {
+      "id": "probe-1-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 stabilizes nose first",
+      "duration": 4,
+      "start": 168,
+      "end": 172,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 1,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-1-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 impacts and emplaces",
+      "duration": 4,
+      "start": 172,
+      "end": 176,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 1,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-1-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 1 science and telemetry activate",
+      "duration": 3,
+      "start": 176,
+      "end": 179,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 1,
+      "kind": "online"
+    },
+    {
+      "id": "probe-2-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 stabilizes nose first",
+      "duration": 4,
+      "start": 179,
+      "end": 183,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 2,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-2-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 impacts and emplaces",
+      "duration": 4,
+      "start": 183,
+      "end": 187,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 2,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-2-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 2 science and telemetry activate",
+      "duration": 3,
+      "start": 187,
+      "end": 190,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 2,
+      "kind": "online"
+    },
+    {
+      "id": "probe-3-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 stabilizes nose first",
+      "duration": 4,
+      "start": 190,
+      "end": 194,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 3,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-3-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 impacts and emplaces",
+      "duration": 4,
+      "start": 194,
+      "end": 198,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 3,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-3-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 3 science and telemetry activate",
+      "duration": 3,
+      "start": 198,
+      "end": 201,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 3,
+      "kind": "online"
+    },
+    {
+      "id": "probe-4-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 4 stabilizes nose first",
+      "duration": 4,
+      "start": 201,
+      "end": 205,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 4,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-4-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 4 impacts and emplaces",
+      "duration": 4,
+      "start": 205,
+      "end": 209,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 4,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-4-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 4 science and telemetry activate",
+      "duration": 3,
+      "start": 209,
+      "end": 212,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 4,
+      "kind": "online"
+    },
+    {
+      "id": "probe-5-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 5 stabilizes nose first",
+      "duration": 4,
+      "start": 212,
+      "end": 216,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 5,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-5-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 5 impacts and emplaces",
+      "duration": 4,
+      "start": 216,
+      "end": 220,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 5,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-5-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 5 science and telemetry activate",
+      "duration": 3,
+      "start": 220,
+      "end": 223,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 5,
+      "kind": "online"
+    },
+    {
+      "id": "probe-6-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 6 stabilizes nose first",
+      "duration": 4,
+      "start": 223,
+      "end": 227,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 6,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-6-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 6 impacts and emplaces",
+      "duration": 4,
+      "start": 227,
+      "end": 231,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 6,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-6-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 6 science and telemetry activate",
+      "duration": 3,
+      "start": 231,
+      "end": 234,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 6,
+      "kind": "online"
+    },
+    {
+      "id": "probe-7-descent",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 7 stabilizes nose first",
+      "duration": 4,
+      "start": 234,
+      "end": 238,
+      "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+      "probe": 7,
+      "kind": "descent"
+    },
+    {
+      "id": "probe-7-impact",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 7 impacts and emplaces",
+      "duration": 4,
+      "start": 238,
+      "end": 242,
+      "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+      "probe": 7,
+      "kind": "impact"
+    },
+    {
+      "id": "probe-7-online",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Probe 7 science and telemetry activate",
+      "duration": 3,
+      "start": 242,
+      "end": 245,
+      "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+      "probe": 7,
+      "kind": "online"
+    },
+    {
+      "id": "carrier-landing",
+      "group": "delivery",
+      "phase": "07 Probe delivery",
+      "label": "Carrier reaches the surface",
+      "duration": 4,
+      "start": 245,
+      "end": 249,
+      "detail": "Review carrier landing confirmation and latched history.",
+      "bit": 8
+    },
+    {
+      "id": "science-sample",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Soil into test and control vessels",
+      "duration": 6,
+      "start": 249,
+      "end": 255,
+      "detail": "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition.",
+      "scienceStage": "sample",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-blank",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Seal vessels and read blanks",
+      "duration": 6,
+      "start": 255,
+      "end": 261,
+      "detail": "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel.",
+      "scienceStage": "blank",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-dose",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Add labeled gas",
+      "duration": 6,
+      "start": 261,
+      "end": 267,
+      "detail": "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled.",
+      "scienceStage": "dose",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-incubate",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Incubation and continuous counts",
+      "duration": 12,
+      "start": 267,
+      "end": 279,
+      "detail": "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time.",
+      "scienceStage": "incubate",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-trap",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Gas and product trap readout",
+      "duration": 6,
+      "start": 279,
+      "end": 285,
+      "detail": "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology.",
+      "scienceStage": "trap",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-retained",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Check retained-label balance",
+      "duration": 6,
+      "start": 285,
+      "end": 291,
+      "detail": "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products.",
+      "scienceStage": "retained",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "science-controls",
+      "group": "science",
+      "phase": "08 Science operations",
+      "label": "Compare controls and qualify interpretation",
+      "duration": 6,
+      "start": 291,
+      "end": 297,
+      "detail": "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life.",
+      "scienceStage": "controls",
+      "protocol": "gas-trap"
+    },
+    {
+      "id": "data-buffer",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Buffer science and engineering data",
+      "duration": 5,
+      "start": 297,
+      "end": 302,
+      "detail": "Store per-probe identifiers, measurement records and confirmation history."
+    },
+    {
+      "id": "carrier-repeat",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Repeat carrier status telemetry",
+      "duration": 4,
+      "start": 302,
+      "end": 306,
+      "detail": "Repeat the cumulative carrier word when power and geometry permit; packet overhead is additional."
+    },
+    {
+      "id": "orbiter-relay",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "UHF relay to an assumed Mars orbiter",
+      "duration": 7,
+      "start": 306,
+      "end": 313,
+      "detail": "Show a conceptual orbiter link; access, compatibility and actual reception remain unverified."
+    },
+    {
+      "id": "earth-return",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Relay records onward to Earth",
+      "duration": 7,
+      "start": 313,
+      "end": 320,
+      "detail": "Illustrate onward data return without claiming a demonstrated Earth link or latency."
+    },
+    {
+      "id": "mission-complete",
+      "group": "return",
+      "phase": "09 Data return",
+      "label": "Mission walkthrough complete",
+      "duration": 3,
+      "start": 320,
+      "end": 323,
+      "detail": "All presentation delivery phases and the selected science workflow have been reviewed."
+    }
+  ]
+}

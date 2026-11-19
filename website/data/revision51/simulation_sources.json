@@ -1,0 +1,82 @@
+[
+  [
+    "SIM-R1",
+    "FREYA design leadership: Robert Zubrin and Robert Mills. FREYA Mission Vehicle Design Specification, FDS-001 Revision 0.9, 10 November 2026. User-supplied DOCX; governing project source. Sections 3\u20139 and Appendix D.",
+    "https://chatgpt.com/library?file_id=libfile_a103c82d897c8191ada94ed38925bc53&account_id=personal"
+  ],
+  [
+    "SIM-R2",
+    "FREYA project user. Simulation direction, 15 November 2026, this FREYA project conversation: attitude-jet separation, shield-forward retrograde burn, gas/tank budget, 3\u201320 orbits, A/B thrust/fuel, temperature and descent telemetry. Internal design instruction; no public URL.",
+    ""
+  ],
+  [
+    "SIM-R3",
+    "FREYA. FREYA Pitch Expanded Science Three Categories, 10-slide user-provided presentation, file FREYA_Pitch_Expanded_Science_Three_Categories.pptx, undated. Slide 7 delivery phases; slides 3\u20134 proposed science alternatives. Internal project artifact; no public URL.",
+    ""
+  ],
+  [
+    "SIM-R4",
+    "NASA Glenn Research Center. Specific Impulse. Beginner\u2019s Guide to Aeronautics, undated webpage. Relations between thrust, impulse, mass flow and specific impulse. Accessed 15 November 2026.",
+    "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/specific-impulse/"
+  ],
+  [
+    "SIM-R5",
+    "NASA Glenn Research Center. Ideal Rocket Equation. Beginner\u2019s Guide to Aeronautics, undated webpage. Variable-mass rocket sizing relation. Accessed 15 November 2026.",
+    "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/"
+  ],
+  [
+    "SIM-R6",
+    "Sutton, K., and Graves, R. A., Jr. A General Stagnation-Point Convective Heating Equation for Arbitrary Gas Mixtures. NASA Technical Report NASA-TR-R-376, November 1971. NTRS document 19720003329. Accessed 15 November 2026.",
+    "https://ntrs.nasa.gov/citations/19720003329"
+  ],
+  [
+    "SIM-R7",
+    "Esper, Jaime, and Aldrin, Buzz. Mars Small-Spacecraft Human Exploration Resource Prospector with Aero-braking (SHERPA): Demonstrating an End-to-End Mission to Phobos Distant Retrograde Orbit. NASA-hosted manuscript, NTRS document 20190032243. Engineering Mars convective heating coefficient; no FREYA validation. Accessed 15 November 2026.",
+    "https://ntrs.nasa.gov/api/citations/20190032243/downloads/20190032243.pdf?attachment=true"
+  ],
+  [
+    "SIM-R8",
+    "West, Thomas K., IV, and Brandis, A. M. Updated Stagnation-Point Aeroheating Correlations for Mars Entry. Journal of Spacecraft and Rockets 57(2), 2020. DOI 10.2514/1.A34602. NTRS document 20200003079. Context for required improved correlations; not implemented here. Accessed 15 November 2026.",
+    "https://ntrs.nasa.gov/citations/20200003079"
+  ],
+  [
+    "SIM-R9",
+    "Meurisse, Jeremie B. E.; Monk, Joshua D.; Borner, Arnaud; Ferguson, Joseph; Panerai, Francesco; and Mansour, Nagi N. Towards the Prediction of the Mars 2020 Heatshield Material Response. Ablation Workshop, Burlington, Vermont, 17\u201318 September 2018. NASA report ARC-E-DAA-TN61346, NTRS document 20190003886. Context for material-response validation; no material constants borrowed. Accessed 15 November 2026.",
+    "https://ntrs.nasa.gov/citations/20190003886"
+  ],
+  [
+    "SIM-R10",
+    "NASA Glenn Research Center. Mars Atmosphere Equation (Metric). Beginner\u2019s Guide to Aeronautics, undated webpage. Reviewed atmosphere context; its piecewise temperature profile is not implemented or extrapolated by this simulator. Accessed 15 November 2026.",
+    "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/mars-atmosphere-equation-metric/"
+  ],
+  [
+    "SIM-R11",
+    "NASA Glenn Research Center. Rocket Thrust Equation. Beginner\u2019s Guide to Aeronautics, undated webpage. Reviewed thrust and mass-flow relation. Accessed 15 November 2026.",
+    "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/rocket-thrust-equation/"
+  ],
+  [
+    "SIM-R12",
+    "NASA Jet Propulsion Laboratory, Solar System Dynamics. Astrodynamic Parameters, webpage. Reviewed reference-parameter context; simulator retains the rounded Rev09 screening constants and an assumed rotation period. Accessed 15 November 2026.",
+    "https://ssd.jpl.nasa.gov/astro_par.html"
+  ],
+  [
+    "SIM-R13",
+    "Moore, H. J. (1970). Estimates of the Mechanical Properties of Lunar Surface Using Tracks and Secondary Impact Craters Produced by Blocks and Boulders. USGS Interagency Report: Astrogeology 22. NASA contract R-66. July 1970. Poncelet resistance context; no Mars parameter calibration. Accessed 16 November 2026.",
+    "https://ntrs.nasa.gov/api/citations/19700031586/downloads/19700031586.pdf"
+  ],
+  [
+    "SIM-R14",
+    "Sandia National Laboratories (1997). Penetration Equations. SAND97-2426. 1 October 1997. DOI: 10.2172/562498. Calibration context only; empirical Sandia equation is not implemented. Accessed 16 November 2026.",
+    "https://www.sandia.gov/research/publications/details/penetration-equations-1997-10-01/"
+  ],
+  [
+    "SIM-R15",
+    "Spacek, J., et al. (2026). IMPRESS: A Planetary Penetrator Network for Astrobiology, Prospecting, and Exploration of Mars. Astrobiology 26(9), 688\u2013699. DOI 10.1177/15311074261471218. Published abstract: concept emplacement range. Author preprint revised 2 August 2026, sections 3.1\u20133.2.1: planned drop-test conditions. Reviewed 17 November 2026. No measured IMPRESS depth-versus-speed calibration is supplied.",
+    "https://doi.org/10.1177/15311074261471218"
+  ],
+  [
+    "SIM-R16",
+    "Spacek, J., et al. (2026). IMPRESS supplementary Tables S1\u2013S3, author version revised 9 July 2026. Table S1, PDF pages 2\u20133: comparative MetNet, LUNAR-A, MoonLITE and DS2 references. Mission summaries combine different architectures and are not individual matched test shots. Reviewed 17 November 2026.",
+    "https://impressmars.com/files/preprints/impress-preprint-supplementary-tables-s1-s2-s3-2026-07-09.pdf"
+  ]
+]

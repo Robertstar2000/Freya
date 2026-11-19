@@ -1,0 +1,1908 @@
+{
+  "title": "FREYA Rev09 — requirement evidence assessment",
+  "reviewDate": "2026-11-15",
+  "baseline": "Revision 5.1, source FDS-001 Rev09; A/B default inputs, not current slider trades",
+  "assessedSourceCommit": "2c3914f56c2da1932630b0464c642d6ce961443d",
+  "meaning": "Simulation supported means a successful numerical subcheck under stated assumptions. Partial means only part of the requirement is addressed. Flight heritage means an analogous demonstrated element, not FREYA qualification. No requirement is marked fully verified.",
+  "sources": {
+    "H-PATH": {
+      "citation": "NASA Planetary Data System. Mars Pathfinder Lander Description. ASI/MET EDL archive, instrument-host documentation, undated. Sections: Entry, Descent, and Landing; Attitude and Information Management; Power and Pyrotechnics.",
+      "url": "https://pds.nasa.gov/data/mpfl-m-asimet-2_3-edr_rdr-edl-v1.0/mpam_0001/document/insthost.htm",
+      "accessed": "2026-11-15",
+      "demonstrated": "Pathfinder demonstrated a blunt-cone SLA-561V entry system, parachute descent, staged separations, onboard timing and radar-triggered events. It also used Sun sensing and integrated command/data handling. This is function-level heritage at different mass, geometry and flight conditions."
+    },
+    "H-MEDLI": {
+      "citation": "NASA. Sensors Collect Crucial Data on Mars Landings with Arrival of Perseverance. 1 April 2021.",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/sensors-collect-crucial-data-on-mars-landings-with-arrival-of-perseverance/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Perseverance landed successfully on 18 February 2021. MEDLI2 returned heat-shield/back-shell heating and pressure measurements, including stored entry data after landing. This supports the existence of measured entry environments, not calibration of FREYA’s thermal model."
+    },
+    "H-MARCO": {
+      "citation": "NASA Jet Propulsion Laboratory. InSight Landing Press Kit: Mars Cube One. 2018. Achievements to date and technology suppliers.",
+      "url": "https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/mars-cube-one/",
+      "accessed": "2026-11-15",
+      "demonstrated": "MarCO completed in-space trajectory corrections and propulsion/radio demonstrations using spacecraft equipped with cold-gas propulsion. This does not demonstrate FREYA’s nitrogen tank, six-jet geometry, orbital deorbit motor or feed system."
+    },
+    "H-KEPLER": {
+      "citation": "NASA Science. Kepler / K2. Mission history, undated webpage.",
+      "url": "https://science.nasa.gov/mission/kepler/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Kepler used four reaction wheels for precision pointing. Wheel failures later forced a different operating approach; heritage therefore includes a reliability caution, not a guarantee of FREYA controllability."
+    },
+    "H-NAV": {
+      "citation": "NASA Science. Surviving an In-Flight Anomaly: What Happened on Ingenuity’s Sixth Flight. 27 May 2021.",
+      "url": "https://science.nasa.gov/blog/surviving-an-in-flight-anomaly-what-happened-on-ingenuitys-sixth-flight/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Ingenuity flew with camera/IMU navigation and landed safely after an image-timing anomaly on Flight Six. This is visual-inertial navigation heritage in low-altitude flight, not orbital limb navigation or FREYA covariance verification."
+    },
+    "H-COMPUTE": {
+      "citation": "Cretu, V.; Ogut, M.; Swope, J.; Dunkel, E.; Mirza, F.; Chien, S.; Jongeling, A.; Sheldon, D.; Sauvageau, J.; Ogbe, D.; Towfic, Z. J. Benchmarking and Testing of Qualcomm Snapdragon System-on-Chip for JPL Space Applications and Missions. JPL, 5 March 2022. NTRS 20230006988.",
+      "url": "https://ntrs.nasa.gov/citations/20230006988",
+      "accessed": "2026-11-15",
+      "demonstrated": "JPL reports Snapdragon 801 use aboard Ingenuity on Mars. It is evidence for a flown commercial processor in a different architecture, not flight proof of Raspberry Pi hardware, ML limb detection, or FREYA safety partitioning."
+    },
+    "H-RELAY": {
+      "citation": "NASA Jet Propulsion Laboratory. The Mars Relay Network Connects Us to NASA’s Martian Explorers. 16 February 2021.",
+      "url": "https://www.nasa.gov/centers-and-facilities/jpl/the-mars-relay-network-connects-us-to-nasas-martian-explorers/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Mars surface missions have used orbiter relay paths to return science and engineering data to Earth. Existing network operation does not establish FREYA link access, waveform compatibility, coverage or a 95% retention guarantee."
+    },
+    "H-VIKING": {
+      "citation": "NASA Science. Viking Spacecraft and Science. Mission retrospective, undated webpage.",
+      "url": "https://science.nasa.gov/mission/viking/spacecraft-and-science/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Viking landers separated from Mars-orbiting spacecraft, landed, acquired/analyzed soil and returned surface science. Biology results provided no clear evidence of living microorganisms. This is not proof of FREYA penetrator sampling or life-detection performance."
+    },
+    "H-LR": {
+      "citation": "NASA Planetary Data System. Viking Lander 1 Spacecraft Labeled Release. Instrument context urn:nasa:pds:context:instrument:lr1.vl1, undated.",
+      "url": "https://pds.nasa.gov/ds-view/pds/viewContext.jsp?identifier=urn:nasa:pds:context:instrument:lr1.vl1&version=1.1",
+      "accessed": "2026-11-15",
+      "demonstrated": "The flown Viking LR instrument measured labeled-gas release and included heat-sterilized controls. Its aqueous nutrient method and detectors differ from FREYA’s proposed protocols; flight heritage does not prove those protocols or a biological interpretation."
+    },
+    "H-PP": {
+      "citation": "NASA. NASA Planetary Protection Handbook, Version 1.0. NASA/SP-20240016475. December 2024. Historical Viking sterilization and bioburden verification discussion.",
+      "url": "https://ntrs.nasa.gov/api/citations/20240016475/downloads/PlanetaryProtection_Hdbk_2024_Final_For508ing_comp.pdf",
+      "accessed": "2026-11-15",
+      "demonstrated": "The handbook documents Viking hardware sterilization and biological-cleanliness verification. It supports contamination-control heritage, not the applicable classification, accepted plan or verified cleanliness of FREYA hardware."
+    },
+    "H-DS2": {
+      "citation": "NASA Science. Mars Polar Lander / Deep Space 2. Mission retrospective, undated webpage.",
+      "url": "https://science.nasa.gov/mission/mars-polar-lander-deep-space-2/",
+      "accessed": "2026-11-15",
+      "demonstrated": "Deep Space 2’s two penetrators were lost on arrival in December 1999. Their intended penetration/sampling/telemetry objectives are not successful flight evidence. No failure mechanism or penetration depth is inferred here."
+    }
+  },
+  "requirements": [
+    {
+      "id": "MIS-001",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DELIVERY-A"
+        ],
+        "scope": "A propagates three 2 kg probes to zero altitude."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-VIKING"
+        ]
+      },
+      "remaining": "Independent hardware delivery, impact survival and operational science return remain untested.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-002",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DELIVERY-B"
+        ],
+        "scope": "One B vehicle propagates seven 2 kg probes; mission count is two by configuration."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "A coupled two-vehicle delivery and all fourteen hardware probes are not demonstrated.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No interface mechanical/electrical simulation."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Approved host ICD, separation loads, connectors and integration acceptance are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-004",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DELIVERY-A",
+          "S-DELIVERY-B",
+          "S-ORBIT",
+          "S-GAS"
+        ],
+        "scope": "Nominal separation, main burn, entry, release and descent execute numerically."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH",
+          "H-VIKING"
+        ]
+      },
+      "remaining": "Orbit state is supplied, not estimated from sensors; integrated autonomous flight software remains unverified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-005",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Only assumed environments are implemented."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "FREYA-approved launch/cruise/entry environment specifications and worst cases remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-006",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-TARGET"
+        ],
+        "scope": "Nominal target misses are inside the assumed regions."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "No 95% Monte Carlo dispersion demonstration or science/prohibited-terrain screening.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-007",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-GAS",
+          "S-ENGINE",
+          "S-THERMAL",
+          "S-POWER",
+          "S-LINK"
+        ],
+        "scope": "Mass, gas, propulsion, thermal and power screens are available."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Measured component mass/volume closure and PDR-approved margins are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "MIS-008",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Scripted event order does not implement a fault-tolerant inhibit."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Independent ignition/pyro inhibits, safe states and fault-injection tests are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-001",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "0.800 m is an initialized input, not independent verification."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Dimensioned drawing and manufactured diameter inspection are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-002",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "0.600 m is a stored geometry input."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Assembly datum, cover inclusion, drawing and physical inspection remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "A shoulder thermal radius is assumed; no baseline-contour CAD verification."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Verify the complete 70 mm transition contour on a controlled drawing and hardware.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No alloy, thickness, joints or structural/thermal stress model is implemented."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Select alloy and demonstrate positive margins and aluminum temperature limits.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-005",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-THERMAL"
+        ],
+        "scope": "Center/shoulder surface temperatures are calculated with generic nonablating properties."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH",
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "FREYA ablative material/thickness qualification is absent; heritage TPS cannot be inherited without a new environment match.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-006",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Schematic stowage is not a fit or restraint test."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "3-D tolerance, swept-volume clearance and launch-load restraint tests are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-007",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Cover movement is an illustration only."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Demonstrate loaded-carrier passage through the actual opening with tolerance margins.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-008",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-ENTRY"
+        ],
+        "scope": "Nominal entry dynamic pressure and deceleration are calculated."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "No load-to-strength FEA, launch/separation vibration qualification or positive structural margins.",
+      "freyaVerified": false
+    },
+    {
+      "id": "STR-009",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Module placement is schematic."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "TPS continuity drawings, attachment design and representative heating/separation inspection remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-001",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "A assumes a 100 N, 1280 N s reference motor; no selected J-class flight unit."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Motor identification, thrust-curve characterization and space-environment qualification remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-002",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Reaction-wheel hardware/control is not simulated."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-KEPLER"
+        ]
+      },
+      "remaining": "Verify FREYA four-wheel mounting, controllability, saturation and desaturation; proposed cold-gas architecture is a separate trade.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No camera images, gyro noise or estimator fusion is modeled."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-NAV"
+        ]
+      },
+      "remaining": "Validate MEMS/camera/Sun fusion and orbital limb/feature observations with representative imagery.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "A target-search output is not an ignition permissive or fault model."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Define confidence thresholds, readiness logic and independent inhibits; test out-of-limit cases.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-005",
+      "simulation": {
+        "status": "shortfall",
+        "checks": [
+          "S-ENGINE",
+          "S-A-MARGIN"
+        ],
+        "scope": "A nominal burn meets vacuum demand but fails the 25% planning allowance. B is sized only for nominal demand."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "A motor margin must be resolved; B reserve capacity, motor curve, pointing and dispersions remain unverified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-006",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "External DOM mounting is drawn only."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Demonstrate load transfer, fasteners and an uninterrupted TPS barrier.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-007",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-ENGINE"
+        ],
+        "scope": "B nominal thrust and fuel/oxidizer masses are calculated for assumed Isp and O/F."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Paraffin/N2O regression, tank/feed/ignition design and signed solid-versus-hybrid hardware trade are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-008",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-GAS"
+        ],
+        "scope": "N2 maneuver consumption and ideal storage residual are calculated."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Valve/regulator/plumbing/thruster masses, N2O phase behavior, compatibility and complete allocated mass remain unverified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-009",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No wheel momentum accumulation, saturation or disturbance integration."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-KEPLER"
+        ]
+      },
+      "remaining": "Size desaturation actuators and demonstrate momentum management for selected attitude architecture.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-010",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No navigation covariance or visibility outage model."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-NAV"
+        ]
+      },
+      "remaining": "Camera occultation/low light and changing viewing geometry require observability analysis and HIL tests.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-001",
+      "simulation": {
+        "status": "supported",
+        "checks": [
+          "S-ORBIT"
+        ],
+        "scope": "Both baseline cases start at 300 km and calculate a descending 125 km interface state and flight-path angle."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-VIKING"
+        ]
+      },
+      "remaining": "Numerical reference-trajectory evidence only; corridor validation, navigation errors and orbit dispersions remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-002",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Heat-shield-forward attitude is imposed, not a simulated stability result."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH",
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "6-DOF aero-moments, CG/CP, attitude dispersions and thermal attitude limits must be demonstrated.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-003",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-THERMAL"
+        ],
+        "scope": "Trajectory-dependent convective heating, radiation loss and two-node heat soak are computed."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "Incident gas radiation, ablation, pyrolysis and aluminum-shell temperatures/limits are not modeled.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Deployment is scheduled by altitude and timing, without validated Mach/q gates."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Select and test Mach/dynamic-pressure/altitude envelopes and enforce flight inhibits.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-005",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DESCENT"
+        ],
+        "scope": "A retained-carrier descent uses the 1.5 m canopy and reaches ground."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Canopy scaling, supersonic deployment, strength, opening load and stability remain unqualified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-006",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DESCENT"
+        ],
+        "scope": "B retained-carrier descent uses the 2.0 m candidate canopy and reaches ground."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Vehicle-level canopy and deployment-load qualification are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-007",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Sequence ordering/graphics do not propagate separation bodies."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Collision-free shield/cover/PCM separation needs multibody dynamics and representative tests.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-008",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Solver altitude is exact model truth, not a noisy sensor estimate."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Select radar/lidar/barometric sensing and qualify release-altitude uncertainty.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-009",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DESCENT"
+        ],
+        "scope": "Individual 0.5 m canopy drag/inflation proxies produce finite probe descent trajectories."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Probe attitude stability, real inflation and Mars deployment acceptance remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-010",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-ATMOSPHERE"
+        ],
+        "scope": "Density scale height and optional horizontal wind change the nominal descent."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "No atmospheric ensemble, terrain/elevation map or site-dependent density/wind dispersions.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-001",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Three probes are instantiated; restraint forces/stowage tolerances are not modeled."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Actual vertical restraint/release hardware and launch-load testing are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-002",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Seven probe records do not prove 3+3+1 packaging."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Verify CAD swept volume inside the 800 mm shell at worst tolerances and loaded extraction.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-003",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-RELEASE"
+        ],
+        "scope": "Release altitude, individual sequencing, inherited state and carrier mass shedding are checked."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Mechanical interference and actuator release reliability require multibody/test evidence.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Carrier retention until an assumed gate is an imposed model boundary."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Demonstrate restraint survival and qualified extraction conditions on hardware.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-005",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Carrier extraction is schematic; no body-clearance dynamics."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "FREYA ejection geometry, canopy extraction and no-contact tests are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-006",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No electrical inhibit or pyro circuit is modeled."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Independent inhibits, ground-safe handling and safety review are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PCM-007",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-RELEASE",
+          "S-ATMOSPHERE"
+        ],
+        "scope": "Adjustable release cadence and a wind sensitivity case propagate separate probe trajectories."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "No full dispersion/collision analysis or hardware cadence acceptance limits.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-001",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "50 mm diameter and 200 mm length are inputs to impact screening."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Manufactured body dimensions and packaged internals require inspection; assumed values are not evidence.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-002",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "75 mm shoulder geometry is not propagated as an impact contact model."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Verify shoulder dimensions, length fraction, antenna/chute interface and its penetration effect.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "2 kg is an assumed complete mass used by equations."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Weighed payload/structure/chute/consumables bill of materials and component boundary closure are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-004",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-IMPACT"
+        ],
+        "scope": "Analytical impact calculations accept an assumed nose-first/obliquity input."
+      },
+      "heritage": {
+        "status": "negative",
+        "sources": [
+          "H-DS2"
+        ]
+      },
+      "remaining": "Nose-first stability is not predicted; Deep Space 2 is not successful penetrator heritage. Validate shape and deployment attitude.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-005",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No tether/antenna mechanical or RF model."
+      },
+      "heritage": {
+        "status": "negative",
+        "sources": [
+          "H-DS2"
+        ]
+      },
+      "remaining": "Demonstrate tether retention, feed, deployment, burial performance and RF link on representative hardware.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-006",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No sample-path contamination or internal probe thermal model."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PP"
+        ]
+      },
+      "remaining": "Contamination budgets and sampled-material temperature/integrity need analysis and tests.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-007",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Science animation is illustrative; no detector counts, controls data or decision threshold analysis."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-VIKING",
+          "H-LR"
+        ]
+      },
+      "remaining": "FREYA-specific assay, blanks, sensitivity and false-positive limits require laboratory validation; Viking methods differ.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-008",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No sample acquisition/transfer mass, efficiency or sensitivity simulation."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-VIKING"
+        ]
+      },
+      "remaining": "Demonstrate 0.5 g collection, 20–100 mm provenance, 80% transfer and control handling; impact depth is not sample acquisition.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-009",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-POWER"
+        ],
+        "scope": "Assumed usable energy minus average load leaves at least 20% reserve in A and B screens."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Probe temperature derating, power duty-cycle model, heaters and actual batteries are unqualified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-010",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No dust/illumination/temperature operating-cases model."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-VIKING"
+        ]
+      },
+      "remaining": "Define FREYA operating envelope and demonstrate science/RF performance under those cases.",
+      "freyaVerified": false
+    },
+    {
+      "id": "PRB-011",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Impact g/depth is an uncalibrated point-mass screen, not survival evidence."
+      },
+      "heritage": {
+        "status": "negative",
+        "sources": [
+          "H-DS2"
+        ]
+      },
+      "remaining": "Representative regolith/ice impacts and instrument shock/survival tests are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-001",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-LINK"
+        ],
+        "scope": "Free-space link margin is positive for assumed receiver/range; buffers are configuration values."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-RELAY"
+        ]
+      },
+      "remaining": "No 95% retention, contact schedule, end-to-end storage model or provider agreement.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-002",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-STATUS"
+        ],
+        "scope": "Each virtual probe has an ID and timestamped release/trajectory rows; synthetic carrier status is encoded."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "No actual time-tagged science packets, synchronization, flight transceiver or end-to-end verification.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Mission classification is not established by simulation or another mission."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Responsible authority must determine FREYA classification before processing; heritage cannot grant approval.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No biological cleanliness or recontamination simulation."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PP"
+        ]
+      },
+      "remaining": "FREYA sample-contact hardware must meet its approved bioburden and recontamination criteria.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-005",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-TRACE"
+        ],
+        "scope": "91 unique source identifiers are preserved and linked to this evidence register."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Full bidirectional objectives/design/tests/anomalies traceability and ownership remain incomplete.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-006",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DELIVERY-A",
+          "S-DELIVERY-B",
+          "S-GAS",
+          "S-ENGINE",
+          "S-DESCENT"
+        ],
+        "scope": "Preliminary analytical checks exercise nominal flight functions."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Representative integrated hardware testing, flight-code verification and qualification remain absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-007",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No environmental hardware-test results are supplied."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Thermal-vacuum, vibration, shock, deployment and impact acceptance records are required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "SYS-008",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No approved fault tree or hazard-control verification."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Approval and implementation evidence for propulsion/pressure/pyro/Mars-impact hazards remain required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-01",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Camera/Mars limb images are not processed; ground target uses supplied orbit truth."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-NAV"
+        ]
+      },
+      "remaining": "Calibrated orbital image sequences, estimator uncertainty and navigation error budget remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-02",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No Sun sensor/camera exposure or observation fusion model."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Different hardware Sun-sensing heritage does not validate FREYA safe camera exposure, fusion or visibility.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-03",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No MEMS gyro bias, thermal drift or propagation between observations."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-NAV"
+        ]
+      },
+      "remaining": "Test actual sensor calibration and bounded estimator drift during observation outages.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-04",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Browser calculation does not execute or benchmark flight GNC/ML on a Pi-class target."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-COMPUTE"
+        ]
+      },
+      "remaining": "Selected processor, WCET, ML errors, deterministic partitioning and independent inhibits need qualification.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-05",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-GAS"
+        ],
+        "scope": "Balanced-pair scalar torque and gas consumption are checked."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MARCO"
+        ]
+      },
+      "remaining": "Six-jet three-axis control matrix, minimum impulse bit, failed jets and closed-loop control are not modeled.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-06",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "A successful nominal target search has no navigation-confidence threshold or fault response."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Monte Carlo, sensor-health inputs and safe/inhibit logic must be implemented and tested.",
+      "freyaVerified": false
+    },
+    {
+      "id": "GNC-07",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Architecture conflicts are recorded, not resolved by a signed trade."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Approve wheel-versus-six-jet architecture, P&ID, mass/power/ICD and N2O/N2 compatibility decisions.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-01",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-ENTRY",
+          "S-THERMAL"
+        ],
+        "scope": "Nominal heating/dynamic-pressure/deceleration histories are available."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "Worst-case corridor/dispersion analysis, aero-moments and CG/CP movement are not calculated.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-02",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-THERMAL"
+        ],
+        "scope": "Generic surface and backing-node temperatures support preliminary thermal review."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH",
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "Ablative material response and internal electronics/battery/PCM/probe limits are not verified.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-03",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-ENTRY"
+        ],
+        "scope": "Nominal entry loads provide a possible future structural input."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI"
+        ]
+      },
+      "remaining": "No coupled FEA, joints, thermal stress or 70 mm transition structural margins.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-04",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Expendable module is depicted, not tested for TPS damage or debris interaction."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Drawings, separation dynamics, debris analysis and TPS continuity acceptance remain required.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-05",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Shield-forward view and zero lift are assumptions; no 6-DOF stability/control-transition simulation."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Validate passive stable attitude and pre-entry authority; no cold-gas credit after module loss.",
+      "freyaVerified": false
+    },
+    {
+      "id": "EDL-06",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Scripted cover/chute/PCM order does not enforce qualified thermal/Mach/q conditions."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Verified event gates, dispersion analysis and integrated separation/deployment tests are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "COM-01",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-LINK"
+        ],
+        "scope": "Assumed high-peak/low-duty RF link and average DC energy screens are positive."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-RELAY"
+        ]
+      },
+      "remaining": "Actual carrier transmitter, pulse buffer, antenna pointing and accepted relay path are not integrated.",
+      "freyaVerified": false
+    },
+    {
+      "id": "COM-02",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-STATUS"
+        ],
+        "scope": "9-bit A and 13-bit B cumulative payload encoding is checked."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "60 s review-time attempts are synthetic; no flight timer, reset/outage queue or actual RF transmission test.",
+      "freyaVerified": false
+    },
+    {
+      "id": "COM-03",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-LINK",
+          "S-POWER"
+        ],
+        "scope": "Duty-cycle/average-energy arithmetic is available."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "No buffer voltage/ESR, peak-current, brownout, battery thermal or independent carrier energy-store tests.",
+      "freyaVerified": false
+    },
+    {
+      "id": "COM-04",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-STATUS"
+        ],
+        "scope": "Browser event chronology and cumulative bit latching are reproducible."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Sensor confidence, command-versus-confirmation hardware inputs and nonvolatile reset recovery are absent.",
+      "freyaVerified": false
+    },
+    {
+      "id": "COM-05",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No plasma blackout, tumble/occlusion or outage/retransmission model."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-MEDLI",
+          "H-RELAY"
+        ]
+      },
+      "remaining": "Validate FREYA link availability and buffered repeat transmissions over missed passes.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-001",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Current solver is deterministic and reduced-order, not 6-DOF Monte Carlo."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Produce a validated orbit-to-surface 6-DOF atmospheric-dispersion ensemble before propulsion selection.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-002",
+      "simulation": {
+        "status": "shortfall",
+        "checks": [
+          "S-ENGINE",
+          "S-A-MARGIN"
+        ],
+        "scope": "A achieves about 64.99 m/s versus 75.34 m/s planning demand."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Resolve delivered impulse margin and demonstrate pointing error and flight motor performance.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-003",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Generic two-node TPS estimate is not coupled aerothermal/structural validation."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Include actual aluminum shell, 600 mm height, 70 mm transition and validated material/load response.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-004",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "Altitude-only timing and nominal canopy diameters do not prove qualified deployment."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-PATH"
+        ]
+      },
+      "remaining": "Meet validated Mach, q, altitude and inflation-load limits for FREYA hardware.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-005",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-DESCENT",
+          "S-IMPACT"
+        ],
+        "scope": "Nominal impact speeds and preliminary g/depth sensitivity are calculated."
+      },
+      "heritage": {
+        "status": "negative",
+        "sources": [
+          "H-DS2"
+        ]
+      },
+      "remaining": "No measured soil/ice calibration, attitude distribution, penetration acceptance or instrument survival.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-006",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No estimator covariance or orbital observation-outage simulation."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-NAV"
+        ]
+      },
+      "remaining": "Navigation uncertainty/observability must be measured and simulated for FREYA sensors and geometry.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-007",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No laboratory blanks, detection limits or false-positive data in the simulator."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-LR"
+        ]
+      },
+      "remaining": "Validate FREYA assay controls/calibration/contamination budgets; flown Viking controls are only analogous.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-008",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-POWER",
+          "S-LINK"
+        ],
+        "scope": "Assumed source-default RF margin and surface energy reserve are positive."
+      },
+      "heritage": {
+        "status": "partial",
+        "sources": [
+          "H-RELAY"
+        ]
+      },
+      "remaining": "Actual flight batteries, temperatures, burst loads and provider geometry require end-to-end test.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-009",
+      "simulation": {
+        "status": "none",
+        "checks": [],
+        "scope": "No approved FREYA planetary-protection implementation plan is provided."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "Authority approval and end-to-end handling/bioburden/recontamination implementation remain open.",
+      "freyaVerified": false
+    },
+    {
+      "id": "DER-010",
+      "simulation": {
+        "status": "partial",
+        "checks": [
+          "S-TRACE"
+        ],
+        "scope": "This register covers all 91 identifiers with evidence and gaps."
+      },
+      "heritage": {
+        "status": "none",
+        "sources": []
+      },
+      "remaining": "This is an evidence assessment, not an approved verification matrix; named owners and objective acceptance limits still need approval.",
+      "freyaVerified": false
+    }
+  ],
+  "checks": {
+    "S-DELIVERY-A": {
+      "id": "S-DELIVERY-A",
+      "title": "A nominal per-vehicle delivery",
+      "result": "pass",
+      "actual": {
+        "count": 3,
+        "probeMassKg": 2,
+        "probeImpactMps": [
+          85.49969682662655,
+          85.43713921263053,
+          85.33108019274722
+        ],
+        "carrierGroundM": 0
+      },
+      "criterion": "Expected probe count; every propagated probe and carrier reaches h=0.",
+      "limits": "Ground arrival in a point-mass model is not impact survival or successful science. B runs one vehicle; the second identical vehicle is not a coupled simulation.",
+      "implementation": "src/flight-model.mjs: integrateCarrier / integrateProbe"
+    },
+    "S-DELIVERY-B": {
+      "id": "S-DELIVERY-B",
+      "title": "B nominal per-vehicle delivery",
+      "result": "pass",
+      "actual": {
+        "count": 7,
+        "probeMassKg": 2,
+        "probeImpactMps": [
+          85.58725821581963,
+          85.56349634053538,
+          85.52285117917961,
+          85.46074079107746,
+          85.37237640095042,
+          85.2530540650167,
+          85.09920002701723
+        ],
+        "carrierGroundM": 0
+      },
+      "criterion": "Expected probe count; every propagated probe and carrier reaches h=0.",
+      "limits": "Ground arrival in a point-mass model is not impact survival or successful science. B runs one vehicle; the second identical vehicle is not a coupled simulation.",
+      "implementation": "src/flight-model.mjs: integrateCarrier / integrateProbe"
+    },
+    "S-ORBIT": {
+      "id": "S-ORBIT",
+      "title": "300 km orbit to descending 125 km interface",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "initialAltitudeM": 300000,
+          "interfaceSpeedMps": 3510.7658384429546,
+          "flightPathDeg": -2.063924784515543
+        },
+        "B": {
+          "initialAltitudeM": 300000,
+          "interfaceSpeedMps": 3515.2554955105916,
+          "flightPathDeg": -1.8419942906390463
+        }
+      },
+      "criterion": "Both cases start at 300 km and reach the descending entry interface.",
+      "limits": "Reduced-order deterministic trajectory; no navigation estimation or corridor qualification.",
+      "implementation": "src/flight-model.mjs: integrateBurn / coastToInterface"
+    },
+    "S-GAS": {
+      "id": "S-GAS",
+      "title": "Paired-jet momentum, slew and storage closure",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "separationGasKg": 0.007530212034298547,
+          "alignmentGasKg": 0.00516925279244903,
+          "heatShieldAlignmentGasKg": 0.007310427406416414,
+          "totalManeuverGasKg": 0.02000989223316399,
+          "initialGasKg": 0.22998445305097373,
+          "reserveAboveMinimumKg": 0.18697611551271237,
+          "slewSeconds": 13.729368492956535
+        },
+        "B": {
+          "separationGasKg": 0.01882553008574637,
+          "alignmentGasKg": 0.00817330631266229,
+          "heatShieldAlignmentGasKg": 0.011558800636796644,
+          "totalManeuverGasKg": 0.0385576370352053,
+          "initialGasKg": 0.22998445305097373,
+          "reserveAboveMinimumKg": 0.16842837071067107,
+          "slewSeconds": 21.708037636748028
+        }
+      },
+      "criterion": "Δv_sep=0.2 m/s; scalar 90° retroburn and 180° heat-shield rest-to-rest slew identities; all three gas withdrawals close; positive gas above minimum pressure.",
+      "limits": "Ideal N2 at 293 K; assumed inertia; no 3-axis control, hardware feed losses, regulator sizing or fault simulation.",
+      "implementation": "src/flight-model.mjs: gasBudget"
+    },
+    "S-ENGINE": {
+      "id": "S-ENGINE",
+      "title": "Nominal finite-burn A/B performance",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "idealDvMps": 64.98839513332994,
+          "requiredDvMps": 60.27261992471085,
+          "burnSeconds": 12.8
+        },
+        "B": {
+          "thrustN": 232.44383771030786,
+          "idealDvMps": 60.27261992467646,
+          "requiredDvMps": 60.27261992471085,
+          "fuelKg": 0.24271539191795455,
+          "oxidizerKg": 0.9708615676718182
+        }
+      },
+      "criterion": "A nominal Δv ≥ vacuum demand; B nominal Δv closes within 10⁻⁶ m/s.",
+      "limits": "B thrust is sized from the same assumed Isp demand relation, an algebraic closure rather than independent hardware proof. Neither case proves pointing or delivered motor curve.",
+      "implementation": "src/flight-model.mjs: rocketPropellant / integrateBurn / runFlight"
+    },
+    "S-A-MARGIN": {
+      "id": "S-A-MARGIN",
+      "title": "A reference motor versus 25% planning allowance",
+      "result": "shortfall",
+      "actual": {
+        "achievedDvMps": 64.98839513332994,
+        "planningDemandMps": 75.34077490588857,
+        "shortfallMps": 10.35237977255862
+      },
+      "criterion": "Achieved A Δv ≥ nominal vacuum demand × 1.25.",
+      "limits": "This check intentionally reports the current baseline shortfall; reaching the atmosphere is not margin compliance.",
+      "implementation": "src/flight-model.mjs: runFlight / src/revision51-model.mjs: calculate"
+    },
+    "S-TARGET": {
+      "id": "S-TARGET",
+      "title": "Nominal target screening within source planning radii",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "missKm": 9.526402261081177,
+          "planningRadiusKm": 100,
+          "orbits": 12.615277777777777
+        },
+        "B": {
+          "missKm": 8.90219830300663,
+          "planningRadiusKm": 50,
+          "orbits": 6.070833333333334
+        }
+      },
+      "criterion": "Nominal closest miss within A 100 km / B 50 km; opportunity in 3–20 orbits.",
+      "limits": "Not a 95% Monte Carlo result. Initial geometry/target assumed; no terrain exclusion.",
+      "implementation": "src/flight-model.mjs: searchGroundTarget"
+    },
+    "S-ENTRY": {
+      "id": "S-ENTRY",
+      "title": "Finite entry load trajectory",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "peakDynamicPressurePa": 382.7768118834056,
+          "entryDurationSec": 723.9555794187929,
+          "extractionAltitudeM": 10000
+        },
+        "B": {
+          "peakDynamicPressurePa": 980.8950012598971,
+          "entryDurationSec": 840.9660087389175,
+          "extractionAltitudeM": 10000
+        }
+      },
+      "criterion": "Finite nominal state history reaches assumed 10 km extraction gate.",
+      "limits": "Zero lift and heat-shield-forward attitude are imposed. No attitude stability, structural strength or safe Mach/q deployment limit is tested.",
+      "implementation": "src/flight-model.mjs: integrateEntry"
+    },
+    "S-THERMAL": {
+      "id": "S-THERMAL",
+      "title": "Finite two-location temperature history",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "peakCenterC": 752.6273540974927,
+          "peakShoulderC": 680.2921234124909
+        },
+        "B": {
+          "peakCenterC": 879.7548466741611,
+          "peakShoulderC": 800.7896613376316
+        }
+      },
+      "criterion": "Finite history; center peak exceeds shoulder peak under chosen flow multiplier.",
+      "limits": "Numerical sanity only. Assumed nonablating properties; not material qualification or acceptable shell/electronics temperatures.",
+      "implementation": "src/flight-model.mjs: temperatureStep / integrateEntry"
+    },
+    "S-DESCENT": {
+      "id": "S-DESCENT",
+      "title": "Independent carrier and probe time histories",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "carrierDurationSec": 179.7881661522018,
+          "canopyCarrierM": 1.5,
+          "canopyProbeM": 0.5,
+          "probeDurationSec": [
+            55.56760010589703,
+            54.54866081880624,
+            54.06460641178738
+          ]
+        },
+        "B": {
+          "carrierDurationSec": 146.69361363460865,
+          "canopyCarrierM": 2,
+          "canopyProbeM": 0.5,
+          "probeDurationSec": [
+            54.09169489604927,
+            52.550509606479004,
+            51.14313939618692,
+            49.88728685209433,
+            48.803791245354766,
+            47.918748412018026,
+            47.267380457799554
+          ]
+        }
+      },
+      "criterion": "Finite time-ordered probe trajectories and positive descent duration; default canopy inputs.",
+      "limits": "Linear inflation proxy and scalar drag, not real deployment opening loads or pendulum/attitude stability.",
+      "implementation": "src/flight-model.mjs: integrateCarrier / integrateProbe"
+    },
+    "S-RELEASE": {
+      "id": "S-RELEASE",
+      "title": "Altitude gate, cadence and inherited release state",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "firstAltitudeM": 5000,
+          "releaseTimesSec": [
+            50.836056685504104,
+            52.836056685504104,
+            54.836056685504104
+          ],
+          "initialMassKg": 9,
+          "finalMassKg": 3
+        },
+        "B": {
+          "firstAltitudeM": 5000,
+          "releaseTimesSec": [
+            46.60908193818134,
+            48.60908193818134,
+            50.60908193818134,
+            52.60908193818134,
+            54.60908193818134,
+            56.60908193818134,
+            58.60908193818134
+          ],
+          "initialMassKg": 22,
+          "finalMassKg": 8
+        }
+      },
+      "criterion": "Sequential release, inherited altitude and released probe mass closure.",
+      "limits": "Point bodies do not test mechanical interference, separation clearances or actuator reliability.",
+      "implementation": "src/flight-model.mjs: integrateCarrier / integrateProbe"
+    },
+    "S-ATMOSPHERE": {
+      "id": "S-ATMOSPHERE",
+      "title": "Density / wind sensitivity",
+      "result": "pass",
+      "actual": {
+        "baselineWindMps": 0,
+        "tradeWindMps": 20,
+        "baselineRho0": 0.015,
+        "tradeRho0": 0.012,
+        "baselineImpactMps": 85.49969682662655,
+        "tradeImpactMps": 98.77669119787325
+      },
+      "criterion": "A changed atmosphere/wind case reaches extraction and changes impact speed.",
+      "limits": "One combined sensitivity case, not separate attribution, site elevation modeling or a probabilistic atmosphere ensemble.",
+      "implementation": "src/flight-model.mjs: integrateEntry / lowAltitudeDerivative"
+    },
+    "S-LINK": {
+      "id": "S-LINK",
+      "title": "Assumed RF link and duty-cycle screen",
+      "result": "pass",
+      "actual": {
+        "linkMarginDb": 23.477600346881502,
+        "frequencyMHz": 400,
+        "rangeKm": 400,
+        "rfW": 10,
+        "receiverDbm": -120,
+        "transmitWhPerHour": 0.4166666666666667
+      },
+      "criterion": "Free-space link margin > 0 dB at the default assumed geometry/receiver.",
+      "limits": "Not an actual radio, pulse buffer, relay contract, contact schedule, outage/blackout or data-retention test.",
+      "implementation": "src/revision51-model.mjs: calculate"
+    },
+    "S-POWER": {
+      "id": "S-POWER",
+      "title": "Surface energy screening with 20% reserve",
+      "result": "pass",
+      "actual": {
+        "A": {
+          "usableWh": 20,
+          "loadWh": 4.800000000000001,
+          "residualWh": 15.2,
+          "requiredReserveWh": 4,
+          "operationHours": 24
+        },
+        "B": {
+          "usableWh": 20,
+          "loadWh": 14.4,
+          "residualWh": 5.6,
+          "requiredReserveWh": 4,
+          "operationHours": 72
+        }
+      },
+      "criterion": "Usable energy − average load × duration ≥ 20% of usable energy.",
+      "limits": "Assumed already-usable capacity and average load; no environmental derating, heater/peak-current waveform or selected battery.",
+      "implementation": "src/revision51-model.mjs: calculate"
+    },
+    "S-STATUS": {
+      "id": "S-STATUS",
+      "title": "Cumulative payload identities",
+      "result": "pass",
+      "actual": {
+        "A_bits": 9,
+        "B_bits": 13,
+        "carrierLandingBit": 8
+      },
+      "criterion": "All bits latch at completion, with stable bit identity in A and B.",
+      "limits": "Synthetic review markers; not actual sensors, flight 60 s timer, RF reception, nonvolatile reset recovery or science packets.",
+      "implementation": "src/revision51-model.mjs: statusBits / presentationEvents"
+    },
+    "S-IMPACT": {
+      "id": "S-IMPACT",
+      "title": "Impact-screen analytical identity",
+      "result": "pass",
+      "actual": {
+        "testVelocityMps": 85,
+        "massKg": 2,
+        "constantResistanceDepthM": 18.3983114214231,
+        "softSandScreenAt85Mps": 2.5329838419868262
+      },
+      "criterion": "Zero inertial-coefficient limit reproduces constant-force work/energy penetration.",
+      "limits": "Uncalibrated material assumptions, no fracture/crush/instrument shock. Mathematical identity is not soil penetration or survival validation.",
+      "implementation": "src/mission-telemetry.mjs: impactEstimate"
+    },
+    "S-TRACE": {
+      "id": "S-TRACE",
+      "title": "Complete source identifier preservation",
+      "result": "pass",
+      "actual": {
+        "sourceRequirementCount": 91,
+        "evidenceAssessmentCount": 91
+      },
+      "criterion": "91 distinct source IDs and matching evidence records.",
+      "limits": "Does not establish approved acceptance criteria, named owners or full objective/design/anomaly traceability.",
+      "implementation": "data/revision51/requirements.json"
+    }
+  },
+  "provenance": {
+    "sourceCommit": null,
+    "modelSha256": {
+      "src/flight-model.mjs": "e42309125d9803f600324904aaa41e11d2b430f0bc3cc750d5fd0c83f06ceed1",
+      "src/revision51-model.mjs": "9f9de60e396b65ce5f50b325c8a069182589d4d0f3dcf47cf0f3858e48d8c01b",
+      "src/mission-telemetry.mjs": "32c211d8066ed712883384227ef38b5f4dee06a78ad22d9262aa80edd2832186",
+      "data/revision51/requirements.json": "6f7955d9c37db215ea63ba63e6f040c60e6e03b13074c93d87b272bf9fe94b47"
+    },
+    "generator": "scripts/build-requirement-evidence.mjs",
+    "reproduce": "node scripts/build-requirement-evidence.mjs",
+    "testLog": "data/revision51/evidence/test-results.txt",
+    "note": "Checks use fresh baseline runs. Review is a fixed baseline assessment; changing website sliders does not alter these evidence marks."
+  },
+  "counts": {
+    "total": 91,
+    "simulationSupport": 34,
+    "simulationShortfall": 2,
+    "flightHeritage": 43,
+    "negativeHeritage": 4,
+    "fullyVerified": 0
+  }
+}

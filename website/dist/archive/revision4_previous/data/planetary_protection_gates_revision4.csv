@@ -1,0 +1,6 @@
+id,name,criterion,state
+PP-1,Mission classification,Agency/authority concurrence: IVa or IVb/IVc depending life investigation and Special Region access,OPEN
+PP-2,Validated full-assembly irradiation,"Bioburden-reduction qualification based on target organisms and approved endpoint, not assumed 100% kill",OPEN
+PP-3,Worst-case internal dose mapping,"Minimum biological dose and maximum component dose measured throughout structural nose, potting and battery pack",OPEN
+PP-4,Post-irradiation acceptance,"Science calibration, memory, controller, cells, heater, canopy and potting survive irradiation + Mars cold + impact",OPEN
+PP-5,Cleanliness and contamination barriers,"Bioburden assays, barrier integrity, storage/transport and integration recontamination prevention",OPEN

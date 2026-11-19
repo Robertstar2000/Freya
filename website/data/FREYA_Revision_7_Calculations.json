@@ -1,0 +1,1837 @@
+{
+  "candidates": [
+    {
+      "diameterMm": 35,
+      "wallMm": 1.5,
+      "innerMm": 32,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 1186.0103932328739,
+      "lengthMm": 1228.5103932328739,
+      "slenderness": 35.10029694951068,
+      "steel": 1.648286179147255,
+      "pot": 0.2623076923076923,
+      "nominal": 4.430593871454947,
+      "margin": 1.1076484678637368,
+      "total": 5.538242339318684,
+      "forebody": 3.5605938714549477,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0009621127501618743,
+      "sectional": 3700.807281533149,
+      "surface": 0.13329499209663948,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.469752103365386,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.020771150338015146,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.03776292544385357,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 30996.26233243613,
+      "averageMargin": 0.8705363052195078,
+      "threeMargin": 0.2901787684065026,
+      "sideLoss": 4.334571863518409,
+      "hybridStructure": 0.5167183416282932,
+      "saved": 1.1315678375189617,
+      "hybridFore": 2.429026033935986,
+      "hybridBudget": 4.123782542419982,
+      "depthRatio": 0.7651327838221452,
+      "steelQ": 4.334470320328612,
+      "hybridQ": 4.328930742327216,
+      "collarIntrusionL": 0.0028745572780346554
+    },
+    {
+      "diameterMm": 50,
+      "wallMm": 1.5,
+      "innerMm": 47,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 549.7848088141525,
+      "lengthMm": 599.7848088141525,
+      "slenderness": 11.99569617628305,
+      "steel": 1.2269708632932685,
+      "pot": 0.2623076923076923,
+      "nominal": 4.009278555600962,
+      "margin": 1.0023196389002405,
+      "total": 5.011598194501202,
+      "forebody": 3.1392785556009617,
+      "aftbody": 0.8700000000000001,
+      "area": 0.001963495408493621,
+      "sectional": 1598.8214395720909,
+      "surface": 0.09225048204677139,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          0.9863822822718266,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.043521386238067374,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.07706719478337462,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 411940.62312021054,
+      "averageMargin": 13.12214306007488,
+      "threeMargin": 4.374047686691627,
+      "sideLoss": 2.2485586357386014,
+      "hybridStructure": 0.5014448046361867,
+      "saved": 0.7255260586570819,
+      "hybridFore": 2.41375249694388,
+      "hybridBudget": 4.10469062117985,
+      "depthRatio": 0.8319630106917718,
+      "steelQ": 2.24851793371524,
+      "hybridQ": 2.2462968221434982,
+      "collarIntrusionL": 0.004288273972150061
+    },
+    {
+      "diameterMm": 50,
+      "wallMm": 2,
+      "innerMm": 46,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 573.9483188423737,
+      "lengthMm": 623.9483188423737,
+      "slenderness": 12.478966376847476,
+      "steel": 1.6127452472271866,
+      "pot": 0.2623076923076923,
+      "nominal": 4.39505293953488,
+      "margin": 1.09876323488372,
+      "total": 5.493816174418599,
+      "forebody": 3.5250529395348797,
+      "aftbody": 0.8700000000000001,
+      "area": 0.001963495408493621,
+      "sectional": 1795.2947199602947,
+      "surface": 0.09604607732625155,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.3588250690708181,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.05685298337299409,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.07706719478337462,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 490729.1191700954,
+      "averageMargin": 13.921184379002423,
+      "threeMargin": 4.640394793000808,
+      "sideLoss": 2.3473847005418573,
+      "hybridStructure": 0.6086401724226388,
+      "saved": 1.004105074804548,
+      "hybridFore": 2.520947864730332,
+      "hybridBudget": 4.238684830912915,
+      "depthRatio": 0.7908220216223061,
+      "steelQ": 2.3473274413064096,
+      "hybridQ": 2.3442038938535505,
+      "collarIntrusionL": 0.00552920307031803
+    },
+    {
+      "diameterMm": 60,
+      "wallMm": 2,
+      "innerMm": 55.99999999999999,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 387.26869983114256,
+      "lengthMm": 442.2686998311426,
+      "slenderness": 7.37114499718571,
+      "steel": 1.421843777775845,
+      "pot": 0.2623076923076923,
+      "nominal": 4.204151470083538,
+      "margin": 1.0510378675208845,
+      "total": 5.255189337604422,
+      "forebody": 3.334151470083538,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0028274333882308137,
+      "sectional": 1179.2148610686772,
+      "surface": 0.08148073030597973,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.1078728414442711,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.08299417584351473,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.11097676048805942,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 1782838.2657617633,
+      "averageMargin": 53.47202374453293,
+      "threeMargin": 17.824007914844312,
+      "sideLoss": 1.6865287143883367,
+      "hybridStructure": 0.6359245160136068,
+      "saved": 0.7859192617622383,
+      "hybridFore": 2.5482322083213,
+      "hybridBudget": 4.272790260401624,
+      "depthRatio": 0.8284714987944242,
+      "steelQ": 1.6864924683884015,
+      "hybridQ": 1.6845148948100388,
+      "collarIntrusionL": 0.006785840131753948
+    },
+    {
+      "diameterMm": 70,
+      "wallMm": 2.5,
+      "innerMm": 65,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 287.44961956697347,
+      "lengthMm": 347.4496195669735,
+      "slenderness": 4.963565993813907,
+      "steel": 1.6078294212954778,
+      "pot": 0.2623076923076923,
+      "nominal": 4.390137113603171,
+      "margin": 1.0975342784007927,
+      "total": 5.487671392003963,
+      "forebody": 3.520137113603171,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0038484510006474974,
+      "sectional": 914.6893420264184,
+      "surface": 0.07475882591955743,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.1962585343650436,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.14051918515501988,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.15105170177541427,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 5883508.881004125,
+      "averageMargin": 167.1386281593399,
+      "threeMargin": 55.712876053113305,
+      "sideLoss": 1.3243885299710871,
+      "hybridStructure": 0.7958937123497156,
+      "saved": 0.8119357089457622,
+      "hybridFore": 2.7082014046574088,
+      "hybridBudget": 4.47275175582176,
+      "depthRatio": 0.8323097175659853,
+      "steelQ": 1.3243561844968812,
+      "hybridQ": 1.3225917101122557,
+      "collarIntrusionL": 0.009817477042468098
+    },
+    {
+      "diameterMm": 80,
+      "wallMm": 3,
+      "innerMm": 74,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 221.78134453441618,
+      "lengthMm": 286.7813445344162,
+      "slenderness": 3.584766806680202,
+      "steel": 1.800175590910436,
+      "pot": 0.2623076923076923,
+      "nominal": 4.582483283218128,
+      "margin": 1.145620820804532,
+      "total": 5.72810410402266,
+      "forebody": 3.7124832832181287,
+      "aftbody": 0.8699999999999992,
+      "area": 0.00502654824574367,
+      "sectional": 738.5750820877424,
+      "surface": 0.0708193761526381,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.2634455245266072,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.21943804773838985,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.19729201864543902,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5,
+      "critical": 15903337.564613152,
+      "averageMargin": 428.3746579143517,
+      "threeMargin": 142.79155263811722,
+      "sideLoss": 1.0758526703272633,
+      "hybridStructure": 0.9870904269960634,
+      "saved": 0.8130851639143726,
+      "hybridFore": 2.899398119303756,
+      "hybridBudget": 4.711747649129694,
+      "depthRatio": 0.8411052471223995,
+      "steelQ": 1.07582356721881,
+      "hybridQ": 1.074236198534543,
+      "collarIntrusionL": 0.013383184704292497
+    }
+  ],
+  "entry": [
+    {
+      "dv": 50,
+      "velocity": 3502.0266587074607,
+      "angle": -1.617246239424737,
+      "propellant": 1.0082494217731928
+    },
+    {
+      "dv": 61.55673249575966,
+      "velocity": 3490.872597559051,
+      "angle": -2.0382652696643357,
+      "propellant": 1.2380580226297453
+    },
+    {
+      "dv": 100,
+      "velocity": 3453.787862888909,
+      "angle": -3.063122867348459,
+      "propellant": 1.9939084680684747
+    },
+    {
+      "dv": 150,
+      "velocity": 3405.5998715908677,
+      "angle": -4.0548587764004065,
+      "propellant": 2.957483288508362
+    },
+    {
+      "dv": 300,
+      "velocity": 3261.3632327606083,
+      "angle": -6.288425566368914,
+      "propellant": 5.720595301421031
+    },
+    {
+      "dv": 500,
+      "velocity": 3069.9071109997312,
+      "angle": -8.694798190892477,
+      "propellant": 9.124346609614983
+    },
+    {
+      "dv": 889,
+      "velocity": 2701.0735947240823,
+      "angle": -13.005113103878706,
+      "propellant": 14.92298424634661
+    }
+  ],
+  "sampling": [
+    {
+      "tilt": 0,
+      "depth": 0.45,
+      "requiredAxial": 0.8
+    },
+    {
+      "tilt": 15,
+      "depth": 0.43296291314453417,
+      "requiredAxial": 0.8194018992255457
+    },
+    {
+      "tilt": 30,
+      "depth": 0.38301270189221936,
+      "requiredAxial": 0.8850852961085883
+    },
+    {
+      "tilt": 45,
+      "depth": 0.3035533905932738,
+      "requiredAxial": 1.0278174593052023
+    }
+  ],
+  "closure": [
+    {
+      "count": 1,
+      "required": 8.141945685465823,
+      "closes": true,
+      "maxFraction": 0.8780517468443564
+    },
+    {
+      "count": 2,
+      "required": 16.283891370931645,
+      "closes": true,
+      "maxFraction": 0.7561034936887128
+    },
+    {
+      "count": 3,
+      "required": 24.425837056397462,
+      "closes": true,
+      "maxFraction": 0.6341552405330692
+    },
+    {
+      "count": 4,
+      "required": 32.56778274186329,
+      "closes": true,
+      "maxFraction": 0.5122069873774255
+    },
+    {
+      "count": 5,
+      "required": 40.70972842732911,
+      "closes": true,
+      "maxFraction": 0.3902587342217818
+    },
+    {
+      "count": 6,
+      "required": 48.851674112794925,
+      "closes": false,
+      "maxFraction": 0.2683104810661383
+    }
+  ],
+  "link": {
+    "loss": 144.52365730462265,
+    "ebn0": 9.98209240740701,
+    "margin": 3.982092407407009
+  },
+  "checks": [
+    {
+      "name": "35/1.5 diameterMm",
+      "value": 35,
+      "reference": 35,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 wallMm",
+      "value": 1.5,
+      "reference": 1.5,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 innerMm",
+      "value": 32.0,
+      "reference": 32,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 barrelMm",
+      "value": 1186.0103932328739,
+      "reference": 1186.0103932328739,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 lengthMm",
+      "value": 1228.5103932328739,
+      "reference": 1228.5103932328739,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 steel",
+      "value": 1.648286179147255,
+      "reference": 1.648286179147255,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 nominal",
+      "value": 4.430593871454947,
+      "reference": 4.430593871454947,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 margin",
+      "value": 1.1076484678637368,
+      "reference": 1.1076484678637368,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 total",
+      "value": 5.538242339318684,
+      "reference": 5.538242339318684,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 forebody",
+      "value": 3.560593871454947,
+      "reference": 3.5605938714549477,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 aftbody",
+      "value": 0.87,
+      "reference": 0.8699999999999997,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "35/1.5 sectional",
+      "value": 3700.8072815331484,
+      "reference": 3700.807281533149,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 30996.26233243613,
+      "reference": 30996.26233243613,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 4.334571863518409,
+      "reference": 4.334571863518409,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 diameterMm",
+      "value": 50,
+      "reference": 50,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 wallMm",
+      "value": 1.5,
+      "reference": 1.5,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 innerMm",
+      "value": 47.0,
+      "reference": 47,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 barrelMm",
+      "value": 549.7848088141525,
+      "reference": 549.7848088141525,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 lengthMm",
+      "value": 599.7848088141525,
+      "reference": 599.7848088141525,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 steel",
+      "value": 1.2269708632932685,
+      "reference": 1.2269708632932685,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 nominal",
+      "value": 4.009278555600961,
+      "reference": 4.009278555600962,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 margin",
+      "value": 1.0023196389002402,
+      "reference": 1.0023196389002405,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 total",
+      "value": 5.011598194501201,
+      "reference": 5.011598194501202,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 forebody",
+      "value": 3.139278555600961,
+      "reference": 3.1392785556009617,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 aftbody",
+      "value": 0.87,
+      "reference": 0.8700000000000001,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/1.5 sectional",
+      "value": 1598.8214395720904,
+      "reference": 1598.8214395720909,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 411940.62312021054,
+      "reference": 411940.62312021054,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 2.2485586357386014,
+      "reference": 2.2485586357386014,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 diameterMm",
+      "value": 50,
+      "reference": 50,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 wallMm",
+      "value": 2,
+      "reference": 2,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 innerMm",
+      "value": 46.0,
+      "reference": 46,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 barrelMm",
+      "value": 573.9483188423737,
+      "reference": 573.9483188423737,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 lengthMm",
+      "value": 623.9483188423737,
+      "reference": 623.9483188423737,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 steel",
+      "value": 1.6127452472271866,
+      "reference": 1.6127452472271866,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 nominal",
+      "value": 4.395052939534879,
+      "reference": 4.39505293953488,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 margin",
+      "value": 1.0987632348837197,
+      "reference": 1.09876323488372,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 total",
+      "value": 5.4938161744185985,
+      "reference": 5.493816174418599,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 forebody",
+      "value": 3.525052939534879,
+      "reference": 3.5250529395348797,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 aftbody",
+      "value": 0.87,
+      "reference": 0.8700000000000001,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "50/2 sectional",
+      "value": 1795.2947199602943,
+      "reference": 1795.2947199602947,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 490729.1191700954,
+      "reference": 490729.1191700954,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 2.3473847005418573,
+      "reference": 2.3473847005418573,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 diameterMm",
+      "value": 60,
+      "reference": 60,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 wallMm",
+      "value": 2,
+      "reference": 2,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 innerMm",
+      "value": 55.99999999999999,
+      "reference": 55.99999999999999,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 barrelMm",
+      "value": 387.26869983114256,
+      "reference": 387.26869983114256,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 lengthMm",
+      "value": 442.2686998311426,
+      "reference": 442.2686998311426,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 steel",
+      "value": 1.421843777775845,
+      "reference": 1.421843777775845,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 nominal",
+      "value": 4.204151470083538,
+      "reference": 4.204151470083538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 margin",
+      "value": 1.0510378675208845,
+      "reference": 1.0510378675208845,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 total",
+      "value": 5.255189337604422,
+      "reference": 5.255189337604422,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 forebody",
+      "value": 3.3341514700835373,
+      "reference": 3.334151470083538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 aftbody",
+      "value": 0.87,
+      "reference": 0.8699999999999997,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "60/2 sectional",
+      "value": 1179.2148610686768,
+      "reference": 1179.2148610686772,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 1782838.2657617633,
+      "reference": 1782838.2657617633,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 1.686528714388337,
+      "reference": 1.6865287143883367,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 diameterMm",
+      "value": 70,
+      "reference": 70,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 wallMm",
+      "value": 2.5,
+      "reference": 2.5,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 innerMm",
+      "value": 65.0,
+      "reference": 65,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 barrelMm",
+      "value": 287.44961956697347,
+      "reference": 287.44961956697347,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 lengthMm",
+      "value": 347.4496195669735,
+      "reference": 347.4496195669735,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 steel",
+      "value": 1.6078294212954778,
+      "reference": 1.6078294212954778,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 nominal",
+      "value": 4.390137113603171,
+      "reference": 4.390137113603171,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 margin",
+      "value": 1.0975342784007927,
+      "reference": 1.0975342784007927,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 total",
+      "value": 5.487671392003963,
+      "reference": 5.487671392003963,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 forebody",
+      "value": 3.52013711360317,
+      "reference": 3.520137113603171,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 aftbody",
+      "value": 0.87,
+      "reference": 0.8699999999999997,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70/2.5 sectional",
+      "value": 914.6893420264182,
+      "reference": 914.6893420264184,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 5883508.881004125,
+      "reference": 5883508.881004125,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 1.324388529971087,
+      "reference": 1.3243885299710871,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 diameterMm",
+      "value": 80,
+      "reference": 80,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 wallMm",
+      "value": 3,
+      "reference": 3,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 innerMm",
+      "value": 74.0,
+      "reference": 74,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 cavityL",
+      "value": 0.9538461538461538,
+      "reference": 0.9538461538461538,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 barrelMm",
+      "value": 221.78134453441618,
+      "reference": 221.78134453441618,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 lengthMm",
+      "value": 286.7813445344162,
+      "reference": 286.7813445344162,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 steel",
+      "value": 1.800175590910436,
+      "reference": 1.800175590910436,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 pot",
+      "value": 0.2623076923076923,
+      "reference": 0.2623076923076923,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 nominal",
+      "value": 4.582483283218128,
+      "reference": 4.582483283218128,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 margin",
+      "value": 1.145620820804532,
+      "reference": 1.145620820804532,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 total",
+      "value": 5.72810410402266,
+      "reference": 5.72810410402266,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 forebody",
+      "value": 3.7124832832181283,
+      "reference": 3.7124832832181287,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 aftbody",
+      "value": 0.87,
+      "reference": 0.8699999999999992,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "80/3 sectional",
+      "value": 738.5750820877423,
+      "reference": 738.5750820877424,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "Euler",
+      "value": 15903337.564613152,
+      "reference": 15903337.564613152,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "soil side heat",
+      "value": 1.0758526703272633,
+      "reference": 1.0758526703272633,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3502.0266587074607,
+      "reference": 3502.0266587074607,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -1.6172462394247624,
+      "reference": -1.617246239424737,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 1.008249421773194,
+      "reference": 1.0082494217731928,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3490.872597559051,
+      "reference": 3490.872597559051,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -2.0382652696641994,
+      "reference": -2.0382652696643357,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 1.2380580226297477,
+      "reference": 1.2380580226297453,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3453.787862888909,
+      "reference": 3453.787862888909,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -3.0631228673482678,
+      "reference": -3.063122867348459,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 1.9939084680684744,
+      "reference": 1.9939084680684747,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3405.5998715908677,
+      "reference": 3405.5998715908677,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -4.054858776400454,
+      "reference": -4.0548587764004065,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 2.95748328850836,
+      "reference": 2.957483288508362,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3261.3632327606083,
+      "reference": 3261.3632327606083,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -6.288425566368845,
+      "reference": -6.288425566368914,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 5.720595301421031,
+      "reference": 5.720595301421031,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 3069.9071109997312,
+      "reference": 3069.9071109997312,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -8.694798190892435,
+      "reference": -8.694798190892477,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 9.124346609614985,
+      "reference": 9.124346609614983,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry speed",
+      "value": 2701.0735947240823,
+      "reference": 2701.0735947240823,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "entry angle",
+      "value": -13.005113103878687,
+      "reference": -13.005113103878706,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "stack propellant",
+      "value": 14.92298424634661,
+      "reference": 14.92298424634661,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "inlet depth",
+      "value": 0.45,
+      "reference": 0.45,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "required stroke",
+      "value": 0.8,
+      "reference": 0.8,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "inlet depth",
+      "value": 0.43296291314453417,
+      "reference": 0.43296291314453417,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "required stroke",
+      "value": 0.8194018992255457,
+      "reference": 0.8194018992255457,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "inlet depth",
+      "value": 0.38301270189221936,
+      "reference": 0.38301270189221936,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "required stroke",
+      "value": 0.8850852961085883,
+      "reference": 0.8850852961085883,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "inlet depth",
+      "value": 0.3035533905932738,
+      "reference": 0.3035533905932738,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "required stroke",
+      "value": 1.0278174593052023,
+      "reference": 1.0278174593052023,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 8.14194568546582,
+      "reference": 8.141945685465823,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 16.28389137093164,
+      "reference": 16.283891370931645,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 24.42583705639746,
+      "reference": 24.425837056397462,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 32.56778274186328,
+      "reference": 32.56778274186329,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 40.709728427329104,
+      "reference": 40.70972842732911,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "carrier",
+      "value": 48.85167411279492,
+      "reference": 48.851674112794925,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70 mm hybrid structure",
+      "value": 0.7958937123497156,
+      "reference": 0.7958937123497156,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "70 mm hybrid depth ratio",
+      "value": 0.8323097175659853,
+      "reference": 0.8323097175659853,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    },
+    {
+      "name": "return link",
+      "value": 3.982092407407009,
+      "reference": 3.982092407407009,
+      "tolerance": 1e-09,
+      "status": "PASS"
+    }
+  ],
+  "checkCount": 134,
+  "legacyChecks": 106,
+  "status": "Concept screens only; no approved flight baseline",
+  "revision": 7
+}

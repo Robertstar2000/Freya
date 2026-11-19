@@ -1,0 +1,5 @@
+element,mass_kg,basis
+Scientific payload,1,"Complete science instruments, sensors, and internal instrument support"
+Retained parachute + integrated antenna,0.5,"Canopy, risers, RF antenna and impact-compatible tether / feed"
+"Batteries, heaters + microcontroller",0.5,"Battery cells, battery protection, heaters, controller, memory, power/thermal interfaces"
+Penetrating structure + protective potting,2,"Nose, shell, shock cage, seal and protective potting/encapsulation"

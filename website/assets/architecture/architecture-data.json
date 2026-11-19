@@ -1,0 +1,1141 @@
+[
+  {
+    "id": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "tag": "SCIENCE NODE",
+    "subtitle": "Independent probe with a drogue chute, antenna structure and local science capability.",
+    "lanes": [
+      "SAMPLE / ENVIRONMENT",
+      "SCIENCE / ELECTRONICS",
+      "POWER / COMMUNICATIONS"
+    ],
+    "nodes": [
+      {
+        "title": "Sample acquisition",
+        "lines": [
+          "Nose/intake and sample path",
+          "Mass + depth provenance required",
+          "Access is not nose penetration"
+        ]
+      },
+      {
+        "title": "Chambers + fluid paths",
+        "lines": [
+          "Separate test and control paths",
+          "Gas / liquid / solid containment",
+          "Valves, seals and filters: trade"
+        ]
+      },
+      {
+        "title": "Battery + power bus",
+        "lines": [
+          "Usable capacity is an assumption",
+          "Regulated rails + peak buffering",
+          "Heater / assay energy unresolved"
+        ]
+      },
+      {
+        "title": "Environment sensors",
+        "lines": [
+          "Sample + detector temperature",
+          "Chamber pressure / state history",
+          "Hydration condition: validate"
+        ]
+      },
+      {
+        "title": "Detector + analog front end",
+        "lines": [
+          "Scintillator + SiPM candidate",
+          "Bias compensation + pulse readout",
+          "Blank / isotope calibration"
+        ]
+      },
+      {
+        "title": "Probe controller + memory",
+        "lines": [
+          "Acquisition timing + watchdog",
+          "Raw counts / spectra + metadata",
+          "Reset-safe records required"
+        ]
+      },
+      {
+        "title": "Drogue chute + structure",
+        "lines": [
+          "Probe canopy + attachment hardware",
+          "Opening loads and clearance: verify",
+          "Impact-resistant instrument shell"
+        ]
+      },
+      {
+        "title": "Thermal enclosure",
+        "lines": [
+          "Sample and detector are distinct",
+          "Insulation + heater trade",
+          "Thermal response not yet solved"
+        ]
+      },
+      {
+        "title": "Antenna structure + UHF",
+        "lines": [
+          "Self-contained antenna support",
+          "RF feed / geometry: design trade",
+          "Independent buffered science downlink"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "sample"
+      ],
+      [
+        3,
+        4,
+        "signal"
+      ],
+      [
+        4,
+        5,
+        "signal"
+      ],
+      [
+        2,
+        5,
+        "power"
+      ],
+      [
+        5,
+        8,
+        "signal"
+      ],
+      [
+        2,
+        7,
+        "power"
+      ],
+      [
+        7,
+        4,
+        "power"
+      ],
+      [
+        6,
+        0,
+        "sample"
+      ]
+    ],
+    "contract": [
+      "Sample → chamber → recovered fraction",
+      "Sensor / AFE → controller → records",
+      "Power stays local after release"
+    ],
+    "sequence": [
+      "Release → impact → health assessment",
+      "Acquire controls + sample → assay",
+      "Preserve raw data → attempt relay"
+    ],
+    "limits": [
+      "Benner outline B(g)–(m); BIO-P01–10",
+      "Rev09 PRB / SYS / COM; no flight BOM",
+      "Assay sensitivity / survival unverified"
+    ]
+  },
+  {
+    "id": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "tag": "SCIENCE NODE",
+    "subtitle": "A proposed auditable acquisition pipeline; no onboard life/no-life verdict.",
+    "lanes": [
+      "MISSION / INPUTS",
+      "ASSAY / PROCESSING",
+      "DATA / ASSURANCE"
+    ],
+    "nodes": [
+      {
+        "title": "Boot + identity",
+        "lines": [
+          "Probe ID, firmware and calibration",
+          "Validate configuration / memory",
+          "Time origin and reset cause"
+        ]
+      },
+      {
+        "title": "Health + experiment gates",
+        "lines": [
+          "Check energy and sensor validity",
+          "Confirm containment readiness",
+          "Inhibit invalid experiment states"
+        ]
+      },
+      {
+        "title": "Schedule + power manager",
+        "lines": [
+          "Budget incubation / heater load",
+          "Reserve energy for data return",
+          "Pause or stop on resource limits"
+        ]
+      },
+      {
+        "title": "Sample / control registry",
+        "lines": [
+          "Track mass, source and channel ID",
+          "Keep blanks and tests separate",
+          "Record acquisition history"
+        ]
+      },
+      {
+        "title": "Assay state machine",
+        "lines": [
+          "Prepare → baseline → incubation",
+          "Separate extraction alternatives",
+          "Log every transition / failure"
+        ]
+      },
+      {
+        "title": "Signal acquisition service",
+        "lines": [
+          "Pulse / count / spectrum records",
+          "Bias + temperature + live time",
+          "Dead time / quality flags"
+        ]
+      },
+      {
+        "title": "Calibration + reduction",
+        "lines": [
+          "Blank / efficiency / recovery",
+          "Isotope-response matrix: required",
+          "Uncertain outputs remain qualified"
+        ]
+      },
+      {
+        "title": "Persistent science journal",
+        "lines": [
+          "Raw data + versioned corrections",
+          "Checksums + reset-safe storage",
+          "No invented counts or yields"
+        ]
+      },
+      {
+        "title": "Packet + relay service",
+        "lines": [
+          "Sequence numbers + probe identity",
+          "Queue / retry / prioritize records",
+          "Do not infer reception from Tx"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "signal"
+      ],
+      [
+        1,
+        2,
+        "command"
+      ],
+      [
+        3,
+        4,
+        "signal"
+      ],
+      [
+        4,
+        5,
+        "command"
+      ],
+      [
+        5,
+        6,
+        "signal"
+      ],
+      [
+        6,
+        7,
+        "signal"
+      ],
+      [
+        7,
+        8,
+        "signal"
+      ],
+      [
+        2,
+        4,
+        "command"
+      ]
+    ],
+    "contract": [
+      "Raw measurements precede correction",
+      "Calibration version follows each result",
+      "Commands and measured states differ"
+    ],
+    "sequence": [
+      "Boot → qualify → execute selected assay",
+      "Acquire → reduce → retain raw record",
+      "Retry return; report censored outcomes"
+    ],
+    "limits": [
+      "BIO-01 / 04 / 05 / 07 / 11",
+      "State logic proposed, not flight code",
+      "LOD / inference thresholds unspecified"
+    ]
+  },
+  {
+    "id": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "tag": "EXPENDABLE CONTROL MODULE",
+    "subtitle": "Separation and two attitude turns before the expendable module is discarded.",
+    "lanes": [
+      "NAVIGATION / SUPPLY",
+      "CONTROL / PROPULSION",
+      "INTERFACES / INHIBITS"
+    ],
+    "nodes": [
+      {
+        "title": "Optical + inertial sensing",
+        "lines": [
+          "Camera / MEMS estimation concept",
+          "Time-tagged attitude observations",
+          "Orbit knowledge source: confirm"
+        ]
+      },
+      {
+        "title": "GNC compute split",
+        "lines": [
+          "SBC estimation / planning",
+          "Independent MCU control authority",
+          "Watchdog + command arbitration"
+        ]
+      },
+      {
+        "title": "Main deorbit propulsion",
+        "lines": [
+          "A fixed motor; B sized alternative",
+          "Ignition path and monitor sensors",
+          "Solid / hybrid choice unresolved"
+        ]
+      },
+      {
+        "title": "Nitrogen tank + feed",
+        "lines": [
+          "Initial trade: 0.100 kg N₂",
+          "Pressure / temperature assumptions",
+          "Regulator + plumbing: qualify"
+        ]
+      },
+      {
+        "title": "Six cold-gas jets",
+        "lines": [
+          "Paired translation and torque",
+          "Allocation + valve drivers required",
+          "Scalar budget is not 6-DOF"
+        ]
+      },
+      {
+        "title": "Ignition + jettison barriers",
+        "lines": [
+          "Independent hardware inhibits",
+          "Readiness / confirmation paths",
+          "Post-turn module separation"
+        ]
+      },
+      {
+        "title": "Module power + harness",
+        "lines": [
+          "Power boundary to capsule: define",
+          "Energy / peak-current allocation",
+          "Safe connectors and grounding"
+        ]
+      },
+      {
+        "title": "Mechanical attachment",
+        "lines": [
+          "Main-thrust and jet load paths",
+          "Capsule/module separation plane",
+          "Clearance / recontact: verify"
+        ]
+      },
+      {
+        "title": "Capsule handover interface",
+        "lines": [
+          "Event history + state estimate",
+          "Entry-attitude confirmation",
+          "No cold jets after jettison"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "signal"
+      ],
+      [
+        1,
+        2,
+        "command"
+      ],
+      [
+        3,
+        4,
+        "power"
+      ],
+      [
+        1,
+        4,
+        "command"
+      ],
+      [
+        1,
+        5,
+        "command"
+      ],
+      [
+        5,
+        8,
+        "signal"
+      ],
+      [
+        6,
+        1,
+        "power"
+      ],
+      [
+        7,
+        8,
+        "command"
+      ]
+    ],
+    "contract": [
+      "N₂ → feed → independently driven jets",
+      "SBC estimate → MCU → gated actuation",
+      "Confirmation → capsule handover"
+    ],
+    "sequence": [
+      "01 Stage separation translation",
+      "02 Retroburn alignment → burn",
+      "03 Entry alignment → jettison"
+    ],
+    "limits": [
+      "Rev09 GNC / EDL; integration INT-01–03",
+      "90° / 180° turns are editable assumptions",
+      "Tank, actuator and thrust curves unqualified"
+    ]
+  },
+  {
+    "id": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "tag": "EXPENDABLE CONTROL MODULE",
+    "subtitle": "Explicit sequencing for all three cold-gas maneuvers and a gated retroburn.",
+    "lanes": [
+      "ESTIMATE / PLAN",
+      "CONTROL / SEQUENCE",
+      "MONITOR / TRANSFER"
+    ],
+    "nodes": [
+      {
+        "title": "Boot + host separation gate",
+        "lines": [
+          "Validate state and power readiness",
+          "Confirm approved separation event",
+          "Latch host-release history"
+        ]
+      },
+      {
+        "title": "Maneuver 1: separation",
+        "lines": [
+          "Paired jets translate clear of host",
+          "Budget Δv + pulse allowance",
+          "Confirm clearance before slew"
+        ]
+      },
+      {
+        "title": "Navigation + target planner",
+        "lines": [
+          "Ingest orbit / attitude estimates",
+          "Select permitted burn opportunity",
+          "Reject unqualified corridor"
+        ]
+      },
+      {
+        "title": "Maneuver 2: burn alignment",
+        "lines": [
+          "Rest-to-rest turn; default 90°",
+          "Closed-loop controller required",
+          "Pointing / health gate to ignition"
+        ]
+      },
+      {
+        "title": "Retroburn state machine",
+        "lines": [
+          "Arm only through approved gates",
+          "Ignition → monitor → cutoff",
+          "A fixed-impulse / B sized model"
+        ]
+      },
+      {
+        "title": "Maneuver 3: entry alignment",
+        "lines": [
+          "Separate turn; default 180°",
+          "Retain gas and module until done",
+          "Confirm entry attitude"
+        ]
+      },
+      {
+        "title": "Fault / inhibit supervisor",
+        "lines": [
+          "Watchdog and sensor consistency",
+          "Abort / safe-state authority",
+          "No software-only ignition credit"
+        ]
+      },
+      {
+        "title": "Mass + gas accounting",
+        "lines": [
+          "Book 3 withdrawals separately",
+          "Retain entry-turn gas during burn",
+          "Pressure reserve / deficit flags"
+        ]
+      },
+      {
+        "title": "Handover + jettison",
+        "lines": [
+          "Commit state / confirmation history",
+          "Jettison after final turn + delay",
+          "Disable absent actuators"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "command"
+      ],
+      [
+        1,
+        2,
+        "signal"
+      ],
+      [
+        2,
+        3,
+        "command"
+      ],
+      [
+        3,
+        4,
+        "command"
+      ],
+      [
+        4,
+        5,
+        "command"
+      ],
+      [
+        5,
+        8,
+        "command"
+      ],
+      [
+        6,
+        4,
+        "command"
+      ],
+      [
+        7,
+        5,
+        "signal"
+      ]
+    ],
+    "contract": [
+      "Measured confirmation ≠ command sent",
+      "Gas accounting follows physical phase",
+      "Authority ends at module jettison"
+    ],
+    "sequence": [
+      "Translate → estimate / wait → align",
+      "Burn → reorient heat shield",
+      "Handover → jettison → passive entry"
+    ],
+    "limits": [
+      "flight-model.mjs / gasUsage reference",
+      "Schematic software, not flight firmware",
+      "No reliability or stability claim"
+    ]
+  },
+  {
+    "id": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "tag": "ENTRY / PROTECTION SYSTEM",
+    "subtitle": "Protect the loaded carrier through entry, then provide a clear extraction path.",
+    "lanes": [
+      "ENTRY / STRUCTURE",
+      "SENSING / SEPARATION",
+      "CARRIER INTERFACES"
+    ],
+    "nodes": [
+      {
+        "title": "Aeroshell + heat shield",
+        "lines": [
+          "Ø 0.8 m · 70° forebody half-angle",
+          "TPS / insulation / structural shell",
+          "Material and thickness: trades"
+        ]
+      },
+      {
+        "title": "Entry sensing + avionics",
+        "lines": [
+          "Acceleration / temperature concept",
+          "Pressure / altitude estimation trade",
+          "Independent timing / health path"
+        ]
+      },
+      {
+        "title": "Carrier restraint interface",
+        "lines": [
+          "Launch and entry load transfer",
+          "Loaded carrier packaging envelope",
+          "A: 3 / B: 7 source probes"
+        ]
+      },
+      {
+        "title": "Cover + release mechanism",
+        "lines": [
+          "Top opening / extraction clearance",
+          "Independent release inhibits",
+          "Latch and separation confirmation"
+        ]
+      },
+      {
+        "title": "Passive entry configuration",
+        "lines": [
+          "Shield-forward attitude imposed",
+          "Low-CG / aerodynamic concept",
+          "Stability must be demonstrated"
+        ]
+      },
+      {
+        "title": "Extraction chute interface",
+        "lines": [
+          "Canopy deployment / load paths",
+          "Pull carrier clear of shell",
+          "Opening loads not qualified"
+        ]
+      },
+      {
+        "title": "Retro attachment plane",
+        "lines": [
+          "Defined expendable-module boundary",
+          "Harness separation + load transfer",
+          "No jet authority after removal"
+        ]
+      },
+      {
+        "title": "Power + event handover",
+        "lines": [
+          "Source of event history: define",
+          "Separate vehicle/carrier ownership",
+          "Do not duplicate mass allocations"
+        ]
+      },
+      {
+        "title": "Discarded aeroshell",
+        "lines": [
+          "Separate descent / clearance path",
+          "Carrier and probes retain autonomy",
+          "No post-discard capsule solution"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        4,
+        "sample"
+      ],
+      [
+        1,
+        3,
+        "command"
+      ],
+      [
+        3,
+        5,
+        "command"
+      ],
+      [
+        5,
+        2,
+        "sample"
+      ],
+      [
+        6,
+        7,
+        "signal"
+      ],
+      [
+        7,
+        2,
+        "signal"
+      ],
+      [
+        2,
+        8,
+        "sample"
+      ]
+    ],
+    "contract": [
+      "Retro state → capsule entry readiness",
+      "Cover clear → chute / carrier extract",
+      "Carrier departs; shell discarded"
+    ],
+    "sequence": [
+      "Retro removed → atmospheric entry",
+      "Heat / decelerate → extraction gate",
+      "Open cover → extract → discard shell"
+    ],
+    "limits": [
+      "Rev09 STR / EDL / PCM requirements",
+      "125 km interface; extraction editable",
+      "Passive stability / TPS not validated"
+    ]
+  },
+  {
+    "id": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "tag": "ENTRY / PROTECTION SYSTEM",
+    "subtitle": "A functional allocation for entry monitoring and safe extraction; ownership is a trade.",
+    "lanes": [
+      "HANDOVER / MONITOR",
+      "GATES / SEQUENCE",
+      "RECORD / SAFE STATE"
+    ],
+    "nodes": [
+      {
+        "title": "Receive retro handover",
+        "lines": [
+          "Latch burn / entry-attitude state",
+          "Verify module-detached evidence",
+          "Retain time and event continuity"
+        ]
+      },
+      {
+        "title": "Entry monitoring function",
+        "lines": [
+          "Acquire available flight sensors",
+          "Tag acceleration / temperatures",
+          "Track sensor and state validity"
+        ]
+      },
+      {
+        "title": "Entry phase estimator",
+        "lines": [
+          "Time / altitude / condition gates",
+          "Use qualified navigation evidence",
+          "Do not trigger from animation time"
+        ]
+      },
+      {
+        "title": "Deployment inhibit logic",
+        "lines": [
+          "Approved deployment envelope",
+          "Cover / chute / carrier readiness",
+          "Independent hardware barriers"
+        ]
+      },
+      {
+        "title": "Cover-release sequence",
+        "lines": [
+          "Command when gate is satisfied",
+          "Await clear / latch confirmation",
+          "Timeout → configured safe response"
+        ]
+      },
+      {
+        "title": "Carrier extraction sequence",
+        "lines": [
+          "Command chute / extraction path",
+          "Confirm carrier separation event",
+          "Prevent conflicting actuation"
+        ]
+      },
+      {
+        "title": "Event + diagnostic recorder",
+        "lines": [
+          "Commands and confirmations logged",
+          "Preserve fault / sensor snapshots",
+          "Transfer before interface loss"
+        ]
+      },
+      {
+        "title": "Ownership / power boundary",
+        "lines": [
+          "Host avionics vs carrier: allocate",
+          "No assumed duplicate flight CPU",
+          "Software execution location open"
+        ]
+      },
+      {
+        "title": "End-of-service handling",
+        "lines": [
+          "Mark aeroshell discarded",
+          "No later capsule telemetry credit",
+          "Carrier operates independently"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "signal"
+      ],
+      [
+        1,
+        2,
+        "signal"
+      ],
+      [
+        2,
+        3,
+        "command"
+      ],
+      [
+        3,
+        4,
+        "command"
+      ],
+      [
+        4,
+        5,
+        "command"
+      ],
+      [
+        5,
+        8,
+        "command"
+      ],
+      [
+        6,
+        7,
+        "signal"
+      ],
+      [
+        7,
+        5,
+        "signal"
+      ]
+    ],
+    "contract": [
+      "Physical gate drives deployment logic",
+      "Confirm cover clear before extraction",
+      "History follows the retained carrier"
+    ],
+    "sequence": [
+      "Handover → monitor → qualify gate",
+      "Cover release → confirm → extract",
+      "Transfer history → end shell service"
+    ],
+    "limits": [
+      "Rev09 EDL / PCM; source phase map",
+      "Concept responsibility allocation",
+      "Dedicated capsule computer not selected"
+    ]
+  },
+  {
+    "id": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "tag": "RELEASE / TELEMETRY PLATFORM",
+    "subtitle": "Retain probes during descent, release independently, and return mission status.",
+    "lanes": [
+      "DESCENT / MECHANICS",
+      "RELEASE / ELECTRONICS",
+      "ENERGY / TELEMETRY"
+    ],
+    "nodes": [
+      {
+        "title": "Carrier frame + probe bays",
+        "lines": [
+          "Retained dry mass allocation",
+          "A: 3 / B: 7 probe positions",
+          "Restraints and center-of-mass trade"
+        ]
+      },
+      {
+        "title": "Release actuators + sensing",
+        "lines": [
+          "Independent probe release paths",
+          "Positive drop confirmations",
+          "Prevent adjacent-probe contact"
+        ]
+      },
+      {
+        "title": "Carrier parachute + risers",
+        "lines": [
+          "Source A 1.5 m / B 2.0 m",
+          "Extraction and descent load paths",
+          "Inflation / opening loads: verify"
+        ]
+      },
+      {
+        "title": "Altitude / descent sensing",
+        "lines": [
+          "Release-height estimate required",
+          "Motion / attitude health concept",
+          "Ground/contact indication trade"
+        ]
+      },
+      {
+        "title": "Carrier MCU + event memory",
+        "lines": [
+          "Inherit upstream confirmation bits",
+          "Latch each probe-drop event",
+          "Reset-safe cumulative history"
+        ]
+      },
+      {
+        "title": "Radio + antenna",
+        "lines": [
+          "High-peak, low-duty UHF concept",
+          "Carrier status word / framing",
+          "Receiver and access assumptions"
+        ]
+      },
+      {
+        "title": "Independent power + buffer",
+        "lines": [
+          "Separate post-extraction supply",
+          "Pulse buffer + regulated rails",
+          "Peak energy and lifetime: size"
+        ]
+      },
+      {
+        "title": "Harness + data handover",
+        "lines": [
+          "Capsule event-history transfer",
+          "Power/interface disconnect boundary",
+          "Avoid duplicated mass accounting"
+        ]
+      },
+      {
+        "title": "Released independent probes",
+        "lines": [
+          "Each retains canopy and antenna",
+          "Independent science power / control",
+          "No required carrier-to-probe relay"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        3,
+        4,
+        "signal"
+      ],
+      [
+        4,
+        1,
+        "command"
+      ],
+      [
+        1,
+        8,
+        "sample"
+      ],
+      [
+        4,
+        5,
+        "signal"
+      ],
+      [
+        6,
+        5,
+        "power"
+      ],
+      [
+        6,
+        4,
+        "power"
+      ],
+      [
+        7,
+        4,
+        "signal"
+      ],
+      [
+        2,
+        0,
+        "sample"
+      ]
+    ],
+    "contract": [
+      "Upstream history → retained MCU",
+      "Release command → drop confirmation",
+      "Local energy → buffered UHF attempt"
+    ],
+    "sequence": [
+      "Extract under chute → establish state",
+      "Release probes sequentially",
+      "Land → retain / repeat status"
+    ],
+    "limits": [
+      "Rev09 PCM / COM; status bit mapping",
+      "9 core bits A / 13 bits B; framing extra",
+      "Geometry / antenna / pulse power open"
+    ]
+  },
+  {
+    "id": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "tag": "RELEASE / TELEMETRY PLATFORM",
+    "subtitle": "Independent post-extraction control with latched history and conservative radio status.",
+    "lanes": [
+      "START / NAVIGATE",
+      "RELEASE / EVENT LOGIC",
+      "POWER / RETURN"
+    ],
+    "nodes": [
+      {
+        "title": "Boot + history reconciliation",
+        "lines": [
+          "Receive capsule event history",
+          "Verify checksum / sequence / ID",
+          "Recover retained state on reset"
+        ]
+      },
+      {
+        "title": "Descent / release estimator",
+        "lines": [
+          "Monitor altitude and health",
+          "Wait for approved release gate",
+          "Source model: first gate + cadence"
+        ]
+      },
+      {
+        "title": "Release scheduler",
+        "lines": [
+          "Address one probe at a time",
+          "Command → confirm → advance",
+          "Timeout / jam handling required"
+        ]
+      },
+      {
+        "title": "Cumulative status machine",
+        "lines": [
+          "Preserve bit 8: carrier landed",
+          "Bits 5–7: probe drops 1–3",
+          "Append bits 9–12: drops 4–7"
+        ]
+      },
+      {
+        "title": "Confirmation / fault journal",
+        "lines": [
+          "Log command and sensed evidence",
+          "Never latch drop from command only",
+          "Retain cause and timing metadata"
+        ]
+      },
+      {
+        "title": "Packet and retry service",
+        "lines": [
+          "Nominal 60 s status cadence",
+          "Add framing / error detection",
+          "Tx attempt is not reception"
+        ]
+      },
+      {
+        "title": "Power + peak-buffer manager",
+        "lines": [
+          "Gate bursts on stored energy",
+          "Brownout protection / watchdog",
+          "Separate local carrier lifetime"
+        ]
+      },
+      {
+        "title": "Contact / blackout policy",
+        "lines": [
+          "Queue during blocked link periods",
+          "Use qualified access assumptions",
+          "Do not promise continuous relay"
+        ]
+      },
+      {
+        "title": "Surface status operations",
+        "lines": [
+          "Latch landing if confirmed",
+          "Repeat latest valid status",
+          "End gracefully at energy limit"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        0,
+        1,
+        "signal"
+      ],
+      [
+        1,
+        2,
+        "command"
+      ],
+      [
+        2,
+        4,
+        "signal"
+      ],
+      [
+        4,
+        3,
+        "signal"
+      ],
+      [
+        3,
+        5,
+        "signal"
+      ],
+      [
+        6,
+        5,
+        "command"
+      ],
+      [
+        7,
+        5,
+        "command"
+      ],
+      [
+        5,
+        8,
+        "signal"
+      ]
+    ],
+    "contract": [
+      "Cumulative history survives separation",
+      "Synthetic website bits ≠ flight sensing",
+      "Probe science records remain distinct"
+    ],
+    "sequence": [
+      "Initialize → estimate → release / confirm",
+      "Latch independent carrier landing",
+      "Buffer → attempt / repeat status"
+    ],
+    "limits": [
+      "missionEvents / statusBits reference",
+      "Real timers / fault logic not simulated",
+      "No on-board life-detection inference"
+    ]
+  }
+]

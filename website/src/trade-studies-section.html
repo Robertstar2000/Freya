@@ -1,0 +1,53 @@
+<div id="screen-trades" class="workspace-screen trade-lab" data-title="Trade studies" aria-label="Trade studies" hidden>
+  <div class="workspace-page-heading">
+    <p class="eyebrow">ENGINEERING LAB / REV 10</p>
+    <h1>Trade studies</h1>
+    <p>Compare candidates and trace each result to Rev 10. Studies start from a snapshot of the active configuration or the Rev 10 baseline for the other configuration. Linked fields show their source and original value. Study assumptions and measured evidence remain editable in the lab.</p>
+    <p><a href="documents/FREYA_Requirements_Specification_Rev10.pdf">Rev 10 specification PDF</a></p>
+  </div>
+  <p id="loadStatus" role="status"></p>
+  <section id="studies" aria-labelledby="studyTitle"><h2 id="studyTitle">Engineering studies</h2><div id="models" class="grid"></div></section>
+  <section id="science-package" aria-labelledby="scienceTitle">
+    <p class="eyebrow">SCIENCE / NOVEMBER 12 BENNER OUTLINE</p><h2 id="scienceTitle">Science package trades</h2>
+    <p>The outline proposes preflight evaluation of isotope-tracer extraction and an alternative oxidant investigation for the 2028 precursor. Candidate studies carry the Rev 10 contamination, control, telemetry and power requirements through to acceptance evidence.</p>
+    <div class="grid">
+      <article><h3>Reductive anabolism and extraction</h3><p>Compare the gas-trap and solvent-extraction concepts, direct carbon fixation and proposed nitrogen or sulfur incorporation readouts. Trade aqueous, hydrophobic, surfactant-assisted and scintillation-compatible fractions on recovery, carryover, containment and separation of abiotic backgrounds.</p><p>Compare matrix blanks, inactivated controls, reference spikes and representative simulants. Use measured sample recovery and tracer accounting, including isotope exchange, before assigning a cause to excess counts.</p><a href="#TBD-06">Compare assay candidates</a></article>
+      <article><h3>Detector and isotope separation</h3><p>Candidate SiPMs include onsemi MICROFC-60035-SMT and MICROFC-30035, Broadcom AFBR-S4N44C013 and the Eikonal Optics SIPM-01 module. Compare response matrix, background, cross-talk, recovery, live time and readout energy. Evaluate mixed-label discrimination with calibrated references.</p><a href="#study-science">Open the detector count-budget study</a> · <a href="#TBD-09">Compare detector evidence</a></article>
+      <article><h3>2028 alternate oxidant screen</h3><p>Compare peroxide, superoxide and molecular-oxygen indicator channels on selectivity, instrument burden and false positives in representative matrices. Require controls for overlapping optical responses and soil-mineral interference. Report chemical evidence with its uncertainties.</p><a href="#FR-BIO-010">Open the alternative-chemistry requirement</a></article>
+    </div>
+    <p><a href="science-review.html">Read the science review and references</a> · <a href="documents/science/Benner_thoughts_outline_2026-11-12.txt">Read the archived outline transcription</a></p>
+  </section>
+  <section id="closure" aria-labelledby="closureTitle">
+    <h2 id="closureTitle">Open closure items</h2>
+    <p>Record comparable candidates against the same limits. Enter signed margins in consistent units across candidates. For an evidence gate, use 0 for met and −1 for unmet. A blank field leaves the comparison incomplete. Lower objective values rank first among candidates that meet every entered gate.</p>
+    <div id="closures"></div>
+  </section>
+  <section id="trace" aria-labelledby="traceTitle">
+    <h2 id="traceTitle">Requirements traceability</h2>
+    <p>Open any requirement to see its acceptance criteria, linked studies and evidence record. Records are saved in this browser for the selected configuration.</p>
+    <label for="requirementConfig">Evidence configuration</label><select id="requirementConfig"><option>A</option><option>B</option></select>
+    <label for="requirementsFilter">Filter by ID, subsystem, or text</label><input id="requirementsFilter" type="search">
+    <p id="requirementCount" role="status"></p><div id="tradeRequirements"></div>
+  </section>
+  <dialog id="tradeCalculationDialog" aria-labelledby="tradeCalculationTitle">
+    <div class="calc-header">
+      <h2 id="tradeCalculationTitle"></h2>
+      <form method="dialog"><button autofocus>Close</button></form>
+    </div>
+    <div id="tradeCalculationBody"></div>
+  </dialog>
+  <section id="optimizer" aria-labelledby="optimizerTitle">
+    <p class="eyebrow">LOCAL PARAMETER SEARCH</p><h2 id="optimizerTitle">Trade-study optimizer</h2>
+    <p>Pick a study and request a search. Modeled studies test small positive and negative changes to each design variable. Evidence-backed studies search the nearby sampled values you entered. Results are local to the chosen starting point, bounds and assumptions.</p>
+    <form id="optForm">
+      <div class="fields">
+        <label>Trade study<select id="optStudy"></select></label>
+        <label>Configuration<select id="optConfig"><option value="A">A · 2028 precursor</option><option value="B">B · 2031 science vehicle</option></select></label>
+        <label>Maximum iterations<input id="optIterations" type="number" min="1" max="30" value="6" required></label>
+      </div>
+      <div id="optFields"></div>
+      <div class="actions"><button id="optRun">Run small-step search</button><button id="optCalculations" class="secondary" type="button" aria-haspopup="dialog">Calculations</button><button id="optStop" type="button" hidden>Stop search</button></div>
+    </form>
+    <div id="optStatus" role="status" aria-live="polite"></div><div id="optResult"></div>
+  </section>
+</div>

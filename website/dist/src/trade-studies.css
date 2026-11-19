@@ -1,0 +1,66 @@
+.trade-lab {
+  --trade-panel: #122234;
+  --trade-line: #32485c;
+  --trade-muted: #b6c6d8;
+}
+.trade-lab p { max-width: 78ch; }
+.trade-lab .grid,
+.trade-lab .fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.trade-lab .grid article,
+.trade-lab details {
+  border: 1px solid var(--trade-line);
+  border-radius: .6rem;
+  background: var(--trade-panel);
+  padding: 1rem;
+  min-width: 0;
+}
+.trade-lab details { margin: .7rem 0; }
+.trade-lab :is(article, details) { scroll-margin-top: 84px; }
+.trade-lab .model details { padding: .5rem .6rem; background: #0a1624; }
+.trade-lab summary { cursor: pointer; font-weight: 700; }
+.trade-lab .actions { display: flex; gap: .65rem 1rem; flex-wrap: wrap; align-items: center; }
+.trade-lab :is(input, select, textarea) { width: 100%; }
+.trade-lab label { display: block; font-size: .92rem; font-weight: 600; }
+.trade-lab label :is(input, select, textarea) { display: block; margin-top: .25rem; }
+.trade-lab textarea { padding: .45rem .55rem; border: 1px solid var(--trade-line); border-radius: .3rem; background: #0c1623; color: inherit; font: inherit; }
+.trade-lab button { cursor: pointer; }
+.trade-lab button:disabled { opacity: .55; cursor: default; }
+.trade-lab .secondary { background: transparent; color: var(--accent); }
+.trade-lab :focus-visible { outline: 2px solid var(--warn); outline-offset: 3px; }
+.trade-lab fieldset { border: 1px solid var(--trade-line); border-radius: .35rem; margin: .8rem 0; padding: .65rem 1rem; min-width: 0; }
+.trade-lab legend { color: var(--accent); font-weight: 650; }
+.trade-lab th { color: var(--trade-muted); }
+.trade-lab .table-wrap { overflow: auto; }
+.trade-lab .pass { color: #a5e5ae; }
+.trade-lab .fail { color: var(--warn); }
+.trade-lab #optStatus { margin-top: .8rem; }
+.trade-lab :is(#requirementsFilter, #requirementConfig, #optMultiplier) { max-width: 28rem; margin-bottom: .7rem; }
+.trade-lab [hidden] { display: none !important; }
+#tradeCalculationDialog {
+  width: min(58rem, calc(100% - 2rem));
+  max-height: 88dvh;
+  padding: 0;
+  color: #e4eef8;
+  background: #0e2032;
+  border: 1px solid #72dfca;
+  border-radius: .9rem;
+  box-shadow: 0 20px 90px #000a;
+}
+#tradeCalculationDialog::backdrop { background: #020911bd; backdrop-filter: blur(3px); }
+#tradeCalculationDialog .calc-header form { margin: 0; }
+#tradeCalculationBody { padding: .25rem clamp(.85rem, 3vw, 1.5rem) 1rem; }
+.trade-calculation { margin-block: 1rem; border-bottom: 1px solid var(--trade-line); }
+.trade-calculation pre {
+  padding: .85rem;
+  border-radius: .45rem;
+  background: #091622;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: .9rem;
+  line-height: 1.6;
+}

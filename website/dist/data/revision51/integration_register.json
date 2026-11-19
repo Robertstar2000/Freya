@@ -1,0 +1,62 @@
+[
+  [
+    "INT-01",
+    "Attitude architecture",
+    "Sections 2/5/7 retain four reaction wheels; 7A GNC-05 proposes six cold-gas thrusters.",
+    "Show both architectures; six-jet operations demonstration follows 7A/7B. No flight selection claimed."
+  ],
+  [
+    "INT-02",
+    "Deorbit propulsion",
+    "Section 7 treats scaled solid propulsion as B baseline; 7B and Appendix D depict hybrid propulsion.",
+    "Retain solid and hybrid alternatives and require a signed propulsion trade. A single J-class motor remains an A feasibility risk."
+  ],
+  [
+    "INT-03",
+    "Compute authority",
+    "GNC-04 names Pi-class deterministic GNC; 7B assigns estimation to SBC and deterministic control to independent MCU.",
+    "Adopt the more explicit 7B responsibility split for the demonstration. Independent hardware inhibits remain required."
+  ],
+  [
+    "INT-04",
+    "Precursor mass",
+    "15 kg aeroshell/assembly, earlier 16 kg, and 20 kg at burn use inconsistent mass boundaries.",
+    "Use 20 kg A wet planning total; 6 kg probes leaves 14 kg for everything else. The 15 kg label remains unresolved."
+  ],
+  [
+    "INT-05",
+    "Parachute mass boundary",
+    "Probe flight mass includes its parachute, while vehicle allocations also contain parachutes and deployment hardware.",
+    "Require a component-level boundary map before closure; allocation sums alone do not demonstrate mass closure."
+  ],
+  [
+    "INT-06",
+    "Sample-depth precedence",
+    "Earlier studies target \u22650.50 m science access and 0.75 m nose penetration; Rev09 PRB-008 assumes 20\u2013100 mm sampling.",
+    "Use Rev09 values as provisional science-planning targets. Preserve deeper-access studies as historical alternatives, not concurrent pass criteria."
+  ],
+  [
+    "INT-07",
+    "Configuration B status word",
+    "A has nine core bits for three probe drops; seven-probe B needs four additional confirmations.",
+    "Preserve bit 8 for carrier landing; append bits 9\u201312 for drops 4\u20137. Total 13 payload bits, excluding framing overhead."
+  ],
+  [
+    "INT-08",
+    "B resource scaling",
+    "B cannot inherit A inertia, gas budget, energy capacity or motor sizing unchanged.",
+    "B calculators use its own wet mass; A-only cold-gas sizing is visibly flagged until independently sized."
+  ],
+  [
+    "INT-09",
+    "Relay and schedule",
+    "Relay access, provider orbit, rideshare allowance, and 2031/2032 opportunity are not contracted in the source.",
+    "Keep every such value marked assumed or pending host/provider confirmation."
+  ],
+  [
+    "INT-10",
+    "Historical science probabilities",
+    "November trade JSON reports pProbe and pAny from heuristic factors and surrogate penetration.",
+    "Preserve raw historical outputs; exclude those factors from current mission reliability claims."
+  ]
+]

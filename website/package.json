@@ -1,0 +1,13 @@
+{
+  "name": "freya-mars-penetrator-lab",
+  "version": "5.1.0",
+  "private": true,
+  "type": "module",
+  "description": "FREYA Revision 5.1 integrating FDS-001 Rev09 specification",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build": "node scripts/requirements-baseline.mjs && python scripts/build-current-requirements.py && node scripts/build-sidebar.mjs && node scripts/build-architecture.mjs && node scripts/build-audit.mjs && node scripts/build-science-review.mjs && python scripts/apply-document-shell.py && node scripts/bundle-revision51.mjs && node scripts/build.mjs"
+  }
+}

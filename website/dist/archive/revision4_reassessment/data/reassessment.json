@@ -1,0 +1,1612 @@
+{
+  "trade": [
+    {
+      "diameterMm": 35,
+      "wallMm": 1.5,
+      "innerMm": 32,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 1186.0103932328739,
+      "lengthMm": 1228.5103932328739,
+      "slenderness": 35.10029694951068,
+      "steel": 1.648286179147255,
+      "pot": 0.2623076923076923,
+      "nominal": 4.430593871454947,
+      "margin": 1.1076484678637368,
+      "total": 5.538242339318684,
+      "forebody": 3.5605938714549477,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0009621127501618743,
+      "sectional": 3700.807281533149,
+      "surface": 0.13329499209663948,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.469752103365386,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.020771150338015146,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.03776292544385357,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    },
+    {
+      "diameterMm": 50,
+      "wallMm": 1.5,
+      "innerMm": 47,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 549.7848088141525,
+      "lengthMm": 599.7848088141525,
+      "slenderness": 11.99569617628305,
+      "steel": 1.2269708632932685,
+      "pot": 0.2623076923076923,
+      "nominal": 4.009278555600962,
+      "margin": 1.0023196389002405,
+      "total": 5.011598194501202,
+      "forebody": 3.1392785556009617,
+      "aftbody": 0.8700000000000001,
+      "area": 0.001963495408493621,
+      "sectional": 1598.8214395720909,
+      "surface": 0.09225048204677139,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          0.9863822822718266,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.043521386238067374,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.07706719478337462,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    },
+    {
+      "diameterMm": 50,
+      "wallMm": 2,
+      "innerMm": 46,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 573.9483188423737,
+      "lengthMm": 623.9483188423737,
+      "slenderness": 12.478966376847476,
+      "steel": 1.6127452472271866,
+      "pot": 0.2623076923076923,
+      "nominal": 4.39505293953488,
+      "margin": 1.09876323488372,
+      "total": 5.493816174418599,
+      "forebody": 3.5250529395348797,
+      "aftbody": 0.8700000000000001,
+      "area": 0.001963495408493621,
+      "sectional": 1795.2947199602947,
+      "surface": 0.09604607732625155,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.3588250690708181,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.05685298337299409,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.07706719478337462,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    },
+    {
+      "diameterMm": 60,
+      "wallMm": 2,
+      "innerMm": 55.99999999999999,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 387.26869983114256,
+      "lengthMm": 442.2686998311426,
+      "slenderness": 7.37114499718571,
+      "steel": 1.421843777775845,
+      "pot": 0.2623076923076923,
+      "nominal": 4.204151470083538,
+      "margin": 1.0510378675208845,
+      "total": 5.255189337604422,
+      "forebody": 3.334151470083538,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0028274333882308137,
+      "sectional": 1179.2148610686772,
+      "surface": 0.08148073030597973,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.1078728414442711,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.08299417584351473,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.11097676048805942,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    },
+    {
+      "diameterMm": 70,
+      "wallMm": 2.5,
+      "innerMm": 65,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 287.44961956697347,
+      "lengthMm": 347.4496195669735,
+      "slenderness": 4.963565993813907,
+      "steel": 1.6078294212954778,
+      "pot": 0.2623076923076923,
+      "nominal": 4.390137113603171,
+      "margin": 1.0975342784007927,
+      "total": 5.487671392003963,
+      "forebody": 3.520137113603171,
+      "aftbody": 0.8699999999999997,
+      "area": 0.0038484510006474974,
+      "sectional": 914.6893420264184,
+      "surface": 0.07475882591955743,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.1962585343650436,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.14051918515501988,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.15105170177541427,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    },
+    {
+      "diameterMm": 80,
+      "wallMm": 3,
+      "innerMm": 74,
+      "cavityL": 0.9538461538461538,
+      "barrelMm": 221.78134453441618,
+      "lengthMm": 286.7813445344162,
+      "slenderness": 3.584766806680202,
+      "steel": 1.800175590910436,
+      "pot": 0.2623076923076923,
+      "nominal": 4.582483283218128,
+      "margin": 1.145620820804532,
+      "total": 5.72810410402266,
+      "forebody": 3.7124832832181287,
+      "aftbody": 0.8699999999999992,
+      "area": 0.00502654824574367,
+      "sectional": 738.5750820877424,
+      "surface": 0.0708193761526381,
+      "ledger": [
+        [
+          "Science package",
+          1,
+          "Forebody",
+          "User assumption"
+        ],
+        [
+          "Steel tube",
+          1.2634455245266072,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel hemispherical nose",
+          0.21943804773838985,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel rear cap 5 mm",
+          0.19729201864543902,
+          "Forebody",
+          "Calculated geometry"
+        ],
+        [
+          "Steel joints and cage",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Potting",
+          0.2623076923076923,
+          "Forebody",
+          "Calculated fill volume"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody",
+          "Short mission allowance"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody",
+          "Engineering allowance"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head",
+          "Unselected method allowance"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody",
+          "Length times linear mass"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody",
+          "Engineering allowance"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody",
+          "Unselected deployment allowance"
+        ]
+      ],
+      "energyWh": 67.5
+    }
+  ],
+  "twoKg": [
+    {
+      "profile": "standard",
+      "contingency": 0.25,
+      "steel": 0.6173546828784043,
+      "nonScience": 2.2322296828784047,
+      "rawMassAllowance": -0.6322296828784046,
+      "volumeAllowance": 0.20849999999999996,
+      "science": 0,
+      "nominal": 2.2322296828784047,
+      "total": 2.790287103598006,
+      "forebody": 1.3622296828784046,
+      "aftbody": 0.8700000000000001,
+      "energyWh": 67.5,
+      "lengthMm": 260,
+      "diameterMm": 50,
+      "area": 0.001963495408493621,
+      "closure": false,
+      "ledger": [
+        [
+          "Science package",
+          0,
+          "Forebody"
+        ],
+        [
+          "Steel chassis",
+          0.6173546828784043,
+          "Forebody"
+        ],
+        [
+          "Potting",
+          0.094875,
+          "Forebody"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody"
+        ]
+      ]
+    },
+    {
+      "profile": "standard",
+      "contingency": 0,
+      "steel": 0.6173546828784043,
+      "nonScience": 2.2322296828784047,
+      "rawMassAllowance": -0.23222968287840473,
+      "volumeAllowance": 0.20849999999999996,
+      "science": 0,
+      "nominal": 2.2322296828784047,
+      "total": 2.2322296828784047,
+      "forebody": 1.3622296828784046,
+      "aftbody": 0.8700000000000001,
+      "energyWh": 67.5,
+      "lengthMm": 260,
+      "diameterMm": 50,
+      "area": 0.001963495408493621,
+      "closure": false,
+      "ledger": [
+        [
+          "Science package",
+          0,
+          "Forebody"
+        ],
+        [
+          "Steel chassis",
+          0.6173546828784043,
+          "Forebody"
+        ],
+        [
+          "Potting",
+          0.094875,
+          "Forebody"
+        ],
+        [
+          "Battery",
+          0.45,
+          "Forebody"
+        ],
+        [
+          "Heaters controller and memory",
+          0.12,
+          "Forebody"
+        ],
+        [
+          "Forebody harness and seals",
+          0.08,
+          "Forebody"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.15,
+          "Surface head"
+        ],
+        [
+          "Transceiver and mounting",
+          0.1,
+          "Aftbody"
+        ],
+        [
+          "Antenna radiator",
+          0.06,
+          "Aftbody"
+        ],
+        [
+          "Cable or tether",
+          0.05,
+          "Aftbody"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.06,
+          "Aftbody"
+        ],
+        [
+          "Surface aftbody structure",
+          0.2,
+          "Aftbody"
+        ],
+        [
+          "Drogue risers and separation",
+          0.25,
+          "Aftbody"
+        ]
+      ]
+    },
+    {
+      "profile": "reduced",
+      "contingency": 0.25,
+      "steel": 0.5573546828784044,
+      "nonScience": 1.2522296828784045,
+      "rawMassAllowance": 0.34777031712159556,
+      "volumeAllowance": 0.30849999999999994,
+      "science": 0.30849999999999994,
+      "nominal": 1.5607296828784045,
+      "total": 1.9509121035980057,
+      "forebody": 1.2107296828784044,
+      "aftbody": 0.3500000000000001,
+      "energyWh": 22.5,
+      "lengthMm": 260,
+      "diameterMm": 50,
+      "area": 0.001963495408493621,
+      "closure": true,
+      "ledger": [
+        [
+          "Science package",
+          0.30849999999999994,
+          "Forebody"
+        ],
+        [
+          "Steel chassis",
+          0.5573546828784044,
+          "Forebody"
+        ],
+        [
+          "Potting",
+          0.094875,
+          "Forebody"
+        ],
+        [
+          "Battery",
+          0.15,
+          "Forebody"
+        ],
+        [
+          "Heaters controller and memory",
+          0.06,
+          "Forebody"
+        ],
+        [
+          "Forebody harness and seals",
+          0.04,
+          "Forebody"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.05,
+          "Surface head"
+        ],
+        [
+          "Transceiver and mounting",
+          0.05,
+          "Aftbody"
+        ],
+        [
+          "Antenna radiator",
+          0.025,
+          "Aftbody"
+        ],
+        [
+          "Cable or tether",
+          0.02,
+          "Aftbody"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.025,
+          "Aftbody"
+        ],
+        [
+          "Surface aftbody structure",
+          0.08,
+          "Aftbody"
+        ],
+        [
+          "Drogue risers and separation",
+          0.1,
+          "Aftbody"
+        ]
+      ]
+    },
+    {
+      "profile": "reduced",
+      "contingency": 0,
+      "steel": 0.5573546828784044,
+      "nonScience": 1.2522296828784045,
+      "rawMassAllowance": 0.7477703171215955,
+      "volumeAllowance": 0.30849999999999994,
+      "science": 0.30849999999999994,
+      "nominal": 1.5607296828784045,
+      "total": 1.5607296828784045,
+      "forebody": 1.2107296828784044,
+      "aftbody": 0.3500000000000001,
+      "energyWh": 22.5,
+      "lengthMm": 260,
+      "diameterMm": 50,
+      "area": 0.001963495408493621,
+      "closure": true,
+      "ledger": [
+        [
+          "Science package",
+          0.30849999999999994,
+          "Forebody"
+        ],
+        [
+          "Steel chassis",
+          0.5573546828784044,
+          "Forebody"
+        ],
+        [
+          "Potting",
+          0.094875,
+          "Forebody"
+        ],
+        [
+          "Battery",
+          0.15,
+          "Forebody"
+        ],
+        [
+          "Heaters controller and memory",
+          0.06,
+          "Forebody"
+        ],
+        [
+          "Forebody harness and seals",
+          0.04,
+          "Forebody"
+        ],
+        [
+          "Sample acquisition hardware",
+          0.05,
+          "Surface head"
+        ],
+        [
+          "Transceiver and mounting",
+          0.05,
+          "Aftbody"
+        ],
+        [
+          "Antenna radiator",
+          0.025,
+          "Aftbody"
+        ],
+        [
+          "Cable or tether",
+          0.02,
+          "Aftbody"
+        ],
+        [
+          "Cable spool and strain relief",
+          0.025,
+          "Aftbody"
+        ],
+        [
+          "Surface aftbody structure",
+          0.08,
+          "Aftbody"
+        ],
+        [
+          "Drogue risers and separation",
+          0.1,
+          "Aftbody"
+        ]
+      ]
+    }
+  ],
+  "reducedSameHardware": {
+    "diameterMm": 70,
+    "wallMm": 2.5,
+    "innerMm": 65,
+    "cavityL": 0.4219230769230769,
+    "barrelMm": 127.1500938165201,
+    "lengthMm": 187.1500938165201,
+    "slenderness": 2.67357276880743,
+    "steel": 0.9407223434620683,
+    "pot": 0.11602884615384616,
+    "nominal": 2.8852511896159143,
+    "margin": 0.7213127974039786,
+    "total": 3.606563987019893,
+    "forebody": 2.015251189615914,
+    "aftbody": 0.8700000000000001,
+    "area": 0.0038484510006474974,
+    "sectional": 523.6525524884819,
+    "surface": 0.03950711904654877,
+    "ledger": [
+      [
+        "Science package",
+        0.30849999999999994,
+        "Forebody",
+        "User assumption"
+      ],
+      [
+        "Steel tube",
+        0.5291514565316342,
+        "Forebody",
+        "Calculated geometry"
+      ],
+      [
+        "Steel hemispherical nose",
+        0.14051918515501988,
+        "Forebody",
+        "Calculated geometry"
+      ],
+      [
+        "Steel rear cap 5 mm",
+        0.15105170177541427,
+        "Forebody",
+        "Calculated geometry"
+      ],
+      [
+        "Steel joints and cage",
+        0.12,
+        "Forebody",
+        "Engineering allowance"
+      ],
+      [
+        "Potting",
+        0.11602884615384616,
+        "Forebody",
+        "Calculated fill volume"
+      ],
+      [
+        "Battery",
+        0.45,
+        "Forebody",
+        "Short mission allowance"
+      ],
+      [
+        "Heaters controller and memory",
+        0.12,
+        "Forebody",
+        "Engineering allowance"
+      ],
+      [
+        "Forebody harness and seals",
+        0.08,
+        "Forebody",
+        "Engineering allowance"
+      ],
+      [
+        "Sample acquisition hardware",
+        0.15,
+        "Surface head",
+        "Unselected method allowance"
+      ],
+      [
+        "Transceiver and mounting",
+        0.1,
+        "Aftbody",
+        "Engineering allowance"
+      ],
+      [
+        "Antenna radiator",
+        0.06,
+        "Aftbody",
+        "Engineering allowance"
+      ],
+      [
+        "Cable or tether",
+        0.05,
+        "Aftbody",
+        "Length times linear mass"
+      ],
+      [
+        "Cable spool and strain relief",
+        0.06,
+        "Aftbody",
+        "Engineering allowance"
+      ],
+      [
+        "Surface aftbody structure",
+        0.2,
+        "Aftbody",
+        "Engineering allowance"
+      ],
+      [
+        "Drogue risers and separation",
+        0.25,
+        "Aftbody",
+        "Unselected deployment allowance"
+      ]
+    ],
+    "energyWh": 67.5
+  },
+  "thermal": [
+    {
+      "z": 0,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 1,
+      "seasonalRemaining": 1
+    },
+    {
+      "z": 0.01,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 0.7318123214699,
+      "seasonalRemaining": 0.9879974573540959
+    },
+    {
+      "z": 0.03,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 0.39192155736146705,
+      "seasonalRemaining": 0.9644228260535324
+    },
+    {
+      "z": 0.1,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 0.04405519967403625,
+      "seasonalRemaining": 0.8862541241540858
+    },
+    {
+      "z": 0.2,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 0.0019408606183192035,
+      "seasonalRemaining": 0.7854463725801257
+    },
+    {
+      "z": 0.5,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 1.6595329120545348e-07,
+      "seasonalRemaining": 0.5467532155195108
+    },
+    {
+      "z": 1,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 2.7540494861922042e-14,
+      "seasonalRemaining": 0.2989390786809246
+    },
+    {
+      "z": 1.5,
+      "diurnal": 0.032027549910952705,
+      "seasonal": 0.8281467355021395,
+      "dailyRemaining": 4.570435763762836e-21,
+      "seasonalRemaining": 0.16344590251323557
+    }
+  ],
+  "orbit": {
+    "dv": 61.55673249575966,
+    "prop": 12.380580226297477,
+    "burn": 273.1770384214953,
+    "period": 6666.174545860458
+  },
+  "references": [
+    {
+      "id": 1,
+      "label": "IMPRESS reference",
+      "citation": "Spacek, J.; Alpern, H.; Dineen, T.; Petkowski, J. J.; Rizzo, G.; Benner, S. A.; Lui, M.; Cockell, C.; Eubanks, M.; Schulze-Makuch, D.; Temby, C.; Richburg, M. (2026). IMPRESS: A Planetary Penetrator Network for Astrobiology, Prospecting, and Exploration of Mars. Astrobiology 26(9), 688\u2013699. DOI 10.1177/15311074261471218. Attached published paper inspected.",
+      "url": "https://doi.org/10.1177/15311074261471218"
+    },
+    {
+      "id": 2,
+      "label": "Soil thermal measurements",
+      "citation": "Spohn, T.; M\u00fcller, N.; Knollenberg, J.; Grott, M.; Golombek, M. P.; Plesa, A.-C.; Bickel, V. T.; Morgan, P.; Krause, C.; Breuer, D.; Smrekar, S.; Banerdt, W. B. (2024). Mars Soil Temperature and Thermal Properties From InSight HP3 Data. Geophysical Research Letters 51(18), e2024GL108600. DOI 10.1029/2024GL108600. Published paper and DLR record inspected.",
+      "url": "https://elib.dlr.de/210686/"
+    },
+    {
+      "id": 3,
+      "label": "Climate context",
+      "citation": "Clifford, S. M.; Lasue, J.; Heggy, E.; Boisson, J.; McGovern, P.; Max, M. D. (2010). Depth of the Martian cryosphere: Revised estimates and implications for the existence and detection of subpermafrost groundwater. Journal of Geophysical Research 115, E07001. DOI 10.1029/2009JE003462. Publisher article inspected.",
+      "url": "https://doi.org/10.1029/2009JE003462"
+    },
+    {
+      "id": 4,
+      "label": "Ethylene oxide history",
+      "citation": "Stroud, R. H., et al.; Exotech Systems, Inc. (April 1972). Contamination Control by Use of Ethylene Oxide: Technology Summary, Task 12. NASA-CR-126034; TR72-11; contract NASw-2062. NASA NTRS 19720013398. Historical report inspected; it is not a current approved FREYA process.",
+      "url": "https://ntrs.nasa.gov/api/citations/19720013398/downloads/19720013398.pdf"
+    },
+    {
+      "id": 5,
+      "label": "Viking interpretation",
+      "citation": "Spacek, J.; Abraham, C. A.; Benner, S. A. (15 September 2026). The case for extant life on Mars: A Technical Reanalysis of the Viking Carbon Assimilation\u2013Pyrolytic Release Experiment. The Primordial Scoop. Page identifies manuscript as a preprint submitted to Astrobiology. Interpretation remains contested, not a confirmed life detection.",
+      "url": "https://primordialscoop.org/2026/09/15/capyr/"
+    },
+    {
+      "id": 6,
+      "label": "Supplied development project",
+      "citation": "NASA TechPort project 184149. Reviewer-supplied project record. Retrieved page required JavaScript and supplied no project details; no maturity or performance claim is based on this record.",
+      "url": "https://techport.nasa.gov/projects/184149"
+    },
+    {
+      "id": 7,
+      "label": "Steel material basis",
+      "citation": "Sandvik Osprey. Osprey 4340 and Osprey 434 low-alloy steel datasheet, updated 14 September 2023. Wrought density 7.85 g/cm3 and conductivity 44.5 W/m K used for screening. Powder data and room-temperature strength are not qualification of a machined cold-impact chassis.",
+      "url": "https://www.metalpowder.sandvik/en/products/metal-powder-alloys/low-alloy-steel/osprey-4340/?html-to-pdf=true"
+    },
+    {
+      "id": 8,
+      "label": "Potting analog",
+      "citation": "Epoxy Technology Inc., Meridian Adhesives Group (February 2021). EPO-TEK 301-2 Technical Data Sheet, Rev XVIII. Component specific gravities 1.15 and 0.95; 100:35 mass ratio. These imply about 1.09 g/cm3 before cure if volumes add. Model rounds to 1.10 g/cm3. Resin selection, cured density, shrinkage, assay compatibility and cryogenic impact response remain open.",
+      "url": "https://products.meridianadhesives.com/storage/downloads/uennuicaaxt1bodtipkbpydtg0u8qs33/301-2.pdf"
+    },
+    {
+      "id": 9,
+      "label": "Radio mass analog",
+      "citation": "GomSpace. NanoCom AX100 product page, accessed 26 October 2026. Bare transceiver 24.5 g, 65 by 40 by 6.5 mm; operating range -30 to +85 C. Supports only a mass analogy; the 100 g FREYA packaged allocation is an engineering estimate. Hardware is not selected or qualified for penetrator shock.",
+      "url": "https://gomspace.com/product/nanocom-ax100/"
+    },
+    {
+      "id": 10,
+      "label": "Planetary protection",
+      "citation": "NASA (30 August 2022). NASA-STD-8719.27, Implementing Planetary Protection Requirements for Space Flight. Active baseline, change 0, as shown by NASA standards page accessed 26 October 2026. Mission authority determines applicable requirements and classification.",
+      "url": "https://standards.nasa.gov/standard/NASA/NASA-STD-871927"
+    },
+    {
+      "id": 11,
+      "label": "Inherited source for later verification",
+      "citation": "NASA Planetary Protection Handbook, NTRS 20240016475. Inherited Revision 4 reference. Retrieval returned access error in this reassessment; detailed requirements were not inferred from unread text.",
+      "url": "https://ntrs.nasa.gov/citations/20240016475"
+    },
+    {
+      "id": 12,
+      "label": "Project review",
+      "citation": "User-supplied FREYA expert review recorded 26 October 2026 in FREYA_Expert_Review_Addendum_2026-10-26.txt. Reviewer identity not explicitly supplied. Corrections, proposals and missing evidence are separated in this reassessment.",
+      "url": "https://chatgpt.com/library?file_id=libfile_e9082a2bf0f08191bc9dac61d937194b&account_id=personal"
+    },
+    {
+      "id": 13,
+      "label": "IMPRESS supplementary information",
+      "citation": "Spacek, J., and coauthors (2026). Supplementary Information for IMPRESS: A Planetary Penetrator Network for Astrobiology, Prospecting, and Exploration of Mars. Tables S1\u2013S3, 15 pages. DOI 10.1177/15311074261471218. Publisher supplement inspected through indexed PDF. Saved PDF is the freely available author-hosted supplementary tables revised 9 July 2026; byte identity with publisher file is not asserted. Author copy: https://impressmars.com/files/preprints/impress-preprint-supplementary-tables-s1-s2-s3-2026-07-09.pdf",
+      "url": "https://journals.sagepub.com/doi/suppl/10.1177/15311074261471218/suppl_file/sj-pdf-1-asb-10.1177_15311074261471218.pdf"
+    }
+  ],
+  "requirements": [
+    [
+      "SCI01",
+      "Retain 1.000 kg science mass as a user-directed trade assumption",
+      "Weigh instrument assembly; record included electronics, reagents and interfaces"
+    ],
+    [
+      "SCI02",
+      "Define measured signal, detection limit and abiotic alternatives before instrument freeze",
+      "Science review and assay validation with blinded analogs"
+    ],
+    [
+      "SCI03",
+      "Separate sample depth from forebody burial depth",
+      "Acquisition drawings and sample provenance demonstration"
+    ],
+    [
+      "SCI04",
+      "Compare shallow skin with buried sensing without assuming liquid water",
+      "Site pressure temperature salt and water-activity model"
+    ],
+    [
+      "SCI05",
+      "Allocate blanks, treated controls, reagent controls and replication",
+      "Statistical analysis and contamination budget"
+    ],
+    [
+      "SCI06",
+      "Define incubation temperature and duration including delayed recovery",
+      "Time series analog experiments; no assumed rapid revival"
+    ],
+    [
+      "SYS01",
+      "Maintain forebody tether and surface aftbody reference architecture",
+      "Interface control drawing and deployment test"
+    ],
+    [
+      "SYS02",
+      "Close nominal mass and volume before adding contingency",
+      "Measured bill of materials and CAD envelope"
+    ],
+    [
+      "SYS03",
+      "Apply 25 percent preliminary mass contingency in this study",
+      "Ledger audit; replace with project-approved growth policy later"
+    ],
+    [
+      "MECH01",
+      "Verify steel heat treatment toughness and joining at operating temperature",
+      "Coupons, NDE, cold impact tests and structural analysis"
+    ],
+    [
+      "MECH02",
+      "Keep a physical tether path and release without damaging science hardware",
+      "Full-speed deployment and pull tests"
+    ],
+    [
+      "MECH03",
+      "Prevent potting from blocking sampling ports and optical or fluid paths",
+      "Manufacturing drawing and flow or optical tests"
+    ],
+    [
+      "MECH04",
+      "Qualify instrument shock response using local acceleration histories",
+      "Instrumented drop tests and post-impact calibration"
+    ],
+    [
+      "PWR01",
+      "Close energy for every operating mode with cold aging and conversion losses",
+      "Time-resolved power model and battery characterization"
+    ],
+    [
+      "THERM01",
+      "Model shell soil sample and electronics as separate thermal nodes",
+      "Vacuum cold-chamber correlation and transient thermal analysis"
+    ],
+    [
+      "COM01",
+      "Transmit through an exposed antenna via a verified tether interface",
+      "Link budget and end-to-end post-impact demonstration"
+    ],
+    [
+      "EDL01",
+      "Analyze each delivery scenario with its own entry boundary conditions",
+      "Trajectory dispersions and aerodynamic database"
+    ],
+    [
+      "EDL02",
+      "Qualify drogue inflation stability and forebody aftbody separation",
+      "Mars-relevant deployment tests"
+    ],
+    [
+      "PP01",
+      "Obtain applicable planetary-protection classification and endpoints",
+      "Mission authority concurrence"
+    ],
+    [
+      "PP02",
+      "Validate a compatible reduction process with residues and assay blanks",
+      "Microbial reduction and materials compatibility evidence"
+    ],
+    [
+      "PP03",
+      "Maintain barriers and cleanliness after treatment",
+      "Integration controls and witness monitoring"
+    ],
+    [
+      "VER01",
+      "Keep data provenance model version and assumptions with every result",
+      "Shared model tests and exported scenario record"
+    ]
+  ],
+  "constraints": [
+    [
+      "C01",
+      "Science mass fixed at 1 kg for this trade; science volume is unknown"
+    ],
+    [
+      "C02",
+      "Baseline packaging assumes 0.500 L science envelope and 0.120 L other forebody hardware"
+    ],
+    [
+      "C03",
+      "Potting occupies 25 percent and reserved space 10 percent of cavity volume"
+    ],
+    [
+      "C04",
+      "Steel density 7850 kg/m3; hemisphere and cap mass retained; no hidden structural allocation"
+    ],
+    [
+      "C05",
+      "Cable allocation assumes 5 m at 10 g/m; spool and strain relief are additional"
+    ],
+    [
+      "C06",
+      "Battery allocation 0.450 kg is a short-duration case, not a mission requirement"
+    ],
+    [
+      "C07",
+      "No flight survival probability or qualified wall thickness follows from this trade"
+    ],
+    [
+      "C08",
+      "No mandatory 1.5 m sample depth, six-probe count or 450 kg delivery bus"
+    ],
+    [
+      "C09",
+      "No selected assembled-probe irradiation or ethylene oxide procedure"
+    ],
+    [
+      "C10",
+      "Low-conductivity dry soil assumptions cannot represent ice or competent rock"
+    ],
+    [
+      "C11",
+      "Contingency covers mass growth; it cannot replace missing power or experiment subsystems"
+    ],
+    [
+      "C12",
+      "Existing public website audience is retained; no private-access claim is made"
+    ]
+  ],
+  "risks": [
+    [
+      "R01",
+      "Sample misses relevant biology",
+      "SCI03 SCI04",
+      "Compare shallow and buried samples in analog trials"
+    ],
+    [
+      "R02",
+      "False biological signal",
+      "SCI02 SCI05",
+      "Blinded abiotic controls and multiple independent measurements"
+    ],
+    [
+      "R03",
+      "Incubation exceeds energy",
+      "SCI06 PWR01",
+      "Demonstrate time series at credible sample conditions"
+    ],
+    [
+      "R04",
+      "Science envelope does not fit",
+      "SYS02",
+      "Obtain CAD and measure package bulk density"
+    ],
+    [
+      "R05",
+      "Narrow chassis buckles or bends",
+      "MECH01",
+      "Cold oblique impact tests and finite element analysis"
+    ],
+    [
+      "R06",
+      "Hard steel fractures in cold impact",
+      "MECH01",
+      "Toughness and heat-treatment qualification"
+    ],
+    [
+      "R07",
+      "Potting cracks or contaminates assay",
+      "MECH03 PP02",
+      "Thermal cycling, shock and chemical blanks"
+    ],
+    [
+      "R08",
+      "Battery failure after impact",
+      "MECH04 PWR01",
+      "Cold shock capacity and safety testing"
+    ],
+    [
+      "R09",
+      "Tether snags or severs",
+      "MECH02",
+      "Dynamic payout and penetration demonstration"
+    ],
+    [
+      "R10",
+      "Antenna remains buried or misoriented",
+      "COM01",
+      "Surface emplacement and RF tests"
+    ],
+    [
+      "R11",
+      "Relay link or access unavailable",
+      "COM01",
+      "Selected service agreement and pass-based link budget"
+    ],
+    [
+      "R12",
+      "Drogue or separation fails",
+      "EDL02",
+      "Rarefied-atmosphere deployment tests"
+    ],
+    [
+      "R13",
+      "Entry scenario transferred incorrectly",
+      "EDL01",
+      "Independent trajectory review"
+    ],
+    [
+      "R14",
+      "Heat shield undersized",
+      "EDL01",
+      "CFD, thermal response, margins and arcjet evidence"
+    ],
+    [
+      "R15",
+      "Treatment damages measurements",
+      "PP02",
+      "Residue and compatibility validation"
+    ],
+    [
+      "R16",
+      "Recontamination during assembly",
+      "PP03",
+      "Barrier and witness verification"
+    ],
+    [
+      "R17",
+      "Local geology prevents emplacement",
+      "MECH04",
+      "Site analog impact matrix and targeting review"
+    ],
+    [
+      "R18",
+      "Heated probe changes habitat",
+      "THERM01 SCI04",
+      "Coupled soil/sample thermal model and untreated reference"
+    ],
+    [
+      "R19",
+      "Incomplete hardware allowances",
+      "SYS02",
+      "Vendor BOM and measured assembly"
+    ],
+    [
+      "R20",
+      "Carrier mass no longer closes",
+      "SYS02 EDL01",
+      "Re-size capsule dispenser and TPS"
+    ],
+    [
+      "R21",
+      "Insufficient replication",
+      "SCI05",
+      "Power analysis with spatial heterogeneity"
+    ],
+    [
+      "R22",
+      "Model used as flight qualification",
+      "VER01",
+      "Independent expert review and documented model limits"
+    ]
+  ]
+}

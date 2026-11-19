@@ -1,0 +1,5152 @@
+[
+  {
+    "id": "R6P01T01",
+    "page": 1,
+    "header": "Mark | Meaning",
+    "cells": [
+      [
+        "Mark",
+        "Meaning"
+      ],
+      [
+        "PEER REVIEW \u00b7 MAJOR",
+        "A finding that changes a decision, invalidates a stated claim, or exposes an internal inconsistency."
+      ],
+      [
+        "PEER REVIEW \u00b7\nMODERATE",
+        "Needs correctoin, qualifciatoin or additional evidence, but does not by itself change the shortlist."
+      ],
+      [
+        "PEER REVIEW \u00b7 MINOR",
+        "Editorial, rounding or presentatoin."
+      ],
+      [
+        "VERIFIED",
+        "Independently reproduced from stated inputs, or confrimed against a located source."
+      ],
+      [
+        "ADDED",
+        "New analysis or content added during the peer-review cycle (Revisions 5\u20136); not present in Revision 4."
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P01T02",
+    "page": 1,
+    "header": "Part | Sections | Purpose",
+    "cells": [
+      [
+        "Part",
+        "Sections",
+        "Purpose"
+      ],
+      [
+        "A",
+        "1 Executive summary \u2022 2 Peer review",
+        "What the study concludes, what must be decided, and what the review found."
+      ],
+      [
+        "B",
+        "3 Mission context and study basis \u2022 4\nAssumptions and data justification",
+        "Why the study exists, heritage comparisons, fgiures of merit, and every assumption\nwith its source and sensitivity."
+      ],
+      [
+        "C",
+        "5 Trade study",
+        "One decision path: optoins, model, results, sensitviity, screens, ranking, decision record,\n2 kg boundary case."
+      ],
+      [
+        "D",
+        "6 Science \u2022 7 Thermal \u2022 8 Power \u2022 9\nCommunications \u2022 10 Structure and\nimpact \u2022 11 Entry and delivery \u2022 12\nPlanetary protection",
+        "Subsystem feasibility screens that bound the trade."
+      ],
+      [
+        "E",
+        "13 Mission planning \u2022 14 Requirements\n\u2022 15 Risks \u2022 16 Next steps \u2022 17 Open\nquestions",
+        "What planners can use now: opportuniteis, scenarios, gates, requirements, risks and\nsequencing."
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P02T01",
+    "page": 2,
+    "header": "Part | Sections | Purpose",
+    "cells": [
+      [
+        "Part",
+        "Sections",
+        "Purpose"
+      ],
+      [
+        "F",
+        "18 References and provenance \u2022\nAppendices A\u2013C",
+        "Every source with its verifciatoin status; model inputs; change record."
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P03T01",
+    "page": 3,
+    "header": "ID | Decision | Recommendation | Needed before",
+    "cells": [
+      [
+        "ID",
+        "Decision",
+        "Recommendation",
+        "Needed before"
+      ],
+      [
+        "D-01",
+        "Mission class: pathfinder (no life\ndetection) or life-detection",
+        "Decide frist. It sets the planetary-protection category and\nprocess, the instrument set, the schedule and the battery.\nSectoin 12.",
+        "Any instrument or process\nselectoin"
+      ],
+      [
+        "D-02",
+        "Operating mode and duration",
+        "Choose among (a) brief sensing at about 1.5 W for up to about\n42 h, (b) insulated, warmed assay for up to about 5 days (\u22480.5\u2013\n0.9 kg battery), (c) long incubation of 30 days or more (needs\n\u22640.25 W average). Recommend (b) with a stated hypothesis and\ntime series. Sections 6\u20138.",
+        "Battery and thermal design"
+      ],
+      [
+        "D-03",
+        "Geometry carried into CAD and\ndrop test",
+        "Carry 60/2 and 70/2.5; keep 50/1.5 as comparator; reject\n35/1.5; hold 50/2 and 80/3. Section 5.8.",
+        "Gate G1"
+      ],
+      [
+        "D-04",
+        "Science package defniition",
+        "Obtain supplier concept designs and measured bulk density for\nthe \u22480.31 kg and 1 kg envelopes. If density is below 1.5 kg/L,\nreopen D-03.",
+        "Gate G0"
+      ],
+      [
+        "D-05",
+        "Delivery architecture and probe\ncount",
+        "Orbit-delivered entry stack with its own kick stage, up to fvie\nprobes in 45 kg; confirm the carrier enters Mars orbit. Section\n11 and 13.",
+        "Carrier selectoin"
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P04T01",
+    "page": 4,
+    "header": "ID | Decision | Recommendation | Needed before",
+    "cells": [
+      [
+        "ID",
+        "Decision",
+        "Recommendation",
+        "Needed before"
+      ],
+      [
+        "D-06",
+        "Radio and relay",
+        "Select a Proximity-1-compatible UHF radio, or confrim the\ncarrier relays. Open dialogue with relay operators. Sectoin 9.",
+        "Gate G1"
+      ],
+      [
+        "D-07",
+        "Margin policy",
+        "Adopt component-level growth allowance with 30 % as the\nconcept default. Sectoin 5.4.",
+        "Next ledger issue"
+      ],
+      [
+        "D-08",
+        "Evidence base",
+        "Provide the expert addendum text and reviewer name; treat [5]\nas a motviatnig hypothesis; add independent sources. Section 6,\n18.",
+        "Science requirements freeze"
+      ],
+      [
+        "D-09",
+        "Forebody structural architecture",
+        "Carry unibody steel as the baseline; carry the\nsteel-head/composite-body hybrid and a fibre-metal-laminate\nvariant as a parallel mass-reduction study. Section 5.9.",
+        "Gate G1"
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P04T02",
+    "page": 4,
+    "header": "Quantity | Revision 4 | Revision 5 | Basis",
+    "cells": [
+      [
+        "Quantity",
+        "Revision 4",
+        "Revision 5",
+        "Basis"
+      ],
+      [
+        "70/2.5 complete budget mass (25 %\ncontingency)",
+        "5.488 kg",
+        "5.488 kg",
+        "Verifeid (D)"
+      ],
+      [
+        "70/2.5 forebody envelope length",
+        "347 mm",
+        "347 mm",
+        "Verifeid (D)"
+      ],
+      [
+        "Same, conservative packaging (1.0 kg/L, 0.35 L\nancillary)",
+        "Not shown",
+        "686 mm; 7.63 kg",
+        "Added (D)"
+      ],
+      [
+        "Budget at 30 % contnigency / component-level\n(illustrative)",
+        "25 % only",
+        "5.707 kg / 5.400 kg",
+        "Added (D, E)"
+      ],
+      [
+        "Barrel side heat loss, 70 mm, k 0.039, \u0394T 50 K",
+        "1.3 W",
+        "1.32 W (88 % of 1.5 W\nproflie)",
+        "Verifeid; context added"
+      ],
+      [
+        "Battery runtime at 1.5 W (150 Wh/kg \u2192 400\nWh/kg)",
+        "41.7 h",
+        "41.7 h \u2192 116.7 h",
+        "Added (D, S)"
+      ],
+      [
+        "Entry from 250 km circular orbit at \u0394v 61.6 m/s",
+        "\u0394v only",
+        "\u22122.0\u00b0 at 3.49 km/s",
+        "Added (D)"
+      ],
+      [
+        "Probes within 45 kg at DS2 aeroshell fraction",
+        "Six do not close",
+        "Five close (40.7 kg)",
+        "Added (D, S)"
+      ],
+      [
+        "Euler buckling margin, 35/1.5 at average load",
+        "Not computed",
+        "0.87 (fails)",
+        "Added (D, E)"
+      ],
+      [
+        "UHF link margin, 1 W, 8 kbps, 1,000 km",
+        "Not computed",
+        "\u2248 +4 dB (illustratvie)",
+        "Added (D, E)"
+      ]
+    ],
+    "family": "Decision and provenance records",
+    "steps": "Transcribe each decision, class and original input; compare to R7T01 conflict ledger. No approval or measured performance inferred.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P05T01",
+    "page": 5,
+    "header": "Item | Revision 4 value | Independent result | Status",
+    "cells": [
+      [
+        "Item",
+        "Revision 4 value",
+        "Independent result",
+        "Status"
+      ],
+      [
+        "Six candidate masses (35\u201380 mm)",
+        "5.538, 5.012, 5.494, 5.255, 5.488, 5.728\nkg",
+        "Identical to 3 decimals",
+        "Verified"
+      ],
+      [
+        "70/2.5 ledger and split",
+        "Fore 3.520; aft 0.870; nominal 4.390;\ntotal 5.488 kg",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Cavity volume and density sensitivity",
+        "0.954 L; 1.723 / 0.954 / 0.697 L; 579 /\n347 / 270 mm",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "2 kg standard and reduced budgets",
+        "2.232 / 2.790; 1.252; 0.348; 0.3085 kg;\n1.561 / 1.951 kg",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Science-only reduction on 70/2.5",
+        "0.422 L; 187 mm; 3.607 kg",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Battery table",
+        "41.0 / 185.0 / 1,085 / 3,245 Wh; 41.7 h",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Thermal skin depth and 1.5 m remnant",
+        "0.032 m; 0.828 m; 16 %",
+        "0.0320 m; 0.8281 m; 16.3 %",
+        "Verified"
+      ],
+      [
+        "Radial side loss, 70 mm",
+        "\u2248 1.3 W",
+        "1.32 W",
+        "Verified"
+      ],
+      [
+        "Orbit example",
+        "61.56 m/s; 12.38 kg; 273 s",
+        "61.56 m/s; 12.38 kg; 273.2 s",
+        "Verified"
+      ],
+      [
+        "Impact energy and average g",
+        "6,054 J; 17,601 J; 1,020 g",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Carrier arithmetic",
+        "32.93; 53.93; 12.07 kg",
+        "Identical",
+        "Verified"
+      ],
+      [
+        "Potting density from EPO-TEK 301-2",
+        "\u2248 1.09 g/cm\u00b3",
+        "1.0905 (100/1.15 + 35/0.95 volumes)",
+        "Verified"
+      ],
+      [
+        "Matched-wall 2 mm budgets (50 / 60 / 70\nmm)",
+        "5.49 / 5.26 / 5.14 kg",
+        "5.494 / 5.255 / 5.128 kg",
+        "Minor"
+      ]
+    ],
+    "family": "Peer review findings",
+    "steps": "Locate each PR ID, source, calculation and severity; apply the current correction register. Review findings are assertions to test, not signed expert closure.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P05T02",
+    "page": 5,
+    "header": "ID | Severity | Rev 4 location | Finding | Disposition in Rev 5",
+    "cells": [
+      [
+        "ID",
+        "Severity",
+        "Rev 4 location",
+        "Finding",
+        "Disposition in Rev 5"
+      ],
+      [
+        "PR-01",
+        "Minor",
+        "\u00a75 matched wall",
+        "At a common 2 mm wall the 70 mm budget is 5.128 kg; Rev 4 prints 5.14 kg.",
+        "Corrected to 5.13 kg (\u00a75.2)."
+      ],
+      [
+        "PR-02",
+        "Major",
+        "Whole\ndocument",
+        "The trade is spread over an unnumbered preface, \u00a71 and \u00a74\u2013\u00a77. Criteria,\nweights and screens are never stated, so the 60\u201370 mm shortlist is asserted\nrather than derived. Findings precede the model that produces them.",
+        "Restructured into Parts A\u2013F; explicit\nfigures of merit, hard screens, five\nweight sets and a decision record\n(\u00a75)."
+      ],
+      [
+        "PR-03",
+        "Major",
+        "\u00a710 gates, \u00a711\nrequirements",
+        "Identfiiers PP01\u2013PP03 are used twice with different meanings (gate\n\"Coverage and residues\" versus requirement \"Maintain barriers\").\nTraceability is ambiguous.",
+        "Gates renamed PPG01\u2013PPG05;\ncrosswalk in \u00a712 and \u00a714."
+      ],
+      [
+        "PR-04",
+        "Major",
+        "\u00a73, \u00a78",
+        "Side loss of the 70 mm barrel (1.3 W at k 0.039 W/m K, \u0394T 50 K) is 88 % of\nthe 1.5 W profile behind the 41.7 h runtime. Holding that \u0394T for 41.7 h costs\n55 Wh of the 62.5 Wh available. k is site dependent (Phoenix more than 2\u00d7),\nso loss can reach 2.9 W or more. The runtime is valid only for an unwarmed\nbody.",
+        "Mode table, k sensitviity and\ninsulation screen (\u00a77); power modes\n(\u00a78); D-02; R24."
+      ],
+      [
+        "PR-05",
+        "Major",
+        "\u00a72, \u00a78",
+        "Rev 4 allows months-long recovery but sizes energy for 1.7 days. Measured\ndoubling times are about 20 d at \u221210 \u00b0C and about 160 d at \u221220 \u00b0C [35]; 130-\nday incubations were used at \u221215 \u00b0C [37]. The architecture cannot test\ndelayed recovery.",
+        "Timescale table (\u00a76); duration\u2013\npower map (\u00a78); D-02; R23."
+      ]
+    ],
+    "family": "Peer review findings",
+    "steps": "Locate each PR ID, source, calculation and severity; apply the current correction register. Review findings are assertions to test, not signed expert closure.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P06T01",
+    "page": 6,
+    "header": "ID | Severity | Rev 4 location | Finding | Disposition in Rev 5",
+    "cells": [
+      [
+        "ID",
+        "Severity",
+        "Rev 4 location",
+        "Finding",
+        "Disposition in Rev 5"
+      ],
+      [
+        "PR-06",
+        "Moderat\ne",
+        "\u00a73",
+        "\u03b1 = 3.63\u00d710\u207b\u2078 m\u00b2/s is called \"illustrative\". It is the measured annual-\nvariatoin diffusivity of the top \u224840 cm at InSight (\u00b10.53\u00d710\u207b\u2078) [2]. Extending\nit to 1.5 m is an extrapolation.",
+        "Sourced; \u00b11\u03c3 band in Fig. 5; 1.5 m\nremnant 14\u201318 %."
+      ],
+      [
+        "PR-07",
+        "Moderat\ne",
+        "\u00a73",
+        "k = 0.039 W/m K comes from Grott et al. 2021 [14] (0.03\u20130.37 m, fine sand,\nabout 60 % porosity), not from [2]. It varies with atmospheric pressure [15]\nand is more than twice as high at Phoenix [14].",
+        "[14], [15] added; k sensitivity (\u00a77)."
+      ],
+      [
+        "PR-08",
+        "Moderat\ne",
+        "\u00a72, [3]",
+        "Clifofrd et al. [3] addresses cryosphere depth (km scale). The 218 K / 154 K\nsurface values are widely quoted but could not be confrimed in the paper\ntext. For shallow soil the InSight datum (217.5 K at 10\u201320 cm) is betetr.",
+        "Flagged partially verified; [2] is\nprimary."
+      ],
+      [
+        "PR-09",
+        "Moderat\ne",
+        "\u00a75, [7]",
+        "[7] is a powder datasheet. Wrought 4340 data quantfiy the strength\u2013\ntoughness trade: from conditoin U to Z the minimum yield rises 740 \u2192\n1,125 MPa while the minimum Charpy energy falls 42 \u2192 9 J [45]. Temper\nembrittlement is reported near 350 \u00b0C tempering [46]. No cold toughness\nevidence.",
+        "[45], [46] added; A-06; MECH01\nkept."
+      ],
+      [
+        "PR-10",
+        "Moderat\ne",
+        "\u00a78, [9]",
+        "AX100 is a CubeSat FSK/GMSK radio (0.1\u2013115.2 kbps; UHF-L 395\u2013405 MHz;\nrated \u221230 to +85 \u00b0C) [9]. Mars relay orbiters use CCSDS Proximity-1; Electra\nsupports BPSK, QPSK, Manchester [28][30]. The mass analogy stands;\ninteroperability and cold-soak survival do not follow.",
+        "\u00a79; COM02; THERM02; R25."
+      ],
+      [
+        "PR-11",
+        "Moderat\ne",
+        "R11, \u00a78",
+        "Relay availability is a generic risk. MAVEN was declared ended on 3 June\n2026; four orbiters remain (ODY, MEX, MRO, TGO). NASA issued a Mars\nTelecommunications Network RFP on 14 May 2026 targeting operations no\nlater than 2030 [26].",
+        "Relay table and link budget (\u00a79);\nR26."
+      ],
+      [
+        "PR-12",
+        "Moderat\ne",
+        "\u00a76, SYS03",
+        "A flat 25 % contingency is below the 30 % commonly used at concept stage\nunder AIAA S-120 practcie [42]. Allocatoin should be per component by\nmaturity. An illustrative mix gives 23.0 %.",
+        "\u00a75.4; SYS04; D-07."
+      ],
+      [
+        "PR-13",
+        "Moderat\ne",
+        "\u00a79",
+        "The orbit example gives \u0394v but no entry state. 61.6 m/s gives \u22122.0\u00b0 at 3.49\nkm/s (125 km entry interface). \u221213\u00b0 needs about 889 m/s (149 kg for the\n450 kg parent). The entry stack alone needs 1.24 kg.",
+        "\u00a711 table and Fig. 10."
+      ],
+      [
+        "PR-14",
+        "Moderat\ne",
+        "\u00a71",
+        "\"Does not close\" is right but incomplete. Closure needs a non-probe fraction\nof at most 26.8 % for six probes at 45 kg. DS2 aeroshell was 32.6 % of\nprobe-plus-aeroshell mass [20]; fvie probes close (40.7 kg), six do not.",
+        "\u00a711 closure table and Fig. 11; D-05."
+      ],
+      [
+        "PR-15",
+        "Moderat\ne",
+        "\u00a79",
+        "Average g (1,020 g) is not a design load. DS2 forebody was designed for\n30,000 g and aftbody 80,000 g [18], although mean deceleration over 0.6 m\nat 190 m/s is about 3,070 g (design \u2248 10\u00d7 mean).",
+        "Fig. 9; MECH04; R29."
+      ],
+      [
+        "PR-16",
+        "Major",
+        "\u00a75\u2013\u00a77",
+        "No structural check exists, so \"35 mm is too slender\" is a judgment. A pin-\nended Euler screen at the 100 m/s, 0.5 m average load gives margin 0.87 for\n35/1.5 versus 13\u2013428 for the others (0.29 versus 4.4\u2013143 at 3\u00d7 load). Crude,\nbut quantitatvie.",
+        "\u00a75.3, \u00a75.5; MECH05; 35 mm rejected\non evidence."
+      ],
+      [
+        "PR-17",
+        "Moderat\ne",
+        "\u00a79",
+        "Penetratoin prediction was withdrawn with no frist-order replacement.\nSectional density is the lead discriminator in Young/Sandia scaling,\n(m/A)^0.7 [22]. 70/2.5 is 915 kg/m\u00b2 versus 696 (DS2 forebody) and 1,600\n(2005 study forebody) [21].",
+        "Relative scaling (\u00a710), marked\nindicative; R30."
+      ],
+      [
+        "PR-18",
+        "Moderat\ne",
+        "\u00a76",
+        "The 0.250 kg drogue, riser and separatoin allowance has no sizing basis. For\n4.39 kg and Cd 0.6, 100 m/s needs about 0.66 m diameter (0.56\u20130.83 m\nacross 0.022\u20130.010 kg/m\u00b3) [16].",
+        "\u00a711 table; EDL03."
+      ],
+      [
+        "PR-19",
+        "Moderat\ne",
+        "\u00a78",
+        "150 Wh/kg is conservative against cell-level 421 Wh/kg (Li/SOCl2) and 730\nWh/kg (Li/CFx) at 20 \u00b0C [23], but Li/CFx discharge collapses near \u221240 \u00b0C [23].\nEven 400 Wh/kg gives only 116.7 h at 1.5 W.",
+        "Chemistry matrix (\u00a78); A-12."
+      ]
+    ],
+    "family": "Peer review findings",
+    "steps": "Locate each PR ID, source, calculation and severity; apply the current correction register. Review findings are assertions to test, not signed expert closure.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P07T01",
+    "page": 7,
+    "header": "ID | Severity | Rev 4 location | Finding | Disposition in Rev 5",
+    "cells": [
+      [
+        "ID",
+        "Severity",
+        "Rev 4 location",
+        "Finding",
+        "Disposition in Rev 5"
+      ],
+      [
+        "PR-20",
+        "Moderat\ne",
+        "\u00a710, [10], [11]",
+        "Framework incomplete: Category IVa/IVb/IVc, Special Region thresholds\nand NPR 8715.24 (listed expiry 24 Sep 2026, status to verify) are not stated.\n[11] resolves to NASA-HDBK-20240016475. A warmed assay may itself raise\nSpecial Region questions.",
+        "\u00a712; PP04; R27."
+      ],
+      [
+        "PR-21",
+        "Moderat\ne",
+        "\u00a72, [1][5][13]",
+        "[1], [5] and [13] share a lead author group; [5] is a preprint on the author's\nsite and contests a consensus (perchlorate chemistry explains Viking GC-MS\nand LR results [39][40]). Independent evidence-standard sources were\nabsent.",
+        "[38]\u2013[41] added; [5] reclassifeid; D-\n08."
+      ],
+      [
+        "PR-22",
+        "Moderat\ne",
+        "\u00a72, [6], [12]",
+        "[12] is a link to a private library and [6] returned no content. The change\nfrom 1.5 m to shallow-skin sampling rests on [12], which this review could\nnot read. Reviewer identity unknown.",
+        "Marked X (\u00a718); request text and\nname (\u00a717)."
+      ],
+      [
+        "PR-23",
+        "Minor",
+        "[3]",
+        "Journal title is \"Journal of Geophysical Research: Planets\".",
+        "Corrected."
+      ],
+      [
+        "PR-24",
+        "Moderat\ne",
+        "\u00a74",
+        "No comparison with flown or studied penetrators. 5.49 kg is 2.3\u00d7 DS2 (2.4\nkg) and about 2.7\u00d7 the IMPRESS reference (about 2 kg); 1 kg science is 3.2\u00d7\nthe 0.31 kg the IMPRESS cavity supports. Aftbody 0.87 kg versus 5.6 kg in a\n2005 study (scope unverified).",
+        "Heritage table (\u00a73.2); R32."
+      ],
+      [
+        "PR-25",
+        "Minor",
+        "Fig. 3",
+        "Legend overlapped the bars.",
+        "All figures regenerated."
+      ],
+      [
+        "PR-26",
+        "Minor",
+        "App. B",
+        "The website and its source could not be audited. The equations were re-\nimplemented independently and agree with the report.",
+        "Noted; publish code and tests with\nthe report."
+      ],
+      [
+        "PR-27",
+        "Moderat\ne",
+        "\u00a75, [8]",
+        "EPO-TEK 301-2 is only a density analog; ftiness as cryogenic shock potting is\nunestablished. Workmanship and outgassing standards (NASA-STD-8739.1,\nASTM E595) are not referenced.",
+        "A-09; recommended reading (\u00a718)."
+      ],
+      [
+        "PR-28",
+        "Moderat\ne",
+        "Whole\ndocument",
+        "No schedule or readiness view. The December 2028 transfer window is\nabout 26 months away.",
+        "\u00a713 gates and options."
+      ],
+      [
+        "PR-29",
+        "Moderat\ne",
+        "\u00a711",
+        "No traceability from objectvie to measurement to requirement.",
+        "\u00a73.1 table."
+      ],
+      [
+        "PR-30",
+        "Minor",
+        "Reduced case",
+        "Cavity 345 cm\u00b3 (published) versus 364 cm\u00b3 geometric (47 mm bore \u00d7 210\nmm). Chassis 0.617 \u2192 0.557 kg is solely joints 0.120 \u2192 0.060 kg. Neither is\nstated.",
+        "\u00a75.6 clarified."
+      ],
+      [
+        "PR-31",
+        "Major",
+        "\u00a74",
+        "Science bulk density 2.0 kg/L is unsourced and optmi istic: the only\nsupplement datum (humidity sensor, 45 g in 124 cm\u00b3) is 0.36 kg/L, and the\n1\u20133 kg/L sensitivity range excludes it. At 0.5 kg/L the 70 mm envelope is\nabout 1.04 m and budget 9.9 kg.",
+        "\u00a75.4; A-02; D-04; R04."
+      ],
+      [
+        "PR-32",
+        "Major",
+        "\u00a74",
+        "The 0.120 L ancillary volume is under half the volume of the cells alone:\n0.450 kg of D-size Li/SOCl2 (100 g, 54 cm\u00b3 each) is 4.5 cells, about 0.243 L,\nbefore controller, heater and harness. At 0.35 L the 70/2.5 grows from 347\nto 454 mm (+0.68 kg).",
+        "\u00a75.4; A-03."
+      ],
+      [
+        "PR-33",
+        "Moderat\ne",
+        "\u00a78",
+        "Power ledger omits radio listening (receive class about 0.4 W, 16.7 Wh over\n41.7 h if always on; secondary source), transmit (0.2\u20131.1 Wh per 6 min pass)\nand heater power for a \u221230 \u00b0C-rated radio.",
+        "\u00a78, \u00a79; PWR02."
+      ],
+      [
+        "PR-34",
+        "Moderat\ne",
+        "\u00a79",
+        "Delivery is assumed from a circular orbit. NASA's December 2028 SR-1\nFreedom has not decided between fylby and orbit after delivering SkyFall\n[43]. A fylby carrier implies direct entry: higher speed, heavier thermal\nprotectoin.",
+        "\u00a713; D-05; R34."
+      ]
+    ],
+    "family": "Peer review findings",
+    "steps": "Locate each PR ID, source, calculation and severity; apply the current correction register. Review findings are assertions to test, not signed expert closure.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P08T01",
+    "page": 8,
+    "header": "Objective (proposed) | Measurement that would show it | Hardware implied | Requirement IDs",
+    "cells": [
+      [
+        "Objective (proposed)",
+        "Measurement that would show it",
+        "Hardware implied",
+        "Requirement IDs"
+      ],
+      [
+        "O1 Test whether\nshallow regolith\ncontains metabolically\nactive or recoverable\nlife",
+        "Time-resolved response of treated\nsample versus untreated, blank and\nreagent controls; independent\ndiscriminants; abiotci alternatvie stated\nin advance",
+        "Sampler, warmed chamber, assay\ninstrument, batetry, thermal\nisolatoin",
+        "SCI02, SCI03, SCI05, SCI06, PWR01,\nTHERM01"
+      ],
+      [
+        "O2 Characterize\nhabitability context at\nthe sample",
+        "Temperature versus depth, humidity or\nwater-activity proxy, salts, pressure",
+        "Temperature string, humidity\nsensor, conductivity or chemistry\nsensor",
+        "SCI04, THERM01"
+      ],
+      [
+        "O3 Provide replicatoin\nand spatial context",
+        "Same measurements at several nodes,\nwith heterogeneity estmi ated",
+        "Multpile probes, relay data return",
+        "SCI05, COM01, COM02, EDL01"
+      ],
+      [
+        "O4 Optional\ngeophysical and\natmospheric context",
+        "Seismic, pressure and temperature\ntime series (supplement class\ninstruments [13])",
+        "Small sensors within the 1 kg or an\nadded allocation",
+        "SCI01, SYS02"
+      ],
+      [
+        "O5 Survive\nemplacement and\ncommunicate",
+        "Post-impact function and link closure",
+        "Forebody, tether, afbtody, radio,\ndrogue",
+        "MECH01\u2013MECH05, COM01\u2013COM03,\nEDL02, EDL03"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P08T02",
+    "page": 8,
+    "header": "Design | Geometry | Mass | Impact or depth | Notes and source",
+    "cells": [
+      [
+        "Design",
+        "Geometry",
+        "Mass",
+        "Impact or depth",
+        "Notes and source"
+      ],
+      [
+        "DS2 forebody (folwn,\n1999)",
+        "35 mm \u00d7 105.6 mm",
+        "0.670 kg forebody; 2.4\nkg probe; 3.572 kg with\n1.165 kg aeroshell [20]",
+        "About 190 m/s design; 0.6 m\npredicted penetration [19]",
+        "Designed for 30,000 g (forebody) and\n80,000 g (aftbody) [18]. Two Li/SOCl2\ncells, 600 mAh each. Mission lost; the\nreview board found no single most\nprobable cause; plausible modes\nincluded impact damage, antenna\norientation and the UHF link [17]."
+      ],
+      [
+        "IMPRESS reference\n(concept)",
+        "50 mm OD, 1.5 mm wall,\n210 mm cylinder, 345\ncm\u00b3 cavity",
+        "About 2 kg forebody\nplus aftbody (Mars-\nready target) [1]",
+        "Emplaces 0.2\u20131 m [1]",
+        "Parameters carried from Rev 4, which\ninspected the paper; the full text was\nnot accessible to this review (X)."
+      ],
+      [
+        "ESA-study micro-\npenetrator (2005)",
+        "Forebody 5 cm (A =\n0.002 m\u00b2)",
+        "Forebody 2.7 kg (3.2\nwith margin); aftbody\n5.6 kg (6.7 with margin)\n[21]",
+        "150 m/s; Young depth 0.76\u2013\n1.36 m for S = 5\u20139 [21]",
+        "Closest mass analog to FREYA's\nforebody. Aftbody scope not verified\n(search excerpt only)."
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P09T01",
+    "page": 9,
+    "header": "Design | Geometry | Mass | Impact or depth | Notes and source",
+    "cells": [
+      [
+        "Design",
+        "Geometry",
+        "Mass",
+        "Impact or depth",
+        "Notes and source"
+      ],
+      [
+        "FREYA 70/2.5 (this study)",
+        "70 mm OD, 2.5 mm wall,\n347 mm",
+        "Forebody 3.520 kg;\naftbody 0.870 kg;\nnominal 4.390; budget\n5.488 kg",
+        "100 m/s reference; 0.5 m\nstopping distance (illustration)",
+        "Sectional density 915 kg/m\u00b2 versus DS2\n696 and ESA study 1,600."
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P09T02",
+    "page": 9,
+    "header": "ID | Figure of merit | Direction | Why it matters and how it is computed here",
+    "cells": [
+      [
+        "ID",
+        "Figure of merit",
+        "Direction",
+        "Why it matters and how it is computed here"
+      ],
+      [
+        "FOM-\n1",
+        "Complete probe budget mass, kg",
+        "Lower",
+        "Drives entry mass, carrier closure and cost. Computed from the ledger with 25 %\ncontingency (\u00a75.2)."
+      ],
+      [
+        "FOM-\n2",
+        "Euler buckling margin at 3\u00d7 average\naxial load",
+        "Higher,\nsaturating at\n10",
+        "Slender bodies fail by column buckling. Pin-ended Euler load of the barrel plus\nnose over the average impact force (\u00a75.3). Margin below 1 fails."
+      ],
+      [
+        "FOM-\n3",
+        "Sectoinal density m/A, kg/m\u00b2",
+        "Higher",
+        "First-order discriminator for penetration in Young/Sandia scaling [22]. Forebody\nmass over frontal area."
+      ],
+      [
+        "FOM-\n4",
+        "Bore diameter, mm",
+        "Higher",
+        "Instrument cross-section and connector access. Package CAD is not available, so\nthis is a proxy."
+      ],
+      [
+        "FOM-\n5",
+        "Forebody envelope length, mm",
+        "Lower",
+        "Stowage in the entry stack, handling and tether geometry."
+      ],
+      [
+        "FOM-\n6",
+        "Barrel side heat loss, W",
+        "Lower",
+        "Conductive-limit loss to the soil at \u0394T = 50 K (\u00a77). Proxy for thermal-isolation\nburden."
+      ],
+      [
+        "FOM-\n7",
+        "Distance from the 50 mm reference,\nmm",
+        "Lower",
+        "Development risk. Published geometry is 50 mm [1]; the only flown design is 35\nmm [20]."
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P09T03",
+    "page": 9,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-01",
+        "Science mass 1.000 kg",
+        "U",
+        "Customer directoin. No instrument suite exists. The\nsupplement lists individual instruments of tens of\ngrams (humidity sensor 45 g) [13], not an integrated\nlife-detection suite.",
+        "\u00b10.5 kg moves the 70/2.5 budget\nby \u00b11.36 kg and length by \u00b1116\nmm.",
+        "G0"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P10T01",
+    "page": 10,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-02",
+        "Science bulk density 2.0 kg/L\n(0.500 L for 1 kg)",
+        "E",
+        "No CAD. Mid-range of Rev 4's 1\u20133 kg/L sensitviity.\nThe only supplement datum, humidity sensor 45 g in\n124 cm\u00b3, is 0.36 kg/L [13]. An integrated package\nwith reagents and vials may be denser; 2.0 is not\nconservatvie (PR-31).",
+        "1.0 kg/L: 579 mm, +1.47 kg. 0.5\nkg/L: 1,043 mm, 9.9 kg. 3.0 kg/L:\n270 mm, \u22120.49 kg.",
+        "G0, G1"
+      ],
+      [
+        "A-03",
+        "Ancillary internal volume 0.120\nL (batetry, controller, heater,\nharness)",
+        "E",
+        "Rev 4 calls it aggressive. A D-size Li/SOCl2 cell is 33.4\n\u00d7 61.6 mm = 54 cm\u00b3 and 100 g [24]; 0.450 kg is 4.5\ncells \u2248 0.243 L before electronics (PR-32).",
+        "0.25 L: 408 mm. 0.35 L: 454 mm,\n+0.68 kg (70/2.5).",
+        "G1"
+      ],
+      [
+        "A-04",
+        "Potting 25 %, reserved space 10\n% of cavity",
+        "E",
+        "No source. Potting provides shock isolatoin and\nsealing; the fractoins are engineering choices.",
+        "Potting 20 / 30 %: \u22120.19 / +0.22\nkg. Reserved 5 / 15 %: \u22120.13 /\n+0.15 kg.",
+        "G1"
+      ],
+      [
+        "A-05",
+        "Six probes; 45 kg entry mass",
+        "U/E",
+        "No replicatoin design supports six. Treated as a\nscenario only.",
+        "See \u00a711 closure table.",
+        "G0"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P10T02",
+    "page": 10,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-06",
+        "4340-class steel, density 7,850\nkg/m\u00b3",
+        "S",
+        "Density 7.85 g/cm\u00b3 for the powder alloy [7] and\nwrought datasheet [45]. Reliable.",
+        "Negligible.",
+        "\u2014"
+      ],
+      [
+        "A-07",
+        "Hardened 4340 survives cold\nimpact",
+        "E / X",
+        "Not established. From condition U to Z the wrought\ndatasheet minimum yield rises 740 \u2192 1,125 MPa\nwhile minimum Charpy falls 42 \u2192 9 J [45]; temper\nembrittlement near 350 \u00b0C tempering [46]. No\nMars-night toughness data located.",
+        "Brittle fracture voids the structure\n(R06).",
+        "G2"
+      ],
+      [
+        "A-08",
+        "Wall schedule 1.5 / 2 / 2.5 / 3\nmm for 50 / 60 / 70 / 80 mm",
+        "E",
+        "Chosen to screen plausible geometries; the IMPRESS\nreference wall is 1.5 mm [1]. No structural analysis.",
+        "\u00b10.5 mm wall \u2248 \u00b10.37 kg at 70\nmm.",
+        "G2"
+      ],
+      [
+        "A-09",
+        "Hollow hemispherical nose, 5\nmm cap, joints and cage 0.120\nkg",
+        "E",
+        "Geometry choices. A solid or thick ogive nose raises\nmass and changes the Young nose coefficient.",
+        "Joints 0.06 / 0.20 kg: \u22120.07 / +0.10\nkg.",
+        "G1"
+      ],
+      [
+        "A-10",
+        "Potting density 1.10 kg/L",
+        "S/E",
+        "EPO-TEK 301-2: 100:35 by mass; specific graviteis\n1.15 and 0.95 give 1.0905 kg/L [8]. An analog only;\ncured density and cryogenic shock behavior\nuntested (PR-27).",
+        "\u00b15 % \u2248 \u00b10.013 kg.",
+        "G2"
+      ],
+      [
+        "A-11",
+        "Young's modulus 205 GPa for\nthe Euler screen",
+        "E",
+        "Typical for steel; not temperature corrected.",
+        "Margins scale linearly.",
+        "G2"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P10T03",
+    "page": 10,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-12",
+        "Batetry 0.450 kg",
+        "U/E",
+        "Short-duration allowance, not a requirement (C06).",
+        "30 days at 1.5 W needs 7.2 kg.",
+        "G1"
+      ],
+      [
+        "A-13",
+        "Usable specific energy 150\nWh/kg at battery level",
+        "E",
+        "Conservative screening value. Cell level at 20 \u00b0C, 50\nmA: Li/SOCl2 421 Wh/kg, Li/CFx 730\u2013741 Wh/kg\n[23]. Li/CFx discharge fails near \u221240 \u00b0C [23]. DS2\nused a modified Li/SOCl2 for cold operatoin [19]\n[25].",
+        "250 Wh/kg: 71.7 h. 400 Wh/kg:\n116.7 h at 1.5 W.",
+        "G1"
+      ],
+      [
+        "A-14",
+        "Average load 1.5 W plus 5 Wh\nstart-up",
+        "E",
+        "No load budget behind it. Barrel side loss alone is\n1.3 W (PR-04). Radio listening and heater power are\nnot included (PR-33).",
+        "A warmed 5-day assay needs\nabout 130 Wh (\u00a78).",
+        "G1"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P11T01",
+    "page": 11,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-15",
+        "Soil diffusivity 3.63\u00d710\u207b\u2078 m\u00b2/s",
+        "S",
+        "(3.63 \u00b1 0.53)\u00d710\u207b\u2078 m\u00b2/s for the 40 cm range from\nthe annual variation; (3.93 \u00b1 0.39)\u00d710\u207b\u2078 for the\nupper 10 cm from the diurnal variation [2].\nExtended to 1.5 m by extrapolation.",
+        "\u03b1 = 10\u207b\u2077 (illustratvie cemented\nground): 1.5 m remnant 34 %.",
+        "Site data"
+      ],
+      [
+        "A-16",
+        "Soil conductivity 0.039 W/m K",
+        "S",
+        "0.039 \u00b1 0.002 over 0.03\u20130.37 m at InSight [14];\nvaries with atmospheric pressure [15]; Phoenix\nmore than twice as high [14].",
+        "k = 0.085: 2.9 W. 0.3: 10 W. 2.0:\n68 W (70 mm barrel).",
+        "Site data"
+      ],
+      [
+        "A-17",
+        "\u0394T 50 K; far-field radius 0.5 m",
+        "E",
+        "Arbitrary screening choices.",
+        "Far-field 0.1 / 0.2 / 1 / 2 m: 3.35 /\n2.02 / 1.05 / 0.87 W.",
+        "Thermal\nmodel"
+      ],
+      [
+        "A-18",
+        "Mean soil temperature 217.5 K",
+        "S",
+        "10\u201320 cm depth, InSight; 5.3\u20136.7 K variation over a\nsol, 13.3 K over the seasons [2].",
+        "Site specific.",
+        "Site data"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P11T02",
+    "page": 11,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-19",
+        "Transceiver 0.100 kg packaged",
+        "E",
+        "Bare AX100 is 24.5 g, 65 \u00d7 40 \u00d7 6.5 mm [9]. Not a\nProximity-1 radio (PR-10).",
+        "A different radio changes mass,\npower and interface.",
+        "G1"
+      ],
+      [
+        "A-20",
+        "Link budget inputs: 1 W\ntransmit, \u22123 dBi whip, +3 dBi\norbiter antenna, 6 dB\npolarizatoin and orientation\nloss, Tsys 806 K, required Eb/N0\n6 dB",
+        "E",
+        "AX100 30 dBm output [9]. Electra receive noise\nfigure 4.9 dB [28] with an assumed 200 K antenna\ntemperature. MER UHF monopole nominal gain 0\ndB, RHCP [29]. The orbiter gain, losses and threshold\nare assumptoins.",
+        "\u00b13 dB moves margins by \u00b13 dB.",
+        "Link analysis"
+      ],
+      [
+        "A-21",
+        "\u03bc = 4.282837\u00d710\u00b9\u00b3 m\u00b3/s\u00b2, R =\n3,389.5 km",
+        "S",
+        "NASA Mars Fact Sheet [16].",
+        "Negligible.",
+        "\u2014"
+      ],
+      [
+        "A-22",
+        "Example parent 450 kg, 250 km\ncircular orbit, Isp 225 s, 100 N",
+        "E",
+        "Optoinal example, not a selected carrier. MRO relay\naltitude 255\u2013320 km and TGO 400 km for context\n[26].",
+        "\u0394v scales with orbit; propellant\nscales with Isp and mass.",
+        "Carrier\nselectoin"
+      ],
+      [
+        "A-23",
+        "Impact 100 m/s, stopping\ndistance 0.5 m",
+        "E",
+        "Illustration. DS2 was designed for about 190 m/s\n[19]; IMPRESS emplacement 0.2\u20131 m [1].",
+        "Average g scales with v\u00b2 and 1/s.",
+        "EDL model"
+      ],
+      [
+        "A-24",
+        "Air density 0.016 kg/m\u00b3 (0.010\u2013\n0.022), drogue Cd 0.6, g 3.71\nm/s\u00b2",
+        "S/E",
+        "Surface density 0.016 \u00b1 0.006 kg/m\u00b3 [16]. Cd and the\nrange are estmi ates.",
+        "Terminal speed scales as \u03c1^\u2212\u00bd.",
+        "EDL model"
+      ],
+      [
+        "A-25",
+        "21 kg carrier placeholder",
+        "X",
+        "Historical, not re-sized. At the DS2 aeroshell\nfraction, six probes imply 15.9 kg of aeroshell alone\n[20].",
+        "See \u00a711.",
+        "Carrier\ndesign"
+      ],
+      [
+        "A-26",
+        "Entry interface 125 km",
+        "E",
+        "Conventional. Using 120 km changes the entry angle\nby less than 0.01\u00b0.",
+        "Negligible.",
+        "\u2014"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P11T03",
+    "page": 11,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-27",
+        "Contingency 25 % of all nominal\nmass",
+        "E",
+        "Policy choice. AIAA S-120 assigns growth allowance\nper component by maturity [42]; LUVOIR used 30 %\n[42].",
+        "30 %: 5.707 kg. Component-level\n(illustrative): 5.400 kg.",
+        "Next ledger"
+      ],
+      [
+        "A-28",
+        "Shallow skin 0\u20133 cm; buried\nsensing 0.2\u20131 m",
+        "S/D",
+        "Diurnal skin depth 3.2 cm derived from [2]; IMPRESS\nemplacement 0.2\u20131 m [1].",
+        "Changes sampler design.",
+        "G0"
+      ]
+    ],
+    "family": "Heritage figures of merit and assumptions",
+    "steps": "Read each source value or E/U/X class. Use geometric mass, power, thermal, orbital or link family below only for explicitly derived cells. Preserve source status and sensitivity.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P12T01",
+    "page": 12,
+    "header": "ID | Assumptoi n and value | Clas s | Justfi ication and source | If wrong | Retrie by",
+    "cells": [
+      [
+        "ID",
+        "Assumptoi n and value",
+        "Clas\ns",
+        "Justfi ication and source",
+        "If wrong",
+        "Retrie by"
+      ],
+      [
+        "A-29",
+        "Planetary-protectoin category",
+        "X",
+        "Not assumed. Assigned by the mission authority [10]\n[31][34]. See \u00a712.",
+        "Sets bioburden endpoints and\nprocess.",
+        "D-01"
+      ],
+      [
+        "A-30",
+        "Special Region screen: T \u2265 255 K\nand aw > 0.60, with\nconservatvie \u221228 \u00b0C and aw \u2265\n0.5 carried by NASA and NASEM",
+        "S",
+        "SR-SAG2 as summarized in [33]; NASEM and NASA\nOPP slides [32].",
+        "A warmed assay may trigger\nCategory IVc questions.",
+        "G0"
+      ],
+      [
+        "A-31",
+        "Replication",
+        "X",
+        "Six nodes is a scenario. No power analysis exists.",
+        "Statistical power unknown.",
+        "G1"
+      ]
+    ],
+    "family": "Geometry ledger and structural candidates",
+    "steps": "Convert mm to m; V=(m/rho+Va)/(1-fp-fr); L=V/A_bore; sum annular barrel, hemisphere, cap, joints and potting plus all hardware. Sum locations then margin. Euler=pi^2 E I/(L+r)^2; divide by m_fore*v^2/(2s), and by 3 times that load. Heat=2pi*k*L*DeltaT/ln(rfar/r).",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P12T02",
+    "page": 12,
+    "header": "Hardware | Locatoi n | Nominal kg | Class | Basis",
+    "cells": [
+      [
+        "Hardware",
+        "Locatoi n",
+        "Nominal kg",
+        "Class",
+        "Basis"
+      ],
+      [
+        "Science package",
+        "Forebody",
+        "1.000",
+        "U",
+        "Customer directoin (A-01)"
+      ],
+      [
+        "Steel tube",
+        "Forebody",
+        "1.196",
+        "D",
+        "70 mm, 2.5 mm wall, 287 mm barrel"
+      ],
+      [
+        "Steel hemispherical nose",
+        "Forebody",
+        "0.141",
+        "D",
+        "Hollow, constant wall"
+      ],
+      [
+        "Steel rear cap 5 mm",
+        "Forebody",
+        "0.151",
+        "D",
+        "Full-diameter cap"
+      ],
+      [
+        "Steel joints and cage",
+        "Forebody",
+        "0.120",
+        "E",
+        "Allowance (A-09)"
+      ],
+      [
+        "Potting",
+        "Forebody",
+        "0.262",
+        "D/S",
+        "1.10 kg/L \u00d7 25 % \u00d7 0.954 L (A-10)"
+      ],
+      [
+        "Batetry",
+        "Forebody",
+        "0.450",
+        "E",
+        "Short-duration allowance (A-12)"
+      ],
+      [
+        "Heaters, controller and memory",
+        "Forebody",
+        "0.120",
+        "E",
+        "Allowance"
+      ]
+    ],
+    "family": "Geometry ledger and structural candidates",
+    "steps": "Convert mm to m; V=(m/rho+Va)/(1-fp-fr); L=V/A_bore; sum annular barrel, hemisphere, cap, joints and potting plus all hardware. Sum locations then margin. Euler=pi^2 E I/(L+r)^2; divide by m_fore*v^2/(2s), and by 3 times that load. Heat=2pi*k*L*DeltaT/ln(rfar/r).",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P13T01",
+    "page": 13,
+    "header": "Hardware | Locatoi n | Nominal kg | Class | Basis",
+    "cells": [
+      [
+        "Hardware",
+        "Locatoi n",
+        "Nominal kg",
+        "Class",
+        "Basis"
+      ],
+      [
+        "Forebody harness and seals",
+        "Forebody",
+        "0.080",
+        "E",
+        "Allowance"
+      ],
+      [
+        "Sample acquisitoin hardware",
+        "Surface head",
+        "0.150",
+        "E",
+        "Mechanism allowance; not a demonstrated sampler"
+      ],
+      [
+        "Transceiver and mountnig",
+        "Aftbody",
+        "0.100",
+        "E",
+        "Analog: AX100 24.5 g bare [9]"
+      ],
+      [
+        "Antenna radiator",
+        "Aftbody",
+        "0.060",
+        "E",
+        "Allowance"
+      ],
+      [
+        "Cable or tether",
+        "Aftbody",
+        "0.050",
+        "E",
+        "5 m \u00d7 10 g/m"
+      ],
+      [
+        "Cable spool and strain relief",
+        "Aftbody",
+        "0.060",
+        "E",
+        "Allowance"
+      ],
+      [
+        "Surface aftbody structure",
+        "Aftbody",
+        "0.200",
+        "E",
+        "Allowance"
+      ],
+      [
+        "Drogue, risers and separatoin",
+        "Aftbody",
+        "0.250",
+        "E",
+        "No sizing basis yet (PR-18)"
+      ],
+      [
+        "Nominal hardware (forebody 3.520,\nsurface head and aftbody 0.870)",
+        "",
+        "4.390",
+        "",
+        "Verified"
+      ],
+      [
+        "Mass contingency 25 %",
+        "Unallocated",
+        "1.098",
+        "E",
+        "Flat policy (A-27)"
+      ],
+      [
+        "Complete probe budget",
+        "",
+        "5.488",
+        "",
+        "Verified"
+      ]
+    ],
+    "family": "Geometry ledger and structural candidates",
+    "steps": "Convert mm to m; V=(m/rho+Va)/(1-fp-fr); L=V/A_bore; sum annular barrel, hemisphere, cap, joints and potting plus all hardware. Sum locations then margin. Euler=pi^2 E I/(L+r)^2; divide by m_fore*v^2/(2s), and by 3 times that load. Heat=2pi*k*L*DeltaT/ln(rfar/r).",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P13T02",
+    "page": 13,
+    "header": "Candidate | Bore mm | Length mm | L/D | Nominal kg | Budget kg | Fore kg | m/A kg/m\u00b2 | Side loss W | Euler margin avg / 3\u00d7 | Hard screen",
+    "cells": [
+      [
+        "Candidate",
+        "Bore\nmm",
+        "Length\nmm",
+        "L/D",
+        "Nominal\nkg",
+        "Budget kg",
+        "Fore kg",
+        "m/A kg/m\u00b2",
+        "Side loss\nW",
+        "Euler margin\navg / 3\u00d7",
+        "Hard screen"
+      ],
+      [
+        "35/1.5",
+        "32",
+        "1229",
+        "35.1",
+        "4.431",
+        "5.538",
+        "3.56",
+        "3701",
+        "4.33",
+        "0.87 / 0.3",
+        "Fails buckling"
+      ],
+      [
+        "50/1.5",
+        "47",
+        "600",
+        "12.0",
+        "4.009",
+        "5.012",
+        "3.14",
+        "1599",
+        "2.25",
+        "13.12 / 4.4",
+        "Passes; confrim by FEA"
+      ],
+      [
+        "50/2.0",
+        "46",
+        "624",
+        "12.5",
+        "4.395",
+        "5.494",
+        "3.53",
+        "1795",
+        "2.35",
+        "13.92 / 4.6",
+        "Passes; confrim by FEA"
+      ],
+      [
+        "60/2.0",
+        "56",
+        "442",
+        "7.4",
+        "4.204",
+        "5.255",
+        "3.33",
+        "1179",
+        "1.69",
+        "53.47 / 17.8",
+        "Passes"
+      ],
+      [
+        "70/2.5",
+        "65",
+        "347",
+        "5.0",
+        "4.390",
+        "5.488",
+        "3.52",
+        "915",
+        "1.32",
+        "167.14 / 55.7",
+        "Passes"
+      ],
+      [
+        "80/3.0",
+        "74",
+        "287",
+        "3.6",
+        "4.582",
+        "5.728",
+        "3.71",
+        "739",
+        "1.08",
+        "428.37 / 142.8",
+        "Passes"
+      ]
+    ],
+    "family": "Geometry ledger and structural candidates",
+    "steps": "Convert mm to m; V=(m/rho+Va)/(1-fp-fr); L=V/A_bore; sum annular barrel, hemisphere, cap, joints and potting plus all hardware. Sum locations then margin. Euler=pi^2 E I/(L+r)^2; divide by m_fore*v^2/(2s), and by 3 times that load. Heat=2pi*k*L*DeltaT/ln(rfar/r).",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P15T01",
+    "page": 15,
+    "header": "70/2.5 case | Cavity L | Length mm | Nominal kg | Budget kg | Length / D",
+    "cells": [
+      [
+        "70/2.5 case",
+        "Cavity L",
+        "Length mm",
+        "Nominal kg",
+        "Budget kg",
+        "Length / D"
+      ],
+      [
+        "Baseline: 2.0 kg/L, 0.12 L",
+        "0.954",
+        "347",
+        "4.390",
+        "5.488",
+        "5.0"
+      ],
+      [
+        "Density 1.5 kg/L",
+        "1.210",
+        "425",
+        "4.782",
+        "5.978",
+        "6.1"
+      ],
+      [
+        "Density 1.0 kg/L",
+        "1.723",
+        "579",
+        "5.566",
+        "6.958",
+        "8.3"
+      ],
+      [
+        "Density 0.5 kg/L",
+        "3.262",
+        "1,043",
+        "7.920",
+        "9.900",
+        "14.9"
+      ],
+      [
+        "Ancillary 0.25 L",
+        "1.154",
+        "408",
+        "4.696",
+        "5.870",
+        "5.8"
+      ],
+      [
+        "Ancillary 0.35 L",
+        "1.308",
+        "454",
+        "4.931",
+        "6.164",
+        "6.5"
+      ],
+      [
+        "Conservatvi e: 1.0 kg/L and 0.35 L",
+        "2.077",
+        "686",
+        "6.107",
+        "7.634",
+        "9.8"
+      ],
+      [
+        "Same, 60/2",
+        "2.077",
+        "898",
+        "5.817",
+        "7.272",
+        "15.0"
+      ],
+      [
+        "Same, 80/3",
+        "2.077",
+        "548",
+        "6.379",
+        "7.974",
+        "6.8"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P15T02",
+    "page": 15,
+    "header": "Policy | Growth kg | Budget kg | Effectvi e %",
+    "cells": [
+      [
+        "Policy",
+        "Growth kg",
+        "Budget kg",
+        "Effectvi e %"
+      ],
+      [
+        "Flat 25 % (Revision 4)",
+        "1.098",
+        "5.488",
+        "25.0"
+      ],
+      [
+        "Flat 30 % (concept-stage example)",
+        "1.317",
+        "5.707",
+        "30.0"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P16T01",
+    "page": 16,
+    "header": "Policy | Growth kg | Budget kg | Effectvi e %",
+    "cells": [
+      [
+        "Policy",
+        "Growth kg",
+        "Budget kg",
+        "Effectvi e %"
+      ],
+      [
+        "Component-level, illustratvie (science 30, steel 15, potting 15,\nbatetry 20, electronics and harness 30, sampler 35, radio 20,\nantenna 30, cable 20, spool 35, aftbody 35, drogue 35)",
+        "1.010",
+        "5.400",
+        "23.0"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P16T02",
+    "page": 16,
+    "header": "Screen | Rule | Basis | Result",
+    "cells": [
+      [
+        "Screen",
+        "Rule",
+        "Basis",
+        "Result"
+      ],
+      [
+        "S1",
+        "Euler margin at average impact load at least 1",
+        "Necessary for column stability (E)",
+        "35/1.5 fails (0.87)"
+      ],
+      [
+        "S2",
+        "Euler margin at 3\u00d7 average load at least 3",
+        "Peak load allowance; DS2 design was about 10\u00d7\nmean [18]",
+        "35/1.5 fails (0.29); others pass"
+      ],
+      [
+        "S3",
+        "Forebody envelope at most 700 mm",
+        "Illustrative stowage limit; no capsule design\nexists (E)",
+        "35/1.5 fails (1,229 mm)"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P16T03",
+    "page": 16,
+    "header": "Criterion weight | Balanced | Mass-driven | Structure and penetration | Packaging and science | Equal weights",
+    "cells": [
+      [
+        "Criterion weight",
+        "Balanced",
+        "Mass-driven",
+        "Structure and\npenetration",
+        "Packaging and\nscience",
+        "Equal weights"
+      ],
+      [
+        "Budget mass",
+        "20 %",
+        "40 %",
+        "10 %",
+        "10 %",
+        "14 %"
+      ],
+      [
+        "Buckling margin",
+        "15 %",
+        "10 %",
+        "25 %",
+        "10 %",
+        "14 %"
+      ],
+      [
+        "Sectional density",
+        "15 %",
+        "10 %",
+        "30 %",
+        "5 %",
+        "14 %"
+      ],
+      [
+        "Bore diameter",
+        "10 %",
+        "5 %",
+        "5 %",
+        "35 %",
+        "14 %"
+      ],
+      [
+        "Envelope length",
+        "10 %",
+        "10 %",
+        "10 %",
+        "15 %",
+        "14 %"
+      ],
+      [
+        "Side heat loss",
+        "15 %",
+        "10 %",
+        "10 %",
+        "15 %",
+        "14 %"
+      ],
+      [
+        "Closeness to 50 mm reference",
+        "15 %",
+        "15 %",
+        "10 %",
+        "10 %",
+        "14 %"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P16T04",
+    "page": 16,
+    "header": "Candidate | Balanced | Mass-driven | Structure and penetration | Packaging and science | Equal weights | Rank range",
+    "cells": [
+      [
+        "Candidate",
+        "Balanced",
+        "Mass-driven",
+        "Structure and\npenetration",
+        "Packaging and\nscience",
+        "Equal weights",
+        "Rank range"
+      ],
+      [
+        "35/1.5",
+        "0.28 (6)",
+        "0.28 (6)",
+        "0.38 (6)",
+        "0.13 (6)",
+        "0.25 (6)",
+        "6\u20136"
+      ],
+      [
+        "50/1.5",
+        "0.65 (2)",
+        "0.77 (1)",
+        "0.53 (3)",
+        "0.57 (4)",
+        "0.62 (3)",
+        "1\u20134"
+      ],
+      [
+        "50/2.0",
+        "0.52 (4)",
+        "0.50 (4)",
+        "0.48 (5)",
+        "0.50 (5)",
+        "0.52 (5)",
+        "4\u20135"
+      ],
+      [
+        "60/2.0",
+        "0.67 (1)",
+        "0.67 (2)",
+        "0.62 (1)",
+        "0.69 (3)",
+        "0.67 (1)",
+        "1\u20133"
+      ],
+      [
+        "70/2.5",
+        "0.59 (3)",
+        "0.52 (3)",
+        "0.56 (2)",
+        "0.72 (2)",
+        "0.62 (2)",
+        "2\u20133"
+      ],
+      [
+        "80/3.0",
+        "0.50 (5)",
+        "0.35 (5)",
+        "0.50 (4)",
+        "0.75 (1)",
+        "0.57 (4)",
+        "1\u20135"
+      ]
+    ],
+    "family": "Sensitivity and ranking",
+    "steps": "Recompute one input at a time; retain all other inputs. For ranking normalize the seven metrics across the original six candidates, apply the printed weights and saturation, and enforce the stated hard screens. Weights and stowage limits are judgment. Ranking does not establish actual penetration or feasibility.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P17T01",
+    "page": 17,
+    "header": "Non-science item | Standard kg | Reduced kg",
+    "cells": [
+      [
+        "Non-science item",
+        "Standard kg",
+        "Reduced kg"
+      ],
+      [
+        "Steel chassis",
+        "0.617",
+        "0.557"
+      ],
+      [
+        "Potting",
+        "0.095",
+        "0.095"
+      ],
+      [
+        "Batetry",
+        "0.450",
+        "0.150"
+      ],
+      [
+        "Heaters, controller and memory",
+        "0.120",
+        "0.060"
+      ],
+      [
+        "Forebody harness and seals",
+        "0.080",
+        "0.040"
+      ],
+      [
+        "Sample acquisitoin hardware",
+        "0.150",
+        "0.050"
+      ],
+      [
+        "Transceiver and mountnig",
+        "0.100",
+        "0.050"
+      ],
+      [
+        "Antenna radiator",
+        "0.060",
+        "0.025"
+      ]
+    ],
+    "family": "Inverse 2 kg budget",
+    "steps": "Use 50/1.5, L=.210 m and .345 L practical cavity; sum reduced and standard hardware separately. Maximum science=min(2/(1+c)-nonScience,[(.345*.65)-Va]*rhoScience), floored at zero. Report failure if nonScience alone exceeds budget. Not a minimum scientific suite.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P18T01",
+    "page": 18,
+    "header": "Non-science item | Standard kg | Reduced kg",
+    "cells": [
+      [
+        "Non-science item",
+        "Standard kg",
+        "Reduced kg"
+      ],
+      [
+        "Cable or tether",
+        "0.050",
+        "0.020"
+      ],
+      [
+        "Cable spool and strain relief",
+        "0.060",
+        "0.025"
+      ],
+      [
+        "Surface aftbody structure",
+        "0.200",
+        "0.080"
+      ],
+      [
+        "Drogue risers and separatoin",
+        "0.250",
+        "0.100"
+      ],
+      [
+        "Total non-science",
+        "2.232 (2.790 with 25 %)",
+        "1.252"
+      ]
+    ],
+    "family": "Inverse 2 kg budget",
+    "steps": "Use 50/1.5, L=.210 m and .345 L practical cavity; sum reduced and standard hardware separately. Maximum science=min(2/(1+c)-nonScience,[(.345*.65)-Va]*rhoScience), floored at zero. Report failure if nonScience alone exceeds budget. Not a minimum scientific suite.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P18T02",
+    "page": 18,
+    "header": "Factor | Reduced reference case | One kilogram science case",
+    "cells": [
+      [
+        "Factor",
+        "Reduced reference case",
+        "One kilogram science case"
+      ],
+      [
+        "Science mass",
+        "0.3085 kg",
+        "1.000 kg"
+      ],
+      [
+        "Diameter and wall",
+        "50 mm / 1.5 mm",
+        "70 mm / 2.5 mm"
+      ],
+      [
+        "Practical cavity",
+        "0.345 L",
+        "0.954 L"
+      ],
+      [
+        "Forebody envelope",
+        "260 mm",
+        "347 mm"
+      ],
+      [
+        "Chassis including joints",
+        "0.557 kg",
+        "1.608 kg"
+      ],
+      [
+        "Complete nominal",
+        "1.561 kg",
+        "4.390 kg"
+      ],
+      [
+        "Budget with 25 %",
+        "1.951 kg",
+        "5.488 kg"
+      ],
+      [
+        "Batetry and usable energy",
+        "0.150 kg / 22.5 Wh",
+        "0.450 kg / 67.5 Wh"
+      ],
+      [
+        "Runtmi e at 1.5 W after 5 Wh",
+        "11.7 hours",
+        "41.7 hours"
+      ],
+      [
+        "Forebody nominal mass",
+        "1.211 kg",
+        "3.520 kg"
+      ],
+      [
+        "Energy at 100 m/s",
+        "6,054 J",
+        "17,601 J"
+      ],
+      [
+        "Forebody mass per frontal area",
+        "617 kg/m\u00b2",
+        "915 kg/m\u00b2"
+      ],
+      [
+        "Six probes at budget mass",
+        "11.71 kg",
+        "32.93 kg"
+      ]
+    ],
+    "family": "Inverse 2 kg budget",
+    "steps": "Use 50/1.5, L=.210 m and .345 L practical cavity; sum reduced and standard hardware separately. Maximum science=min(2/(1+c)-nonScience,[(.345*.65)-Va]*rhoScience), floored at zero. Report failure if nonScience alone exceeds budget. Not a minimum scientific suite.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P18T03",
+    "page": 18,
+    "header": "Supplement datum [13] | Implication for this trade",
+    "cells": [
+      [
+        "Supplement datum [13]",
+        "Implication for this trade"
+      ],
+      [
+        "Humidity sensor 45 g and 124 cm\u00b3",
+        "About 80 % of the reduced 0.154 L science envelope. Also 0.36 kg/L, which is the single data\npoint behind PR-31."
+      ],
+      [
+        "Radiometer 25 g plus 56 g processor",
+        "Include processor mass; avoid counting shared control twice (ledger reconciliation, \u00a75.2)."
+      ]
+    ],
+    "family": "Inverse 2 kg budget",
+    "steps": "Use 50/1.5, L=.210 m and .345 L practical cavity; sum reduced and standard hardware separately. Maximum science=min(2/(1+c)-nonScience,[(.345*.65)-Va]*rhoScience), floored at zero. Report failure if nonScience alone exceeds budget. Not a minimum scientific suite.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P19T01",
+    "page": 19,
+    "header": "Supplement datum [13] | Implication for this trade",
+    "cells": [
+      [
+        "Supplement datum [13]",
+        "Implication for this trade"
+      ],
+      [
+        "Microseismometer 12 cm\u00b3 example",
+        "Small volume does not establish integrated mass."
+      ],
+      [
+        "Larger metabolic packages and complex organic analysis",
+        "Do not presume a complete assay fits either allocation. Obtain supplier concept designs and\ncompare detection limits, controls, replicatoin and duration."
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P19T02",
+    "page": 19,
+    "header": "Candidate | Decision | Rationale | Reopen if",
+    "cells": [
+      [
+        "Candidate",
+        "Decision",
+        "Rationale",
+        "Reopen if"
+      ],
+      [
+        "35/1.5",
+        "Reject",
+        "Fails S1\u2013S3: Euler margin 0.87 / 0.29; envelope 1,229 mm; L/D\n35. Highest sectional density (3,701 kg/m\u00b2) does not offset\nthis.",
+        "Instrument is needle-like and FEA with soil\nsupport shows margin of 3 or more."
+      ],
+      [
+        "50/1.5",
+        "Carry as comparator",
+        "Lightest (5.012 kg); closest to published geometry; 600 mm\nlong; Euler margin 4.4 at 3\u00d7 load.",
+        "Package is long and thin, or mass\ndominates."
+      ],
+      [
+        "50/2",
+        "Hold",
+        "Dominated by 50/1.5 on mass and by 60/2 on mass and\nlength.",
+        "FEA shows 1.5 mm wall is inadequate."
+      ],
+      [
+        "60/2",
+        "Carry (primary)",
+        "Top three in all weight sets; 5.255 kg; 442 mm; margin 18 at\n3\u00d7 load; sectional density 1,179 kg/m\u00b2.",
+        "Package needs a bore above 56 mm."
+      ],
+      [
+        "70/2.5",
+        "Carry (primary)",
+        "Rank 2\u20133 throughout; 5.488 kg; 347 mm; bore 65 mm; lowest\nslenderness among the primaries.",
+        "Penetratoin depth is insufcfiient at feasible\nspeed (sectional density 915 kg/m\u00b2)."
+      ],
+      [
+        "80/3",
+        "Hold",
+        "Wins only when bore dominates; heaviest (5.728 kg); lowest\nsectional density.",
+        "CAD shows a bore above 65 mm is\nrequired."
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P19T03",
+    "page": 19,
+    "header": "Property | Value used | Basis and class",
+    "cells": [
+      [
+        "Property",
+        "Value used",
+        "Basis and class"
+      ],
+      [
+        "CFRP laminate density",
+        "1,580 kg/m\u00b3",
+        "Typical quasi-isotropic laminate [49] (S)"
+      ],
+      [
+        "Effective (quasi-isotropic) modulus",
+        "60 GPa",
+        "Between unidirectional E\u2081\u2081 \u2248 131 GPa and transverse \u2248 8 GPa [49]; used\nfor the buckling screen (E)"
+      ],
+      [
+        "Through-wall thermal conductivity",
+        "0.8 W/m\u00b7K",
+        "Perpendicular-to-fibre value \u2248 0.8 W/m\u00b7K; parallel \u2248 7 W/m\u00b7K [50]; steel\nis 44.5 W/m\u00b7K [7] (S)"
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P20T01",
+    "page": 20,
+    "header": "Property | Value used | Basis and class",
+    "cells": [
+      [
+        "Property",
+        "Value used",
+        "Basis and class"
+      ],
+      [
+        "Barrel geometry",
+        "Same OD, bore and length\nas the steel case",
+        "Drop-in swap so the payload cavity is unchanged (E)"
+      ],
+      [
+        "Steel collar at the nose joint",
+        "20 mm long, double wall, at\nthe nose-to-barrel interface,\nplus the existnig 0.120 kg\njoint allowance",
+        "Load-transfer and bearing ring; mass estimate only (E)"
+      ],
+      [
+        "Compressive strength knock-down afetr impact",
+        "Not modelled; flagged\nqualitatively",
+        "Reported 40\u201360 % loss of compressive residual strength after impact\n[51][52] (S)"
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P20T02",
+    "page": 20,
+    "header": "Geometry | Steel struct. kg | Hybrid struct. kg | Structure saved | Steel fore kg | Hybrid fore kg | m/A steel / hybrid | Penetratio n | Euler 3\u00d7 steel / hybrid | Budget steel / hybrid kg",
+    "cells": [
+      [
+        "Geometry",
+        "Steel struct.\nkg",
+        "Hybrid struct.\nkg",
+        "Structure saved",
+        "Steel fore kg",
+        "Hybrid fore\nkg",
+        "m/A steel /\nhybrid",
+        "Penetratio\nn",
+        "Euler 3\u00d7\nsteel / hybrid",
+        "Budget\nsteel /\nhybrid kg"
+      ],
+      [
+        "50/1.5",
+        "1.227",
+        "0.501",
+        "0.726 (59 %)",
+        "3.139",
+        "2.414",
+        "1599 / 1229",
+        "\u221217 %",
+        "4 / 2",
+        "5.01 / 4.10"
+      ],
+      [
+        "60/2.0",
+        "1.422",
+        "0.636",
+        "0.786 (55 %)",
+        "3.334",
+        "2.548",
+        "1179 / 901",
+        "\u221217 %",
+        "18 / 8",
+        "5.26 / 4.27"
+      ],
+      [
+        "70/2.5",
+        "1.608",
+        "0.796",
+        "0.812 (50 %)",
+        "3.520",
+        "2.708",
+        "915 / 704",
+        "\u221217 %",
+        "56 / 24",
+        "5.49 / 4.47"
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P21T01",
+    "page": 21,
+    "header": "Concern | Why it matters for a penetrator | Source",
+    "cells": [
+      [
+        "Concern",
+        "Why it matters for a penetrator",
+        "Source"
+      ],
+      [
+        "Impact damage tolerance",
+        "A single impact can cut the compressive residual strength of a CFRP laminate\nby 40\u201360 %; the weak directoins are interlaminar shear and through-thickness\ntension, exactly the stresses a deceleratnig buried body sees. DS2 designed its\nmetal forebody for 30,000 g.",
+        "[51][52]; [18]"
+      ],
+      [
+        "The steel-to-composite joint",
+        "Bonded or bolted metal-to-CFRP joints fail by delaminatoin under shock;\ndrilling holes cuts fibres and concentrates stress. Fibre-metal laminates, metal\ndoublers or 3D-printed penetrative anchors are used to carry impact through\nthe interface, and add mass and process complexity. This is the hardest part of\nthe hybrid and the collar mass here is only an allowance.",
+        "[53][54]"
+      ],
+      [
+        "Cold plus impact",
+        "Mars-night temperatures (soil near 217.5 K [2]) embrittle the matrix and the\nsteel-composite coefficient-of-thermal-expansion mismatch stresses the joint\nbefore impact even begins. No cold-impact data for this joint exists.",
+        "[2]; general"
+      ],
+      [
+        "Planetary protection",
+        "Resin outgassing and the compatibility of a cured laminate with dry-heat\nmicrobial reduction, vapour hydrogen peroxide or ethylene oxide must be\nshown; sealed laminate volumes are hard to sterilise and to verify (Section 12).",
+        "[10][34]"
+      ],
+      [
+        "Heritage, cost and inspectoin",
+        "Flown Mars penetrators (DS2) are metal; the 2005 study penetrator is metal\n[21]. A composite body needs non-destructive inspection for delamination and\nhas no penetrator flight heritage.",
+        "[20][21]"
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P21T02",
+    "page": 21,
+    "header": "Decision | Recommendation | Reopen if",
+    "cells": [
+      [
+        "Decision",
+        "Recommendation",
+        "Reopen if"
+      ],
+      [
+        "Forebody structural\narchitecture",
+        "Carry unibody steel as the baseline for the 60/2 and 70/2.5\ncandidates into CAD and drop testing. Carry the steel-\nhead/CFRP-body hybrid, and the fibre-metal-laminate\nvariant, as a parallel mass-reduction study, not as the\nbaseline.",
+        "Drop tests show the joint survives impact at the design load\nand cold, and penetratoin depth has margin, or structural\nmass becomes the binding constraint on carrier closure\n(Section 11.3)."
+      ]
+    ],
+    "family": "Steel and composite comparison",
+    "steps": "Use R7T03 steps; retain steel nose/cap/joints; replace 20 mm tube segment with double-wall steel collar; use 1580 kg/m3 composite over remaining length. Compare forebody m/A, depth ratio exponent .7, and 60 GPa composite Euler screen. Check collar intrusion. Material allowable and damage knockdown remain unqualified.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P22T01",
+    "page": 22,
+    "header": "Sampling option | Science value | Engineering consequence | Reviewer note",
+    "cells": [
+      [
+        "Sampling option",
+        "Science value",
+        "Engineering consequence",
+        "Reviewer note"
+      ],
+      [
+        "Shallow skin, roughly 0\u20133 cm",
+        "Material infulenced by the daily thermal\nwave",
+        "Surface scoop or inlet; dust exposure;\nbiological contaminatoin and radiation\neffects",
+        "Matches the 3.2 cm diurnal\nskin depth. Mass allowance\n0.150 kg is not a\ndemonstrated sampler."
+      ]
+    ],
+    "family": "Science thermal attenuation and biological analogs",
+    "steps": "For thermal depth use delta=sqrt(alpha*P/pi) and fraction exp(-z/delta). Biological rates are transcribed organism-specific observations; do not extrapolate to hypothetical Mars biology or a universal detection limit.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P23T01",
+    "page": 23,
+    "header": "Sampling option | Science value | Engineering consequence | Reviewer note",
+    "cells": [
+      [
+        "Sampling option",
+        "Science value",
+        "Engineering consequence",
+        "Reviewer note"
+      ],
+      [
+        "Buried forebody sensing, roughly\n0.2\u20131 m",
+        "Compare protected material and physical\nproperties",
+        "Impact mixing; port access; no automatic\ntransfer of shallow sample",
+        "Matches IMPRESS\nemplacement depth [1]."
+      ],
+      [
+        "Controlled warmed\nmicrochamber",
+        "Test response versus untreated controls",
+        "Thermal isolation, seals, repeated\nmeasurements, power and chemical\nperturbation",
+        "Drives volume and power\n(\u00a77.3, \u00a78) and may raise\nSpecial Region questions\n(\u00a712)."
+      ]
+    ],
+    "family": "Science thermal attenuation and biological analogs",
+    "steps": "For thermal depth use delta=sqrt(alpha*P/pi) and fraction exp(-z/delta). Biological rates are transcribed organism-specific observations; do not extrapolate to hypothetical Mars biology or a universal detection limit.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P23T02",
+    "page": 23,
+    "header": "Temperature | Observation | Source | Implication for FREYA",
+    "cells": [
+      [
+        "Temperature",
+        "Observation",
+        "Source",
+        "Implication for FREYA"
+      ],
+      [
+        "+5 \u00b0C",
+        "Minimum doubling time of permafrost bacteria about 1\nday (\u00b9\u2074C-acetate incorporation into lipids)",
+        "[35]",
+        "A warmed chamber near +5 \u00b0C could show growth\nwithin days, if viable organisms are present."
+      ],
+      [
+        "\u221210 \u00b0C",
+        "Minimum doubling time about 20 days",
+        "[35]",
+        "Even a mildly warmed chamber needs weeks."
+      ],
+      [
+        "\u221215 \u00b0C",
+        "Growth and division demonstrated in Planococcus\nhalocryophilus Or1; incubations ran 130 days at \u221215 \u00b0C;\nmetabolic activity to \u221225 \u00b0C in frozen permafrost\nmicrocosms",
+        "[37]",
+        "Months-long tmi e series are the norm in the literature."
+      ],
+      [
+        "\u221220 \u00b0C",
+        "Minimum doubling time about 160 days; stationary phase\nreached after 200\u2013350 days",
+        "[35]",
+        "Delayed-recovery tests need 100 days or more."
+      ],
+      [
+        "About \u221240 \u00b0C",
+        "Roughly 10 turnovers of cellular carbon per billion years in\nice; no evidence of a minimum temperature for\nmetabolism",
+        "[36]",
+        "Survival-class rates; not measurable by a short assay."
+      ],
+      [
+        "\u221255.7 \u00b0C (217.5 K)",
+        "Mean soil temperature at 10\u201320 cm, InSight",
+        "[2]",
+        "Unwarmed, in-place metabolism is far below any\nlaboratory detectoin limit."
+      ]
+    ],
+    "family": "Science thermal attenuation and biological analogs",
+    "steps": "For thermal depth use delta=sqrt(alpha*P/pi) and fraction exp(-z/delta). Biological rates are transcribed organism-specific observations; do not extrapolate to hypothetical Mars biology or a universal detection limit.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P24T01",
+    "page": 24,
+    "header": "Difuf sivity \u03b1 | Year skin depth m | Remnant at 1.5 m | Sol skin depth cm | Remnant at 10 cm | Class",
+    "cells": [
+      [
+        "Difuf sivity \u03b1",
+        "Year skin depth m",
+        "Remnant at 1.5 m",
+        "Sol skin depth cm",
+        "Remnant at 10 cm",
+        "Class"
+      ],
+      [
+        "3.10\u00d710\u207b\u2078 (\u22121\u03c3) [2]",
+        "0.77",
+        "14 %",
+        "3.0",
+        "3.4 %",
+        "S"
+      ],
+      [
+        "3.63\u00d710\u207b\u2078 [2]",
+        "0.83",
+        "16 %",
+        "3.2",
+        "4.4 %",
+        "S"
+      ],
+      [
+        "4.16\u00d710\u207b\u2078 (+1\u03c3) [2]",
+        "0.89",
+        "18 %",
+        "3.4",
+        "5.4 %",
+        "S"
+      ],
+      [
+        "1.0\u00d710\u207b\u2077 (illustrative)",
+        "1.37",
+        "34 %",
+        "5.3",
+        "15 %",
+        "E"
+      ],
+      [
+        "1.0\u00d710\u207b\u2076 (illustrative ice-rich)",
+        "4.35",
+        "71 %",
+        "16.8",
+        "55 %",
+        "E"
+      ]
+    ],
+    "family": "Thermal operating modes",
+    "steps": "Barrel-only side loss uses radial soil resistance. Insulation and warm-up use the stated geometry, k, mass, heat capacity and DeltaT assumptions. Add relevant paths; separate power from energy. Correct shell-versus-soil inference with series resistance in this release.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P24T02",
+    "page": 24,
+    "header": "Soil conductivity k, W/m K | 70 mm barrel (287 mm) | IMPRESS-size barrel (210 mm, 50 mm) | Comment",
+    "cells": [
+      [
+        "Soil conductivity k, W/m K",
+        "70 mm barrel (287 mm)",
+        "IMPRESS-size barrel (210\nmm, 50 mm)",
+        "Comment"
+      ],
+      [
+        "0.02",
+        "0.68 W",
+        "0.44 W",
+        "Below InSight; plausible for very fnie, dry dust."
+      ],
+      [
+        "0.039 (InSight [14])",
+        "1.32 W",
+        "0.86 W",
+        "Rev 4 case."
+      ],
+      [
+        "0.085",
+        "2.89 W",
+        "1.87 W",
+        "About twice InSight, the Phoenix class [14]."
+      ],
+      [
+        "0.3",
+        "10.2 W",
+        "6.6 W",
+        "Cemented or gravelly ground (illustratvie, E)."
+      ],
+      [
+        "2.0",
+        "67.9 W",
+        "44.0 W",
+        "Solid water ice order of magnitude (physical\nconstant, not site data)."
+      ]
+    ],
+    "family": "Thermal operating modes",
+    "steps": "Barrel-only side loss uses radial soil resistance. Insulation and warm-up use the stated geometry, k, mass, heat capacity and DeltaT assumptions. Add relevant paths; separate power from energy. Correct shell-versus-soil inference with series resistance in this release.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P25T01",
+    "page": 25,
+    "header": "Radial insulation thickness | Loss at k = 0.015 | Loss at k = 0.005 | Energy over 5 days at k = 0.005",
+    "cells": [
+      [
+        "Radial insulation thickness",
+        "Loss at k = 0.015",
+        "Loss at k = 0.005",
+        "Energy over 5 days at k = 0.005"
+      ],
+      [
+        "5 mm",
+        "1.85 W",
+        "0.62 W",
+        "74 Wh"
+      ],
+      [
+        "10 mm",
+        "1.06 W",
+        "0.35 W",
+        "42 Wh"
+      ],
+      [
+        "20 mm",
+        "0.65 W",
+        "0.22 W",
+        "26 Wh"
+      ]
+    ],
+    "family": "Thermal operating modes",
+    "steps": "Barrel-only side loss uses radial soil resistance. Insulation and warm-up use the stated geometry, k, mass, heat capacity and DeltaT assumptions. Add relevant paths; separate power from energy. Correct shell-versus-soil inference with series resistance in this release.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P25T02",
+    "page": 25,
+    "header": "Mode | Thermal state | Power implication | Planetary-protectoi n note",
+    "cells": [
+      [
+        "Mode",
+        "Thermal state",
+        "Power implication",
+        "Planetary-protectoi n note"
+      ],
+      [
+        "A Cold survival and brief\nmeasurement",
+        "Body tracks soil; electronics survive on low heat\nor cold qualifciation",
+        "Fits 1.5 W for about 42 h with\n0.450 kg batetry (A-12)",
+        "No warmed volume; consistent\nwith surface-contact\nclassification"
+      ],
+      [
+        "B Insulated warm electronics,\nsample minimally altered",
+        "Electronics bay isolated and held near \u221220 to 0\n\u00b0C; sample at soil temperature",
+        "About 0.3\u20130.7 W continuous; 5\ndays \u2248 60\u2013130 Wh (\u00a78)",
+        "Warm bay is dry hardware, not\nsample"
+      ]
+    ],
+    "family": "Thermal operating modes",
+    "steps": "Barrel-only side loss uses radial soil resistance. Insulation and warm-up use the stated geometry, k, mass, heat capacity and DeltaT assumptions. Add relevant paths; separate power from energy. Correct shell-versus-soil inference with series resistance in this release.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P26T01",
+    "page": 26,
+    "header": "Mode | Thermal state | Power implication | Planetary-protectoi n note",
+    "cells": [
+      [
+        "Mode",
+        "Thermal state",
+        "Power implication",
+        "Planetary-protectoi n note"
+      ],
+      [
+        "C Intentionally warmed assay\nchamber",
+        "Chamber held at assay temperature (for\nexample +5 to +20 \u00b0C), thermally isolated from\nthe soil",
+        "Hold power 0.2\u20130.7 W plus heater\npeaks; 5 days \u2248 130 Wh",
+        "May meet Special Region\ntemperature and water-activity\nconditions (\u00a712.3)"
+      ]
+    ],
+    "family": "Power duty cycle",
+    "steps": "Energy=mean power*hours+startup. Runtime=(batteryMass*usableWhPerKg-startup)/meanPower. For the 130 Wh profile sum each printed time-duty row. Do not substitute the 1.5 W continuous profile without recomputing.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P26T02",
+    "page": 26,
+    "header": "Runtime from 0.450 kg batet ry, hours (days) | 0.1 W | 0.25 W | 0.5 W | 1.0 W | 1.5 W",
+    "cells": [
+      [
+        "Runtime from 0.450 kg batet ry,\nhours (days)",
+        "0.1 W",
+        "0.25 W",
+        "0.5 W",
+        "1.0 W",
+        "1.5 W"
+      ],
+      [
+        "150 Wh/kg (Rev 4)",
+        "625 (26.0 d)",
+        "250 (10.4 d)",
+        "125 (5.2 d)",
+        "62.5 (2.6 d)",
+        "41.7 (1.7 d)"
+      ],
+      [
+        "250 Wh/kg",
+        "1,075 (44.8 d)",
+        "430 (17.9 d)",
+        "215 (9.0 d)",
+        "107.5 (4.5 d)",
+        "71.7 (3.0 d)"
+      ],
+      [
+        "400 Wh/kg",
+        "1,750 (72.9 d)",
+        "700 (29.2 d)",
+        "350 (14.6 d)",
+        "175 (7.3 d)",
+        "116.7 (4.9 d)"
+      ]
+    ],
+    "family": "Power duty cycle",
+    "steps": "Energy=mean power*hours+startup. Runtime=(batteryMass*usableWhPerKg-startup)/meanPower. For the 130 Wh profile sum each printed time-duty row. Do not substitute the 1.5 W continuous profile without recomputing.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P26T03",
+    "page": 26,
+    "header": "Battery mass for 30 days, kg | 0.1 W | 0.25 W | 0.5 W | 1.5 W",
+    "cells": [
+      [
+        "Battery mass for 30 days, kg",
+        "0.1 W",
+        "0.25 W",
+        "0.5 W",
+        "1.5 W"
+      ],
+      [
+        "150 Wh/kg",
+        "0.51",
+        "1.23",
+        "2.43",
+        "7.23"
+      ],
+      [
+        "250 Wh/kg",
+        "0.31",
+        "0.74",
+        "1.46",
+        "4.34"
+      ],
+      [
+        "400 Wh/kg",
+        "0.19",
+        "0.46",
+        "0.91",
+        "2.71"
+      ]
+    ],
+    "family": "Power duty cycle",
+    "steps": "Energy=mean power*hours+startup. Runtime=(batteryMass*usableWhPerKg-startup)/meanPower. For the 130 Wh profile sum each printed time-duty row. Do not substitute the 1.5 W continuous profile without recomputing.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P27T01",
+    "page": 27,
+    "header": "Load | Energy | Basis",
+    "cells": [
+      [
+        "Load",
+        "Energy",
+        "Basis"
+      ],
+      [
+        "Start-up and checkout",
+        "5 Wh",
+        "Rev 4 allowance (A-14)"
+      ],
+      [
+        "Chamber hold, 0.7 W \u00d7 120 h",
+        "84 Wh",
+        "Upper end of \u00a77.3 (A, E)"
+      ],
+      [
+        "Electronics, 0.3 W \u00d7 120 h",
+        "36 Wh",
+        "Assumed (E)"
+      ],
+      [
+        "Communications, 10 passes \u00d7 0.5 Wh",
+        "5 Wh",
+        "5 W RF class, 6 min pass (\u00a79)"
+      ],
+      [
+        "Total",
+        "130 Wh",
+        "0.87 kg at 150 Wh/kg; 0.52 kg at 250; 0.33 kg at 400"
+      ]
+    ],
+    "family": "Power duty cycle",
+    "steps": "Energy=mean power*hours+startup. Runtime=(batteryMass*usableWhPerKg-startup)/meanPower. For the 130 Wh profile sum each printed time-duty row. Do not substitute the 1.5 W continuous profile without recomputing.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P28T01",
+    "page": 28,
+    "header": "Orbiter | Altitude | Passes per day (used) | Average relay data Feb\u2013May 2026",
+    "cells": [
+      [
+        "Orbiter",
+        "Altitude",
+        "Passes per day (used)",
+        "Average relay data Feb\u2013May 2026"
+      ],
+      [
+        "Mars Odyssey (2001)",
+        "385\u2013450 km",
+        "2\u20134 (0\u20131)",
+        "107.3 Mb/day"
+      ],
+      [
+        "Mars Express (2003, ESA)",
+        "298\u201310,107 km",
+        "1\u20133 (0)",
+        "Backup orbiter"
+      ],
+      [
+        "Mars Reconnaissance Orbiter (2005)",
+        "255\u2013320 km",
+        "2\u20134 (1\u20133)",
+        "850.6 Mb/day"
+      ],
+      [
+        "ExoMars Trace Gas Orbiter (2016,\nESA)",
+        "400 km",
+        "2\u20134 (2\u20134)",
+        "2,228.1 Mb/day"
+      ],
+      [
+        "MAVEN (2013)",
+        "\u2014",
+        "\u2014",
+        "Mission ended 3 June 2026"
+      ]
+    ],
+    "family": "Relay and link",
+    "steps": "Read each dated service record; no capacity allocation inferred. FSPL=20log10(4pi R f/c); C/N0=Pr-(-228.6+10log10(Tsys)); Eb/N0=C/N0-10log10(rate); margin subtracts required 6 dB. Use 401.6 MHz for return-link example.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P28T02",
+    "page": 28,
+    "header": "Slant range | 1 W, 8 kbps | 1 W, 32 kbps | 1 W, 128 kbps | 5 W, 8 kbps | 5 W, 32 kbps | 5 W, 128 kbps",
+    "cells": [
+      [
+        "Slant range",
+        "1 W, 8 kbps",
+        "1 W, 32 kbps",
+        "1 W, 128 kbps",
+        "5 W, 8 kbps",
+        "5 W, 32 kbps",
+        "5 W, 128 kbps"
+      ],
+      [
+        "400 km",
+        "+11.9",
+        "+5.9",
+        "\u22120.1",
+        "+18.9",
+        "+12.9",
+        "+6.9"
+      ],
+      [
+        "1000 km",
+        "+4.0",
+        "\u22122.0",
+        "\u22128.1",
+        "+11.0",
+        "+5.0",
+        "\u22121.1"
+      ],
+      [
+        "1500 km",
+        "+0.5",
+        "\u22125.6",
+        "\u221211.6",
+        "+7.4",
+        "+1.4",
+        "\u22124.6"
+      ]
+    ],
+    "family": "Relay and link",
+    "steps": "Read each dated service record; no capacity allocation inferred. FSPL=20log10(4pi R f/c); C/N0=Pr-(-228.6+10log10(Tsys)); Eb/N0=C/N0-10log10(rate); margin subtracts required 6 dB. Use 401.6 MHz for return-link example.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P29T01",
+    "page": 29,
+    "header": "Average deceleration, Earth g | 0.25 m | 0.5 m | 1.0 m | Comment",
+    "cells": [
+      [
+        "Average deceleration, Earth g",
+        "0.25 m",
+        "0.5 m",
+        "1.0 m",
+        "Comment"
+      ],
+      [
+        "50 m/s",
+        "510",
+        "255",
+        "127",
+        ""
+      ],
+      [
+        "75 m/s",
+        "1,147",
+        "574",
+        "287",
+        ""
+      ],
+      [
+        "100 m/s",
+        "2,039",
+        "1,020",
+        "510",
+        "Rev 4 reference"
+      ],
+      [
+        "150 m/s",
+        "4,589",
+        "2,294",
+        "1,147",
+        ""
+      ],
+      [
+        "200 m/s",
+        "8,158",
+        "4,079",
+        "2,039",
+        "DS2 about 190 m/s"
+      ]
+    ],
+    "family": "Impact and relative penetration",
+    "steps": "Energy=.5*m_fore*v^2; a=v^2/(2s); force=m_fore*a; Earth g=a/9.80665. Relative depth=(SD/1600)^.7*(v-30.5)/(150-30.5) times the 0.76-1.36 m reference. Source target, nose and K assumptions remain unvalidated.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P30T01",
+    "page": 30,
+    "header": "Forebody | Sect. density kg/m\u00b2 | Depth at 100 m/s, S = 5\u20139 | Depth at 150 m/s, S = 5\u20139",
+    "cells": [
+      [
+        "Forebody",
+        "Sect. density kg/m\u00b2",
+        "Depth at 100 m/s, S = 5\u20139",
+        "Depth at 150 m/s, S = 5\u20139"
+      ],
+      [
+        "35/1.5",
+        "3,701",
+        "0.79\u20131.42 m",
+        "1.36\u20132.45 m"
+      ],
+      [
+        "50/1.5 (equal volume)",
+        "1,599",
+        "0.44\u20130.79 m",
+        "0.76\u20131.36 m"
+      ],
+      [
+        "50/1.5 (2 kg reduced case)",
+        "617",
+        "0.23\u20130.41 m",
+        "0.39\u20130.70 m"
+      ],
+      [
+        "60/2",
+        "1,179",
+        "0.36\u20130.64 m",
+        "0.61\u20131.10 m"
+      ],
+      [
+        "70/2.5",
+        "915",
+        "0.30\u20130.54 m",
+        "0.51\u20130.92 m"
+      ],
+      [
+        "80/3",
+        "739",
+        "0.26\u20130.46 m",
+        "0.44\u20130.79 m"
+      ],
+      [
+        "DS2 forebody (reference)",
+        "696",
+        "0.25\u20130.44 m",
+        "0.42\u20130.76 m"
+      ]
+    ],
+    "family": "Impact and relative penetration",
+    "steps": "Energy=.5*m_fore*v^2; a=v^2/(2s); force=m_fore*a; Earth g=a/9.80665. Relative depth=(SD/1600)^.7*(v-30.5)/(150-30.5) times the 0.76-1.36 m reference. Source target, nose and K assumptions remain unvalidated.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P31T01",
+    "page": 31,
+    "header": "\u0394v m/s | Entry angle | Entry speed km/s | Propellant, 450 kg parent | Propellant, 45 kg stack",
+    "cells": [
+      [
+        "\u0394v m/s",
+        "Entry angle",
+        "Entry speed km/s",
+        "Propellant, 450 kg parent",
+        "Propellant, 45 kg stack"
+      ],
+      [
+        "50",
+        "-1.62\u00b0",
+        "3.50",
+        "10.1 kg",
+        "1.01 kg"
+      ],
+      [
+        "61.6",
+        "-2.04\u00b0",
+        "3.49",
+        "12.4 kg",
+        "1.24 kg"
+      ],
+      [
+        "100",
+        "-3.06\u00b0",
+        "3.45",
+        "19.9 kg",
+        "1.99 kg"
+      ],
+      [
+        "150",
+        "-4.05\u00b0",
+        "3.41",
+        "29.6 kg",
+        "2.96 kg"
+      ],
+      [
+        "300",
+        "-6.29\u00b0",
+        "3.26",
+        "57.2 kg",
+        "5.72 kg"
+      ],
+      [
+        "500",
+        "-8.69\u00b0",
+        "3.07",
+        "91.2 kg",
+        "9.12 kg"
+      ],
+      [
+        "889",
+        "-13.01\u00b0",
+        "2.70",
+        "149.2 kg",
+        "14.92 kg"
+      ]
+    ],
+    "family": "Entry drogue and carrier",
+    "steps": "Entry follows R7T05. Terminal speed=sqrt(2mg/(rho*Cd*pi*Dchute^2/4)); invert for diameter. Carrier=N*M/(1-f), using probe budget mass. None of these equations models inflation, TPS, entry stability or dispenser mass.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P32T01",
+    "page": 32,
+    "header": "Drogue diameter | Terminal speed, \u03c1 = 0.010 | \u03c1 = 0.016 | \u03c1 = 0.022 | Drogue for 100 m/s",
+    "cells": [
+      [
+        "Drogue diameter",
+        "Terminal speed, \u03c1 = 0.010",
+        "\u03c1 = 0.016",
+        "\u03c1 = 0.022",
+        "Drogue for 100 m/s"
+      ],
+      [
+        "0.50 m",
+        "166 m/s",
+        "131 m/s",
+        "112 m/s",
+        ""
+      ],
+      [
+        "0.75 m",
+        "111 m/s",
+        "88 m/s",
+        "75 m/s",
+        ""
+      ],
+      [
+        "1.00 m",
+        "83 m/s",
+        "66 m/s",
+        "56 m/s",
+        ""
+      ],
+      [
+        "1.50 m",
+        "55 m/s",
+        "44 m/s",
+        "37 m/s",
+        ""
+      ],
+      [
+        "Diameter needed for target\nspeed (\u03c1 = 0.016; range 0.010\u2013\n0.022)",
+        "60 m/s: 1.10 m (0.93\u20131.39)",
+        "80 m/s: 0.82 m (0.70\u20131.04)",
+        "100 m/s: 0.66 m (0.56\u20130.83)",
+        "150 m/s: 0.44 m (0.37\u20130.55)"
+      ]
+    ],
+    "family": "Entry drogue and carrier",
+    "steps": "Entry follows R7T05. Terminal speed=sqrt(2mg/(rho*Cd*pi*Dchute^2/4)); invert for diameter. Carrier=N*M/(1-f), using probe budget mass. None of these equations models inflation, TPS, entry stability or dispenser mass.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P33T01",
+    "page": 33,
+    "header": "Probes | Probe mass kg | f = 25 % | f = 32.6 % (DS2 aeroshell) | f = 38.9 % (21 kg) | f = 50 %",
+    "cells": [
+      [
+        "Probes",
+        "Probe mass kg",
+        "f = 25 %",
+        "f = 32.6 % (DS2\naeroshell)",
+        "f = 38.9 % (21 kg)",
+        "f = 50 %"
+      ],
+      [
+        "1",
+        "5.49",
+        "7.3 kg",
+        "8.1 kg",
+        "9.0 kg",
+        "11.0 kg"
+      ],
+      [
+        "2",
+        "10.98",
+        "14.6 kg",
+        "16.3 kg",
+        "18.0 kg",
+        "22.0 kg"
+      ],
+      [
+        "3",
+        "16.46",
+        "22.0 kg",
+        "24.4 kg",
+        "26.9 kg",
+        "32.9 kg"
+      ],
+      [
+        "4",
+        "21.95",
+        "29.3 kg",
+        "32.6 kg",
+        "35.9 kg",
+        "43.9 kg"
+      ],
+      [
+        "5",
+        "27.44",
+        "36.6 kg",
+        "40.7 kg",
+        "44.9 kg",
+        "54.9 kg"
+      ],
+      [
+        "6",
+        "32.93",
+        "43.9 kg",
+        "48.9 kg",
+        "53.9 kg",
+        "65.9 kg"
+      ]
+    ],
+    "family": "Entry drogue and carrier",
+    "steps": "Entry follows R7T05. Terminal speed=sqrt(2mg/(rho*Cd*pi*Dchute^2/4)); invert for diameter. Carrier=N*M/(1-f), using probe budget mass. None of these equations models inflation, TPS, entry stability or dispenser mass.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P33T02",
+    "page": 33,
+    "header": "Document | Role | Status noted in this review",
+    "cells": [
+      [
+        "Document",
+        "Role",
+        "Status noted in this review"
+      ],
+      [
+        "COSPAR Policy on Planetary Protection\n[31]",
+        "Internatoinal categories and bioburden limits for Mars\nlanders",
+        "Category definitions confirmed through NASEM\nand ECSS summaries; check the current edition."
+      ],
+      [
+        "NPR 8715.24, Planetary Protectoin\nProvisions for Robotci Extraterrestrial\nMissions [34]",
+        "NASA procedural requirements; replaced NPR 8020.12D",
+        "Effective 24 Sep 2021 with listed expiration 24\nSep 2026; an update was announced as coming\nin March 2026. Current status to be verifei d.\nNot cited in Rev 4."
+      ]
+    ],
+    "family": "Entry drogue and carrier",
+    "steps": "Entry follows R7T05. Terminal speed=sqrt(2mg/(rho*Cd*pi*Dchute^2/4)); invert for diameter. Carrier=N*M/(1-f), using probe budget mass. None of these equations models inflation, TPS, entry stability or dispenser mass.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P34T01",
+    "page": 34,
+    "header": "Document | Role | Status noted in this review",
+    "cells": [
+      [
+        "Document",
+        "Role",
+        "Status noted in this review"
+      ],
+      [
+        "NASA-STD-8719.27, Implementing\nPlanetary Protectoin Requirements for\nSpace Flight [10]",
+        "Technical requirements and standard spore assay",
+        "Baseline approved 30 Aug 2022; active (verified)."
+      ],
+      [
+        "NASA Planetary Protectoin Handbook,\nNASA-HDBK-20240016475 [11]",
+        "Guidance and best practcie; companion to the NPR and the\nstandard",
+        "Rev 4 reference [11] resolves to this handbook,\neffectvie 24 Jan 2025; it replaced NASA-HDBK-\n6022."
+      ],
+      [
+        "NASEM, Evaluation of Bioburden\nRequirements for Mars Missions (2021)\n[32]",
+        "Advisory; Special Region temperature margin",
+        "Adopts \u221228 \u00b0C (245 K) with a margin to 255 K."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P34T02",
+    "page": 34,
+    "header": "Category | Bioburden requirement | What it means for FREYA",
+    "cells": [
+      [
+        "Category",
+        "Bioburden requirement",
+        "What it means for FREYA"
+      ],
+      [
+        "IVa",
+        "Lander not designed to search for Martain life: at most 3\u00d710\u2075 spores on\nthe system surface and an average of at most 300 spores per m\u00b2 [31]",
+        "The likely class for a non-life-detectoin pathfinder (D-01)."
+      ],
+      [
+        "IVb",
+        "IVa plus the entire landed system at 30 spores or fewer, or the subsystems\nthat acquire, deliver and analyze life-detection samples sterilized to that\nlevel, with recontamination preventoin [31]",
+        "A life-detectoin FREYA lands here. Rev 4's dropping of\nmandatory whole-assembly irradiation is consistent with the\nsubsystem route, which then needs a validated, compatible\ntreatment and barrier."
+      ],
+      [
+        "IVc",
+        "Accessing a Special Region: system at 30 spores or fewer, or subsystems in\ncontact sterilized and protected [31]",
+        "Possible if a warmed assay is judged to create Special Region\nconditions (\u00a712.3)."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P34T03",
+    "page": 34,
+    "header": "Gate | Name | Required evidence | State | Related req.",
+    "cells": [
+      [
+        "Gate",
+        "Name",
+        "Required evidence",
+        "State",
+        "Related req."
+      ],
+      [
+        "PPG01",
+        "Classifciation",
+        "Mission authority assigns applicable requirements and sample and\nsite restrictions",
+        "OPEN",
+        "PP01"
+      ],
+      [
+        "PPG02",
+        "Process selection",
+        "Organism endpoints and instrument and material compatibility",
+        "OPEN",
+        "PP02"
+      ],
+      [
+        "PPG03",
+        "Coverage and residues",
+        "Representative assemblies, inaccessible spaces and assay interference",
+        "OPEN",
+        "PP02"
+      ],
+      [
+        "PPG04",
+        "Functional acceptance",
+        "Post-treatment calibration, battery, tether, impact and thermal tests",
+        "OPEN",
+        "PP02"
+      ],
+      [
+        "PPG05",
+        "Recontaminatoin control",
+        "Barriers, witnesses, integration and transport records",
+        "OPEN",
+        "PP03"
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P35T01",
+    "page": 35,
+    "header": "Process option | Status | Compatbi ility questoi ns to answer with evidence",
+    "cells": [
+      [
+        "Process option",
+        "Status",
+        "Compatbi ility questoi ns to answer with evidence"
+      ],
+      [
+        "Controlled (glove-box) assembly\nwith component treatment",
+        "Proposed in Rev 4; not selected",
+        "Barrier integrity; treatment compatibility of each component;\nwitness monitoring (PPG05)."
+      ],
+      [
+        "Gas process, ethylene oxide\ncandidate",
+        "Record only. The 1972 report [4] discusses\neffectvieness and material compatibility; it does\nnot establish complete fumigatoin of FREYA or\nmodern acceptance",
+        "Residues or reaction products that bias the assay; access to\nsealed and potetd cavities; verificatoin on flight-representatvie\ngeometry."
+      ],
+      [
+        "Vapor hydrogen peroxide and\ndry-heat microbial reductoin",
+        "Used on NASA projects according to NASA OPP\npresentatoins [34]",
+        "Batetry, potting and electronics temperature limits; penetration\ninto sealed volumes. Not assessed here."
+      ],
+      [
+        "Radiatoin where compatible",
+        "No longer mandatory for the assembled probe",
+        "Dose efefcts on batteries, electronics, polymers and assay\nreagents."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P35T02",
+    "page": 35,
+    "header": "Opportunity | What is reported | Implication for FREYA",
+    "cells": [
+      [
+        "Opportunity",
+        "What is reported",
+        "Implication for FREYA"
+      ],
+      [
+        "December 2028 transfer window",
+        "NASA targets launch of SR-1 Freedom, a\nnuclear-electric spacecraft, in December 2028,\ncarrying the SkyFall helicopter entry vehicle\n[43]. IMPRESS materials say swarms could ride\nas a secondary payload on this mission [44]. The\nspacecraft's fate after delivering SkyFall (flyby or\norbit) has not been decided [43]. ESA's Rosalind\nFranklin rover is also reported for 2028 on a US\ncommercial launcher (secondary source).",
+        "About 26 months from now. Needs a host agreement, a planetary-\nprotectoin route, and either orbital release (Section 11) or direct\nentry. Press reports are secondary sources and should be checked\nagainst NASA releases."
+      ],
+      [
+        "Early 2031 window (assumed)",
+        "Mars launch windows recur about every 26\nmonths (synodic period about 780 days). Date\nnot verifeid in this review.",
+        "The realistic target for a life-detection configuratoin (Sectoin 13.3)."
+      ],
+      [
+        "Dedicated or commercial\nrideshare",
+        "No specifci offer identified",
+        "Not assessable. Entry mass, volume and delivery orbit are the\ninterface parameters to specify."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P35T03",
+    "page": 35,
+    "header": "Probes | Probe mass kg | Entry mass kg (f 32.6 %) | Within 45 kg | Kick-stage propellant kg | Conservatvi e entry kg | Within 45 kg",
+    "cells": [
+      [
+        "Probes",
+        "Probe mass kg",
+        "Entry mass kg (f 32.6 %)",
+        "Within 45 kg",
+        "Kick-stage propellant kg",
+        "Conservatvi e\nentry kg",
+        "Within 45 kg"
+      ],
+      [
+        "1",
+        "5.5",
+        "8.1",
+        "Yes",
+        "0.22",
+        "11.3",
+        "Yes"
+      ],
+      [
+        "2",
+        "11.0",
+        "16.3",
+        "Yes",
+        "0.45",
+        "22.7",
+        "Yes"
+      ],
+      [
+        "3",
+        "16.5",
+        "24.4",
+        "Yes",
+        "0.67",
+        "34.0",
+        "Yes"
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P36T01",
+    "page": 36,
+    "header": "Probes | Probe mass kg | Entry mass kg (f 32.6 %) | Within 45 kg | Kick-stage propellant kg | Conservatvi e entry kg | Within 45 kg",
+    "cells": [
+      [
+        "Probes",
+        "Probe mass kg",
+        "Entry mass kg (f 32.6 %)",
+        "Within 45 kg",
+        "Kick-stage propellant kg",
+        "Conservatvi e\nentry kg",
+        "Within 45 kg"
+      ],
+      [
+        "4",
+        "22.0",
+        "32.6",
+        "Yes",
+        "0.90",
+        "45.3",
+        "No"
+      ],
+      [
+        "5",
+        "27.4",
+        "40.7",
+        "Yes",
+        "1.12",
+        "56.6",
+        "No"
+      ],
+      [
+        "6",
+        "32.9",
+        "48.9",
+        "No",
+        "1.34",
+        "68.0",
+        "No"
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P36T02",
+    "page": 36,
+    "header": "Gate | Target | Exit criteria | Closes or bounds",
+    "cells": [
+      [
+        "Gate",
+        "Target",
+        "Exit criteria",
+        "Closes or bounds"
+      ],
+      [
+        "G0",
+        "Q4 2026 \u2013 Q1 2027",
+        "Mission class chosen (D-01); operatnig mode and hypothesis\nstated (D-02); supplier concept designs and measured bulk\ndensity for the 0.31 kg and 1 kg envelopes (D-04); planetary-\nprotectoin authority and route identfiied; expert addendum\nsupplied (D-08).",
+        "A-01, A-02, A-03, A-29; R01, R04, R16, R27,\nR31"
+      ],
+      [
+        "G1",
+        "Q2 2027",
+        "Packaging CAD and coupled thermal model for 60/2 and\n70/2.5 (and 50/1.5); battery chemistry and radio chosen (D-\n06); carrier and entry mode selected (D-05); component-level\nmass ledger (D-07).",
+        "A-12 to A-19; R03, R19, R25, R32"
+      ],
+      [
+        "G2",
+        "H2 2027",
+        "Coupon tests: steel heat treatment toughness at cold; potting\nthermal cycling and shock; battery cold-shock capacity.\nInstrumented drop tests of mass-simulant forebodies into\nanalog targets.",
+        "A-07, A-08, A-10; R05\u2013R08, R29"
+      ],
+      [
+        "G3",
+        "H1 2028",
+        "Full-scale impact tests with flight-like internals; tether and\ndrogue deployment tests; planetary-protection process\nvalidatoin on representative assemblies; link test with a\nProximity-1 radio.",
+        "R09, R10, R12, R15, R30"
+      ],
+      [
+        "G4",
+        "Mid 2028 (delivery)",
+        "Integrated acceptance; documentation; planetary-protectoin\nrecords; hardware delivered to the carrier.",
+        "R14, R20, R22"
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P36T03",
+    "page": 36,
+    "header": "Option | Scope | Planning judgment",
+    "cells": [
+      [
+        "Option",
+        "Scope",
+        "Planning judgment"
+      ],
+      [
+        "1 2028 pathfinder",
+        "About 2 kg class, IMPRESS-like probe; environmental\nand geophysical sensors; no life detectoin (IVa-like,\nsubject to authority); one to several probes.\nDemonstrates impact, tether, antenna, relay link,\nthermal behavior.",
+        "About 20 months from today to delivery. Aggressive but\nconceivable only if funded and hosted now. Retries R05\u2013R10,\nR12, R17, R29, R30 and gives flight data for Optoin 2."
+      ],
+      [
+        "2 2031 science mission",
+        "Life-detectoin payload at the 0.31\u20131 kg level; Mode B\nor C; planetary-protectoin validatoin; up to five\nprobes.",
+        "Allows G0\u2013G4 without compression and uses the new relay\nconstellatoin planned for 2030. Preferred for the 1 kg science\ncase."
+      ],
+      [
+        "3 2028 full science",
+        "The Revision 4 concept on the December 2028\nwindow.",
+        "Not credible: science package, assay validation, cold-impact\nqualificatoin and planetary-protection validatoin cannot all be\ncompleted in the tmi e. Do not plan on it without schedule\nevidence."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P37T01",
+    "page": 37,
+    "header": "Rank | Uncertainty | Why it comes frist | Cheapest retirement",
+    "cells": [
+      [
+        "Rank",
+        "Uncertainty",
+        "Why it comes frist",
+        "Cheapest retirement"
+      ],
+      [
+        "1",
+        "Science package defniitoin, density and operatnig\nmode (A-01, A-02, D-02)",
+        "Sets cavity volume, length, battery and\nthermal design; moves every number in Part C.",
+        "Supplier concept designs and a writetn\nhypothesis; no hardware."
+      ],
+      [
+        "2",
+        "Carrier, entry mode and relay (D-05, D-06)",
+        "Sets entry speed, thermal protection, mass\nclosure and link.",
+        "Host-mission discussions; relay operator\ninquiry; Proximity-1 radio survey."
+      ],
+      [
+        "3",
+        "Planetary-protectoin category and process (D-01,\nPP01\u2013PP04)",
+        "Sets the process, schedule and, for Mode C,\npossibly the category.",
+        "Early consultation with the mission\nauthority; process compatibility screens."
+      ],
+      [
+        "4",
+        "Thermal isolation versus soil conductviity (PR-04)",
+        "Decides whether a warmed mode is feasible at\nall.",
+        "Coupled thermal model with k from 0.02 to\n2 W/m K."
+      ],
+      [
+        "5",
+        "Impact survivability of structure, potting, batetry,\nradio (R05\u2013R08)",
+        "No design is credible without drop-test\nevidence.",
+        "Instrumented drops of mass simulants;\ncoupon tests."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P37T02",
+    "page": 37,
+    "header": "If this becomes true | Then",
+    "cells": [
+      [
+        "If this becomes true",
+        "Then"
+      ],
+      [
+        "Measured science bulk density below 1.5 kg/L, or ancillary volume\nabove 0.25 L",
+        "70 mm length exceeds 408\u2013425 mm and mass rises by 0.4\u20130.5 kg; reopen D-03\nand re-run Sectoin 5 and Section 11 closure."
+      ],
+      [
+        "Thermal model shows side loss above about 1 W in plausible soils for a\nwarmed mode",
+        "Mode C is not feasible at 0.450 kg; choose Mode A or B, or a larger battery."
+      ],
+      [
+        "Carrier will not enter Mars orbit",
+        "Direct entry: new EDL study; Sectoin 11 entry numbers do not apply."
+      ],
+      [
+        "Relay operator cannot support the chosen radio",
+        "Select a Proximity-1 radio or host a relay on the carrier."
+      ],
+      [
+        "Cold impact tests show the steel is britlte at Mars night temperatures",
+        "Change material or heat treatment; mass and wall schedule change."
+      ],
+      [
+        "Planetary-protectoin authority rules Mode C a Special Region access",
+        "Category IVc requirements apply; the warmed assay may need redesign or\ncancellation."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P37T03",
+    "page": 37,
+    "header": "Step | Duratoi n or timing | Notes (not verified by simulatoi n)",
+    "cells": [
+      [
+        "Step",
+        "Duratoi n or timing",
+        "Notes (not verified by simulatoi n)"
+      ],
+      [
+        "Release and deorbit burn",
+        "\u0394v 61.6 m/s at periapsis-lowering",
+        "Kick stage on the entry stack, not the parent (Sectoin 11)."
+      ],
+      [
+        "Coast to entry",
+        "About 55.6 min for a 250 km orbit\n(half period)",
+        "Parent can remain in orbit as a relay if it carries a UHF radio."
+      ],
+      [
+        "Entry and drogue\ndeployment",
+        "Entry near 3.5 km/s at about \u22122\u00b0",
+        "Thermal protection and deployment altitude open (R12, R14)."
+      ],
+      [
+        "Impact, penetration, tether\npayout",
+        "Seconds",
+        "Instrumented acceleration record is the frist data product (MECH04)."
+      ],
+      [
+        "Aftbody antenna\ndeployment and link\nacquisition",
+        "First overflight; 2\u20134 orbiter passes\nper day [26]",
+        "Receiver windows scheduled from predicted passes (PWR02)."
+      ],
+      [
+        "Measurement sequence",
+        "Mode A about 42 h; Mode B or C\nup to 5 days",
+        "Set by D-02 and the battery."
+      ],
+      [
+        "Data return",
+        "3\u201346 Mbit per 6 min pass at 8\u2013128\nkbps",
+        "Margin per Section 9."
+      ]
+    ],
+    "family": "Protection and mission planning",
+    "steps": "Read each standard or opportunity at its cited date; keep category assignments and access approvals OPEN. Cost and schedule are estimates unless backed by a proposal. Apply the NPR date correction and unavailable-SBIR boundary.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P38T01",
+    "page": 38,
+    "header": "ID | Proposed requirement | Verification",
+    "cells": [
+      [
+        "ID",
+        "Proposed requirement",
+        "Verification"
+      ],
+      [
+        "SCI01",
+        "Retain 1.000 kg science mass as a user-directed trade assumption",
+        "Weigh instrument assembly; record included\nelectronics, reagents and interfaces"
+      ],
+      [
+        "SCI02",
+        "Define measured signal, detection limit and abiotic alternatives before\ninstrument freeze",
+        "Science review and assay validation with blinded\nanalogs"
+      ],
+      [
+        "SCI03",
+        "Separate sample depth from forebody burial depth",
+        "Acquisition drawings and sample provenance\ndemonstration"
+      ],
+      [
+        "SCI04",
+        "Compare shallow skin with buried sensing without assuming liquid water",
+        "Site pressure, temperature, salt and water-actviity\nmodel"
+      ],
+      [
+        "SCI05",
+        "Allocate blanks, treated controls, reagent controls and replication",
+        "Statistical analysis and contamination budget"
+      ],
+      [
+        "SCI06",
+        "Define incubation temperature and duration including delayed recovery",
+        "Time-series analog experiments; no assumed rapid\nrevival; energy closure per \u00a78"
+      ],
+      [
+        "SCI07 (new)",
+        "State the hypothesis and operatnig mode (A, B or C) that the energy ledger\nsupports",
+        "Decision record D-02"
+      ],
+      [
+        "SYS01",
+        "Maintain forebody, tether and surface aftbody reference architecture",
+        "Interface control drawing and deployment test"
+      ],
+      [
+        "SYS02",
+        "Close nominal mass and volume before adding contingency",
+        "Measured bill of materials and CAD envelope"
+      ],
+      [
+        "SYS03",
+        "Apply 25 % preliminary mass contingency in this study",
+        "Ledger audit; replace with project-approved growth\npolicy"
+      ],
+      [
+        "SYS04 (new)",
+        "Carry growth allowance per component by maturity, with 30 % as the concept\ndefault",
+        "Ledger audit against AIAA S-120 practcie [42]"
+      ],
+      [
+        "MECH01",
+        "Verify steel heat treatment, toughness and joining at operatnig temperature",
+        "Coupons, NDE, cold impact tests and structural\nanalysis"
+      ],
+      [
+        "MECH02",
+        "Keep a physical tether path and release without damaging science hardware",
+        "Full-speed deployment and pull tests"
+      ],
+      [
+        "MECH03",
+        "Prevent potting from blocking sampling ports and optical or fluid paths",
+        "Manufacturing drawing and folw or optical tests"
+      ],
+      [
+        "MECH04",
+        "Qualify instrument shock response using local acceleratoin histories",
+        "Instrumented drop tests and post-impact calibration"
+      ],
+      [
+        "MECH05 (new)",
+        "Show buckling and bending margin for the selected geometry under oblique\nimpact",
+        "Finite-element analysis and cold oblique impact tests"
+      ],
+      [
+        "MECH06 (new)",
+        "If a composite body is pursued, qualify the steel-to-composite joint for impact\nshock and cold",
+        "Coupon and drop tests of the joint at Mars-night\ntemperature; NDE for delamination"
+      ],
+      [
+        "PWR01",
+        "Close energy for every operatnig mode with cold, aging and conversion losses",
+        "Time-resolved power model and battery\ncharacterizatoin"
+      ],
+      [
+        "PWR02 (new)",
+        "Schedule receiver windows from predicted overfilghts and include listening\nand transmit energy",
+        "Power model with pass schedule"
+      ],
+      [
+        "THERM01",
+        "Model shell, soil, sample and electronics as separate thermal nodes",
+        "Vacuum cold-chamber correlation and transient\nthermal analysis"
+      ],
+      [
+        "THERM02 (new)",
+        "Keep aftbody electronics within their qualified range through the Martian night",
+        "Cold-soak test; heater power in the ledger"
+      ],
+      [
+        "COM01",
+        "Transmit through an exposed antenna via a verified tether interface",
+        "Link budget and end-to-end post-impact\ndemonstration"
+      ],
+      [
+        "COM02 (new)",
+        "Use a radio that interoperates with the selected relay (Proximity-1 for NASA\nand ESA orbiters)",
+        "Interoperability test with the relay operator"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P39T01",
+    "page": 39,
+    "header": "ID | Proposed requirement | Verification",
+    "cells": [
+      [
+        "ID",
+        "Proposed requirement",
+        "Verification"
+      ],
+      [
+        "COM03 (new)",
+        "Close the return link with at least 3 dB margin at the minimum usable elevatoin",
+        "Link budget with measured antenna patetrn"
+      ],
+      [
+        "EDL01",
+        "Analyze each delivery scenario with its own entry boundary conditions",
+        "Trajectory dispersions and aerodynamic database"
+      ],
+      [
+        "EDL02",
+        "Qualify drogue inflation stability and forebody\u2013aftbody separation",
+        "Mars-relevant deployment tests"
+      ],
+      [
+        "EDL03 (new)",
+        "Define the impact-speed envelope and show the drogue delivers it across the\ndensity range",
+        "Terminal-speed analysis and drop tests"
+      ],
+      [
+        "PP01",
+        "Obtain applicable planetary-protection classifciation and endpoints",
+        "Mission authority concurrence"
+      ],
+      [
+        "PP02",
+        "Validate a compatible reductoin process with residues and assay blanks",
+        "Microbial reduction and materials compatibility\nevidence"
+      ],
+      [
+        "PP03",
+        "Maintain barriers and cleanliness after treatment",
+        "Integration controls and witness monitoring"
+      ],
+      [
+        "PP04 (new)",
+        "Record maximum temperature, humidity and time above Special Region\nthresholds for every wetetd or humid volume",
+        "Thermal and humidity analysis; authority review"
+      ],
+      [
+        "VER01",
+        "Keep data provenance, model version and assumptions with every result",
+        "Shared model tests and exported scenario record"
+      ],
+      [
+        "VER02 (new)",
+        "Maintain the source register with verifciation status",
+        "Section 18 reviewed at each gate"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P39T02",
+    "page": 39,
+    "header": "ID | Study constraint or boundary",
+    "cells": [
+      [
+        "ID",
+        "Study constraint or boundary"
+      ],
+      [
+        "C01",
+        "Science mass fixed at 1 kg for this trade; science volume is unknown"
+      ],
+      [
+        "C02",
+        "Baseline packaging assumes 0.500 L science envelope and 0.120 L other forebody hardware (both challenged in PR-31, PR-32)"
+      ],
+      [
+        "C03",
+        "Potting occupies 25 % and reserved space 10 % of cavity volume"
+      ],
+      [
+        "C04",
+        "Steel density 7,850 kg/m\u00b3; hemisphere and cap mass retained; no hidden structural allocatoin"
+      ],
+      [
+        "C05",
+        "Cable allocatoin assumes 5 m at 10 g/m; spool and strain relief are additional"
+      ],
+      [
+        "C06",
+        "Batetry allocation 0.450 kg is a short-duratoin case, not a mission requirement"
+      ],
+      [
+        "C07",
+        "No flight survival probability or qualifeid wall thickness follows from this trade"
+      ],
+      [
+        "C08",
+        "No mandatory 1.5 m sample depth, six-probe count or 450 kg delivery bus"
+      ],
+      [
+        "C09",
+        "No selected assembled-probe irradiation or ethylene oxide procedure"
+      ],
+      [
+        "C10",
+        "Low-conductivity dry soil assumptoins cannot represent ice or competent rock"
+      ],
+      [
+        "C11",
+        "Contingency covers mass growth; it cannot replace missing power or experiment subsystems"
+      ],
+      [
+        "C12",
+        "Existing public website audience is retained; no private-access claim is made"
+      ],
+      [
+        "C13 (new)",
+        "All penetration, link, structural and thermal results in Rev 5 are screens, not predictoins; none qualifeis hardware"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P39T03",
+    "page": 39,
+    "header": "Risk | Issue | Closure evidence | Reviewer note | Gate",
+    "cells": [
+      [
+        "Risk",
+        "Issue",
+        "Closure evidence",
+        "Reviewer note",
+        "Gate"
+      ],
+      [
+        "R01",
+        "Sample misses relevant biology",
+        "Compare shallow and buried samples\nin analog trials",
+        "Skin depth 3.2 cm supports shallow sampling\n(\u00a76.1).",
+        "G3"
+      ],
+      [
+        "R02",
+        "False biological signal",
+        "Blinded abiotci controls and multpile\nindependent measurements",
+        "Include perchlorate-spiked blanks for heated\nsteps (\u00a76.3).",
+        "G3"
+      ],
+      [
+        "R03",
+        "Incubation exceeds energy",
+        "Demonstrate tmi e series at credible\nsample conditions",
+        "Quantifeid in \u00a78; see R23.",
+        "G1"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P40T01",
+    "page": 40,
+    "header": "Risk | Issue | Closure evidence | Reviewer note | Gate",
+    "cells": [
+      [
+        "Risk",
+        "Issue",
+        "Closure evidence",
+        "Reviewer note",
+        "Gate"
+      ],
+      [
+        "R04",
+        "Science envelope does not fti",
+        "Obtain CAD and measure package bulk\ndensity",
+        "Raised: density and ancillary volume unsourced\n(PR-31, PR-32).",
+        "G0"
+      ],
+      [
+        "R05",
+        "Narrow chassis buckles or bends",
+        "Cold oblique impact tests and finite\nelement analysis",
+        "35 mm fails Euler screen; others pass at\naverage load (\u00a75.3).",
+        "G2"
+      ],
+      [
+        "R06",
+        "Hard steel fractures in cold\nimpact",
+        "Toughness and heat-treatment\nqualificatoin",
+        "Strength\u2013toughness data in [45]; no cold data.",
+        "G2"
+      ],
+      [
+        "R07",
+        "Potting cracks or contaminates\nassay",
+        "Thermal cycling, shock and chemical\nblanks",
+        "Analog resin only (PR-27).",
+        "G2"
+      ],
+      [
+        "R08",
+        "Batetry failure after impact",
+        "Cold shock capacity and safety testing",
+        "DS2 reviewers listed batetry failure on impact\nas plausible [17].",
+        "G2"
+      ],
+      [
+        "R09",
+        "Tether snags or severs",
+        "Dynamic payout and penetration\ndemonstration",
+        "",
+        "G3"
+      ],
+      [
+        "R10",
+        "Antenna remains buried or\nmisoriented",
+        "Surface emplacement and RF tests",
+        "DS2 candidate failure: lands on its side [17].",
+        "G3"
+      ],
+      [
+        "R11",
+        "Relay link or access unavailable",
+        "Selected service agreement and pass-\nbased link budget",
+        "MAVEN ended; four aging orbiters; new\nnetwork by about 2030 (PR-11).",
+        "G1"
+      ],
+      [
+        "R12",
+        "Drogue or separation fails",
+        "Rarefied-atmosphere deployment tests",
+        "Sizing in \u00a711.2.",
+        "G3"
+      ],
+      [
+        "R13",
+        "Entry scenario transferred\nincorrectly",
+        "Independent trajectory review",
+        "Entry state from orbit now tabulated (\u00a711.1).",
+        "G1"
+      ],
+      [
+        "R14",
+        "Heat shield undersized",
+        "CFD, thermal response, margins and\narcjet evidence",
+        "Orbit entry about 3.5 km/s; direct entry differs.",
+        "G3"
+      ],
+      [
+        "R15",
+        "Treatment damages\nmeasurements",
+        "Residue and compatbiility validation",
+        "",
+        "G3"
+      ],
+      [
+        "R16",
+        "Recontaminatoin during\nassembly",
+        "Barrier and witness verifciation",
+        "",
+        "G3"
+      ],
+      [
+        "R17",
+        "Local geology prevents\nemplacement",
+        "Site analog impact matrix and targetnig\nreview",
+        "Penetratoin scaling is relative only (\u00a710.3).",
+        "G3"
+      ],
+      [
+        "R18",
+        "Heated probe changes habitat",
+        "Coupled soil and sample thermal\nmodel and untreated reference",
+        "Link to R27.",
+        "G2"
+      ],
+      [
+        "R19",
+        "Incomplete hardware allowances",
+        "Vendor BOM and measured assembly",
+        "Aftbody 0.87 kg versus 5.6 kg in a 2005 study\n(scope unverifeid).",
+        "G1"
+      ],
+      [
+        "R20",
+        "Carrier mass no longer closes",
+        "Re-size capsule, dispenser and TPS",
+        "Closure condition f \u2264 26.8 % for six probes\n(\u00a711.3).",
+        "G1"
+      ],
+      [
+        "R21",
+        "Insufcfiient replicatoin",
+        "Power analysis with spatial\nheterogeneity",
+        "",
+        "G1"
+      ],
+      [
+        "R22",
+        "Model used as filght qualification",
+        "Independent expert review and\ndocumented model limits",
+        "This review is by an AI and is not that\nindependent review.",
+        "G4"
+      ],
+      [
+        "R23 (new)",
+        "Energy and duratoin cannot test\nthe science hypothesis (delayed\nrecovery)",
+        "State hypothesis; demonstrate\ndetectable response within the energy\nledger",
+        "PR-05; timescales 20\u2013160 days [35].",
+        "G0"
+      ],
+      [
+        "R24 (new)",
+        "Soil heat loss exceeds available\npower",
+        "Thermal model across k = 0.02\u20132 W/m\nK; insulation design",
+        "PR-04; 1.32 W at k 0.039.",
+        "G1"
+      ],
+      [
+        "R25 (new)",
+        "Radio and relay protocol\nmismatch",
+        "Interoperability test; Proximity-1 radio\nselected",
+        "PR-10.",
+        "G3"
+      ],
+      [
+        "R26 (new)",
+        "Relay network degrades before\narrival",
+        "Service agreement; backup relay on\ncarrier",
+        "PR-11.",
+        "G1"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P41T01",
+    "page": 41,
+    "header": "Risk | Issue | Closure evidence | Reviewer note | Gate",
+    "cells": [
+      [
+        "Risk",
+        "Issue",
+        "Closure evidence",
+        "Reviewer note",
+        "Gate"
+      ],
+      [
+        "R27 (new)",
+        "Warmed assay triggers Special\nRegion or Category IVc questions",
+        "Authority determinatoin; PP04 record",
+        "PR-20.",
+        "G0"
+      ],
+      [
+        "R28 (new)",
+        "Schedule does not support the\nchosen launch window",
+        "Gate plan with exit criteria; host\nagreement",
+        "PR-28; Section 13.3.",
+        "G0"
+      ],
+      [
+        "R29 (new)",
+        "Shock loads underestimated\n(peak much larger than average)",
+        "Instrumented drop tests; load spectra",
+        "DS2 design load about 10\u00d7 mean [18].",
+        "G2"
+      ],
+      [
+        "R30 (new)",
+        "Penetratoin depth outside the\nuseful range",
+        "Analog target tests; speed and drogue\nrequirement",
+        "About 0.3\u20130.5 m at 100 m/s (relative scaling,\n\u00a710.3).",
+        "G3"
+      ],
+      [
+        "R31 (new)",
+        "Evidence base is narrow (one\nauthor group, preprint, unread\naddendum)",
+        "Independent sources; addendum text;\nreviewer named",
+        "PR-21, PR-22.",
+        "G0"
+      ],
+      [
+        "R32 (new)",
+        "Aftbody allowance incomplete",
+        "Bottom-up aftbody design",
+        "See R19.",
+        "G1"
+      ],
+      [
+        "R33 (new)",
+        "Planetary-protectoin policy\ninstrument status uncertain",
+        "Confirm current NPR 8715.24 and\nCOSPAR edition",
+        "Listed expiratoin 24 Sep 2026 (PR-20).",
+        "G0"
+      ],
+      [
+        "R34 (new)",
+        "Carrier does not enter Mars orbit",
+        "Carrier trajectory and decision from\nhost",
+        "PR-34.",
+        "G1"
+      ],
+      [
+        "R35 (new)",
+        "Composite body delaminates or\nthe steel-to-composite joint fails\nunder impact or cold",
+        "Joint coupon and drop tests; NDE;\nfibre-metal-laminate fallback",
+        "New with the \u00a75.9 architecture trade (D-09).",
+        "G2"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P41T02",
+    "page": 41,
+    "header": "Step | Action | Output | Unlocks",
+    "cells": [
+      [
+        "Step",
+        "Action",
+        "Output",
+        "Unlocks"
+      ],
+      [
+        "1",
+        "Resolve D-01, D-02 and D-08; supply the expert\naddendum text and reviewer name",
+        "Mission class, mode and hypothesis; evidence\nbase",
+        "Every other step"
+      ],
+      [
+        "2",
+        "Obtain supplier concept designs and measured\ndensity for the 0.31 kg and 1 kg envelopes (D-04)",
+        "Package envelope, mass, power and operating\nprofile",
+        "Cavity sizing; battery; thermal"
+      ],
+      [
+        "3",
+        "Select carrier, entry mode, probe count and relay\n(D-05, D-06)",
+        "Interface conditoins; link requirements",
+        "EDL design; mass closure"
+      ],
+      [
+        "4",
+        "Open the planetary-protection dialogue and\nconfirm the compliance route",
+        "Category and endpoints",
+        "Process selection; schedule"
+      ],
+      [
+        "5",
+        "Build the coupled thermal and energy model for\nthe three modes",
+        "Mode feasibility; battery mass",
+        "D-02 confirmation; PWR01, THERM01"
+      ],
+      [
+        "6",
+        "Packaging CAD for 60/2, 70/2.5 and 50/1.5;\ncomponent-level ledger; repeat Sectoin 5",
+        "Revised ranking and decision record",
+        "Gate G1"
+      ],
+      [
+        "7",
+        "Coupons and instrumented drop tests; tether and\ndrogue tests",
+        "Survivability evidence",
+        "Gates G2, G3"
+      ],
+      [
+        "8",
+        "Independent human review by structures,\nthermal, power, communications, planetary-\nprotectoin and astrobiology experts",
+        "Reviewed baseline",
+        "Gate G4"
+      ]
+    ],
+    "family": "Requirements risks and next steps",
+    "steps": "Keep stable IDs; trace each to science/engineering evidence; proposed verification is future work. No risk probability or gate closure is inferred from a listed mitigation.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P42T01",
+    "page": 42,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[1]",
+        "Spacek, J.; Alpern, H.; Dineen, T.; Petkowski, J. J.; Rizzo, G.; Benner,\nS. A.; Lui, M.; Cockell, C.; Eubanks, M.; Schulze-Makuch, D.; Temby,\nC.; Richburg, M. (2026). IMPRESS: A Planetary Penetrator Network\nfor Astrobiology, Prospecting, and Exploratoin of Mars. Astrobiology\n26(9), 688\u2013699. DOI 10.1177/15311074261471218.",
+        "Architecture; 0.2\u20131 m\nemplacement; 50 mm\nreference geometry",
+        "Partial",
+        "Abstract and landing page\nconfirmed (first published 23 Jul\n2026; instruments emplaced 0.2\u2013\n1 m; swarms of penetrators as\nnetwork nodes). Full text\nrestricted; geometry (50 mm, 1.5\nmm, 210 mm, 345 cm\u00b3, \u22482 kg)\ncarried from Rev 4.\nhttps://doi.org/10.1177/1531107\n4261471218"
+      ],
+      [
+        "[2]",
+        "Spohn, T.; M\u00fcller, N.; Knollenberg, J.; Grott, M.; Golombek, M. P.;\nPlesa, A.-C.; Bickel, V. T.; Morgan, P.; Krause, C.; Breuer, D.;\nSmrekar, S.; Banerdt, W. B. (2024). Mars Soil Temperature and\nThermal Properties From InSight HP3 Data. Geophys. Res. Let.t\n51(18), e2024GL108600. DOI 10.1029/2024GL108600.",
+        "Soil temperature; diffusivity;\nshallow thermal wave",
+        "Verified",
+        "Abstract: 217.5 K average at 10\u2013\n20 cm; 5.3\u20136.7 K diurnal, 13.3 K\nseasonal; diffusivity (3.93 \u00b1\n0.39)\u00d710\u207b\u2078 (upper 10 cm) and\n(3.63 \u00b1 0.53)\u00d710\u207b\u2078 m\u00b2/s (40 cm);\nbrine deliquescence possible.\nhttps://boris-portal.unibe.ch/enti\nties/publication/30148514-4356-\n4636-8e3b-c5b64ee3e809"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P43T01",
+    "page": 43,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[3]",
+        "Clifofrd, S. M.; Lasue, J.; Heggy, E.; Boisson, J.; McGovern, P.; Max,\nM. D. (2010). Depth of the Martian cryosphere: Revised estmi ates\nand implications for the existence and detectoin of subpermafrost\ngroundwater. J. Geophys. Res. Planets 115, E07001. DOI\n10.1029/2009JE003462.",
+        "Broad climate context",
+        "Partial",
+        "Paper exists; cryosphere depth at\nkilometer scale. The 218 K / 154 K\nsurface values were not found in\nthe text read (PR-08). https://hal-\ninsu.archives-ouvertes.fr/insu-\n03605310"
+      ],
+      [
+        "[4]",
+        "Stroud, R. H., et al.; Exotech Systems, Inc. (April 1972).\nContamination Control by Use of Ethylene Oxide: Technology\nSummary, Task 12. NASA-CR-126034; NTRS 19720013398.",
+        "Historical gas-process\ndiscussion",
+        "Not re-\nopened",
+        "Not re-opened. Historical; not a\ncurrent approved process.\nhttps://ntrs.nasa.gov/api/citatoins\n/19720013398/downloads/19720\n013398.pdf"
+      ],
+      [
+        "[5]",
+        "Spacek, J.; Abraham, C. A.; Benner, S. A. (15 Sep 2026). The case for\nextant life on Mars: A Technical Reanalysis of the Viking Carbon\nAssimilation\u2013Pyrolytic Release Experiment. The Primordial Scoop\n(preprint submitetd to Astrobiology).",
+        "Motivating hypothesis only",
+        "Not re-\nopened",
+        "Not re-opened. Hosted on the\nlead author's own site, which also\nhosts earlier IMPRESS posts.\nInterpretatoin contested (PR-21).\nhttps://primordialscoop.org/2026\n/09/15/capyr/"
+      ],
+      [
+        "[6]",
+        "NASA TechPort project 184149 (reviewer-supplied).",
+        "None; no claim rests on it",
+        "Not verifei d",
+        "Could not be resolved by this\nreview either; the tool could not\nfetch the page and searches\nreturned no project record.\nhttps://techport.nasa.gov/project\ns/184149"
+      ],
+      [
+        "[7]",
+        "Sandvik Osprey. Osprey 4340 and Osprey 434 low-alloy steel\ndatasheet (14 Sep 2023).",
+        "Density 7.85 g/cm\u00b3;\nconductivity 44.5 W/m K",
+        "Not re-\nopened",
+        "Not re-opened. Powder-\nmetallurgy data; superseded for\nwrought properties by [45].\nhttps://www.metalpowder.sandvi\nk/en/products/metal-powder-\nalloys/low-alloy-steel/osprey-\n4340/"
+      ],
+      [
+        "[8]",
+        "Epoxy Technology Inc., Meridian Adhesives Group (Feb 2021). EPO-\nTEK 301-2 Technical Data Sheet, Rev XVIII.",
+        "Potting density analog",
+        "Not re-\nopened",
+        "Arithmetic verified: 100:35 mix of\nspecifci graviteis 1.15 and 0.95\ngives 1.0905 g/cm\u00b3. Datasheet not\nre-opened.\nhttps://products.meridianadhesiv\nes.com/storage/downloads/uenn\nuicaaxt1bodtipkbpydtg0u8qs33/3\n01-2.pdf"
+      ],
+      [
+        "[9]",
+        "GomSpace. NanoCom AX100 datasheet v3.3 (12 Aug 2016) and\nproduct flyer.",
+        "Radio mass analog; modulation;\npower",
+        "Verified",
+        "Mass 24.5 g; 65 \u00d7 40 \u00d7 6.5 mm;\n\u221230 to +85 \u00b0C (a 2015\npresentation lists \u221240 to +60 \u00b0C);\nFSK/MSK/GFSK/GMSK; 0.1\u2013115.2\nkbps; 30 dBm at >45 % PAE; UHF-\nlow 395\u2013405 MHz.\nhttps://gomspace.com/UserFiles/\nSubsystems/datasheet/gs-ds-\nnanocom-ax100-33.pdf"
+      ],
+      [
+        "[10]",
+        "NASA (30 Aug 2022). NASA-STD-8719.27, Implementnig Planetary\nProtection Requirements for Space Flight.",
+        "Planetary-protection technical\nframework",
+        "Verified",
+        "Baseline approved 2022-08-30;\nactive; complements NPR\n8715.24.\nhttps://standards.nasa.gov/standa\nrd/NASA/NASA-STD-871927"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P44T01",
+    "page": 44,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[11]",
+        "NASA Planetary Protectoin Handbook, NASA-HDBK-20240016475\n(NTRS 20240016475).",
+        "Guidance",
+        "Partial",
+        "Resolved: effectvie 24 Jan 2025,\ncompanion to NPR 8715.24 and\nNASA-STD-8719.27, replaces\nNASA-HDBK-6022 (NASA OPP).\nFull text not opened.\nhttps://ntrs.nasa.gov/citatoins/20\n240016475"
+      ],
+      [
+        "[12]",
+        "User-supplied FREYA expert review, 26 Oct 2026\n(FREYA Expert Review Addendum 2026-10-26.txt).\n_ _ _ _",
+        "Basis of the sampling-depth\nchange",
+        "Not verifei d",
+        "A private library link; not\naccessible. Reviewer identity\nunknown (PR-22)."
+      ],
+      [
+        "[13]",
+        "Spacek, J., and coauthors (2026). Supplementary Information for\nIMPRESS, Tables S1\u2013S3.",
+        "Instrument sizes; DS2 entry",
+        "Not re-\nopened",
+        "Not re-opened. Version identity\nwith the publisher flie is not\nasserted.\nhttps://impressmars.com/files/pr\neprints/impress-preprint-\nsupplementary-tables-s1-s2-s3-\n2026-07-09.pdf"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P44T02",
+    "page": 44,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[14]",
+        "Grot,t M.; Spohn, T.; Knollenberg, J.; et al. (2021). Thermal\nconductivity of the martian soil at the InSight landing site from HP3\nactive heating experiments. J. Geophys. Res. Planets 126(7),\ne2021JE006861.",
+        "Soil conductivity; porosity",
+        "Verified",
+        "0.039 \u00b1 0.002 W/m K over 0.03\u2013\n0.37 m; about 60 % porosity; fine\nsand; more than twice as\nconductive at Phoenix.\nhttps://elib.dlr.de/141828"
+      ],
+      [
+        "[15]",
+        "Grot,t M., et al. (2023). Seasonal variations of soil thermal\nconductivity at the InSight landing site. Geophys. Res. Let.t 50(7),\ne2023GL102975.",
+        "Pressure dependence of k",
+        "Verified",
+        "k correlates strongly with\natmospheric pressure over 0.03\u2013\n0.37 m. htpts://researchportal.ip-\nparis.fr/en/publicatoins/seasonal-\nvariations-of-soil-thermal-\nconductivity-at-the-insight-l/"
+      ],
+      [
+        "[16]",
+        "NASA NSSDC. Mars Fact Sheet.",
+        "\u03bc, radius, density, gravity",
+        "Verified",
+        "GM 0.042828\u00d710\u2076 km\u00b3/s\u00b2; mean\nradius 3,389.5 km; surface\npressure 6.36 mb mean; density \u2248\n0.016 \u00b1 0.006 kg/m\u00b3.\nhttps://nssdc.gsfc.nasa.gov/planet\nary/factsheet/marsfact.html"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P44T03",
+    "page": 44,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[17]",
+        "JPL Special Review Board (22 Mar 2000). Report on the Loss of Mars\nPolar Lander and Deep Space 2 Missions, JPL D-18709.",
+        "DS2 failure modes",
+        "Partial",
+        "Excerpts: plausible modes include\nimpact electronic or battery\nfailure, ionization breakdown,\nUHF link failure, probes landing on\ntheir sides. No single most\nprobable cause.\nhttps://www.cs.washington.edu/h\nomes/leveson/accidents/mpl rep\n_\nort 1.pdf\n_"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P45T01",
+    "page": 45,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[18]",
+        "NASA NTRS 20000056603. Mars microprobe system description.",
+        "DS2 design loads",
+        "Partial",
+        "Excerpt: forebody deceleratoin\n30,000 g; afbtody peak shock\n80,000 g; Li/SOCl2 batteries.\nhttps://ntrs.nasa.gov/api/citatoins\n/20000056603/downloads/20000\n056603.pdf"
+      ],
+      [
+        "[19]",
+        "Smrekar, S., et al. (1999). Deep Space 2: The Mars Microprobe\nMission (Caltech Authors record).",
+        "DS2 mass, speed, depth",
+        "Verified",
+        "Abstract: 2.4 kg each; about 190\nm/s; penetrate up to 0.6 m.\nhttps://resolver.caltech.edu/Calte\nchAUTHORS:20140416-\n103953096"
+      ],
+      [
+        "[20]",
+        "Gunter's Space Page. DS2 (Deep Space 2, Mars Microprobes).",
+        "DS2 masses and geometry",
+        "Secondary",
+        "Secondary: probe 3.572 kg;\naeroshell 1.165 kg; forebody 0.670\nkg, 35 mm \u00d7 105.6 mm; impact\n160\u2013200 m/s, angle of attack\nbelow 12\u00b0. Verify against JPL.\nhttps://space.skyrocket.de/doc s\n_\ndat/ds-2.htm"
+      ],
+      [
+        "[21]",
+        "Gao, Y.; Ellery, A.; Jaddou, M.; Vincent, J.; Eckersley, S. (2005). A\nNovel Penetratoin System for in situ Astrobiological Studies. Int. J.\nAdv. Robotci Syst. 2(4). DOI 10.5772/5779.",
+        "Mass budget; Young calibratoin",
+        "Partial",
+        "Search excerpt only (publisher\nblocked fetch): forebody 2.7 kg\n(3.2 with margin), aftbody 5.6 kg\n(6.7), 150 m/s, depth 0.76\u20131.36 m\nfor S = 5\u20139.\nhttps://doi.org/10.5772/5779"
+      ],
+      [
+        "[22]",
+        "Young, C. W. (1997). Penetration Equatoins. Sandia report SAND97-\n2426.",
+        "Penetration scaling",
+        "Partial",
+        "Report confrimed via OSTI. The SI\nform was read in two secondary\nsources: an NC State thesis and\nAtlantis Press ICISMME 2015.\nhttps://www.ost.igov/biblio/5624\n98 ; https://www.atlantis-\npress.com/article/21027.pdf"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P45T02",
+    "page": 45,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[23]",
+        "Brandon, E. (JPL). High Specific Energy Primary Batteries for NASA\nMissions (NASA SMD, 2023); and US patent 11,831,044, Heat-\naugmented primary batetry (background).",
+        "Cell-level specific energy; cold\nfailure of Li/CFx",
+        "Partial",
+        "Li/SOCl2 (Saft LSH 20) 421 Wh/kg;\nLi/SO2 420; Li/CFx 730\u2013741 Wh/kg\nat 20 \u00b0C, 50 mA. Patent\nbackground: Li/CFx 640 Wh/kg at\n0 \u00b0C, no discharge at \u221240 \u00b0C.\nhttps://smd-cms.nasa.gov/wp-\ncontent/uploads/2023/11/brando\nn-jpl-licfx-primary-batteries.pdf"
+      ],
+      [
+        "[24]",
+        "Saf.t LSH 20 HTS datasheet (July 2010), D-size Li-SOCl2 cell.",
+        "Cell size and mass",
+        "Verified",
+        "33.4 mm \u00d7 61.6 mm, about 100 g,\n\u221260 to +85 \u00b0C. htpts://www.enix-\npower-solutions.com/wp-\ncontent/uploads/2021/10/LSH20-\nHTS.pdf"
+      ],
+      [
+        "[25]",
+        "Distributed Instruments for Planetary Surface Science: Scientifci\nOpportuniteis and Technology Feasibility. arXiv:2407.01757.",
+        "Primary battery context",
+        "Partial",
+        "Excerpt: Li/CFx above 700 Wh/kg\nwithout filght heritage; a modified\nLi/SOCl2 was developed for DS-2.\nhttps://arxiv.org/pdf/2407.01757"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P46T01",
+    "page": 46,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[26]",
+        "NASA Science. Mars Relay Network (updated 5 Jun 2026).",
+        "Relay network status and data\nvolumes",
+        "Verified",
+        "Four orbiters; MAVEN ended 3 Jun\n2026; table of passes and data\nvolumes; rates up to 2 Mbps. The\n14 May 2026 Mars\nTelecommunications Network RFP\nand the 2030 target come from a\nsecondary report\n(macmyths.com); verify with\nNASA.\nhttps://science.nasa.gov/mars/ma\nrs-relay-network/"
+      ],
+      [
+        "[27]",
+        "JPL IPN Progress Report 42-246 (15 Aug 2026). Recommendatoin for\nthe Next-Generation Mars Relay Orbiter.",
+        "UHF recommendatoin",
+        "Partial",
+        "Excerpt: UHF recommended for\nbackward compatibility and low-\npower users.\nhttps://ipnpr.jpl.nasa.gov/progres\ns report/42-246/42-246A.pdf\n_"
+      ],
+      [
+        "[28]",
+        "JPL (17 Dec 2009). Electra Mars Proximity-Link Communications and\nNavigation Payload Description.",
+        "Electra parameters",
+        "Verified",
+        "Transmit 5 W (7 W); receive noise\nfgiure 4.9 dB (3.9 dB); modulation\nManchester, NRZ-L, BPSK, QPSK;\nrate-1/2 coding; Proximity-1.\nhttps://discovery.larc.nasa.gov/PD\nF FILES/29Electra Description.pdf\n_ _"
+      ],
+      [
+        "[29]",
+        "Communications for the Planet Mars: Past, Present, and Future\n(arXiv:2211.14245); and the MER UHF instrument catalog entry\n(NASA PDS).",
+        "Frequencies and rates; surface\nantenna",
+        "Verified",
+        "Return 401.585625 MHz; forward\n437.1 MHz; Electra 390\u2013405 and\n435\u2013450 MHz, 1\u20131,024 kbps; MER\nUHF monopole, nominal 0 dB,\nRHCP.\nhttps://arxiv.org/pdf/2211.14245"
+      ],
+      [
+        "[30]",
+        "CCSDS Proximity-1 Space Link Protocol (CCSDS 211.0-B); ISO\n21460:2015 (physical layer).",
+        "Relay protocol",
+        "Not re-\nopened",
+        "Existence of the ISO standard\nconfirmed; standards not opened.\nhttps://commitete.iso.org/standar\nd/67092.html"
+      ],
+      [
+        "[47]",
+        "NASA Mars Exploration Program. Mars Relay Network health\nassessment slide (Ianson).",
+        "Relay asset viability",
+        "Partial",
+        "Excerpt: July 2022 assessment,\nonly ESA's TGO expected viable to\nabout 2030 (text truncated).\nhttps://science.nasa.gov/wp-\ncontent/uploads/2024/01/07-\nmep-marsfuture-ianson-\ntagged.pdf"
+      ],
+      [
+        "[48]",
+        "NTNU CubeSat radio survey table (wiki).",
+        "AX100 receive and transmit\npower",
+        "Secondary",
+        "Secondary compilation: TX 4\u201310\nW, RX 0.4\u20132.81 W. Not verifeid\nagainst the datasheet.\nhttps://ntnu.no/wiki/x/OowpBw"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P47T01",
+    "page": 47,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[31]",
+        "COSPAR Policy on Planetary Protection, Mars Category IV, as\ntabulated in NASEM (2020), Assessment of the Report of NASA's\nPlanetary Protectoin Independent Review Board, App. E (NAP\n25773); and an ECSS summary (2022).",
+        "Category defniitoins",
+        "Partial",
+        "IVa: \u2264 3\u00d710\u2075 spores and \u2264 300\nspores/m\u00b2; IVb adds \u2264 30 spores\nor subsystem route; IVc for Special\nRegions. The COSPAR policy itself\nwas not opened.\nhttps://nap.nationalacademies.or\ng/read/25773/chapter/73.xhtml"
+      ],
+      [
+        "[32]",
+        "NASEM (2021). Evaluatoin of Bioburden Requirements for Mars\nMissions (NAP 26336), as presented in NASA OPP slides.",
+        "Special Region margin",
+        "Partial",
+        "Adopts \u221228 \u00b0C (245 K) with a\nmargin to 255 K; aw \u2265 0.5\nconservative.\nhttps://www.natoinalacademies.o\nrg/cdn/materials/a1f3901a-881f-\n4927-91dc-ea92d094d8d3"
+      ],
+      [
+        "[33]",
+        "SR-SAG2 (Rummel et al. 2014, Astrobiology 14) as summarized in\nNASEM (2018), Review and Assessment of Planetary Protectoin\nPolicy Development Processes (NAP 25172), App. B; and NRC text\non Category IVc (nap.nationalacademies.org/read/11937).",
+        "Special Region thresholds",
+        "Partial",
+        "T \u2265 255 K and aw > 0.60; wording\nthat IVc covers places where the\nspacecraf tcould cause liquid\nwater.\nhttps://nap.nationalacademies.or\ng/read/25172/chapter/11 ;\nhttps://nap.nationalacademies.or\ng/read/11937/chapter/9"
+      ],
+      [
+        "[34]",
+        "NASA NPR 8715.24 (effective 24 Sep 2021; listed expiration 24 Sep\n2026); NASA OPP updates (Mar 2026); NASA OPP \"Not One Size Fits\nAll\" (2023).",
+        "Procedural requirement;\nprocess examples",
+        "Partial",
+        "Dates confrimed from NODIS and\nOPP slides; an update was\n\"coming soon\" in March 2026;\nslides cite VHP and dry-heat\nmicrobial reduction as project\nexamples. Current status\nunverified.\nhttps://nodis3.gsfc.nasa.gov/npg\n_\nimg/N PR 8715 0024 /N PR 87\n_ _ _ _ _ _\n15 0024 .pdf ;\n_ _\nhttps://ntrs.nasa.gov/api/citatoins\n/20230012610/downloads/CCMP\nP\n%20Benardini NotOneSize 20230\n_ _\n818 V2.pdf\n_"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P47T02",
+    "page": 47,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[35]",
+        "Rivkina, E. M.; Friedmann, E. I.; McKay, C. P.; Gilichinsky, D. A.\n(2000). Metabolic activity of permafrost bacteria below the freezing\npoint. Appl. Environ. Microbiol. 66(8), 3230\u20133233.",
+        "Doubling times versus\ntemperature",
+        "Verified",
+        "Minimum doubling about 1 d (5\n\u00b0C), 20 d (\u221210 \u00b0C), 160 d (\u221220 \u00b0C);\nactivity monitored to day 550.\nhttps://ntrs.nasa.gov/citatoins/20\n040141461"
+      ],
+      [
+        "[36]",
+        "Price, P. B.; Sowers, T. (2004). Temperature dependence of\nmetabolic rates for microbial growth, maintenance, and survival.\nPNAS 101(13), 4631\u20134636. DOI 10.1073/pnas.0400522101.",
+        "Rates at very low temperature",
+        "Verified",
+        "\u2248 10 turnovers of cellular carbon\nper billion years at \u221240 \u00b0C; no\nevidence of a minimum\ntemperature.\nhttps://pmc.ncbi.nlm.nih.gov/artic\nles/PMC384798"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P48T01",
+    "page": 48,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[37]",
+        "Mykytczuk, N. C. S., et al. (2013). Bacterial growth at \u221215 \u00b0C;\nmolecular insights from the permafrost bacterium Planococcus\nhalocryophilus Or1. ISME J 7, 1211\u20131226. DOI\n10.1038/ismej.2013.8.",
+        "Subzero growth",
+        "Verified",
+        "Growth at \u221215 \u00b0C; activity at \u221225\n\u00b0C; \u221215 \u00b0C incubations of 130 days.\nhttps://pmc.ncbi.nlm.nih.gov/artic\nles/PMC3660685"
+      ],
+      [
+        "[38]",
+        "Levin, G. V.; Straat, P. A. (2016). The case for extant life on Mars and\nits possible detection by the Viking Labeled Release experiment.\nAstrobiology 16(10), 798\u2013810.",
+        "Biological reading of Viking LR",
+        "Secondary",
+        "Citation and argument confirmed\nthrough a Phys.org report; paper\nnot opened.\nhttps://phys.org/news/2016-10-\nyear-old-viking-life-mars.html"
+      ],
+      [
+        "[39]",
+        "Hecht, M. H., et al. (2009). Science 325, 64\u201367; Navarro-Gonz\u00e1lez,\nR., et al. (2010). J. Geophys. Res. Planets 115, E12010.",
+        "Perchlorate; Viking reanalysis",
+        "Secondary",
+        "Citations confrimed through\nsecondary abstracts; Phoenix\nperchlorate about 0.5 % (via [40]).\nhttps://eana-net.eu/conferences/\nEANA2024/abstract show.php?\n_\nid=106"
+      ],
+      [
+        "[40]",
+        "NASA NTRS 20250000980. Viking Revisited (perchlorate model;\nreported as an Icarus paper by McKay and coauthors).",
+        "Consensus counter-argument",
+        "Partial",
+        "Excerpt: perchlorate can explain\nall nine listed Viking observations;\ndoes not prove absence of life.\nhttps://ntrs.nasa.gov/api/citatoins\n/20250000980/downloads/20250\n000980-Viking%20Revisited\n%20Rev1%20Final.docx"
+      ],
+      [
+        "[41]",
+        "Community Report from the Biosignatures Standards of Evidence\nWorkshop (2022). arXiv:2210.14293.",
+        "Evidence standards",
+        "Partial",
+        "Excerpt: Viking LR as a case study\nin biosignature assessment.\nhttps://arxiv.org/pdf/2210.14293"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P48T02",
+    "page": 48,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[42]",
+        "AIAA S-120-2006, Mass Properties Control for Space Systems;\nLUVOIR Final Report \u00a712.3.3.1 (arXiv:1912.06219); NASA MSFC\npresentation on S-120 and ISO 22010 (NTRS 20130014265).",
+        "Growth allowance practice",
+        "Secondary",
+        "LUVOIR adopts 30 % MGA from\nthe AIAA standard; S-120 assigns\nallowance by maturity category\n(estmi ated, calculated, actual).\nThe standard itself was not\nopened.\nhttps://arxiv.org/pdf/1912.06219 ;\nhttps://ntrs.nasa.gov/citatoins/20\n130014265"
+      ],
+      [
+        "[43]",
+        "Press reports on NASA SR-1 Freedom and SkyFall: Payload\n(payloadspace.com), Interestnig Engineering, Space.com via AIAA\n(16 Oct 2026).",
+        "December 2028 opportunity",
+        "Secondary",
+        "Launch targeted December 2028;\nSkyFall released in Mars orbit per\none report; post-delivery fate\nundecided. Verify with NASA\nreleases.\nhttps://payloadspace.com/?\np=30736 ;\nhttps://interestingengineering.co\nm/space/nasa-nuclear-powered-\nmars-mission"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P49T01",
+    "page": 49,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[44]",
+        "Leonard David, Inside Outer Space, on IMPRESS; astrobiology.com\nsummary (31 Jul 2026).",
+        "IMPRESS delivery intent",
+        "Secondary",
+        "Secondary payload on the 2028\nSR-1 Freedom/SkyFall mission;\nabout $40,000 per probe claimed.\nhttps://www.leonarddavid.com/?\np=48968 ;\nhttps://astrobiology.com/2026/07\n/31/impress-a-planetary-\npenetrator-network-for-\nastrobiology-prospecting-and-\nexploration-of-mars/"
+      ],
+      [
+        "[45]",
+        "voestalpine High Performance Metals. AISI 4340 datasheet (2026\nv2).",
+        "Wrought 4340 properties",
+        "Verified",
+        "Quench-and-temper conditoins T\u2013\nZ: minimum yield 665 MPa (T) to\n1,125 MPa (Z); minimum Charpy\n42 J (U, V) down to 9 J (Z).\nhttps://www.voestalpine.com/hig\nhperformancemetals/australia/ap\np/uploads/sites/265/2024/08/\nDatasheet-4340-2026-v2.pdf"
+      ],
+      [
+        "[46]",
+        "Lee, Y. G.; Moon, I. G.; Choi, C. S. (1982). J. Korean Inst. Metals\n20(11), 1000\u20131007.",
+        "Temper embritltement",
+        "Verified",
+        "Abstract: Charpy trough at 350 \u00b0C\ntempering.\nhttps://kjmm.org/kjmm/ArtcileDe\ntail/RD R/440368\n_"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P49T02",
+    "page": 49,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[49]",
+        "Quasi-isotropic CFRP laminate properteis as compiled from an Altair\nmaterials thread and MDPI Materials 12(18):3011 (2019);\nunidirectoinal values from Maeda & Morioka (OMU repository).",
+        "Composite density, modulus,\nstrength",
+        "Secondary",
+        "Density \u2248 1.58\u20131.60 g/cm\u00b3;\nunidirectoinal E\u2081\u2081 \u2248 131 GPa,\ntransverse \u2248 8.2 GPa; compressive\nstrength in fibre direction \u2248 1,400\nMPa; interlaminar shear \u2248 40\u201390\nMPa.\nhttps://community.altair.com/disc\nussion/13637/i-want-to-know-\nmaterial-property-of-cfrp"
+      ],
+      [
+        "[50]",
+        "NASA NTRS 20130013393, thermal response of composite\nlaminates (flash heating).",
+        "Composite thermal conductivity",
+        "Verified",
+        "Through-thickness (perpendicular\nto fibres) \u2248 0.8 W/m\u00b7K; parallel \u2248 7\nW/m\u00b7K; density 1,600 kg/m\u00b3;\nspecifci heat 1,200 J/kg\u00b7K.\nhttps://ntrs.nasa.gov/api/citatoins\n/20130013393/downloads/20130\n013393.pdf"
+      ],
+      [
+        "[51]",
+        "Alzeanidi, N. (Cranfeild). Analysis of the efefct of impact damage on\nthe repairability of CFRP composite laminates.",
+        "Impact strength knock-down",
+        "Partial",
+        "Impact can reduce undamaged\nlaminate strength by about 40\u201360\n%.\nhttps://dspace.lib.cranfield.ac.uk/i\ntems/370e0d66-e75f-4772-a5c2-\ne5097a7e0e4a/full"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P50T01",
+    "page": 50,
+    "header": "# | Citatoi n | Used for | Status | What was confirmed, and link",
+    "cells": [
+      [
+        "#",
+        "Citatoi n",
+        "Used for",
+        "Status",
+        "What was confirmed, and link"
+      ],
+      [
+        "[52]",
+        "US patent 11,207,867, bio-inspired CFRP laminate (background); De\nMoura & Marques, as cited therein.",
+        "Compressive residual strength\nafetr impact",
+        "Secondary",
+        "Compressive residual strength\nreduced up to 60 % by in-service\nimpact. htpts://image-\nppubs.uspto.gov/dirsearch-\npublic/print/downloadPdf/112078\n67"
+      ],
+      [
+        "[53]",
+        "Performance of Hybrid Reinforced Composite Substrates in\nAdhesively Bonded Joints Under Varied Loading Rates. Materials\n(MDPI), PMC11859037.",
+        "Metal-composite joint failure",
+        "Verified",
+        "CFRP-only single-lap joints fail by\ndelaminatoin; metal (fibre-metal-\nlaminate) reinforcement shifts\nfailure to cohesive and raises\nimpact failure load and energy\nabsorption.\nhttps://www.ncbi.nlm.nih.gov/pm\nc/articles/PMC11859037/"
+      ],
+      [
+        "[54]",
+        "Zhao, K., et al. (2024). Low-velocity impact damage and\noptimizatoin of metal and CFRP through-thickness reinforcement\nconnection structures. Cailiao Gongcheng.",
+        "Through-thickness reinforced\nmetal-CFRP joint",
+        "Secondary",
+        "A co-cured metal \"synapse\"\n(penetratvie anchor) joint raised\nimpact absorption 216 % over\nbolted joints and suppressed\ndelaminatoin.\nhttps://doaj.org/article/4a380244\n7b2a461da3d0669e3a129eb0"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P50T02",
+    "page": 50,
+    "header": "Source | Why a human reviewer should obtain it",
+    "cells": [
+      [
+        "Source",
+        "Why a human reviewer should obtain it"
+      ],
+      [
+        "NASA SP-6105, NASA Systems Engineering Handbook",
+        "Margin, maturity and review-gate conventions for Sectoin 13."
+      ],
+      [
+        "MMPDS (or MIL-HDBK-5) data for 4340",
+        "Qualified design allowables and low-temperature behavior for MECH01."
+      ],
+      [
+        "ASTM E595 and NASA-STD-8739.1",
+        "Outgassing screening and workmanship for potntig and polymeric assemblies (PR-27)."
+      ],
+      [
+        "ISO 11135 (ethylene oxide sterilization) and NASA-\nHDBK-6022",
+        "Process validation and legacy microbial-examinatoin practice (\u00a712)."
+      ],
+      [
+        "Neveu et al. (2018), The Ladder of Life Detectoin,\nAstrobiology 18(11)",
+        "Structured evidence ladder for SCI02 and SCI05."
+      ],
+      [
+        "Mars Climate Database (or equivalent)",
+        "Site-specific density, pressure and temperature to replace single-value atmosphere inputs (A-24)."
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P50T03",
+    "page": 50,
+    "header": "Claim in this report | Value | Class | Source and status",
+    "cells": [
+      [
+        "Claim in this report",
+        "Value",
+        "Class",
+        "Source and status"
+      ],
+      [
+        "Emplacement depth of IMPRESS probes",
+        "0.2\u20131 m",
+        "S",
+        "[1] abstract (verified)"
+      ],
+      [
+        "Mean soil temperature at 10\u201320 cm, InSight",
+        "217.5 K",
+        "S",
+        "[2] (verified)"
+      ],
+      [
+        "Soil thermal diffusivity (annual, 40 cm)",
+        "(3.63 \u00b1 0.53)\u00d710\u207b\u2078 m\u00b2/s",
+        "S",
+        "[2] (verified)"
+      ],
+      [
+        "Soil thermal conductivity",
+        "0.039 \u00b1 0.002 W/m K",
+        "S",
+        "[14] (verified)"
+      ],
+      [
+        "Mars \u03bc and radius",
+        "4.282837\u00d710\u00b9\u00b3 m\u00b3/s\u00b2; 3,389.5 km",
+        "S",
+        "[16] (verified)"
+      ],
+      [
+        "Surface atmospheric density",
+        "0.016 \u00b1 0.006 kg/m\u00b3",
+        "S",
+        "[16] (verified)"
+      ],
+      [
+        "DS2 probe mass, impact speed, depth",
+        "2.4 kg; \u2248 190 m/s; \u2264 0.6 m",
+        "S",
+        "[19] (verified)"
+      ]
+    ],
+    "family": "Bibliography and source verification",
+    "steps": "Retain full citation, URL, source role and verification status. Locally available IMPRESS paper, supplement and expert text are now inspected; other source statuses remain as carried unless N1-N8 explicitly update them.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P51T01",
+    "page": 51,
+    "header": "Claim in this report | Value | Class | Source and status",
+    "cells": [
+      [
+        "Claim in this report",
+        "Value",
+        "Class",
+        "Source and status"
+      ],
+      [
+        "DS2 design shock loads",
+        "30,000 g forebody; 80,000 g\naftbody",
+        "S",
+        "[18] (excerpt)"
+      ],
+      [
+        "DS2 aeroshell fraction",
+        "1.165 / 3.572 = 32.6 %",
+        "S",
+        "[20] (secondary)"
+      ],
+      [
+        "Cell-level specific energy, Li/SOCl2 and Li/CFx",
+        "421; 730\u2013741 Wh/kg",
+        "S",
+        "[23] (partial)"
+      ],
+      [
+        "D-size Li/SOCl2 cell size and mass",
+        "54 cm\u00b3; 100 g",
+        "S/D",
+        "[24] (verified)"
+      ],
+      [
+        "AX100 mass, size, temperature range",
+        "24.5 g; 65 \u00d7 40 \u00d7 6.5 mm; \u221230 to\n+85 \u00b0C",
+        "S",
+        "[9] (verified)"
+      ],
+      [
+        "Electra transmit power and noise figure",
+        "5 W; 4.9 dB",
+        "S",
+        "[28] (verified)"
+      ],
+      [
+        "Proximity-1 UHF frequencies",
+        "401.585625 / 437.1 MHz",
+        "S",
+        "[29] (verified)"
+      ],
+      [
+        "Relay orbiters and data volumes",
+        "Four orbiters; MAVEN ended 3 Jun\n2026",
+        "S",
+        "[26] (verified)"
+      ],
+      [
+        "Microbial doubling tmi es at low temperature",
+        "1 d (5 \u00b0C); 20 d (\u221210 \u00b0C); 160 d\n(\u221220 \u00b0C)",
+        "S",
+        "[35] (verified)"
+      ],
+      [
+        "Planetary-protectoin category limits",
+        "3\u00d710\u2075 spores; 300/m\u00b2; 30 spores",
+        "S",
+        "[31] (partial)"
+      ],
+      [
+        "Special Region thresholds",
+        "255 K and aw > 0.60; conservative\n245 K and 0.5",
+        "S",
+        "[32], [33] (partial)"
+      ],
+      [
+        "Wrought 4340 strength and toughness range",
+        "Yield 740 \u2192 1,125 MPa while\nCharpy 42 \u2192 9 J (U to Z)",
+        "S",
+        "[45] (verified)"
+      ],
+      [
+        "Euler margins; side loss; link margin; terminal speed;\nentry state",
+        "Sections 5.3, 7, 9, 11",
+        "D",
+        "Reviewer calculatoins from the inputs\nabove"
+      ],
+      [
+        "Contingency policies and component mix",
+        "25 %, 30 %, 23.0 %",
+        "E",
+        "Policy examples; mix is reviewer\nassumption"
+      ]
+    ],
+    "family": "Reproduction website and change record",
+    "steps": "Use preserved input vector and source identities. Reproduce calculations from exact units. This integration updates the website; the original note that code was not audited remains historical. No hidden design approval.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P51T02",
+    "page": 51,
+    "header": "Parameter | Value | Provenance",
+    "cells": [
+      [
+        "Parameter",
+        "Value",
+        "Provenance"
+      ],
+      [
+        "Science mass",
+        "1.000 kg",
+        "User instructoin (U)"
+      ],
+      [
+        "Science envelope density",
+        "2.0 kg/L",
+        "Packaging assumption; challenged (PR-31)"
+      ],
+      [
+        "Other internal envelope",
+        "0.120 L",
+        "Aggressive allowance; challenged (PR-32)"
+      ],
+      [
+        "Potting / reserved volume",
+        "25 % / 10 %",
+        "Packaging assumptions"
+      ],
+      [
+        "Potting density",
+        "1.10 kg/L",
+        "Rounded resin analog [8]"
+      ],
+      [
+        "Steel density",
+        "7,850 kg/m\u00b3",
+        "Material analog [7][45]"
+      ],
+      [
+        "Nose / rear cap",
+        "Hollow hemisphere / 5 mm",
+        "Geometry assumptoins"
+      ],
+      [
+        "Steel joints and cage",
+        "0.120 kg",
+        "Allowance"
+      ],
+      [
+        "Batetry; usable energy",
+        "0.450 kg; 150 Wh/kg",
+        "Brief-mode assumption; derated screening assumptoin"
+      ],
+      [
+        "Cable",
+        "5 m at 10 g/m",
+        "Custom tether allowance"
+      ],
+      [
+        "Contingency",
+        "25 % of all nominal mass",
+        "Preliminary growth allowance"
+      ]
+    ],
+    "family": "Reproduction website and change record",
+    "steps": "Use preserved input vector and source identities. Reproduce calculations from exact units. This integration updates the website; the original note that code was not audited remains historical. No hidden design approval.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  },
+  {
+    "id": "R6P53T01",
+    "page": 53,
+    "header": "Revision 4 assumptoi n or content | Revision 4 reassessment | Revision 5\u20136 disposition",
+    "cells": [
+      [
+        "Revision 4 assumptoi n or content",
+        "Revision 4 reassessment",
+        "Revision 5\u20136 disposition"
+      ],
+      [
+        "35 mm and fixed 4 kg probe",
+        "Geometry-derived trade; no fxied total\nmass",
+        "Confirmed; 35/1.5 now rejected on a buckling screen (PR-16)"
+      ],
+      [
+        "1.5 m desired biological sample depth",
+        "Open science trade; shallow skin priority",
+        "Physics supports shallow priority (\u00a76.1); source [12] unreadable\n(PR-22)"
+      ],
+      [
+        "Six probes",
+        "Adjustable scenario",
+        "Closure condition and probe-count matrix (\u00a711.3, \u00a713.2)"
+      ],
+      [
+        "1 kg science plus 0.5 kg power",
+        "1 kg retained; power sized by duration",
+        "Mode-based energy ledger and chemistry sensitviity (\u00a78)"
+      ],
+      [
+        "Parachute-integrated antenna",
+        "Separate aftbody antenna and tether",
+        "Radio and relay compatibility added (\u00a79)"
+      ],
+      [
+        "Mandatory whole-probe irradiatoin",
+        "Compatbile process trade",
+        "Framework, categories and Special Region screen added (\u00a712)"
+      ],
+      [
+        "450 kg bus in 250 km orbit",
+        "Optoinal delivery calculation",
+        "Entry state and stack-only deorbit added (\u00a711.1)"
+      ],
+      [
+        "Auto-fti canopy to 1.5 m",
+        "Withdrawn pending calibratoin",
+        "Relative penetration scaling and drogue sizing added (\u00a710.3,\n\u00a711.2)"
+      ],
+      [
+        "Private website claim",
+        "Existing site is public",
+        "Unchanged"
+      ],
+      [
+        "Flat 25 % contingency",
+        "Retained",
+        "Alternatvies shown; component-level policy proposed (D-07)"
+      ],
+      [
+        "Science density 2.0 kg/L; ancillary 0.120\nL",
+        "Retained as assumptions",
+        "Challenged and sensitivity added (PR-31, PR-32)"
+      ],
+      [
+        "PP01\u2013PP05 used for gates and\nrequirements",
+        "Retained",
+        "Gates renamed PPG01\u2013PPG05 (PR-03)"
+      ],
+      [
+        "Unnumbered preface and \u00a71\u2013\u00a713",
+        "Retained",
+        "Restructured into Parts A\u2013F with explicit trade method (PR-02)"
+      ],
+      [
+        "Single steel structural architecture\n(implicit)",
+        "Not addressed",
+        "Rev 6: steel-head/composite-body trade added (\u00a75.9, D-09,\nMECH06, R35)"
+      ],
+      [
+        "Fixed-sounding geometry and ledger",
+        "Treated as assumptions",
+        "Rev 6: all sizes, masses, allowances and architecture declared\ntrade variables; ledger labelled illustratvie"
+      ],
+      [
+        "Document navigation",
+        "None",
+        "Rev 6: table of contents and Revision 6 change summary added"
+      ]
+    ],
+    "family": "Reproduction website and change record",
+    "steps": "Use preserved input vector and source identities. Reproduce calculations from exact units. This integration updates the website; the original note that code was not audited remains historical. No hidden design approval.",
+    "status": "Arithmetic family identified; source validity retained from original"
+  }
+]

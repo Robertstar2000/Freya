@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-18",
+  "status": "Scientific design review; no assay or life-detection validation",
+  "skill": {
+    "name": "Google DeepMind science-skills: literature-search-europepmc",
+    "commit": "370f8f33e5bb27dffe8289ea9bdec436686613ce",
+    "url": "https://github.com/google-deepmind/science-skills/blob/370f8f33e5bb27dffe8289ea9bdec436686613ce/skills/literature_search_europepmc/SKILL.md",
+    "applied": "Open-access literature search and full-text retrieval using the supplied wrapper; supplemented with primary publisher and manufacturer sources. Not a biology simulation or formal peer review."
+  },
+  "source": {
+    "title": "Benner thoughts in outline form 2026 11 12",
+    "path": "documents/science/Benner_thoughts_outline_2026-11-12.txt",
+    "origin": "User-supplied transcription received 18 November 2026; attribution and date supplied by user. Original file and publication status unverified; formatting normalized. Statements preserved separately from this review."
+  },
+  "sources": [
+    {
+      "id": "BIO-R1",
+      "citation": "Failla et al. (2025), Light Readout of Small Scintillators Using SiPM Photosensors. Sensors 25(20), 6412.",
+      "url": "https://doi.org/10.3390/s25206412",
+      "access": "Europe PMC skill: PMC12567877, full text reviewed",
+      "scope": "Supports above-breakdown SiPM operation and linearity/saturation concerns. Gamma-scintillator study; does not establish FREYA tritium sensitivity or isotope discrimination."
+    },
+    {
+      "id": "BIO-R2",
+      "citation": "Alton et al. (2023), Laminated Flow-Cell Detector with Granulated Scintillator for the Detection of Tritiated Water. Radiation 3, 211–225.",
+      "url": "https://www.mdpi.com/2673-592X/3/4/17",
+      "access": "Publisher-indexed text excerpt reviewed; full-page retrieval returned HTTP 429",
+      "scope": "Detector precedent in tritiated water; efficiency and detection limits depend on geometry and measurement conditions. Not flight-qualified soil-extract performance."
+    },
+    {
+      "id": "BIO-R3",
+      "citation": "Li and Chen (2025), In-situ detector theoretical design for low-activity concentration tritiated water based on plastic scintillator thin film flow cell.",
+      "url": "https://doi.org/10.1016/j.fusengdes.2025.115104",
+      "access": "Publisher-indexed title/abstract metadata reviewed; full paper not assessed",
+      "scope": "Theoretical detector design, not measured FREYA performance. No numerical sensitivity transferred."
+    },
+    {
+      "id": "BIO-R4",
+      "citation": "Ji et al. (2017), Atmospheric trace gases support primary production in Antarctic desert surface soil. Nature 552, 400–403.",
+      "url": "https://doi.org/10.1038/nature25014",
+      "access": "Primary publisher-indexed text excerpt reviewed; full-page retrieval unavailable",
+      "scope": "Terrestrial precedent for H2/CO oxidation and carbon fixation. Trace gases are not noble gases; this is not evidence of Martian metabolism."
+    },
+    {
+      "id": "BIO-R5",
+      "citation": "Quinn et al. (2013), Perchlorate Radiolysis on Mars and the Origin of Martian Soil Reactivity. Astrobiology 13, 515–520.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3691774/",
+      "access": "Primary full text reviewed",
+      "scope": "Perchlorate itself and its irradiation products must be distinguished. Demonstrates abiotic mechanisms involving trapped O2 and oxychlorine chemistry; does not identify all Viking soil species uniquely."
+    },
+    {
+      "id": "BIO-R6",
+      "citation": "Georgiou, Papapostolou and Grintzalis (2008), Superoxide radical detection in cells, tissues, organisms and soils. Nature Protocols 3, 1679–1692.",
+      "url": "https://doi.org/10.1038/nprot.2008.155",
+      "access": "Publisher abstract reviewed; full protocol not assessed",
+      "scope": "Specific product identification matters for hydroethidine interpretation. A generic fluorescence increase alone does not uniquely measure superoxide."
+    },
+    {
+      "id": "BIO-R7",
+      "citation": "The effects of brines relevant to Mars and the ocean worlds on bacterial growth reflect salt-specific responses across water activity (2025).",
+      "url": "https://doi.org/10.1007/s00203-025-04418-9",
+      "access": "Europe PMC skill: PMC12420771, abstract reviewed",
+      "scope": "Terrestrial experiments show interacting salt and water-activity effects. Unknown Martian adaptations do not justify omitting water activity from assay validation."
+    },
+    {
+      "id": "BIO-R8",
+      "citation": "onsemi C-Series SiPM manufacturer datasheet.",
+      "url": "https://www.onsemi.com/pdf/datasheet/microc-series-d.pdf",
+      "access": "Manufacturer specifications consulted",
+      "scope": "Part-specific operating and temperature behavior must be verified. Candidate parts are a trade list, not a flight selection."
+    },
+    {
+      "id": "BIO-R9",
+      "citation": "EPA oxygen-method reference supplied in the outline.",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=10003Z26.TXT",
+      "access": "Supplied link retained; content not independently verified",
+      "scope": "No selectivity, wavelength or detection limit adopted from this unverified reference."
+    }
+  ],
+  "findings": [
+    [
+      "BIO-01",
+      "Critical",
+      "Interpretation",
+      "Retained radiolabel is not a life verdict. The eight C/H channels are schematic tracer experiments, not balanced reactions; abiotic fixation, sorption, isotope exchange and contamination can also retain label.",
+      "Require time-zero, reagent/no-soil, matrix, killed and recovery controls plus an orthogonal molecular/product measurement before a biological interpretation."
+    ],
+    [
+      "BIO-02",
+      "High",
+      "Energy source wording",
+      "Outline A(e) says rare gases. Antarctic evidence concerns trace H2/CO, not noble gases. It does not establish a preferred Martian metabolism or rule out phototrophy.",
+      "Keep the original wording in the source record; use trace-gas hypothesis in the design and obtain author clarification."
+    ],
+    [
+      "BIO-03",
+      "High",
+      "Water and incubation",
+      "Liquid water, water activity, salinity, temperature and pressure are separate constraints. A universal Martian threshold is unknown; water activity cannot simply be omitted. Incubation can alter the native state.",
+      "Log chamber/sample temperature, pressure, hydration and gas history. Validate recovery under each chosen condition and qualify negative results accordingly."
+    ],
+    [
+      "BIO-04",
+      "Critical",
+      "Duration and power",
+      "The gas/trap source proposes 1–5 sols. A 24-hour goal is shorter than one Mars sol; B 72 hours is shorter than five. The 20 Wh / 0.2 W screen does not establish heater, pumping, counting or reagent-actuation performance.",
+      "Resolve assay duration versus mission lifetime; build a time-resolved, thermally derated power and energy budget. Live arithmetic below flags the mismatch."
+    ],
+    [
+      "BIO-05",
+      "High",
+      "Dual-label inference",
+      "Raw pulse-height or photon-burst ratios do not directly equal the 3H/14C activity ratio. Beta spectra overlap; quenching, exchangeable tritium, recovery and spectral spillover can change the apparent ratio.",
+      "Calibrate single-isotope standards, mixtures, blanks and matrix effects; propagate the response-matrix uncertainty. A fraction-dependent ratio is a candidate signature, not unique proof of reductive anabolism."
+    ],
+    [
+      "BIO-06",
+      "High",
+      "Nitrogen and sulfur interpretation",
+      "C/H labels in an amine- or thiol-reactive fraction do not by themselves prove N2 or SO2 supplied its nitrogen or sulfur. -3/-2 are relevant reduced groups, not universal oxidation states for all biomass atoms.",
+      "Resolve the identity of phenylcyanate versus possible isocyanate wording; validate capture specificity and reagent compatibility. Use orthogonal elemental/isotopic attribution in ground validation."
+    ],
+    [
+      "BIO-07",
+      "High",
+      "SiPM operating principle",
+      "The outline says below breakdown. Geiger-mode microcells operate above breakdown and are quenched after avalanches. The cited Failla paper addresses linearity, not an assay-specific tritium detection limit.",
+      "Specify bias/temperature compensation, photon coupling, dark noise, cross-talk, dead time, saturation, low-energy beta geometry and in-matrix efficiency."
+    ],
+    [
+      "BIO-08",
+      "High",
+      "Extraction and sampling",
+      "Water and toluene are operational fractions, not perfectly exclusive chemical classes. A 100 nm filter does not prove sterile separation or analyte recovery. One gram and 0.25 cm3 are not equivalent without density. Nose penetration does not prove sampled source depth.",
+      "Measure sample mass and provenance, carryover, filter retention, extraction recovery and gas/solid/liquid label balance. Demonstrate access to the stated 2–5 cm zone independently of the penetration screen."
+    ],
+    [
+      "BIO-09",
+      "High",
+      "Oxidant discrimination",
+      "Parent perchlorate can be kinetically slow while irradiation products remain reactive. Neither universally reactive nor universally self-sterilizing soil follows. GEx O2 provenance remains an interpretation question.",
+      "Treat peroxide, superoxide, oxychlorine and molecular O2 as competing/overlapping targets. Validate selectivity in minerals and salts; distinguish adsorbed, trapped and newly generated O2."
+    ],
+    [
+      "BIO-10",
+      "High",
+      "Optical assay specificity",
+      "410/560 nm and proposed NBT/hydroethidine/O2 indicators are candidate readouts, not unique species identifications. Matrix color, pH, metals, turbidity and cross-reactions can interfere.",
+      "Require matrix-matched blanks, recovery standards, kinetic/spectral controls and validated identification of the specific product, particularly 2-hydroxyethidium."
+    ],
+    [
+      "BIO-11",
+      "High",
+      "Statistics and detection limits",
+      "No measured count histories, background distribution, calibration, extraction yield, LOD/LOQ, biological replication or false-positive targets are supplied. More probes alone do not determine life-detection probability.",
+      "Predeclare endpoints and error rates; separate independent samples from repeated counts; establish detection capability using blank and low-level validation data. No assay sensitivity or life probability is computed here."
+    ],
+    [
+      "BIO-13",
+      "High",
+      "Detector thermal limits",
+      "The consulted C-Series datasheet recommends operation from −40 to +85 °C. Ambient Mars or heat-shield model temperatures do not establish detector temperature or gain stability.",
+      "Provide an electronics enclosure thermal model and measured detector temperature/bias calibration; do not assume a room-temperature sensitivity applies in flight."
+    ],
+    [
+      "BIO-12",
+      "Medium",
+      "Flight readiness",
+      "A reagent/device trade and laboratory outline are not a packaged, impact-qualified payload. Planetary protection, contamination controls, sealing, storage stability and post-impact calibration remain open.",
+      "Complete component mass/volume boundaries and integrated environmental, shock, contamination and sample-transfer verification before flight selection."
+    ]
+  ],
+  "requirements": [
+    [
+      "BIO-P01",
+      "Acquire and document the sample",
+      "A(a), B(l)",
+      "Capture the selected mass; identify probe, site, acquired depth, timestamp and thermal history; distinguish emplacement from sampled material.",
+      "Sample-access demonstrator and contamination/recovery records."
+    ],
+    [
+      "BIO-P02",
+      "Partition experiments and controls",
+      "B(g), B(i), B(l)",
+      "Provide independently identified test, no-soil/reagent, matrix/killed, time-zero and recovery-control paths. Record which controls are on-board versus ground-only; do not assume all fit one probe.",
+      "Channel allocation, carryover matrix and blinded analog validation."
+    ],
+    [
+      "BIO-P03",
+      "Contain and track reactants",
+      "B(g)–(j)",
+      "Separate isotope and unlabeled conditions; log valve state, pressure, temperature, inventory and leakage. Preserve label accountability without claiming a selected flight dose.",
+      "Material compatibility, sealing and traceable reference/recovery measurements."
+    ],
+    [
+      "BIO-P04",
+      "Control the assay environment",
+      "A(a), B(l)",
+      "Establish each protocol temperature/hydration/pressure state and its incubation duration. Keep the dry gas/trap workflow distinct from the wet extraction concept.",
+      "Measured thermal balance, environmental sensing and complete energy profile."
+    ],
+    [
+      "BIO-P05",
+      "Separate and recover analytes",
+      "B(h), B(l)",
+      "Demonstrate filtering, gas removal, carbonate discrimination and fraction recovery. Characterize reagent, membrane, adsorption and mineral backgrounds.",
+      "Recovery/cross-contamination validation; no assumed perfect solvent selectivity."
+    ],
+    [
+      "BIO-P06",
+      "Read scintillation quantitatively",
+      "B(j), B(k)",
+      "Acquire pulse-height/time/count data, bias and temperature alongside dark/blank records; retain calibrations and isotope-response matrices.",
+      "In-matrix 3H/14C efficiency, spillover and detection-limit validation."
+    ],
+    [
+      "BIO-P07",
+      "Investigate amine/thiol fractions",
+      "B(h)",
+      "Treat capture chemistry as a development trade pending reagent identity, specificity, target recovery and elemental-source attribution.",
+      "Orthogonal compound characterization and abiotic interference studies."
+    ],
+    [
+      "BIO-P08",
+      "Offer an oxidant scout alternative",
+      "B(m)",
+      "Trade peroxide/oxidant and molecular-O2 measurements as a precursor payload alternative; include spectral/kinetic and mineral-matrix controls.",
+      "Validated chemical identification and demonstrated optical/electronic resource budget."
+    ],
+    [
+      "BIO-P09",
+      "Preserve and return auditable data",
+      "B(l), source mission goals",
+      "Store raw signals, blanks, calibration versions, control identities, temperature/pressure histories, errors and censored results; no onboard life/no-life verdict.",
+      "End-to-end record recovery, relay/contact budget and reset-safe storage."
+    ],
+    [
+      "BIO-P10",
+      "Survive delivery without invalidating the experiment",
+      "B(k), B(l)",
+      "Verify that sample ports, seals, reagents, filters, detector optics and calibration remain functional after the predicted impact environment.",
+      "Integrated shock/thermal/vacuum and post-impact assay validation; peak point-mass deceleration is not instrument qualification."
+    ]
+  ],
+  "baselines": {
+    "A": {
+      "solHours": 24.65979,
+      "operationHours": 24,
+      "availableSols": 0.973244297700832,
+      "minimumHours": 24.65979,
+      "maximumHours": 123.29895,
+      "coversOneSol": false,
+      "coversFiveSols": false,
+      "screenLoadWh": 4.800000000000001,
+      "screenRemainingWh": 15.2,
+      "averagePowerCeilingW": 0.8333333333333334,
+      "assayEnergyClosure": "Not demonstrated: measured heater/pump/valve/detector duty cycles and thermal derating are absent",
+      "lifeDetectionProbability": null,
+      "assayDetectionLimit": null
+    },
+    "B": {
+      "solHours": 24.65979,
+      "operationHours": 72,
+      "availableSols": 2.9197328931024957,
+      "minimumHours": 24.65979,
+      "maximumHours": 123.29895,
+      "coversOneSol": true,
+      "coversFiveSols": false,
+      "screenLoadWh": 14.4,
+      "screenRemainingWh": 5.6,
+      "averagePowerCeilingW": 0.2777777777777778,
+      "assayEnergyClosure": "Not demonstrated: measured heater/pump/valve/detector duty cycles and thermal derating are absent",
+      "lifeDetectionProbability": null,
+      "assayDetectionLimit": null
+    }
+  },
+  "reviewScope": {
+    "current": "Current bioscience source claims, both proposed protocols, live resource equations, penetration-to-sampling distinction, source provenance and current flight/gas/energy/uncertainty code; repository regression tests executed.",
+    "limits": "Historical PDFs and studies retain their earlier inputs; not every archived calculation was independently rederived. Visual browser QA unavailable. No experimental assay dataset, calibration matrix or measured flight resource profile is supplied. Source verification depth is listed per reference."
+  },
+  "implementationInventory": [
+    {
+      "file": "src/aeroshell-geometry.mjs",
+      "sha256": "e7389c68d3ab7e9894263bfc5e56e2c84fd602d0f6e28d9c9e27b8bef03e54e9"
+    },
+    {
+      "file": "src/app.js",
+      "sha256": "c8044dd3be663c0faf2d1183da40fc2e41ea3aeae15b3d275534554b4ffd5898"
+    },
+    {
+      "file": "src/architecture-data.mjs",
+      "sha256": "2bae005867f1c1c81faa02e5ec3d00f12910443a31391df46a99f1032abe3bdf"
+    },
+    {
+      "file": "src/architecture-links.mjs",
+      "sha256": "ebdf8e9f4066156d6396483281b52272d173265b148023317777df893695516e"
+    },
+    {
+      "file": "src/calculation-catalog.mjs",
+      "sha256": "8dcfc72c0c1e6f3a15d7072cd0ca84739e6bc4f1473dfae17d52ec0fa630dcf7"
+    },
+    {
+      "file": "src/calculation-inspector.mjs",
+      "sha256": "01566f6e4d6b0c7498ae7a7330c1b027dd2e1003062ec486a900a1f742e18b09"
+    },
+    {
+      "file": "src/console-instruments.mjs",
+      "sha256": "cc868c037e9022e537b83a1180559a2df81a00339c8029a9775ec01fcbecd6a4"
+    },
+    {
+      "file": "src/document-navigation.mjs",
+      "sha256": "bbd3f49ed0f9b4843ed725da98d34f1095d6b85f823893a38a2923bfcefc2fe0"
+    },
+    {
+      "file": "src/entry-design-model.mjs",
+      "sha256": "dc4d71b8fd69a3beb3f6959fe611028587b725fa0d8fe41b8a8403a52e450ca2"
+    },
+    {
+      "file": "src/entry-design-ui.mjs",
+      "sha256": "90ab6f4e6efdd8cfb7234ad284b2e0e6f66c117af3fc6d8bb4a4eec398094e7d"
+    },
+    {
+      "file": "src/flight-model.mjs",
+      "sha256": "e42309125d9803f600324904aaa41e11d2b430f0bc3cc750d5fd0c83f06ceed1"
+    },
+    {
+      "file": "src/flight-sampling.mjs",
+      "sha256": "409e0103e0ff3b3fe0e8439542c4efc116513886d5921228473cadc37adff778"
+    },
+    {
+      "file": "src/flight-ui.mjs",
+      "sha256": "b8a59a83ad69d3c8974fe9dd54dcf4cde3b60efc18af7e44cc33a3da72eb7272"
+    },
+    {
+      "file": "src/initial-console.mjs",
+      "sha256": "030a6f7be1fe8088cea20e68e29f5c17014fc09f32446b15926861c78285f985"
+    },
+    {
+      "file": "src/mission-dashboard.mjs",
+      "sha256": "9a33ce02c71c6056ff21b94c6903c6b30f1d0e4c3988a46384b26597368adf4a"
+    },
+    {
+      "file": "src/mission-review.mjs",
+      "sha256": "6108386c9f1bce6b82b643da7bcb33e38b7639a197d1cf95925c11312ff5dc0e"
+    },
+    {
+      "file": "src/mission-settings.mjs",
+      "sha256": "2b4534b943eebb6455a29bb7711344565adabac374c59d20daf91e7210e3180f"
+    },
+    {
+      "file": "src/mission-start.mjs",
+      "sha256": "bd879a90df0ebe549354a239d117f2622ccde5d557f51d337856e6209716dcc0"
+    },
+    {
+      "file": "src/mission-telemetry.mjs",
+      "sha256": "32c211d8066ed712883384227ef38b5f4dee06a78ad22d9262aa80edd2832186"
+    },
+    {
+      "file": "src/mission-trade-ui.mjs",
+      "sha256": "5b80a44224d71be6579ccdb35e96313dbf5953f814b377defa5c15590e645c21"
+    },
+    {
+      "file": "src/mount-trade.mjs",
+      "sha256": "cfdfd577f5eb181deff909b71902b36f3ca6d6827ea2f7acc5b814c5243ed380"
+    },
+    {
+      "file": "src/penetration-evidence.mjs",
+      "sha256": "98a98fb43d76f76d92e2211a49eeb0d93233877857bf73586c262447f7bcc1f4"
+    },
+    {
+      "file": "src/penetration-uncertainty.mjs",
+      "sha256": "38b5ac77bd9767b02beb2c1d8f9fbf71df2b8d341ac56d44a14dffc2ffd459c0"
+    },
+    {
+      "file": "src/precursor-mass.mjs",
+      "sha256": "143a831bed74e56eed8a103f06f4ce2787f907c33eab8cdab0b623b15150ae74"
+    },
+    {
+      "file": "src/presentation-scenes.mjs",
+      "sha256": "f8287283facf08cc01b45a71647ccf031ddd73eb40f2b7f17e04faf30fca8499"
+    },
+    {
+      "file": "src/requirement-evidence-ui.mjs",
+      "sha256": "7950b396a16af16a909959833af2f6f882d1ade1ed4f4379b41d5979cc40a2bd"
+    },
+    {
+      "file": "src/requirement-evidence.mjs",
+      "sha256": "ad36f9ddeb778dea07e27fdc9dab13c0eb57482221fb5e084b8995a5e2742acc"
+    },
+    {
+      "file": "src/requirement-navigation.mjs",
+      "sha256": "a4021f914c209d561e99ee31fc5a1d0710bab84b19e4b3375f46d1e51cf2a0b6"
+    },
+    {
+      "file": "src/review7.js",
+      "sha256": "a958a454adcc8f811a6b4ff26811e9d88ef80ee0f40992114e4692895591c9fa"
+    },
+    {
+      "file": "src/revision51-app.mjs",
+      "sha256": "5e5061cc4d08e9371d1f42e001885138a654707e17c4c7afafe2b362a96e574e"
+    },
+    {
+      "file": "src/revision51-model.mjs",
+      "sha256": "9f9de60e396b65ce5f50b325c8a069182589d4d0f3dcf47cf0f3858e48d8c01b"
+    },
+    {
+      "file": "src/science-review.mjs",
+      "sha256": "daf0870bd22e841264c2fe727ed0335b332ace4314adf4a50369231d113001f4"
+    },
+    {
+      "file": "src/sidebar-data.mjs",
+      "sha256": "ebdd97e2929bcb15a706de324f8ca233a83d24d50db8a53f3edb49b846a15ba6"
+    },
+    {
+      "file": "src/thermal-propulsion-instruments.mjs",
+      "sha256": "56c3fce0915cddef496985a641bc39796645233a9eb8a5496e08d9807d66f3c1"
+    },
+    {
+      "file": "src/trade-calculations.mjs",
+      "sha256": "9dee87eefe39cad8d0179d020be15c34b01d07e7437734f629e3593866c838ff"
+    },
+    {
+      "file": "src/trade-evidence.mjs",
+      "sha256": "e30f8ee66926b0f33944f9db970564cad024dc9c1e18b29fa2eb4288b25d60db"
+    },
+    {
+      "file": "src/trade-inputs.mjs",
+      "sha256": "898fcc9d582fb1705c21b36901b22ce6697cc515f9016c79daebfc1b469e28f0"
+    },
+    {
+      "file": "src/trade-studies-model.mjs",
+      "sha256": "85597d103eba5bedc1f3d5ff9170b40845800da95a67b1c34a8447167a328541"
+    },
+    {
+      "file": "src/trade-studies-redirect.mjs",
+      "sha256": "ca90393fb05877195d40e5e33180cf5c77e0f49cd4397a59e27a5d40fc664088"
+    },
+    {
+      "file": "src/trade-studies-ui.mjs",
+      "sha256": "742ba1bf2618d3b1a96c66915c7b0fc1bc82237a2f2f04e18cb8c17e955073a9"
+    },
+    {
+      "file": "src/trade-studies-worker.mjs",
+      "sha256": "435c77b5e27b2921547654f77e2d14cd51ae902084a13821550dfd5b2c8a1bd8"
+    },
+    {
+      "file": "src/trade.js",
+      "sha256": "572ea22723d4ee1ac11c880695f96016aaf59c4784c0d2c72b89751f918c248f"
+    },
+    {
+      "file": "src/workspace-ui.mjs",
+      "sha256": "c9dc5929a8b2a019ec4ddb49e16de3e2b48a92248952ea4b31bef8d0ea1e3b0c"
+    }
+  ]
+}

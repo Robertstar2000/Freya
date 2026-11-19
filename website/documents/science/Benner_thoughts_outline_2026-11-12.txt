@@ -1,0 +1,75 @@
+Benner thoughts in outline form 2026 11 12
+
+PROJECT SOURCE RECORD
+Source: text supplied by the project user on 18 November 2026, attributed to Benner.
+Title/date are user supplied. No original signed file, DOI, or publication status was provided.
+This is a project design outline, not authenticated peer-reviewed evidence. Layout and isotope typography are normalized below; substantive statements are preserved, including statements flagged by the separate scientific review.
+
+A. Not indisputable but likely true statements (NITLS) guide extant Mars life detection design
+(a) Requirement for liquid water in some form, not limited by water activity.
+(b) Hydrophobicity used in bio-organization → biosphere contains hydrophobic organics.
+(c) Nitrogen and sulfur must be present in -3 and -2 oxidation states (as in NH3 and H2S).
+(d) Atmospheric CO2, CO, H2O, SO2, N2 source C, H, S, and N atoms for Martian biomass.
+(e) Rare gases are the source of energy, in preference to direct use of solar photons.
+
+B. NITLS based on information from the Martian surface environment
+(f) The surface in bulk is oxidizing, making reduction reactions more persuasive than oxidations.
+(g) This gives us these anabolic reduction reactions that can be directly observed
+14CO2 + H2 → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+CO2 + 3H2 → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+14CO + H2 → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+CO + 3H2 → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+14CO2 + H2O → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+CO2 + 3H2O → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+14CO + H2O → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+CO + 3H2O → radiolabeled non-gaseous solvent-extractable; solid state scintillation detection
+(h) This gives us these indirect target anabolic reduction reactions
+N2 + “3H” + “C” → -C3H2-NH2 extracted and captured by phenylcyanate in detection zone
+N2 + “H” + “14C” → -14CH2-NH2 extracted and captured by phenylcyanate in detection zone
+SO2 + “H” + “14C” → -14CH2-SH extracted and captured by phenylmercury in detection zone
+SO2 + “3H” + “C” → -C3H-SH extracted and captured by phenylmercury in detection zone
+(i) Fixation reactions may give greater yields by adding energy unlabeled nutrients; addition of unlabeled CO or H2 facilitates the fixation of radiolabel in any of the (g) or (h) processes. Indeed, observation of such a yield change would provide information about the metabolic lifestyle of the Martian autotrophs.
+(j) Double labeling. Add both 3H and 14C and use the relative size of photon bursts to determine the 3H/14C ratio in the extract. Hydrophobics have a higher ratio than hydrophilics. The ratio of the two isotopes in hydrophobic and hydrophilic extraction media is a signature of active reductive anabolism.
+(k) Hardware. Silicon photomultipliers (SiPMs) have microcells kept quiescent by a voltage just below the breakdown voltage. When a photon interacts with a microcell, its discharge gives rise to a signal from the entire electrical charge stored in the microcell. SiPMs have been used with scintillating plastic and solid scintillants covers to detect tritium in water without classical scintillation solvents.[1,2] The sensitivity of these has been metricked.[3]
+
+Footnotes to the supplied outline
+(a) Arguments that water activity cannot be below a threshold area terracentric, based on biophysics of proteins that have not adapted to Mars salinity levels.
+(b) This is based on a NILTS that compartmentalization is required for Darwinian evolution.
+(c) Although life is “carbon based”, heteroatoms (O, N, S) give carbon compounds reactivity needed for life.
+(d) These are the most abundant sources and, for S, the most chemically reactive sources.
+(e) Based on Antarctic microbes, and the view that photon damage disfavors photosynthetic anabolism.
+(f) This is a thermodynamic, not kinetic, statement, as perchlorate oxidizes organic materials at a negligible rate at Martian temperatures, organics easily coexist with perchlorate, and the Martian surface has abundant organics. Thus, 2022 NASA-endorsed documents notwithstanding, Martian soils are neither “reactive” nor “self-sterilizing”.
+
+(l) General workflow for pre-flight biosignature development research
+1. Soil (1 g) is placed in a closed chamber to sit atop a porous filter with 100 nm holes.
+2. Add radioactive gas at approximately Mars ambient pressures, 14CO2, 14CO, 3H2, 3H2O.
+3. Incubate at 0–5 °C for as long as the battery lasts.
+4. Flush soils unlabeled gases. HCl added to ensure 14CO2 not absorbed as a (bi)carbonate.
+5. Extract soils through the porous filter. Various extractions will be traded:
+5.1. Water, which removes only water-soluble compounds.
+5.2. Toluene, which removes only oil-soluble compounds presumed present by NITLS(b).
+5.3. Water plus detergent, which removes water soluble compounds and some oils.
+5.4. Toluene with surfactants, as in a liquid scintillation solvent.
+5.5. Complete liquid scintillation solvent, including fluors, to simplify workflow.
+6. Place extracts on a solid state scintillation device with electronic readout to a microprocessor.
+This workflow will be tested on desert, Antarctic, and rich Terran materials, as well as multiple Mars simulants (recognizing that no simulant might be representative of soils at any particular site on Mars). Outputs will be quantitatively compared to heat-sterilized samples, diluted samples, and sterilized samples spiked with known amounts of autotrophic bacteria, including photosynthetic bacteria and bacteria that grow on rare gases. This will generate (i) amounts of material fixed both per unit soil and per microbe count, (ii) limits of detection, and (iii) possible interfering materials.
+
+Table 1. Solid state scintillation devices to be traded for Mars anabolism detection
+onsemi / SensL: MICROFC-60035-SMT or MICROFC-30035. Designed specifically for scintillation detection; inexpensive.
+Broadcom: AFBR-S4N44C013. Marketed for low-level scintillation detection; 3.72 × 3.72 mm active area.
+Eikonal Optics: SIPM-01 amplified SiPM module. Ready-to-use module containing an onsemi MICROFC-30035, bias supply and amplifier.
+
+(m) Alternative experiments for a 2028 penetrator.
+One persistent misconception is that the release of O2 in the 1976 Viking GEx experiment did not come from absorbed O2, but from a more reactive species, HOCl, H2O2, or O2−. A single penetrator might carry colorometric test to distinguish these, tested on Martian meteorites.
+1. TiSO4 + H2O2 read at 410 nm.
+2. Fe2+ + peroxide → Fe3+ + xylene orange, read at 560 nm (very sensitive).
+3. Nitroblue tetrazolium + O2− → blue/purple formazan.
+4. Hydroethidine + O2− → 2-hydroxyethidium (fluorescence).[4]
+5. Rhodazine D or indigo carmine + O2 → color,[5] a control for molecular O2.
+
+References as supplied (bibliographic validation is in the separate review)
+[1] Li, X., & Chen, Z. (2025). In-situ detector theoretical design for low-activity concentration tritiated water based on plastic scintillator thin film flow cell. Fusion Engineering and Design, 216, 115104.
+[2] Alton et al. (2023). Laminated Flow-Cell Detector with Granulated Scintillator for the Detection of Tritiated Water. Radiation 3: 211–225.
+[3] Failla, C. R., Amaducci, S., Poma, G. E., & Finocchiaro, P. (2025). Light Readout of Small Scintillators Using SiPM Photosensors. Sensors 25(20), 6412.
+[4] Georgiou, C. D., Papapostolou, I., & Grintzalis, K. (2008). Superoxide radical detection in cells, tissues, organisms (animals, plants, insects, microorganisms) and soils. Nature Protocols 3(11), 1679–1692.
+[5] https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=10003Z26.TXT

@@ -1,0 +1,40 @@
+{
+  "reviewDate": "2026-11-18",
+  "repository": "https://github.com/google-deepmind/science-skills",
+  "commit": "370f8f33e5bb27dffe8289ea9bdec436686613ce",
+  "skill": "literature_search_europepmc",
+  "method": "Provided europepmc_api.py via uv; OPEN_ACCESS:y retained, no optional credentials used. Publisher/manufacturer searches supplemented this OA-only index.",
+  "queries": [
+    {
+      "query": "Viking Mars perchlorate radiolysis biological experiments",
+      "openAccessFilter": true,
+      "hitCount": 10,
+      "returned": 8
+    },
+    {
+      "query": "(Mars AND (water activity OR perchlorate) AND microbial survival)",
+      "openAccessFilter": true,
+      "hitCount": 1369,
+      "returned": 8
+    },
+    {
+      "query": "(TITLE:\"Light Readout of Small Scintillators\" OR TITLE:\"Laminated Flow-Cell Detector\" OR TITLE:\"Perchlorate Radiolysis on Mars\")",
+      "openAccessFilter": true,
+      "hitCount": 1,
+      "returned": 1
+    },
+    {
+      "query": "(TITLE:\"perchlorate radiolysis\" OR TITLE:\"Atmospheric trace gases support\" OR DOI:10.3390/s25206412)",
+      "openAccessFilter": true,
+      "hitCount": 1,
+      "returned": 1
+    }
+  ],
+  "fullText": [
+    {
+      "pmcid": "PMC12567877",
+      "title": "Light Readout of Small Scintillators Using SiPM Photosensors",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12567877/"
+    }
+  ]
+}

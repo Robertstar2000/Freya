@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "probe-hardware-01",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 1,
+    "title": "Sample acquisition",
+    "lines": [
+      "Nose/intake and sample path",
+      "Mass + depth provenance required",
+      "Access is not nose penetration"
+    ],
+    "lens": "sample",
+    "requirements": [
+      "PRB-004",
+      "PRB-006",
+      "PRB-008"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-01"
+  },
+  {
+    "id": "probe-hardware-02",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 2,
+    "title": "Chambers + fluid paths",
+    "lines": [
+      "Separate test and control paths",
+      "Gas / liquid / solid containment",
+      "Valves, seals and filters: trade"
+    ],
+    "lens": "science",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-02"
+  },
+  {
+    "id": "probe-hardware-03",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 3,
+    "title": "Battery + power bus",
+    "lines": [
+      "Usable capacity is an assumption",
+      "Regulated rails + peak buffering",
+      "Heater / assay energy unresolved"
+    ],
+    "lens": "energy",
+    "requirements": [
+      "PRB-003",
+      "PRB-009"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-03"
+  },
+  {
+    "id": "probe-hardware-04",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 4,
+    "title": "Environment sensors",
+    "lines": [
+      "Sample + detector temperature",
+      "Chamber pressure / state history",
+      "Hydration condition: validate"
+    ],
+    "lens": "science",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-04"
+  },
+  {
+    "id": "probe-hardware-05",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 5,
+    "title": "Detector + analog front end",
+    "lines": [
+      "Scintillator + SiPM candidate",
+      "Bias compensation + pulse readout",
+      "Blank / isotope calibration"
+    ],
+    "lens": "detector",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-05"
+  },
+  {
+    "id": "probe-hardware-06",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 6,
+    "title": "Probe controller + memory",
+    "lines": [
+      "Acquisition timing + watchdog",
+      "Raw counts / spectra + metadata",
+      "Reset-safe records required"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-06"
+  },
+  {
+    "id": "probe-hardware-07",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 7,
+    "title": "Drogue chute + structure",
+    "lines": [
+      "Probe canopy + attachment hardware",
+      "Opening loads and clearance: verify",
+      "Impact-resistant instrument shell"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-07"
+  },
+  {
+    "id": "probe-hardware-08",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 8,
+    "title": "Thermal enclosure",
+    "lines": [
+      "Sample and detector are distinct",
+      "Insulation + heater trade",
+      "Thermal response not yet solved"
+    ],
+    "lens": "thermal",
+    "requirements": [
+      "STR-003",
+      "STR-004",
+      "STR-005"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-08"
+  },
+  {
+    "id": "probe-hardware-09",
+    "diagram": "probe-hardware",
+    "vehicle": "Probe",
+    "kind": "Hardware",
+    "index": 9,
+    "title": "Antenna structure + UHF",
+    "lines": [
+      "Self-contained antenna support",
+      "RF feed / geometry: design trade",
+      "Independent buffered science downlink"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#probe-hardware-09"
+  },
+  {
+    "id": "probe-software-01",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 1,
+    "title": "Boot + identity",
+    "lines": [
+      "Probe ID, firmware and calibration",
+      "Validate configuration / memory",
+      "Time origin and reset cause"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#probe-software-01"
+  },
+  {
+    "id": "probe-software-02",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 2,
+    "title": "Health + experiment gates",
+    "lines": [
+      "Check energy and sensor validity",
+      "Confirm containment readiness",
+      "Inhibit invalid experiment states"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#probe-software-02"
+  },
+  {
+    "id": "probe-software-03",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 3,
+    "title": "Schedule + power manager",
+    "lines": [
+      "Budget incubation / heater load",
+      "Reserve energy for data return",
+      "Pause or stop on resource limits"
+    ],
+    "lens": "energy",
+    "requirements": [
+      "PRB-003",
+      "PRB-009"
+    ],
+    "referenceUrl": "block-data.html#probe-software-03"
+  },
+  {
+    "id": "probe-software-04",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 4,
+    "title": "Sample / control registry",
+    "lines": [
+      "Track mass, source and channel ID",
+      "Keep blanks and tests separate",
+      "Record acquisition history"
+    ],
+    "lens": "sample",
+    "requirements": [
+      "PRB-004",
+      "PRB-006",
+      "PRB-008"
+    ],
+    "referenceUrl": "block-data.html#probe-software-04"
+  },
+  {
+    "id": "probe-software-05",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 5,
+    "title": "Assay state machine",
+    "lines": [
+      "Prepare → baseline → incubation",
+      "Separate extraction alternatives",
+      "Log every transition / failure"
+    ],
+    "lens": "science",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-software-05"
+  },
+  {
+    "id": "probe-software-06",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 6,
+    "title": "Signal acquisition service",
+    "lines": [
+      "Pulse / count / spectrum records",
+      "Bias + temperature + live time",
+      "Dead time / quality flags"
+    ],
+    "lens": "detector",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-software-06"
+  },
+  {
+    "id": "probe-software-07",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 7,
+    "title": "Calibration + reduction",
+    "lines": [
+      "Blank / efficiency / recovery",
+      "Isotope-response matrix: required",
+      "Uncertain outputs remain qualified"
+    ],
+    "lens": "detector",
+    "requirements": [
+      "PRB-003",
+      "PRB-006",
+      "PRB-007"
+    ],
+    "referenceUrl": "block-data.html#probe-software-07"
+  },
+  {
+    "id": "probe-software-08",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 8,
+    "title": "Persistent science journal",
+    "lines": [
+      "Raw data + versioned corrections",
+      "Checksums + reset-safe storage",
+      "No invented counts or yields"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#probe-software-08"
+  },
+  {
+    "id": "probe-software-09",
+    "diagram": "probe-software",
+    "vehicle": "Probe",
+    "kind": "Software",
+    "index": 9,
+    "title": "Packet + relay service",
+    "lines": [
+      "Sequence numbers + probe identity",
+      "Queue / retry / prioritize records",
+      "Do not infer reception from Tx"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#probe-software-09"
+  },
+  {
+    "id": "retro-hardware-01",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 1,
+    "title": "Optical + inertial sensing",
+    "lines": [
+      "Camera / MEMS estimation concept",
+      "Time-tagged attitude observations",
+      "Orbit knowledge source: confirm"
+    ],
+    "lens": "gnc",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-01"
+  },
+  {
+    "id": "retro-hardware-02",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 2,
+    "title": "GNC compute split",
+    "lines": [
+      "SBC estimation / planning",
+      "Independent MCU control authority",
+      "Watchdog + command arbitration"
+    ],
+    "lens": "gnc",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-02"
+  },
+  {
+    "id": "retro-hardware-03",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 3,
+    "title": "Main deorbit propulsion",
+    "lines": [
+      "A fixed motor; B sized alternative",
+      "Ignition path and monitor sensors",
+      "Solid / hybrid choice unresolved"
+    ],
+    "lens": "engine",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-03"
+  },
+  {
+    "id": "retro-hardware-04",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 4,
+    "title": "Nitrogen tank + feed",
+    "lines": [
+      "Initial trade: 0.100 kg N₂",
+      "Pressure / temperature assumptions",
+      "Regulator + plumbing: qualify"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-04"
+  },
+  {
+    "id": "retro-hardware-05",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 5,
+    "title": "Six cold-gas jets",
+    "lines": [
+      "Paired translation and torque",
+      "Allocation + valve drivers required",
+      "Scalar budget is not 6-DOF"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-05"
+  },
+  {
+    "id": "retro-hardware-06",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 6,
+    "title": "Ignition + jettison barriers",
+    "lines": [
+      "Independent hardware inhibits",
+      "Readiness / confirmation paths",
+      "Post-turn module separation"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-06"
+  },
+  {
+    "id": "retro-hardware-07",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 7,
+    "title": "Module power + harness",
+    "lines": [
+      "Power boundary to capsule: define",
+      "Energy / peak-current allocation",
+      "Safe connectors and grounding"
+    ],
+    "lens": "energy",
+    "requirements": [
+      "PRB-003",
+      "PRB-009"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-07"
+  },
+  {
+    "id": "retro-hardware-08",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 8,
+    "title": "Mechanical attachment",
+    "lines": [
+      "Main-thrust and jet load paths",
+      "Capsule/module separation plane",
+      "Clearance / recontact: verify"
+    ],
+    "lens": "mass",
+    "requirements": [
+      "STR-004",
+      "STR-006",
+      "STR-007"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-08"
+  },
+  {
+    "id": "retro-hardware-09",
+    "diagram": "retro-hardware",
+    "vehicle": "Retro module",
+    "kind": "Hardware",
+    "index": 9,
+    "title": "Capsule handover interface",
+    "lines": [
+      "Event history + state estimate",
+      "Entry-attitude confirmation",
+      "No cold jets after jettison"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#retro-hardware-09"
+  },
+  {
+    "id": "retro-software-01",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 1,
+    "title": "Boot + host separation gate",
+    "lines": [
+      "Validate state and power readiness",
+      "Confirm approved separation event",
+      "Latch host-release history"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#retro-software-01"
+  },
+  {
+    "id": "retro-software-02",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 2,
+    "title": "Maneuver 1: separation",
+    "lines": [
+      "Paired jets translate clear of host",
+      "Budget Δv + pulse allowance",
+      "Confirm clearance before slew"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-software-02"
+  },
+  {
+    "id": "retro-software-03",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 3,
+    "title": "Navigation + target planner",
+    "lines": [
+      "Ingest orbit / attitude estimates",
+      "Select permitted burn opportunity",
+      "Reject unqualified corridor"
+    ],
+    "lens": "gnc",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-software-03"
+  },
+  {
+    "id": "retro-software-04",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 4,
+    "title": "Maneuver 2: burn alignment",
+    "lines": [
+      "Rest-to-rest turn; default 90°",
+      "Closed-loop controller required",
+      "Pointing / health gate to ignition"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-software-04"
+  },
+  {
+    "id": "retro-software-05",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 5,
+    "title": "Retroburn state machine",
+    "lines": [
+      "Arm only through approved gates",
+      "Ignition → monitor → cutoff",
+      "A fixed-impulse / B sized model"
+    ],
+    "lens": "engine",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#retro-software-05"
+  },
+  {
+    "id": "retro-software-06",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 6,
+    "title": "Maneuver 3: entry alignment",
+    "lines": [
+      "Separate turn; default 180°",
+      "Retain gas and module until done",
+      "Confirm entry attitude"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-software-06"
+  },
+  {
+    "id": "retro-software-07",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 7,
+    "title": "Fault / inhibit supervisor",
+    "lines": [
+      "Watchdog and sensor consistency",
+      "Abort / safe-state authority",
+      "No software-only ignition credit"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#retro-software-07"
+  },
+  {
+    "id": "retro-software-08",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 8,
+    "title": "Mass + gas accounting",
+    "lines": [
+      "Book 3 withdrawals separately",
+      "Retain entry-turn gas during burn",
+      "Pressure reserve / deficit flags"
+    ],
+    "lens": "gas",
+    "requirements": [
+      "GNC-002",
+      "GNC-003",
+      "GNC-004"
+    ],
+    "referenceUrl": "block-data.html#retro-software-08"
+  },
+  {
+    "id": "retro-software-09",
+    "diagram": "retro-software",
+    "vehicle": "Retro module",
+    "kind": "Software",
+    "index": 9,
+    "title": "Handover + jettison",
+    "lines": [
+      "Commit state / confirmation history",
+      "Jettison after final turn + delay",
+      "Disable absent actuators"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#retro-software-09"
+  },
+  {
+    "id": "capsule-hardware-01",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 1,
+    "title": "Aeroshell + heat shield",
+    "lines": [
+      "Ø 0.8 m · 70° forebody half-angle",
+      "TPS / insulation / structural shell",
+      "Material and thickness: trades"
+    ],
+    "lens": "entry",
+    "requirements": [
+      "STR-003",
+      "STR-005",
+      "STR-008"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-01"
+  },
+  {
+    "id": "capsule-hardware-02",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 2,
+    "title": "Entry sensing + avionics",
+    "lines": [
+      "Acceleration / temperature concept",
+      "Pressure / altitude estimation trade",
+      "Independent timing / health path"
+    ],
+    "lens": "entry",
+    "requirements": [
+      "STR-003",
+      "STR-005",
+      "STR-008"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-02"
+  },
+  {
+    "id": "capsule-hardware-03",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 3,
+    "title": "Carrier restraint interface",
+    "lines": [
+      "Launch and entry load transfer",
+      "Loaded carrier packaging envelope",
+      "A: 3 / B: 7 source probes"
+    ],
+    "lens": "mass",
+    "requirements": [
+      "STR-004",
+      "STR-006",
+      "STR-007"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-03"
+  },
+  {
+    "id": "capsule-hardware-04",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 4,
+    "title": "Cover + release mechanism",
+    "lines": [
+      "Top opening / extraction clearance",
+      "Independent release inhibits",
+      "Latch and separation confirmation"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-04"
+  },
+  {
+    "id": "capsule-hardware-05",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 5,
+    "title": "Passive entry configuration",
+    "lines": [
+      "Shield-forward attitude imposed",
+      "Low-CG / aerodynamic concept",
+      "Stability must be demonstrated"
+    ],
+    "lens": "entry",
+    "requirements": [
+      "STR-003",
+      "STR-005",
+      "STR-008"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-05"
+  },
+  {
+    "id": "capsule-hardware-06",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 6,
+    "title": "Extraction chute interface",
+    "lines": [
+      "Canopy deployment / load paths",
+      "Pull carrier clear of shell",
+      "Opening loads not qualified"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-06"
+  },
+  {
+    "id": "capsule-hardware-07",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 7,
+    "title": "Retro attachment plane",
+    "lines": [
+      "Defined expendable-module boundary",
+      "Harness separation + load transfer",
+      "No jet authority after removal"
+    ],
+    "lens": "mass",
+    "requirements": [
+      "STR-004",
+      "STR-006",
+      "STR-007"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-07"
+  },
+  {
+    "id": "capsule-hardware-08",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 8,
+    "title": "Power + event handover",
+    "lines": [
+      "Source of event history: define",
+      "Separate vehicle/carrier ownership",
+      "Do not duplicate mass allocations"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-08"
+  },
+  {
+    "id": "capsule-hardware-09",
+    "diagram": "capsule-hardware",
+    "vehicle": "Capsule",
+    "kind": "Hardware",
+    "index": 9,
+    "title": "Discarded aeroshell",
+    "lines": [
+      "Separate descent / clearance path",
+      "Carrier and probes retain autonomy",
+      "No post-discard capsule solution"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-hardware-09"
+  },
+  {
+    "id": "capsule-software-01",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 1,
+    "title": "Receive retro handover",
+    "lines": [
+      "Latch burn / entry-attitude state",
+      "Verify module-detached evidence",
+      "Retain time and event continuity"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-01"
+  },
+  {
+    "id": "capsule-software-02",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 2,
+    "title": "Entry monitoring function",
+    "lines": [
+      "Acquire available flight sensors",
+      "Tag acceleration / temperatures",
+      "Track sensor and state validity"
+    ],
+    "lens": "entry",
+    "requirements": [
+      "STR-003",
+      "STR-005",
+      "STR-008"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-02"
+  },
+  {
+    "id": "capsule-software-03",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 3,
+    "title": "Entry phase estimator",
+    "lines": [
+      "Time / altitude / condition gates",
+      "Use qualified navigation evidence",
+      "Do not trigger from animation time"
+    ],
+    "lens": "entry",
+    "requirements": [
+      "STR-003",
+      "STR-005",
+      "STR-008"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-03"
+  },
+  {
+    "id": "capsule-software-04",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 4,
+    "title": "Deployment inhibit logic",
+    "lines": [
+      "Approved deployment envelope",
+      "Cover / chute / carrier readiness",
+      "Independent hardware barriers"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-04"
+  },
+  {
+    "id": "capsule-software-05",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 5,
+    "title": "Cover-release sequence",
+    "lines": [
+      "Command when gate is satisfied",
+      "Await clear / latch confirmation",
+      "Timeout → configured safe response"
+    ],
+    "lens": "safety",
+    "requirements": [
+      "GNC-004",
+      "EDL-007",
+      "PCM-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-05"
+  },
+  {
+    "id": "capsule-software-06",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 6,
+    "title": "Carrier extraction sequence",
+    "lines": [
+      "Command chute / extraction path",
+      "Confirm carrier separation event",
+      "Prevent conflicting actuation"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-06"
+  },
+  {
+    "id": "capsule-software-07",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 7,
+    "title": "Event + diagnostic recorder",
+    "lines": [
+      "Commands and confirmations logged",
+      "Preserve fault / sensor snapshots",
+      "Transfer before interface loss"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-07"
+  },
+  {
+    "id": "capsule-software-08",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 8,
+    "title": "Ownership / power boundary",
+    "lines": [
+      "Host avionics vs carrier: allocate",
+      "No assumed duplicate flight CPU",
+      "Software execution location open"
+    ],
+    "lens": "mass",
+    "requirements": [
+      "STR-004",
+      "STR-006",
+      "STR-007"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-08"
+  },
+  {
+    "id": "capsule-software-09",
+    "diagram": "capsule-software",
+    "vehicle": "Capsule",
+    "kind": "Software",
+    "index": 9,
+    "title": "End-of-service handling",
+    "lines": [
+      "Mark aeroshell discarded",
+      "No later capsule telemetry credit",
+      "Carrier operates independently"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#capsule-software-09"
+  },
+  {
+    "id": "carrier-hardware-01",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 1,
+    "title": "Carrier frame + probe bays",
+    "lines": [
+      "Retained dry mass allocation",
+      "A: 3 / B: 7 probe positions",
+      "Restraints and center-of-mass trade"
+    ],
+    "lens": "mass",
+    "requirements": [
+      "STR-004",
+      "STR-006",
+      "STR-007"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-01"
+  },
+  {
+    "id": "carrier-hardware-02",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 2,
+    "title": "Release actuators + sensing",
+    "lines": [
+      "Independent probe release paths",
+      "Positive drop confirmations",
+      "Prevent adjacent-probe contact"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-02"
+  },
+  {
+    "id": "carrier-hardware-03",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 3,
+    "title": "Carrier parachute + risers",
+    "lines": [
+      "Source A 1.5 m / B 2.0 m",
+      "Extraction and descent load paths",
+      "Inflation / opening loads: verify"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-03"
+  },
+  {
+    "id": "carrier-hardware-04",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 4,
+    "title": "Altitude / descent sensing",
+    "lines": [
+      "Release-height estimate required",
+      "Motion / attitude health concept",
+      "Ground/contact indication trade"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-04"
+  },
+  {
+    "id": "carrier-hardware-05",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 5,
+    "title": "Carrier MCU + event memory",
+    "lines": [
+      "Inherit upstream confirmation bits",
+      "Latch each probe-drop event",
+      "Reset-safe cumulative history"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-05"
+  },
+  {
+    "id": "carrier-hardware-06",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 6,
+    "title": "Radio + antenna",
+    "lines": [
+      "High-peak, low-duty UHF concept",
+      "Carrier status word / framing",
+      "Receiver and access assumptions"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-06"
+  },
+  {
+    "id": "carrier-hardware-07",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 7,
+    "title": "Independent power + buffer",
+    "lines": [
+      "Separate post-extraction supply",
+      "Pulse buffer + regulated rails",
+      "Peak energy and lifetime: size"
+    ],
+    "lens": "energy",
+    "requirements": [
+      "PRB-003",
+      "PRB-009"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-07"
+  },
+  {
+    "id": "carrier-hardware-08",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 8,
+    "title": "Harness + data handover",
+    "lines": [
+      "Capsule event-history transfer",
+      "Power/interface disconnect boundary",
+      "Avoid duplicated mass accounting"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-08"
+  },
+  {
+    "id": "carrier-hardware-09",
+    "diagram": "carrier-hardware",
+    "vehicle": "Carrier",
+    "kind": "Hardware",
+    "index": 9,
+    "title": "Released independent probes",
+    "lines": [
+      "Each retains canopy and antenna",
+      "Independent science power / control",
+      "No required carrier-to-probe relay"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-hardware-09"
+  },
+  {
+    "id": "carrier-software-01",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 1,
+    "title": "Boot + history reconciliation",
+    "lines": [
+      "Receive capsule event history",
+      "Verify checksum / sequence / ID",
+      "Recover retained state on reset"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-01"
+  },
+  {
+    "id": "carrier-software-02",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 2,
+    "title": "Descent / release estimator",
+    "lines": [
+      "Monitor altitude and health",
+      "Wait for approved release gate",
+      "Source model: first gate + cadence"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-02"
+  },
+  {
+    "id": "carrier-software-03",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 3,
+    "title": "Release scheduler",
+    "lines": [
+      "Address one probe at a time",
+      "Command → confirm → advance",
+      "Timeout / jam handling required"
+    ],
+    "lens": "descent",
+    "requirements": [
+      "EDL-004",
+      "EDL-005",
+      "EDL-006"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-03"
+  },
+  {
+    "id": "carrier-software-04",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 4,
+    "title": "Cumulative status machine",
+    "lines": [
+      "Preserve bit 8: carrier landed",
+      "Bits 5–7: probe drops 1–3",
+      "Append bits 9–12: drops 4–7"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-04"
+  },
+  {
+    "id": "carrier-software-05",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 5,
+    "title": "Confirmation / fault journal",
+    "lines": [
+      "Log command and sensed evidence",
+      "Never latch drop from command only",
+      "Retain cause and timing metadata"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-05"
+  },
+  {
+    "id": "carrier-software-06",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 6,
+    "title": "Packet and retry service",
+    "lines": [
+      "Nominal 60 s status cadence",
+      "Add framing / error detection",
+      "Tx attempt is not reception"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-06"
+  },
+  {
+    "id": "carrier-software-07",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 7,
+    "title": "Power + peak-buffer manager",
+    "lines": [
+      "Gate bursts on stored energy",
+      "Brownout protection / watchdog",
+      "Separate local carrier lifetime"
+    ],
+    "lens": "energy",
+    "requirements": [
+      "PRB-003",
+      "PRB-009"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-07"
+  },
+  {
+    "id": "carrier-software-08",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 8,
+    "title": "Contact / blackout policy",
+    "lines": [
+      "Queue during blocked link periods",
+      "Use qualified access assumptions",
+      "Do not promise continuous relay"
+    ],
+    "lens": "data",
+    "requirements": [
+      "SYS-001",
+      "SYS-002",
+      "COM-01"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-08"
+  },
+  {
+    "id": "carrier-software-09",
+    "diagram": "carrier-software",
+    "vehicle": "Carrier",
+    "kind": "Software",
+    "index": 9,
+    "title": "Surface status operations",
+    "lines": [
+      "Latch landing if confirmed",
+      "Repeat latest valid status",
+      "End gracefully at energy limit"
+    ],
+    "lens": "status",
+    "requirements": [
+      "GNC-001",
+      "GNC-004",
+      "GNC-005"
+    ],
+    "referenceUrl": "block-data.html#carrier-software-09"
+  }
+]

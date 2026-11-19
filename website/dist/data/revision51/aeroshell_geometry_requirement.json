@@ -1,0 +1,29 @@
+{
+  "id": "FREYA-DER-GEO-001",
+  "status": "Project design requirement; NASA analogy reviewed; qualification open",
+  "applies": "A and B",
+  "requirement": "The heat-shield forebody shall use a 70 degree cone half-angle from the symmetry axis, equivalent to 20 degrees from the shield reference plane, consistent with NASA Mars sphere-cone examples. Backshell geometry shall be sized independently.",
+  "defaults": {
+    "baseDiameterM": 0.8,
+    "assumedBackshellHeightM": 0.6,
+    "forebodyConeEnvelopeRiseM": 0.14558809370648093,
+    "totalEnvelopeHeightM": 0.745588093706481
+  },
+  "assumption": "Backshell height/diameter = 0.75 retains the Rev09 0.6 m packaging height as a provisional backshell allocation. Forebody cone envelope (D/2)tan20\u00b0 is added; spherical nose and shoulder blends, cover crown and actual internal volume require CAD. This is a packaging assumption, not NASA dimensions.",
+  "nasaRationale": "NASA Pathfinder and MSL use a 70 degree half-angle sphere-cone forebody. Adopt this angle convention for FREYA. NASA heritage does not prescribe FREYA backshell slope, nose radius, height, stability or TPS.",
+  "sources": [
+    {
+      "title": "NASA PDS: Mars Pathfinder Lander Description",
+      "url": "https://pds.nasa.gov/data/mpfl-m-asimet-2_3-edr_rdr-edl-v1.0/mpam_0001/document/insthost.htm"
+    },
+    {
+      "title": "NASA: Aerodynamic Challenges for the Mars Science Laboratory Entry, Descent and Landing",
+      "url": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20090025343.pdf"
+    },
+    {
+      "title": "NASA: Aeroshell for Mars Science Laboratory",
+      "url": "https://science.nasa.gov/photojournal/aeroshell-for-mars-science-laboratory/"
+    }
+  ],
+  "verification": "Analytical geometry test across supported diameters; later CAD inspection, packaging clearance review and aerodynamic/thermal qualification required. NASA heritage does not verify FREYA performance."
+}

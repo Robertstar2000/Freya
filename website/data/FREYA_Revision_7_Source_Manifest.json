@@ -1,0 +1,210 @@
+[
+  {
+    "path": "2026, Spacek, AStrobiology - published version MR-ASTJ260081(1).pdf",
+    "name": "2026, Spacek, AStrobiology - published version MR-ASTJ260081(1).pdf",
+    "bytes": 20893316,
+    "sha256": "eba02be97b2350f984796060fb9e84863b9bce021803b2abd5be400ce925c274",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "2026, Spacek, AStrobiology - published version MR-ASTJ260081.pdf",
+    "name": "2026, Spacek, AStrobiology - published version MR-ASTJ260081.pdf",
+    "bytes": 20893316,
+    "sha256": "eba02be97b2350f984796060fb9e84863b9bce021803b2abd5be400ce925c274",
+    "same_bytes_as": "2026, Spacek, AStrobiology - published version MR-ASTJ260081(1).pdf",
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Peer_Review_Revision_5.zip",
+    "name": "FREYA_Peer_Review_Revision_5.zip",
+    "bytes": 865243,
+    "sha256": "729203703bb916a7210a71723ca653a96084f14da36fc0211f3289df64b43d7b",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Penetrator_Trade_Revision_4.csv",
+    "name": "FREYA_Penetrator_Trade_Revision_4.csv",
+    "bytes": 1311,
+    "sha256": "28f26b1077eed10c38b29b2d773ca21f3e05dabb645a508792a01891f733eb1a",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Revision_5_Sampling_Depth_Justification.pdf",
+    "name": "FREYA_Revision_5_Sampling_Depth_Justification.pdf",
+    "bytes": 50084,
+    "sha256": "7e3d54b78bbfe35edc583e5c665ffa03654654f18e3ee60b1b7f6c343e14334a",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Revision_5_Steel_vs_Carbon_Fiber_Updated_Penetration.pdf",
+    "name": "FREYA_Revision_5_Steel_vs_Carbon_Fiber_Updated_Penetration.pdf",
+    "bytes": 8134,
+    "sha256": "3981463e2050ef03cd82a86f01a807e3f5a17515bf85d672a426a3286a8d6e06",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Trade_Study_Revision_4.json",
+    "name": "FREYA_Trade_Study_Revision_4.json",
+    "bytes": 42091,
+    "sha256": "45dc2f68ab41be3009312fe7d7987466ac577c3a21fc88a5aabc7dc625b59420",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/FREYA_Website_Specification_Revision_4.md",
+    "name": "FREYA_Website_Specification_Revision_4.md",
+    "bytes": 7071,
+    "sha256": "fd59017a2c90edab8a4d881c97421c2cbab5cfa3099894c0688b984090ec2d16",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/Freya_ChatGPT_Sites_Project_Revision_4.zip",
+    "name": "Freya_ChatGPT_Sites_Project_Revision_4.zip",
+    "bytes": 1134037,
+    "sha256": "434f580fd977e2ec11472d98e7eaf2ac31eb8b9dc0f44d9017912a576c6f7864",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/Freya_Engineering_Study_Revision_5.docx",
+    "name": "Freya_Engineering_Study_Revision_5.docx",
+    "bytes": 290296,
+    "sha256": "ff9abc0be4ee8d5f79d7451e4f8074a25d3dcf38c2a0066b3ef08f7261fb8cb3",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/Freya_Engineering_Study_Revision_5.pdf",
+    "name": "Freya_Engineering_Study_Revision_5.pdf",
+    "bytes": 940345,
+    "sha256": "941b6f9cc776c68bafc6f2478a5224ab17eaba500591abd36a0c8d982cdad10a",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/Freya_Engineering_Study_Revision_6_Consolidated(1).pdf",
+    "name": "Freya_Engineering_Study_Revision_6_Consolidated(1).pdf",
+    "bytes": 2365155,
+    "sha256": "3cf5cc67df422786c942e4ebe0f87450acad1e7d9eacecd91372c677da79a3b1",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/Freya_Sites_Standalone_Revision_4.html",
+    "name": "Freya_Sites_Standalone_Revision_4.html",
+    "bytes": 72369,
+    "sha256": "82c407e5035a4f515ebc09f8dbbadcb0fd785bcc05559fc06fa567958e20f7c1",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/IMPRESS_Supplement_Source_Record.txt",
+    "name": "IMPRESS_Supplement_Source_Record.txt",
+    "bytes": 1357,
+    "sha256": "bcd189534db86ccc5a236444299057a1d8d5d4602036b5e01adab4042cfc6fed",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA/IMPRESS_Supplementary_Tables_Author_Copy_2026.pdf",
+    "name": "IMPRESS_Supplementary_Tables_Author_Copy_2026.pdf",
+    "bytes": 433724,
+    "sha256": "e2b406e7f91f9c874eee4548f4f447f20a73455551a00a7a28740aa2c0063b80",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA_Expert_Review_Addendum_2026-10-26.txt",
+    "name": "FREYA_Expert_Review_Addendum_2026-10-26.txt",
+    "bytes": 9104,
+    "sha256": "8b492a2c35c84b79fbac1eba3e62eae7287096685f9033ad3e5d7a76cb79a867",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA_Revision_5_Sampling_Depth_Justification.pdf",
+    "name": "FREYA_Revision_5_Sampling_Depth_Justification.pdf",
+    "bytes": 75035,
+    "sha256": "a627714a2b643ef137f1d4c76e148159e7006a48df31bfffae6652f7bd69a970",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "FREYA_Revision_5_Steel_vs_Carbon_Fiber_Assessment.pdf",
+    "name": "FREYA_Revision_5_Steel_vs_Carbon_Fiber_Assessment.pdf",
+    "bytes": 32510,
+    "sha256": "eb227fcb73184fc8d95da082ffa9b66766ea00c0ebb4eab089ad5335caa976d8",
+    "same_bytes_as": null,
+    "disposition": "Superseded earlier assessment; not used as current authority"
+  },
+  {
+    "path": "FREYA_Revision_5_Steel_vs_Carbon_Fiber_Updated_Penetration.pdf",
+    "name": "FREYA_Revision_5_Steel_vs_Carbon_Fiber_Updated_Penetration.pdf",
+    "bytes": 33080,
+    "sha256": "f88060557976bb3fb4b7e6f49250c2a9c6e1d08b42267f52ddb0dc7ddd68620d",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_ChatGPT_Sites_Project.zip",
+    "name": "Freya_ChatGPT_Sites_Project.zip",
+    "bytes": 1024079,
+    "sha256": "93043a4e42c4289b6d276881451098f945f4f4e77e1b702ed7387e33d3c5710b",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Engineering_Study_Revision_2.pdf",
+    "name": "Freya_Engineering_Study_Revision_2.pdf",
+    "bytes": 627664,
+    "sha256": "9d5270150780d72e42b0442dd96342dff60ce012c715b070ce7464838519d664",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Engineering_Study_Revision_6_Consolidated.pdf",
+    "name": "Freya_Engineering_Study_Revision_6_Consolidated.pdf",
+    "bytes": 2365155,
+    "sha256": "3cf5cc67df422786c942e4ebe0f87450acad1e7d9eacecd91372c677da79a3b1",
+    "same_bytes_as": "FREYA/Freya_Engineering_Study_Revision_6_Consolidated(1).pdf",
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Interactive_Dashboard.html",
+    "name": "Freya_Interactive_Dashboard.html",
+    "bytes": 21201,
+    "sha256": "d80652615717bd2359f854571668ff422aae0d660b7f4362fd72d902392503c4",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Mars_Penetrator_Optimization_Study.pdf",
+    "name": "Freya_Mars_Penetrator_Optimization_Study.pdf",
+    "bytes": 634501,
+    "sha256": "6aff2eb04f4b069cd569fd40bd416f43b5b245bc718b9a1a693e282225dca050",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Preliminary_Study.pdf",
+    "name": "Freya_Preliminary_Study.pdf",
+    "bytes": 35945,
+    "sha256": "a9db032e1fe26aa7c5f81dc4d56ee8f365c4cfe75964841d3dfab85b1152b67d",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  },
+  {
+    "path": "Freya_Sites_Standalone.html",
+    "name": "Freya_Sites_Standalone.html",
+    "bytes": 59461,
+    "sha256": "622b0e24fc6f280b9f1b122599a84e2bc456f225214056fc91f98c46070f57ac",
+    "same_bytes_as": null,
+    "disposition": "Retained source"
+  }
+]

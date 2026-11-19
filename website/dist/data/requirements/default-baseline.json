@@ -1,0 +1,5194 @@
+{
+  "revision": "FREYA-RS-010",
+  "date": "2026-11-19",
+  "status": "Working requirements draft; hardware acceptance and presentation reconciliation open",
+  "websiteBaseVersion": 31,
+  "presentation": {
+    "sourceFile": "FREYA_Pitch_Expanded_Science_Three_Categories.pptx",
+    "library_file_id": "libfile_351f23462f5081919b6715a2aad9610a",
+    "slideCount": 10,
+    "phaseAuthority": "Slide 7 delivery order; slides 3–4 proposed science alternatives",
+    "scope": "Mission phase extension only; Rev09 mass and geometry unchanged; no Aeolus source incorporation",
+    "phases": [
+      {
+        "id": "rideshare",
+        "title": "01 Rideshare",
+        "source": "Presentation slide 7 · step 01",
+        "description": "Show FREYA carried by the host second stage, then capsule separation. Cold-gas hardware remains on the detachable reentry module."
+      },
+      {
+        "id": "orient",
+        "title": "02 Orient",
+        "source": "Presentation slide 7 · step 02",
+        "description": "Acquire the burn attitude with optical/MEMS estimation and cold-gas control, then start vehicle telemetry."
+      },
+      {
+        "id": "deorbit",
+        "title": "03 Deorbit",
+        "source": "Presentation slide 7 · step 03",
+        "description": "Perform the retrograde burn, confirm its completion and detach the expendable reentry module."
+      },
+      {
+        "id": "entry",
+        "title": "04 Entry",
+        "source": "Presentation slide 7 · step 04",
+        "description": "The heat shield, aerodynamic shape and low center of gravity support passive entry and deceleration. Do not credit cold-gas control after module jettison."
+      },
+      {
+        "id": "extraction",
+        "title": "05 Carrier extraction",
+        "source": "Presentation slide 7 · step 05",
+        "description": "Remove the cover, deploy the carrier parachute, extract the carrier and discard the aeroshell. Begin the independent carrier telemetry sequence."
+      },
+      {
+        "id": "release",
+        "title": "06 Probe release",
+        "source": "Presentation slide 7 · step 06",
+        "description": "Descend to the release gate. Release every probe individually, deploying its own smaller parachute for descent and stabilization."
+      },
+      {
+        "id": "delivery",
+        "title": "07 Probe delivery",
+        "source": "Presentation slide 7 · step 07",
+        "description": "Show nose-first impact and schematic emplacement for every probe. Activate instruments and telemetry using the antenna integrated with retained parachute shrouds."
+      },
+      {
+        "id": "science",
+        "title": "08 Science operations",
+        "source": "Presentation slides 3–4 · proposed experiments",
+        "description": "Acquire soil, run blanks and controls, apply the selected proposed protocol, and inspect detector readout and interpretation. The two source protocols remain alternatives."
+      },
+      {
+        "id": "return",
+        "title": "09 Data return",
+        "source": "Presentation slide 7 · probe telemetry; Rev09 SYS-001 and COM-01–05",
+        "description": "Buffer science and engineering records, repeat the carrier status word, and illustrate an assumed orbiter relay and onward return to Earth."
+      }
+    ],
+    "scienceProtocols": {
+      "gas-trap": {
+        "name": "Slide 4 · sealed gas and trap assay",
+        "source": "Presentation slide 4 embedded workflow",
+        "sample": "0.25 cm³ per vessel; proposed 2–5 cm source depth",
+        "conditions": "No water added; sealed and dark at −10 to 0 °C for 1–5 sols",
+        "steps": [
+          [
+            "sample",
+            "Soil into test and control vessels",
+            "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition."
+          ],
+          [
+            "blank",
+            "Seal vessels and read blanks",
+            "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel."
+          ],
+          [
+            "dose",
+            "Add labeled gas",
+            "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled."
+          ],
+          [
+            "incubate",
+            "Incubation and continuous counts",
+            "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time."
+          ],
+          [
+            "trap",
+            "Gas and product trap readout",
+            "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology."
+          ],
+          [
+            "retained",
+            "Check retained-label balance",
+            "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products."
+          ],
+          [
+            "controls",
+            "Compare controls and qualify interpretation",
+            "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life."
+          ]
+        ]
+      },
+      "extract": {
+        "name": "Slide 3 · incubation and extraction concept",
+        "source": "Presentation slide 3 proposed labeled-gas experiment",
+        "sample": "Approximately 1 g soil; sample provenance and controls required",
+        "conditions": "Near Mars ambient pressure; proposed 0–5 °C incubation",
+        "steps": [
+          [
+            "sample",
+            "Acquire soil and prepare controls",
+            "Illustrate approximately 1 g soil alongside heat-treated, no-soil and known-microbe control concepts. These are proposed validation steps."
+          ],
+          [
+            "blank",
+            "Record blanks and baseline",
+            "Record baseline detector and environmental observations and keep controls separate from the unmodified test sample."
+          ],
+          [
+            "dose",
+            "Introduce proposed labeled reactants",
+            "Illustrate candidate ¹⁴CO₂, ¹⁴CO, ³H₂ or ³H₂O channels. These are alternative experimental inputs, not a selected flight recipe."
+          ],
+          [
+            "incubate",
+            "Incubate under proposed conditions",
+            "Illustrate near-ambient-pressure incubation at 0–5 °C. Do not merge this temperature or water assumption into the slide 4 gas/trap concept."
+          ],
+          [
+            "extract",
+            "Flush gas and examine extracts",
+            "Illustrate excess-gas removal, carbonate-control acidification and water-soluble versus oil-soluble extraction concepts. Hardware and sample transfer remain unverified."
+          ],
+          [
+            "detect",
+            "Scintillation and SiPM readout",
+            "Show detector acquisition for retained label in separate fractions, with sensitivity and interference still requiring laboratory validation."
+          ],
+          [
+            "controls",
+            "Compare fractions and controls",
+            "Compare test/control and hydrophobic/hydrophilic behavior. Abiotic incorporation, chemical interference and contamination must be considered before any biological interpretation."
+          ]
+        ]
+      }
+    },
+    "exampleA": [
+      {
+        "id": "health",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Vehicle health check",
+        "duration": 3,
+        "start": 0,
+        "end": 3,
+        "detail": "Review initialization and confirm the demonstrated avionics self-test.",
+        "bit": 0
+      },
+      {
+        "id": "host-carried",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Rideshare on host second stage",
+        "duration": 7,
+        "start": 3,
+        "end": 10,
+        "detail": "The presentation names a Terran R rideshare; host and delivery agreement remain proposed."
+      },
+      {
+        "id": "host-separation",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Capsule separates from second stage",
+        "duration": 7,
+        "start": 10,
+        "end": 17,
+        "detail": "Show physical separation while the expendable module remains attached.",
+        "bit": 1
+      },
+      {
+        "id": "cold-gas-slew",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Cold-gas burn-attitude acquisition",
+        "duration": 10,
+        "start": 17,
+        "end": 27,
+        "detail": "Animate proposed cold-gas torque while the external module is attached."
+      },
+      {
+        "id": "attitude-confirmed",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Burn attitude confirmed",
+        "duration": 4,
+        "start": 27,
+        "end": 31,
+        "detail": "Demonstration confidence gate for optical/MEMS attitude estimation.",
+        "bit": 2
+      },
+      {
+        "id": "vehicle-telemetry",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Vehicle telemetry begins",
+        "duration": 4,
+        "start": 31,
+        "end": 35,
+        "detail": "Show a vehicle status transmission attempt; no receiver acknowledgement is modeled."
+      },
+      {
+        "id": "retro-burn",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Retrograde burn",
+        "duration": 10,
+        "start": 35,
+        "end": 45,
+        "detail": "Animate the retrograde propulsion burn. Display timing is illustrative."
+      },
+      {
+        "id": "burn-confirmed",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Reentry burn confirmed",
+        "duration": 3,
+        "start": 45,
+        "end": 48,
+        "detail": "Distinguish confirmed burn evidence from an ignition command.",
+        "bit": 3
+      },
+      {
+        "id": "module-jettison",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Expendable reentry module detaches",
+        "duration": 6,
+        "start": 48,
+        "end": 54,
+        "detail": "Separate the external motor/control hardware before passive atmospheric entry."
+      },
+      {
+        "id": "entry-interface",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Atmospheric entry interface",
+        "duration": 7,
+        "start": 54,
+        "end": 61,
+        "detail": "The capsule enters heat-shield forward; trajectory is schematic."
+      },
+      {
+        "id": "entry-heating",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Heat-shield heating",
+        "duration": 10,
+        "start": 61,
+        "end": 71,
+        "detail": "Show thermal glow on the forebody; no heat-flux prediction is implied."
+      },
+      {
+        "id": "entry-deceleration",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Passive aerodynamic deceleration",
+        "duration": 8,
+        "start": 71,
+        "end": 79,
+        "detail": "Aerodynamic shape and mass distribution support passive entry; no cold-gas jet credit."
+      },
+      {
+        "id": "cover-release",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Top cover ejected",
+        "duration": 5,
+        "start": 79,
+        "end": 84,
+        "detail": "Move the removable cover clear of the carrier extraction path."
+      },
+      {
+        "id": "carrier-chute",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Carrier parachute deploys",
+        "duration": 7,
+        "start": 84,
+        "end": 91,
+        "detail": "Open the larger carrier canopy; dimensions remain the Rev09 A/B assumptions."
+      },
+      {
+        "id": "carrier-extraction",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Parachute extracts the carrier",
+        "duration": 7,
+        "start": 91,
+        "end": 98,
+        "detail": "Separate the loaded probe carrier from the aeroshell.",
+        "bit": 4
+      },
+      {
+        "id": "aeroshell-discard",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Aeroshell falls away",
+        "duration": 5,
+        "start": 98,
+        "end": 103,
+        "detail": "Show the spent aeroshell on a separate path clear of carrier and probes."
+      },
+      {
+        "id": "carrier-telemetry",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Carrier telemetry begins",
+        "duration": 4,
+        "start": 103,
+        "end": 107,
+        "detail": "The detached carrier uses independent energy, antenna and transferred event history."
+      },
+      {
+        "id": "release-gate",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Carrier reaches release gate",
+        "duration": 5,
+        "start": 107,
+        "end": 112,
+        "detail": "An approved altitude/condition gate is required; playback does not compute that altitude."
+      },
+      {
+        "id": "probe-1-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 1 released",
+        "duration": 4,
+        "start": 112,
+        "end": 116,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 5,
+        "probe": 1,
+        "kind": "release"
+      },
+      {
+        "id": "probe-1-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 1 parachute opens",
+        "duration": 4,
+        "start": 116,
+        "end": 120,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 1,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-2-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 2 released",
+        "duration": 4,
+        "start": 120,
+        "end": 124,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 6,
+        "probe": 2,
+        "kind": "release"
+      },
+      {
+        "id": "probe-2-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 2 parachute opens",
+        "duration": 4,
+        "start": 124,
+        "end": 128,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 2,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-3-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 3 released",
+        "duration": 4,
+        "start": 128,
+        "end": 132,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 7,
+        "probe": 3,
+        "kind": "release"
+      },
+      {
+        "id": "probe-3-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 3 parachute opens",
+        "duration": 4,
+        "start": 132,
+        "end": 136,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 3,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-1-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 stabilizes nose first",
+        "duration": 4,
+        "start": 136,
+        "end": 140,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 1,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-1-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 impacts and emplaces",
+        "duration": 4,
+        "start": 140,
+        "end": 144,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 1,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-1-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 science and telemetry activate",
+        "duration": 3,
+        "start": 144,
+        "end": 147,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 1,
+        "kind": "online"
+      },
+      {
+        "id": "probe-2-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 stabilizes nose first",
+        "duration": 4,
+        "start": 147,
+        "end": 151,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 2,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-2-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 impacts and emplaces",
+        "duration": 4,
+        "start": 151,
+        "end": 155,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 2,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-2-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 science and telemetry activate",
+        "duration": 3,
+        "start": 155,
+        "end": 158,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 2,
+        "kind": "online"
+      },
+      {
+        "id": "probe-3-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 stabilizes nose first",
+        "duration": 4,
+        "start": 158,
+        "end": 162,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 3,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-3-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 impacts and emplaces",
+        "duration": 4,
+        "start": 162,
+        "end": 166,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 3,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-3-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 science and telemetry activate",
+        "duration": 3,
+        "start": 166,
+        "end": 169,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 3,
+        "kind": "online"
+      },
+      {
+        "id": "carrier-landing",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Carrier reaches the surface",
+        "duration": 4,
+        "start": 169,
+        "end": 173,
+        "detail": "Review carrier landing confirmation and latched history.",
+        "bit": 8
+      },
+      {
+        "id": "science-sample",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Soil into test and control vessels",
+        "duration": 6,
+        "start": 173,
+        "end": 179,
+        "detail": "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition.",
+        "scienceStage": "sample",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-blank",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Seal vessels and read blanks",
+        "duration": 6,
+        "start": 179,
+        "end": 185,
+        "detail": "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel.",
+        "scienceStage": "blank",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-dose",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Add labeled gas",
+        "duration": 6,
+        "start": 185,
+        "end": 191,
+        "detail": "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled.",
+        "scienceStage": "dose",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-incubate",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Incubation and continuous counts",
+        "duration": 12,
+        "start": 191,
+        "end": 203,
+        "detail": "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time.",
+        "scienceStage": "incubate",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-trap",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Gas and product trap readout",
+        "duration": 6,
+        "start": 203,
+        "end": 209,
+        "detail": "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology.",
+        "scienceStage": "trap",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-retained",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Check retained-label balance",
+        "duration": 6,
+        "start": 209,
+        "end": 215,
+        "detail": "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products.",
+        "scienceStage": "retained",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-controls",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Compare controls and qualify interpretation",
+        "duration": 6,
+        "start": 215,
+        "end": 221,
+        "detail": "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life.",
+        "scienceStage": "controls",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "data-buffer",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Buffer science and engineering data",
+        "duration": 5,
+        "start": 221,
+        "end": 226,
+        "detail": "Store per-probe identifiers, measurement records and confirmation history."
+      },
+      {
+        "id": "carrier-repeat",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Repeat carrier status telemetry",
+        "duration": 4,
+        "start": 226,
+        "end": 230,
+        "detail": "Repeat the cumulative carrier word when power and geometry permit; packet overhead is additional."
+      },
+      {
+        "id": "orbiter-relay",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "UHF relay to an assumed Mars orbiter",
+        "duration": 7,
+        "start": 230,
+        "end": 237,
+        "detail": "Show a conceptual orbiter link; access, compatibility and actual reception remain unverified."
+      },
+      {
+        "id": "earth-return",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Relay records onward to Earth",
+        "duration": 7,
+        "start": 237,
+        "end": 244,
+        "detail": "Illustrate onward data return without claiming a demonstrated Earth link or latency."
+      },
+      {
+        "id": "mission-complete",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Mission walkthrough complete",
+        "duration": 3,
+        "start": 244,
+        "end": 247,
+        "detail": "All presentation delivery phases and the selected science workflow have been reviewed."
+      }
+    ],
+    "exampleB": [
+      {
+        "id": "health",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Vehicle health check",
+        "duration": 3,
+        "start": 0,
+        "end": 3,
+        "detail": "Review initialization and confirm the demonstrated avionics self-test.",
+        "bit": 0
+      },
+      {
+        "id": "host-carried",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Rideshare on host second stage",
+        "duration": 7,
+        "start": 3,
+        "end": 10,
+        "detail": "The presentation names a Terran R rideshare; host and delivery agreement remain proposed."
+      },
+      {
+        "id": "host-separation",
+        "group": "rideshare",
+        "phase": "01 Rideshare",
+        "label": "Capsule separates from second stage",
+        "duration": 7,
+        "start": 10,
+        "end": 17,
+        "detail": "Show physical separation while the expendable module remains attached.",
+        "bit": 1
+      },
+      {
+        "id": "cold-gas-slew",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Cold-gas burn-attitude acquisition",
+        "duration": 10,
+        "start": 17,
+        "end": 27,
+        "detail": "Animate proposed cold-gas torque while the external module is attached."
+      },
+      {
+        "id": "attitude-confirmed",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Burn attitude confirmed",
+        "duration": 4,
+        "start": 27,
+        "end": 31,
+        "detail": "Demonstration confidence gate for optical/MEMS attitude estimation.",
+        "bit": 2
+      },
+      {
+        "id": "vehicle-telemetry",
+        "group": "orient",
+        "phase": "02 Orient",
+        "label": "Vehicle telemetry begins",
+        "duration": 4,
+        "start": 31,
+        "end": 35,
+        "detail": "Show a vehicle status transmission attempt; no receiver acknowledgement is modeled."
+      },
+      {
+        "id": "retro-burn",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Retrograde burn",
+        "duration": 10,
+        "start": 35,
+        "end": 45,
+        "detail": "Animate the retrograde propulsion burn. Display timing is illustrative."
+      },
+      {
+        "id": "burn-confirmed",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Reentry burn confirmed",
+        "duration": 3,
+        "start": 45,
+        "end": 48,
+        "detail": "Distinguish confirmed burn evidence from an ignition command.",
+        "bit": 3
+      },
+      {
+        "id": "module-jettison",
+        "group": "deorbit",
+        "phase": "03 Deorbit",
+        "label": "Expendable reentry module detaches",
+        "duration": 6,
+        "start": 48,
+        "end": 54,
+        "detail": "Separate the external motor/control hardware before passive atmospheric entry."
+      },
+      {
+        "id": "entry-interface",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Atmospheric entry interface",
+        "duration": 7,
+        "start": 54,
+        "end": 61,
+        "detail": "The capsule enters heat-shield forward; trajectory is schematic."
+      },
+      {
+        "id": "entry-heating",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Heat-shield heating",
+        "duration": 10,
+        "start": 61,
+        "end": 71,
+        "detail": "Show thermal glow on the forebody; no heat-flux prediction is implied."
+      },
+      {
+        "id": "entry-deceleration",
+        "group": "entry",
+        "phase": "04 Entry",
+        "label": "Passive aerodynamic deceleration",
+        "duration": 8,
+        "start": 71,
+        "end": 79,
+        "detail": "Aerodynamic shape and mass distribution support passive entry; no cold-gas jet credit."
+      },
+      {
+        "id": "cover-release",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Top cover ejected",
+        "duration": 5,
+        "start": 79,
+        "end": 84,
+        "detail": "Move the removable cover clear of the carrier extraction path."
+      },
+      {
+        "id": "carrier-chute",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Carrier parachute deploys",
+        "duration": 7,
+        "start": 84,
+        "end": 91,
+        "detail": "Open the larger carrier canopy; dimensions remain the Rev09 A/B assumptions."
+      },
+      {
+        "id": "carrier-extraction",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Parachute extracts the carrier",
+        "duration": 7,
+        "start": 91,
+        "end": 98,
+        "detail": "Separate the loaded probe carrier from the aeroshell.",
+        "bit": 4
+      },
+      {
+        "id": "aeroshell-discard",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Aeroshell falls away",
+        "duration": 5,
+        "start": 98,
+        "end": 103,
+        "detail": "Show the spent aeroshell on a separate path clear of carrier and probes."
+      },
+      {
+        "id": "carrier-telemetry",
+        "group": "extraction",
+        "phase": "05 Carrier extraction",
+        "label": "Carrier telemetry begins",
+        "duration": 4,
+        "start": 103,
+        "end": 107,
+        "detail": "The detached carrier uses independent energy, antenna and transferred event history."
+      },
+      {
+        "id": "release-gate",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Carrier reaches release gate",
+        "duration": 5,
+        "start": 107,
+        "end": 112,
+        "detail": "An approved altitude/condition gate is required; playback does not compute that altitude."
+      },
+      {
+        "id": "probe-1-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 1 released",
+        "duration": 4,
+        "start": 112,
+        "end": 116,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 5,
+        "probe": 1,
+        "kind": "release"
+      },
+      {
+        "id": "probe-1-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 1 parachute opens",
+        "duration": 4,
+        "start": 116,
+        "end": 120,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 1,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-2-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 2 released",
+        "duration": 4,
+        "start": 120,
+        "end": 124,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 6,
+        "probe": 2,
+        "kind": "release"
+      },
+      {
+        "id": "probe-2-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 2 parachute opens",
+        "duration": 4,
+        "start": 124,
+        "end": 128,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 2,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-3-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 3 released",
+        "duration": 4,
+        "start": 128,
+        "end": 132,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 7,
+        "probe": 3,
+        "kind": "release"
+      },
+      {
+        "id": "probe-3-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 3 parachute opens",
+        "duration": 4,
+        "start": 132,
+        "end": 136,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 3,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-4-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 4 released",
+        "duration": 4,
+        "start": 136,
+        "end": 140,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 9,
+        "probe": 4,
+        "kind": "release"
+      },
+      {
+        "id": "probe-4-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 4 parachute opens",
+        "duration": 4,
+        "start": 140,
+        "end": 144,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 4,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-5-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 5 released",
+        "duration": 4,
+        "start": 144,
+        "end": 148,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 10,
+        "probe": 5,
+        "kind": "release"
+      },
+      {
+        "id": "probe-5-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 5 parachute opens",
+        "duration": 4,
+        "start": 148,
+        "end": 152,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 5,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-6-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 6 released",
+        "duration": 4,
+        "start": 152,
+        "end": 156,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 11,
+        "probe": 6,
+        "kind": "release"
+      },
+      {
+        "id": "probe-6-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 6 parachute opens",
+        "duration": 4,
+        "start": 156,
+        "end": 160,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 6,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-7-release",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 7 released",
+        "duration": 4,
+        "start": 160,
+        "end": 164,
+        "detail": "Release one probe independently, with positive carrier clearance.",
+        "bit": 12,
+        "probe": 7,
+        "kind": "release"
+      },
+      {
+        "id": "probe-7-chute",
+        "group": "release",
+        "phase": "06 Probe release",
+        "label": "Probe 7 parachute opens",
+        "duration": 4,
+        "start": 164,
+        "end": 168,
+        "detail": "Deploy the smaller individual canopy; it remains associated with its antenna/shrouds.",
+        "probe": 7,
+        "kind": "chute"
+      },
+      {
+        "id": "probe-1-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 stabilizes nose first",
+        "duration": 4,
+        "start": 168,
+        "end": 172,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 1,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-1-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 impacts and emplaces",
+        "duration": 4,
+        "start": 172,
+        "end": 176,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 1,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-1-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 1 science and telemetry activate",
+        "duration": 3,
+        "start": 176,
+        "end": 179,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 1,
+        "kind": "online"
+      },
+      {
+        "id": "probe-2-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 stabilizes nose first",
+        "duration": 4,
+        "start": 179,
+        "end": 183,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 2,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-2-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 impacts and emplaces",
+        "duration": 4,
+        "start": 183,
+        "end": 187,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 2,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-2-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 2 science and telemetry activate",
+        "duration": 3,
+        "start": 187,
+        "end": 190,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 2,
+        "kind": "online"
+      },
+      {
+        "id": "probe-3-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 stabilizes nose first",
+        "duration": 4,
+        "start": 190,
+        "end": 194,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 3,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-3-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 impacts and emplaces",
+        "duration": 4,
+        "start": 194,
+        "end": 198,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 3,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-3-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 3 science and telemetry activate",
+        "duration": 3,
+        "start": 198,
+        "end": 201,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 3,
+        "kind": "online"
+      },
+      {
+        "id": "probe-4-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 4 stabilizes nose first",
+        "duration": 4,
+        "start": 201,
+        "end": 205,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 4,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-4-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 4 impacts and emplaces",
+        "duration": 4,
+        "start": 205,
+        "end": 209,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 4,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-4-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 4 science and telemetry activate",
+        "duration": 3,
+        "start": 209,
+        "end": 212,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 4,
+        "kind": "online"
+      },
+      {
+        "id": "probe-5-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 5 stabilizes nose first",
+        "duration": 4,
+        "start": 212,
+        "end": 216,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 5,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-5-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 5 impacts and emplaces",
+        "duration": 4,
+        "start": 216,
+        "end": 220,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 5,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-5-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 5 science and telemetry activate",
+        "duration": 3,
+        "start": 220,
+        "end": 223,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 5,
+        "kind": "online"
+      },
+      {
+        "id": "probe-6-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 6 stabilizes nose first",
+        "duration": 4,
+        "start": 223,
+        "end": 227,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 6,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-6-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 6 impacts and emplaces",
+        "duration": 4,
+        "start": 227,
+        "end": 231,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 6,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-6-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 6 science and telemetry activate",
+        "duration": 3,
+        "start": 231,
+        "end": 234,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 6,
+        "kind": "online"
+      },
+      {
+        "id": "probe-7-descent",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 7 stabilizes nose first",
+        "duration": 4,
+        "start": 234,
+        "end": 238,
+        "detail": "Illustrate descent and stabilization before impact; gyro/drogue effectiveness is not qualified.",
+        "probe": 7,
+        "kind": "descent"
+      },
+      {
+        "id": "probe-7-impact",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 7 impacts and emplaces",
+        "duration": 4,
+        "start": 238,
+        "end": 242,
+        "detail": "Show schematic penetration, with no numerical depth or survival claim.",
+        "probe": 7,
+        "kind": "impact"
+      },
+      {
+        "id": "probe-7-online",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Probe 7 science and telemetry activate",
+        "duration": 3,
+        "start": 242,
+        "end": 245,
+        "detail": "Activate the science sequence and retained-shroud antenna link in this demonstration.",
+        "probe": 7,
+        "kind": "online"
+      },
+      {
+        "id": "carrier-landing",
+        "group": "delivery",
+        "phase": "07 Probe delivery",
+        "label": "Carrier reaches the surface",
+        "duration": 4,
+        "start": 245,
+        "end": 249,
+        "detail": "Review carrier landing confirmation and latched history.",
+        "bit": 8
+      },
+      {
+        "id": "science-sample",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Soil into test and control vessels",
+        "duration": 6,
+        "start": 249,
+        "end": 255,
+        "detail": "Illustrate acquiring soil from the proposed 2–5 cm source zone and loading 0.25 cm³ into each vessel. This does not demonstrate sample acquisition.",
+        "scienceStage": "sample",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-blank",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Seal vessels and read blanks",
+        "duration": 6,
+        "start": 255,
+        "end": 261,
+        "detail": "Show no-soil controls and baseline counts, O₂ and pressure before dosing; keep controls distinct from the test vessel.",
+        "scienceStage": "blank",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-dose",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Add labeled gas",
+        "duration": 6,
+        "start": 261,
+        "end": 267,
+        "detail": "Illustrate separate ³H₂ and ¹⁴CO test channels and a defined time-zero count. No physical dosing or radioactive hardware is controlled.",
+        "scienceStage": "dose",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-incubate",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Incubation and continuous counts",
+        "duration": 12,
+        "start": 267,
+        "end": 279,
+        "detail": "Show a compressed incubation review segment: no water added, dark, −10 to 0 °C, 1–5 sols proposed. Playback seconds are not incubation time.",
+        "scienceStage": "incubate",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-trap",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Gas and product trap readout",
+        "duration": 6,
+        "start": 279,
+        "end": 285,
+        "detail": "Show gas counting and transfer to cold-water/CO₂ trap detectors. Counts identify retained label; they do not identify a molecule or prove biology.",
+        "scienceStage": "trap",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-retained",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Check retained-label balance",
+        "duration": 6,
+        "start": 285,
+        "end": 291,
+        "detail": "Illustrate the accounting question for label absent from gas and traps. Leaks and sorption remain alternative explanations; extraction would be needed to identify larger products.",
+        "scienceStage": "retained",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "science-controls",
+        "group": "science",
+        "phase": "08 Science operations",
+        "label": "Compare controls and qualify interpretation",
+        "duration": 6,
+        "start": 291,
+        "end": 297,
+        "detail": "Show test/control comparison and valid non-detection checks. A difference can motivate further investigation; it does not establish life.",
+        "scienceStage": "controls",
+        "protocol": "gas-trap"
+      },
+      {
+        "id": "data-buffer",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Buffer science and engineering data",
+        "duration": 5,
+        "start": 297,
+        "end": 302,
+        "detail": "Store per-probe identifiers, measurement records and confirmation history."
+      },
+      {
+        "id": "carrier-repeat",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Repeat carrier status telemetry",
+        "duration": 4,
+        "start": 302,
+        "end": 306,
+        "detail": "Repeat the cumulative carrier word when power and geometry permit; packet overhead is additional."
+      },
+      {
+        "id": "orbiter-relay",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "UHF relay to an assumed Mars orbiter",
+        "duration": 7,
+        "start": 306,
+        "end": 313,
+        "detail": "Show a conceptual orbiter link; access, compatibility and actual reception remain unverified."
+      },
+      {
+        "id": "earth-return",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Relay records onward to Earth",
+        "duration": 7,
+        "start": 313,
+        "end": 320,
+        "detail": "Illustrate onward data return without claiming a demonstrated Earth link or latency."
+      },
+      {
+        "id": "mission-complete",
+        "group": "return",
+        "phase": "09 Data return",
+        "label": "Mission walkthrough complete",
+        "duration": 3,
+        "start": 320,
+        "end": 323,
+        "detail": "All presentation delivery phases and the selected science workflow have been reviewed."
+      }
+    ],
+    "availability": "Recorded extracted phase map only; original slide deck not available in this workspace or located in connected Drive. Latest pitch revision not independently verified."
+  },
+  "configurations": {
+    "A": {
+      "mission": {
+        "orbitKm": 400,
+        "periapsisKm": 50,
+        "marginPct": 25,
+        "rho": 0.015,
+        "cd": 0.75,
+        "frequencyMHz": 400,
+        "rangeKm": 400,
+        "rfW": 10,
+        "txGain": 0,
+        "rxGain": 6,
+        "lossDb": 6,
+        "receiverDbm": -120,
+        "dutySec": 1,
+        "periodSec": 60,
+        "paEfficiency": 0.4,
+        "inertia": 1.5,
+        "jetN": 0.1,
+        "leverM": 0.25,
+        "ispSec": 65,
+        "jetSeconds": 60,
+        "averageW": 0.2,
+        "energyWh": 20,
+        "name": "Late 2028 precursor",
+        "vehicles": 1,
+        "count": 3,
+        "wetKg": 20,
+        "probeKg": 1.999266924395893,
+        "diameterM": 0.8,
+        "heightM": 0.745588093706481,
+        "pcmChuteM": 1.5,
+        "probeChuteM": 0.5,
+        "operationHours": 24,
+        "bufferMB": 64,
+        "targetRadiusKm": 100,
+        "suspendedKg": 20,
+        "massScale": 0.9996334621979466
+      },
+      "flight": {
+        "minOrbits": 3,
+        "maxOrbits": 20,
+        "inclinationDeg": 30,
+        "initialLongitudeDeg": 0,
+        "targetLatDeg": 0,
+        "targetLonDeg": 0,
+        "targetToleranceKm": 100,
+        "initialArgumentDeg": 0,
+        "jetN": 0.1,
+        "jetIsp": 65,
+        "separationJets": 2,
+        "separationDv": 0.2,
+        "separationClearanceM": 20,
+        "slewDeg": 90,
+        "heatSlewDeg": 180,
+        "inertiaA": 1.5,
+        "inertiaB": 3.75,
+        "leverM": 0.25,
+        "gasMarginPct": 20,
+        "tankLitres": 0.4348120000000001,
+        "tankBar": 200,
+        "tankMinBar": 20,
+        "tankKelvin": 293,
+        "leakPctDay": 0,
+        "AthrustN": 100,
+        "AimpulseNs": 2000,
+        "Aisp": 225,
+        "BburnSec": 12.8,
+        "Bisp": 250,
+        "BoxidizerFuel": 4,
+        "propReservePct": 25,
+        "moduleDryA": 1.5,
+        "moduleDryB": 3,
+        "extractionAltM": 10000,
+        "releaseAltM": 5000,
+        "releaseCadenceSec": 2,
+        "carrierDryA": 2.9989003865938395,
+        "carrierDryB": 8,
+        "probeDelaySec": 1.5,
+        "inflateSec": 2,
+        "windMps": 0,
+        "rho0": 0.015,
+        "scaleHeightM": 11000,
+        "sampleStep": 0.5,
+        "entryStep": 0.25,
+        "entryCd": 1.5,
+        "tpsDensity": 250,
+        "tpsCp": 1200,
+        "tpsK": 0.15,
+        "tpsThicknessM": 0.015,
+        "surfaceLayerM": 0.002,
+        "emissivity": 0.85,
+        "initialTempK": 210,
+        "noseRadiusM": 0.2,
+        "shoulderRadiusM": 0.07,
+        "shoulderFlowFactor": 0.45
+      }
+    },
+    "B": {
+      "mission": {
+        "orbitKm": 400,
+        "periapsisKm": 50,
+        "marginPct": 25,
+        "rho": 0.015,
+        "cd": 0.75,
+        "frequencyMHz": 400,
+        "rangeKm": 400,
+        "rfW": 10,
+        "txGain": 0,
+        "rxGain": 6,
+        "lossDb": 6,
+        "receiverDbm": -120,
+        "dutySec": 1,
+        "periodSec": 60,
+        "paEfficiency": 0.4,
+        "inertia": 3.75,
+        "jetN": 0.1,
+        "leverM": 0.25,
+        "ispSec": 65,
+        "jetSeconds": 60,
+        "averageW": 0.2,
+        "energyWh": 20,
+        "name": "2031 science mission",
+        "vehicles": 2,
+        "count": 7,
+        "wetKg": 50,
+        "probeKg": 2,
+        "diameterM": 0.8,
+        "heightM": 0.745588093706481,
+        "pcmChuteM": 2,
+        "probeChuteM": 0.5,
+        "operationHours": 72,
+        "bufferMB": 256,
+        "targetRadiusKm": 50,
+        "suspendedKg": 50
+      },
+      "flight": {
+        "minOrbits": 3,
+        "maxOrbits": 20,
+        "inclinationDeg": 30,
+        "initialLongitudeDeg": 0,
+        "targetLatDeg": 0,
+        "targetLonDeg": 0,
+        "targetToleranceKm": 100,
+        "initialArgumentDeg": 0,
+        "jetN": 0.1,
+        "jetIsp": 65,
+        "separationJets": 2,
+        "separationDv": 0.2,
+        "separationClearanceM": 20,
+        "slewDeg": 90,
+        "heatSlewDeg": 180,
+        "inertiaA": 1.5,
+        "inertiaB": 3.75,
+        "leverM": 0.25,
+        "gasMarginPct": 20,
+        "tankLitres": 0.4348120000000001,
+        "tankBar": 200,
+        "tankMinBar": 20,
+        "tankKelvin": 293,
+        "leakPctDay": 0,
+        "AthrustN": 100,
+        "AimpulseNs": 2000,
+        "Aisp": 225,
+        "BburnSec": 12.8,
+        "Bisp": 250,
+        "BoxidizerFuel": 4,
+        "propReservePct": 25,
+        "moduleDryA": 1.5,
+        "moduleDryB": 3,
+        "extractionAltM": 10000,
+        "releaseAltM": 5000,
+        "releaseCadenceSec": 2,
+        "carrierDryA": 3,
+        "carrierDryB": 8,
+        "probeDelaySec": 1.5,
+        "inflateSec": 2,
+        "windMps": 0,
+        "rho0": 0.015,
+        "scaleHeightM": 11000,
+        "sampleStep": 0.5,
+        "entryStep": 0.25,
+        "entryCd": 1.5,
+        "tpsDensity": 250,
+        "tpsCp": 1200,
+        "tpsK": 0.15,
+        "tpsThicknessM": 0.015,
+        "surfaceLayerM": 0.002,
+        "emissivity": 0.85,
+        "initialTempK": 210,
+        "noseRadiusM": 0.2,
+        "shoulderRadiusM": 0.07,
+        "shoulderFlowFactor": 0.45
+      }
+    }
+  },
+  "precursorAllocation": {
+    "wetKg": 20,
+    "propellantKg": 0.9064144115359364,
+    "nitrogenKg": 0.1,
+    "dryKg": 1.5,
+    "propulsionKg": 2.5064144115359364,
+    "scale": 0.9996334621979466,
+    "allocations": [
+      {
+        "name": "Probes",
+        "sourceKg": 6,
+        "kg": 5.997800773187679
+      },
+      {
+        "name": "Aeroshell and cover",
+        "sourceKg": 3,
+        "kg": 2.9989003865938395
+      },
+      {
+        "name": "TPS and insulation",
+        "sourceKg": 2,
+        "kg": 1.9992669243958932
+      },
+      {
+        "name": "PCM and restraints",
+        "sourceKg": 1.5,
+        "kg": 1.4994501932969198
+      },
+      {
+        "name": "Parachutes and deployment",
+        "sourceKg": 1.2,
+        "kg": 1.1995601546375358
+      },
+      {
+        "name": "Deorbit propulsion",
+        "sourceKg": 2.5,
+        "kg": 2.5064144115359364
+      },
+      {
+        "name": "GNC avionics and power",
+        "sourceKg": 1.7,
+        "kg": 1.6993768857365092
+      },
+      {
+        "name": "Communications and harness",
+        "sourceKg": 0.7,
+        "kg": 0.6997434235385626
+      },
+      {
+        "name": "Integration and uncertainty reserve",
+        "sourceKg": 1.4,
+        "kg": 1.3994868470771251
+      }
+    ],
+    "probeTotalKg": 5.997800773187679,
+    "carrierDryKg": 2.9989003865938395
+  },
+  "sourceHashes": {
+    "src/mission-settings.mjs": "2b4534b943eebb6455a29bb7711344565adabac374c59d20daf91e7210e3180f",
+    "src/revision51-model.mjs": "9f9de60e396b65ce5f50b325c8a069182589d4d0f3dcf47cf0f3858e48d8c01b",
+    "src/flight-model.mjs": "e42309125d9803f600324904aaa41e11d2b430f0bc3cc750d5fd0c83f06ceed1",
+    "src/aeroshell-geometry.mjs": "e7389c68d3ab7e9894263bfc5e56e2c84fd602d0f6e28d9c9e27b8bef03e54e9",
+    "src/precursor-mass.mjs": "143a831bed74e56eed8a103f06f4ce2787f907c33eab8cdab0b623b15150ae74",
+    "src/architecture-data.mjs": "2bae005867f1c1c81faa02e5ec3d00f12910443a31391df46a99f1032abe3bdf",
+    "src/science-review.mjs": "daf0870bd22e841264c2fe727ed0335b332ace4314adf4a50369231d113001f4",
+    "data/revision51/presentation_phase_map.json": "7a0914fe78e70825bc0ffd786dc7eb04bda07ece26d2dfbdee1059e9ac1d7522",
+    "data/revision51/requirements.json": "6f7955d9c37db215ea63ba63e6f040c60e6e03b13074c93d87b272bf9fe94b47"
+  },
+  "architecture": [
+    {
+      "id": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "tag": "SCIENCE NODE",
+      "subtitle": "Independent probe with a drogue chute, antenna structure and local science capability.",
+      "lanes": [
+        "SAMPLE / ENVIRONMENT",
+        "SCIENCE / ELECTRONICS",
+        "POWER / COMMUNICATIONS"
+      ],
+      "nodes": [
+        {
+          "title": "Sample acquisition",
+          "lines": [
+            "Nose/intake and sample path",
+            "Mass + depth provenance required",
+            "Access is not nose penetration"
+          ]
+        },
+        {
+          "title": "Chambers + fluid paths",
+          "lines": [
+            "Separate test and control paths",
+            "Gas / liquid / solid containment",
+            "Valves, seals and filters: trade"
+          ]
+        },
+        {
+          "title": "Battery + power bus",
+          "lines": [
+            "Usable capacity is an assumption",
+            "Regulated rails + peak buffering",
+            "Heater / assay energy unresolved"
+          ]
+        },
+        {
+          "title": "Environment sensors",
+          "lines": [
+            "Sample + detector temperature",
+            "Chamber pressure / state history",
+            "Hydration condition: validate"
+          ]
+        },
+        {
+          "title": "Detector + analog front end",
+          "lines": [
+            "Scintillator + SiPM candidate",
+            "Bias compensation + pulse readout",
+            "Blank / isotope calibration"
+          ]
+        },
+        {
+          "title": "Probe controller + memory",
+          "lines": [
+            "Acquisition timing + watchdog",
+            "Raw counts / spectra + metadata",
+            "Reset-safe records required"
+          ]
+        },
+        {
+          "title": "Drogue chute + structure",
+          "lines": [
+            "Probe canopy + attachment hardware",
+            "Opening loads and clearance: verify",
+            "Impact-resistant instrument shell"
+          ]
+        },
+        {
+          "title": "Thermal enclosure",
+          "lines": [
+            "Sample and detector are distinct",
+            "Insulation + heater trade",
+            "Thermal response not yet solved"
+          ]
+        },
+        {
+          "title": "Antenna structure + UHF",
+          "lines": [
+            "Self-contained antenna support",
+            "RF feed / geometry: design trade",
+            "Independent buffered science downlink"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "sample"
+        ],
+        [
+          3,
+          4,
+          "signal"
+        ],
+        [
+          4,
+          5,
+          "signal"
+        ],
+        [
+          2,
+          5,
+          "power"
+        ],
+        [
+          5,
+          8,
+          "signal"
+        ],
+        [
+          2,
+          7,
+          "power"
+        ],
+        [
+          7,
+          4,
+          "power"
+        ],
+        [
+          6,
+          0,
+          "sample"
+        ]
+      ],
+      "contract": [
+        "Sample → chamber → recovered fraction",
+        "Sensor / AFE → controller → records",
+        "Power stays local after release"
+      ],
+      "sequence": [
+        "Release → impact → health assessment",
+        "Acquire controls + sample → assay",
+        "Preserve raw data → attempt relay"
+      ],
+      "limits": [
+        "Benner outline B(g)–(m); BIO-P01–10",
+        "Rev09 PRB / SYS / COM; no flight BOM",
+        "Assay sensitivity / survival unverified"
+      ]
+    },
+    {
+      "id": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "tag": "SCIENCE NODE",
+      "subtitle": "A proposed auditable acquisition pipeline; no onboard life/no-life verdict.",
+      "lanes": [
+        "MISSION / INPUTS",
+        "ASSAY / PROCESSING",
+        "DATA / ASSURANCE"
+      ],
+      "nodes": [
+        {
+          "title": "Boot + identity",
+          "lines": [
+            "Probe ID, firmware and calibration",
+            "Validate configuration / memory",
+            "Time origin and reset cause"
+          ]
+        },
+        {
+          "title": "Health + experiment gates",
+          "lines": [
+            "Check energy and sensor validity",
+            "Confirm containment readiness",
+            "Inhibit invalid experiment states"
+          ]
+        },
+        {
+          "title": "Schedule + power manager",
+          "lines": [
+            "Budget incubation / heater load",
+            "Reserve energy for data return",
+            "Pause or stop on resource limits"
+          ]
+        },
+        {
+          "title": "Sample / control registry",
+          "lines": [
+            "Track mass, source and channel ID",
+            "Keep blanks and tests separate",
+            "Record acquisition history"
+          ]
+        },
+        {
+          "title": "Assay state machine",
+          "lines": [
+            "Prepare → baseline → incubation",
+            "Separate extraction alternatives",
+            "Log every transition / failure"
+          ]
+        },
+        {
+          "title": "Signal acquisition service",
+          "lines": [
+            "Pulse / count / spectrum records",
+            "Bias + temperature + live time",
+            "Dead time / quality flags"
+          ]
+        },
+        {
+          "title": "Calibration + reduction",
+          "lines": [
+            "Blank / efficiency / recovery",
+            "Isotope-response matrix: required",
+            "Uncertain outputs remain qualified"
+          ]
+        },
+        {
+          "title": "Persistent science journal",
+          "lines": [
+            "Raw data + versioned corrections",
+            "Checksums + reset-safe storage",
+            "No invented counts or yields"
+          ]
+        },
+        {
+          "title": "Packet + relay service",
+          "lines": [
+            "Sequence numbers + probe identity",
+            "Queue / retry / prioritize records",
+            "Do not infer reception from Tx"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "signal"
+        ],
+        [
+          1,
+          2,
+          "command"
+        ],
+        [
+          3,
+          4,
+          "signal"
+        ],
+        [
+          4,
+          5,
+          "command"
+        ],
+        [
+          5,
+          6,
+          "signal"
+        ],
+        [
+          6,
+          7,
+          "signal"
+        ],
+        [
+          7,
+          8,
+          "signal"
+        ],
+        [
+          2,
+          4,
+          "command"
+        ]
+      ],
+      "contract": [
+        "Raw measurements precede correction",
+        "Calibration version follows each result",
+        "Commands and measured states differ"
+      ],
+      "sequence": [
+        "Boot → qualify → execute selected assay",
+        "Acquire → reduce → retain raw record",
+        "Retry return; report censored outcomes"
+      ],
+      "limits": [
+        "BIO-01 / 04 / 05 / 07 / 11",
+        "State logic proposed, not flight code",
+        "LOD / inference thresholds unspecified"
+      ]
+    },
+    {
+      "id": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "tag": "EXPENDABLE CONTROL MODULE",
+      "subtitle": "Separation and two attitude turns before the expendable module is discarded.",
+      "lanes": [
+        "NAVIGATION / SUPPLY",
+        "CONTROL / PROPULSION",
+        "INTERFACES / INHIBITS"
+      ],
+      "nodes": [
+        {
+          "title": "Optical + inertial sensing",
+          "lines": [
+            "Camera / MEMS estimation concept",
+            "Time-tagged attitude observations",
+            "Orbit knowledge source: confirm"
+          ]
+        },
+        {
+          "title": "GNC compute split",
+          "lines": [
+            "SBC estimation / planning",
+            "Independent MCU control authority",
+            "Watchdog + command arbitration"
+          ]
+        },
+        {
+          "title": "Main deorbit propulsion",
+          "lines": [
+            "A fixed motor; B sized alternative",
+            "Ignition path and monitor sensors",
+            "Solid / hybrid choice unresolved"
+          ]
+        },
+        {
+          "title": "Nitrogen tank + feed",
+          "lines": [
+            "Initial trade: 0.100 kg N₂",
+            "Pressure / temperature assumptions",
+            "Regulator + plumbing: qualify"
+          ]
+        },
+        {
+          "title": "Six cold-gas jets",
+          "lines": [
+            "Paired translation and torque",
+            "Allocation + valve drivers required",
+            "Scalar budget is not 6-DOF"
+          ]
+        },
+        {
+          "title": "Ignition + jettison barriers",
+          "lines": [
+            "Independent hardware inhibits",
+            "Readiness / confirmation paths",
+            "Post-turn module separation"
+          ]
+        },
+        {
+          "title": "Module power + harness",
+          "lines": [
+            "Power boundary to capsule: define",
+            "Energy / peak-current allocation",
+            "Safe connectors and grounding"
+          ]
+        },
+        {
+          "title": "Mechanical attachment",
+          "lines": [
+            "Main-thrust and jet load paths",
+            "Capsule/module separation plane",
+            "Clearance / recontact: verify"
+          ]
+        },
+        {
+          "title": "Capsule handover interface",
+          "lines": [
+            "Event history + state estimate",
+            "Entry-attitude confirmation",
+            "No cold jets after jettison"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "signal"
+        ],
+        [
+          1,
+          2,
+          "command"
+        ],
+        [
+          3,
+          4,
+          "power"
+        ],
+        [
+          1,
+          4,
+          "command"
+        ],
+        [
+          1,
+          5,
+          "command"
+        ],
+        [
+          5,
+          8,
+          "signal"
+        ],
+        [
+          6,
+          1,
+          "power"
+        ],
+        [
+          7,
+          8,
+          "command"
+        ]
+      ],
+      "contract": [
+        "N₂ → feed → independently driven jets",
+        "SBC estimate → MCU → gated actuation",
+        "Confirmation → capsule handover"
+      ],
+      "sequence": [
+        "01 Stage separation translation",
+        "02 Retroburn alignment → burn",
+        "03 Entry alignment → jettison"
+      ],
+      "limits": [
+        "Rev09 GNC / EDL; integration INT-01–03",
+        "90° / 180° turns are editable assumptions",
+        "Tank, actuator and thrust curves unqualified"
+      ]
+    },
+    {
+      "id": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "tag": "EXPENDABLE CONTROL MODULE",
+      "subtitle": "Explicit sequencing for all three cold-gas maneuvers and a gated retroburn.",
+      "lanes": [
+        "ESTIMATE / PLAN",
+        "CONTROL / SEQUENCE",
+        "MONITOR / TRANSFER"
+      ],
+      "nodes": [
+        {
+          "title": "Boot + host separation gate",
+          "lines": [
+            "Validate state and power readiness",
+            "Confirm approved separation event",
+            "Latch host-release history"
+          ]
+        },
+        {
+          "title": "Maneuver 1: separation",
+          "lines": [
+            "Paired jets translate clear of host",
+            "Budget Δv + pulse allowance",
+            "Confirm clearance before slew"
+          ]
+        },
+        {
+          "title": "Navigation + target planner",
+          "lines": [
+            "Ingest orbit / attitude estimates",
+            "Select permitted burn opportunity",
+            "Reject unqualified corridor"
+          ]
+        },
+        {
+          "title": "Maneuver 2: burn alignment",
+          "lines": [
+            "Rest-to-rest turn; default 90°",
+            "Closed-loop controller required",
+            "Pointing / health gate to ignition"
+          ]
+        },
+        {
+          "title": "Retroburn state machine",
+          "lines": [
+            "Arm only through approved gates",
+            "Ignition → monitor → cutoff",
+            "A fixed-impulse / B sized model"
+          ]
+        },
+        {
+          "title": "Maneuver 3: entry alignment",
+          "lines": [
+            "Separate turn; default 180°",
+            "Retain gas and module until done",
+            "Confirm entry attitude"
+          ]
+        },
+        {
+          "title": "Fault / inhibit supervisor",
+          "lines": [
+            "Watchdog and sensor consistency",
+            "Abort / safe-state authority",
+            "No software-only ignition credit"
+          ]
+        },
+        {
+          "title": "Mass + gas accounting",
+          "lines": [
+            "Book 3 withdrawals separately",
+            "Retain entry-turn gas during burn",
+            "Pressure reserve / deficit flags"
+          ]
+        },
+        {
+          "title": "Handover + jettison",
+          "lines": [
+            "Commit state / confirmation history",
+            "Jettison after final turn + delay",
+            "Disable absent actuators"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "command"
+        ],
+        [
+          1,
+          2,
+          "signal"
+        ],
+        [
+          2,
+          3,
+          "command"
+        ],
+        [
+          3,
+          4,
+          "command"
+        ],
+        [
+          4,
+          5,
+          "command"
+        ],
+        [
+          5,
+          8,
+          "command"
+        ],
+        [
+          6,
+          4,
+          "command"
+        ],
+        [
+          7,
+          5,
+          "signal"
+        ]
+      ],
+      "contract": [
+        "Measured confirmation ≠ command sent",
+        "Gas accounting follows physical phase",
+        "Authority ends at module jettison"
+      ],
+      "sequence": [
+        "Translate → estimate / wait → align",
+        "Burn → reorient heat shield",
+        "Handover → jettison → passive entry"
+      ],
+      "limits": [
+        "flight-model.mjs / gasUsage reference",
+        "Schematic software, not flight firmware",
+        "No reliability or stability claim"
+      ]
+    },
+    {
+      "id": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "tag": "ENTRY / PROTECTION SYSTEM",
+      "subtitle": "Protect the loaded carrier through entry, then provide a clear extraction path.",
+      "lanes": [
+        "ENTRY / STRUCTURE",
+        "SENSING / SEPARATION",
+        "CARRIER INTERFACES"
+      ],
+      "nodes": [
+        {
+          "title": "Aeroshell + heat shield",
+          "lines": [
+            "Ø 0.8 m · 70° forebody half-angle",
+            "TPS / insulation / structural shell",
+            "Material and thickness: trades"
+          ]
+        },
+        {
+          "title": "Entry sensing + avionics",
+          "lines": [
+            "Acceleration / temperature concept",
+            "Pressure / altitude estimation trade",
+            "Independent timing / health path"
+          ]
+        },
+        {
+          "title": "Carrier restraint interface",
+          "lines": [
+            "Launch and entry load transfer",
+            "Loaded carrier packaging envelope",
+            "A: 3 / B: 7 source probes"
+          ]
+        },
+        {
+          "title": "Cover + release mechanism",
+          "lines": [
+            "Top opening / extraction clearance",
+            "Independent release inhibits",
+            "Latch and separation confirmation"
+          ]
+        },
+        {
+          "title": "Passive entry configuration",
+          "lines": [
+            "Shield-forward attitude imposed",
+            "Low-CG / aerodynamic concept",
+            "Stability must be demonstrated"
+          ]
+        },
+        {
+          "title": "Extraction chute interface",
+          "lines": [
+            "Canopy deployment / load paths",
+            "Pull carrier clear of shell",
+            "Opening loads not qualified"
+          ]
+        },
+        {
+          "title": "Retro attachment plane",
+          "lines": [
+            "Defined expendable-module boundary",
+            "Harness separation + load transfer",
+            "No jet authority after removal"
+          ]
+        },
+        {
+          "title": "Power + event handover",
+          "lines": [
+            "Source of event history: define",
+            "Separate vehicle/carrier ownership",
+            "Do not duplicate mass allocations"
+          ]
+        },
+        {
+          "title": "Discarded aeroshell",
+          "lines": [
+            "Separate descent / clearance path",
+            "Carrier and probes retain autonomy",
+            "No post-discard capsule solution"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          4,
+          "sample"
+        ],
+        [
+          1,
+          3,
+          "command"
+        ],
+        [
+          3,
+          5,
+          "command"
+        ],
+        [
+          5,
+          2,
+          "sample"
+        ],
+        [
+          6,
+          7,
+          "signal"
+        ],
+        [
+          7,
+          2,
+          "signal"
+        ],
+        [
+          2,
+          8,
+          "sample"
+        ]
+      ],
+      "contract": [
+        "Retro state → capsule entry readiness",
+        "Cover clear → chute / carrier extract",
+        "Carrier departs; shell discarded"
+      ],
+      "sequence": [
+        "Retro removed → atmospheric entry",
+        "Heat / decelerate → extraction gate",
+        "Open cover → extract → discard shell"
+      ],
+      "limits": [
+        "Rev09 STR / EDL / PCM requirements",
+        "125 km interface; extraction editable",
+        "Passive stability / TPS not validated"
+      ]
+    },
+    {
+      "id": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "tag": "ENTRY / PROTECTION SYSTEM",
+      "subtitle": "A functional allocation for entry monitoring and safe extraction; ownership is a trade.",
+      "lanes": [
+        "HANDOVER / MONITOR",
+        "GATES / SEQUENCE",
+        "RECORD / SAFE STATE"
+      ],
+      "nodes": [
+        {
+          "title": "Receive retro handover",
+          "lines": [
+            "Latch burn / entry-attitude state",
+            "Verify module-detached evidence",
+            "Retain time and event continuity"
+          ]
+        },
+        {
+          "title": "Entry monitoring function",
+          "lines": [
+            "Acquire available flight sensors",
+            "Tag acceleration / temperatures",
+            "Track sensor and state validity"
+          ]
+        },
+        {
+          "title": "Entry phase estimator",
+          "lines": [
+            "Time / altitude / condition gates",
+            "Use qualified navigation evidence",
+            "Do not trigger from animation time"
+          ]
+        },
+        {
+          "title": "Deployment inhibit logic",
+          "lines": [
+            "Approved deployment envelope",
+            "Cover / chute / carrier readiness",
+            "Independent hardware barriers"
+          ]
+        },
+        {
+          "title": "Cover-release sequence",
+          "lines": [
+            "Command when gate is satisfied",
+            "Await clear / latch confirmation",
+            "Timeout → configured safe response"
+          ]
+        },
+        {
+          "title": "Carrier extraction sequence",
+          "lines": [
+            "Command chute / extraction path",
+            "Confirm carrier separation event",
+            "Prevent conflicting actuation"
+          ]
+        },
+        {
+          "title": "Event + diagnostic recorder",
+          "lines": [
+            "Commands and confirmations logged",
+            "Preserve fault / sensor snapshots",
+            "Transfer before interface loss"
+          ]
+        },
+        {
+          "title": "Ownership / power boundary",
+          "lines": [
+            "Host avionics vs carrier: allocate",
+            "No assumed duplicate flight CPU",
+            "Software execution location open"
+          ]
+        },
+        {
+          "title": "End-of-service handling",
+          "lines": [
+            "Mark aeroshell discarded",
+            "No later capsule telemetry credit",
+            "Carrier operates independently"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "signal"
+        ],
+        [
+          1,
+          2,
+          "signal"
+        ],
+        [
+          2,
+          3,
+          "command"
+        ],
+        [
+          3,
+          4,
+          "command"
+        ],
+        [
+          4,
+          5,
+          "command"
+        ],
+        [
+          5,
+          8,
+          "command"
+        ],
+        [
+          6,
+          7,
+          "signal"
+        ],
+        [
+          7,
+          5,
+          "signal"
+        ]
+      ],
+      "contract": [
+        "Physical gate drives deployment logic",
+        "Confirm cover clear before extraction",
+        "History follows the retained carrier"
+      ],
+      "sequence": [
+        "Handover → monitor → qualify gate",
+        "Cover release → confirm → extract",
+        "Transfer history → end shell service"
+      ],
+      "limits": [
+        "Rev09 EDL / PCM; source phase map",
+        "Concept responsibility allocation",
+        "Dedicated capsule computer not selected"
+      ]
+    },
+    {
+      "id": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "tag": "RELEASE / TELEMETRY PLATFORM",
+      "subtitle": "Retain probes during descent, release independently, and return mission status.",
+      "lanes": [
+        "DESCENT / MECHANICS",
+        "RELEASE / ELECTRONICS",
+        "ENERGY / TELEMETRY"
+      ],
+      "nodes": [
+        {
+          "title": "Carrier frame + probe bays",
+          "lines": [
+            "Retained dry mass allocation",
+            "A: 3 / B: 7 probe positions",
+            "Restraints and center-of-mass trade"
+          ]
+        },
+        {
+          "title": "Release actuators + sensing",
+          "lines": [
+            "Independent probe release paths",
+            "Positive drop confirmations",
+            "Prevent adjacent-probe contact"
+          ]
+        },
+        {
+          "title": "Carrier parachute + risers",
+          "lines": [
+            "Source A 1.5 m / B 2.0 m",
+            "Extraction and descent load paths",
+            "Inflation / opening loads: verify"
+          ]
+        },
+        {
+          "title": "Altitude / descent sensing",
+          "lines": [
+            "Release-height estimate required",
+            "Motion / attitude health concept",
+            "Ground/contact indication trade"
+          ]
+        },
+        {
+          "title": "Carrier MCU + event memory",
+          "lines": [
+            "Inherit upstream confirmation bits",
+            "Latch each probe-drop event",
+            "Reset-safe cumulative history"
+          ]
+        },
+        {
+          "title": "Radio + antenna",
+          "lines": [
+            "High-peak, low-duty UHF concept",
+            "Carrier status word / framing",
+            "Receiver and access assumptions"
+          ]
+        },
+        {
+          "title": "Independent power + buffer",
+          "lines": [
+            "Separate post-extraction supply",
+            "Pulse buffer + regulated rails",
+            "Peak energy and lifetime: size"
+          ]
+        },
+        {
+          "title": "Harness + data handover",
+          "lines": [
+            "Capsule event-history transfer",
+            "Power/interface disconnect boundary",
+            "Avoid duplicated mass accounting"
+          ]
+        },
+        {
+          "title": "Released independent probes",
+          "lines": [
+            "Each retains canopy and antenna",
+            "Independent science power / control",
+            "No required carrier-to-probe relay"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          3,
+          4,
+          "signal"
+        ],
+        [
+          4,
+          1,
+          "command"
+        ],
+        [
+          1,
+          8,
+          "sample"
+        ],
+        [
+          4,
+          5,
+          "signal"
+        ],
+        [
+          6,
+          5,
+          "power"
+        ],
+        [
+          6,
+          4,
+          "power"
+        ],
+        [
+          7,
+          4,
+          "signal"
+        ],
+        [
+          2,
+          0,
+          "sample"
+        ]
+      ],
+      "contract": [
+        "Upstream history → retained MCU",
+        "Release command → drop confirmation",
+        "Local energy → buffered UHF attempt"
+      ],
+      "sequence": [
+        "Extract under chute → establish state",
+        "Release probes sequentially",
+        "Land → retain / repeat status"
+      ],
+      "limits": [
+        "Rev09 PCM / COM; status bit mapping",
+        "9 core bits A / 13 bits B; framing extra",
+        "Geometry / antenna / pulse power open"
+      ]
+    },
+    {
+      "id": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "tag": "RELEASE / TELEMETRY PLATFORM",
+      "subtitle": "Independent post-extraction control with latched history and conservative radio status.",
+      "lanes": [
+        "START / NAVIGATE",
+        "RELEASE / EVENT LOGIC",
+        "POWER / RETURN"
+      ],
+      "nodes": [
+        {
+          "title": "Boot + history reconciliation",
+          "lines": [
+            "Receive capsule event history",
+            "Verify checksum / sequence / ID",
+            "Recover retained state on reset"
+          ]
+        },
+        {
+          "title": "Descent / release estimator",
+          "lines": [
+            "Monitor altitude and health",
+            "Wait for approved release gate",
+            "Source model: first gate + cadence"
+          ]
+        },
+        {
+          "title": "Release scheduler",
+          "lines": [
+            "Address one probe at a time",
+            "Command → confirm → advance",
+            "Timeout / jam handling required"
+          ]
+        },
+        {
+          "title": "Cumulative status machine",
+          "lines": [
+            "Preserve bit 8: carrier landed",
+            "Bits 5–7: probe drops 1–3",
+            "Append bits 9–12: drops 4–7"
+          ]
+        },
+        {
+          "title": "Confirmation / fault journal",
+          "lines": [
+            "Log command and sensed evidence",
+            "Never latch drop from command only",
+            "Retain cause and timing metadata"
+          ]
+        },
+        {
+          "title": "Packet and retry service",
+          "lines": [
+            "Nominal 60 s status cadence",
+            "Add framing / error detection",
+            "Tx attempt is not reception"
+          ]
+        },
+        {
+          "title": "Power + peak-buffer manager",
+          "lines": [
+            "Gate bursts on stored energy",
+            "Brownout protection / watchdog",
+            "Separate local carrier lifetime"
+          ]
+        },
+        {
+          "title": "Contact / blackout policy",
+          "lines": [
+            "Queue during blocked link periods",
+            "Use qualified access assumptions",
+            "Do not promise continuous relay"
+          ]
+        },
+        {
+          "title": "Surface status operations",
+          "lines": [
+            "Latch landing if confirmed",
+            "Repeat latest valid status",
+            "End gracefully at energy limit"
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          "signal"
+        ],
+        [
+          1,
+          2,
+          "command"
+        ],
+        [
+          2,
+          4,
+          "signal"
+        ],
+        [
+          4,
+          3,
+          "signal"
+        ],
+        [
+          3,
+          5,
+          "signal"
+        ],
+        [
+          6,
+          5,
+          "command"
+        ],
+        [
+          7,
+          5,
+          "command"
+        ],
+        [
+          5,
+          8,
+          "signal"
+        ]
+      ],
+      "contract": [
+        "Cumulative history survives separation",
+        "Synthetic website bits ≠ flight sensing",
+        "Probe science records remain distinct"
+      ],
+      "sequence": [
+        "Initialize → estimate → release / confirm",
+        "Latch independent carrier landing",
+        "Buffer → attempt / repeat status"
+      ],
+      "limits": [
+        "missionEvents / statusBits reference",
+        "Real timers / fault logic not simulated",
+        "No on-board life-detection inference"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "probe-hardware-01",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 1,
+      "title": "Sample acquisition",
+      "lines": [
+        "Nose/intake and sample path",
+        "Mass + depth provenance required",
+        "Access is not nose penetration"
+      ],
+      "lens": "sample",
+      "websiteProvisionalSourceIds": [
+        "PRB-004",
+        "PRB-006",
+        "PRB-008"
+      ],
+      "sourceRequirementIds": [
+        "PRB-004",
+        "PRB-006",
+        "PRB-008"
+      ]
+    },
+    {
+      "id": "probe-hardware-02",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 2,
+      "title": "Chambers + fluid paths",
+      "lines": [
+        "Separate test and control paths",
+        "Gas / liquid / solid containment",
+        "Valves, seals and filters: trade"
+      ],
+      "lens": "science",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-hardware-03",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 3,
+      "title": "Battery + power bus",
+      "lines": [
+        "Usable capacity is an assumption",
+        "Regulated rails + peak buffering",
+        "Heater / assay energy unresolved"
+      ],
+      "lens": "energy",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-009"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-009"
+      ]
+    },
+    {
+      "id": "probe-hardware-04",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 4,
+      "title": "Environment sensors",
+      "lines": [
+        "Sample + detector temperature",
+        "Chamber pressure / state history",
+        "Hydration condition: validate"
+      ],
+      "lens": "science",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-hardware-05",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 5,
+      "title": "Detector + analog front end",
+      "lines": [
+        "Scintillator + SiPM candidate",
+        "Bias compensation + pulse readout",
+        "Blank / isotope calibration"
+      ],
+      "lens": "detector",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-hardware-06",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 6,
+      "title": "Probe controller + memory",
+      "lines": [
+        "Acquisition timing + watchdog",
+        "Raw counts / spectra + metadata",
+        "Reset-safe records required"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "probe-hardware-07",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 7,
+      "title": "Drogue chute + structure",
+      "lines": [
+        "Probe canopy + attachment hardware",
+        "Opening loads and clearance: verify",
+        "Impact-resistant instrument shell"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "probe-hardware-08",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 8,
+      "title": "Thermal enclosure",
+      "lines": [
+        "Sample and detector are distinct",
+        "Insulation + heater trade",
+        "Thermal response not yet solved"
+      ],
+      "lens": "thermal",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-004",
+        "STR-005"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-004",
+        "STR-005"
+      ]
+    },
+    {
+      "id": "probe-hardware-09",
+      "diagram": "probe-hardware",
+      "vehicle": "Probe",
+      "kind": "Hardware",
+      "index": 9,
+      "title": "Antenna structure + UHF",
+      "lines": [
+        "Self-contained antenna support",
+        "RF feed / geometry: design trade",
+        "Independent buffered science downlink"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "probe-software-01",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 1,
+      "title": "Boot + identity",
+      "lines": [
+        "Probe ID, firmware and calibration",
+        "Validate configuration / memory",
+        "Time origin and reset cause"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "probe-software-02",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 2,
+      "title": "Health + experiment gates",
+      "lines": [
+        "Check energy and sensor validity",
+        "Confirm containment readiness",
+        "Inhibit invalid experiment states"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "probe-software-03",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 3,
+      "title": "Schedule + power manager",
+      "lines": [
+        "Budget incubation / heater load",
+        "Reserve energy for data return",
+        "Pause or stop on resource limits"
+      ],
+      "lens": "energy",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-009"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-009"
+      ]
+    },
+    {
+      "id": "probe-software-04",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 4,
+      "title": "Sample / control registry",
+      "lines": [
+        "Track mass, source and channel ID",
+        "Keep blanks and tests separate",
+        "Record acquisition history"
+      ],
+      "lens": "sample",
+      "websiteProvisionalSourceIds": [
+        "PRB-004",
+        "PRB-006",
+        "PRB-008"
+      ],
+      "sourceRequirementIds": [
+        "PRB-004",
+        "PRB-006",
+        "PRB-008"
+      ]
+    },
+    {
+      "id": "probe-software-05",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 5,
+      "title": "Assay state machine",
+      "lines": [
+        "Prepare → baseline → incubation",
+        "Separate extraction alternatives",
+        "Log every transition / failure"
+      ],
+      "lens": "science",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-software-06",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 6,
+      "title": "Signal acquisition service",
+      "lines": [
+        "Pulse / count / spectrum records",
+        "Bias + temperature + live time",
+        "Dead time / quality flags"
+      ],
+      "lens": "detector",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-software-07",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 7,
+      "title": "Calibration + reduction",
+      "lines": [
+        "Blank / efficiency / recovery",
+        "Isotope-response matrix: required",
+        "Uncertain outputs remain qualified"
+      ],
+      "lens": "detector",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-006",
+        "PRB-007"
+      ]
+    },
+    {
+      "id": "probe-software-08",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 8,
+      "title": "Persistent science journal",
+      "lines": [
+        "Raw data + versioned corrections",
+        "Checksums + reset-safe storage",
+        "No invented counts or yields"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "probe-software-09",
+      "diagram": "probe-software",
+      "vehicle": "Probe",
+      "kind": "Software",
+      "index": 9,
+      "title": "Packet + relay service",
+      "lines": [
+        "Sequence numbers + probe identity",
+        "Queue / retry / prioritize records",
+        "Do not infer reception from Tx"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "retro-hardware-01",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 1,
+      "title": "Optical + inertial sensing",
+      "lines": [
+        "Camera / MEMS estimation concept",
+        "Time-tagged attitude observations",
+        "Orbit knowledge source: confirm"
+      ],
+      "lens": "gnc",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-hardware-02",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 2,
+      "title": "GNC compute split",
+      "lines": [
+        "SBC estimation / planning",
+        "Independent MCU control authority",
+        "Watchdog + command arbitration"
+      ],
+      "lens": "gnc",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-hardware-03",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 3,
+      "title": "Main deorbit propulsion",
+      "lines": [
+        "A fixed motor; B sized alternative",
+        "Ignition path and monitor sensors",
+        "Solid / hybrid choice unresolved"
+      ],
+      "lens": "engine",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "retro-hardware-04",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 4,
+      "title": "Nitrogen tank + feed",
+      "lines": [
+        "Initial trade: 0.100 kg N₂",
+        "Pressure / temperature assumptions",
+        "Regulator + plumbing: qualify"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-hardware-05",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 5,
+      "title": "Six cold-gas jets",
+      "lines": [
+        "Paired translation and torque",
+        "Allocation + valve drivers required",
+        "Scalar budget is not 6-DOF"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-hardware-06",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 6,
+      "title": "Ignition + jettison barriers",
+      "lines": [
+        "Independent hardware inhibits",
+        "Readiness / confirmation paths",
+        "Post-turn module separation"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "retro-hardware-07",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 7,
+      "title": "Module power + harness",
+      "lines": [
+        "Power boundary to capsule: define",
+        "Energy / peak-current allocation",
+        "Safe connectors and grounding"
+      ],
+      "lens": "energy",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-009"
+      ],
+      "sourceRequirementIds": []
+    },
+    {
+      "id": "retro-hardware-08",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 8,
+      "title": "Mechanical attachment",
+      "lines": [
+        "Main-thrust and jet load paths",
+        "Capsule/module separation plane",
+        "Clearance / recontact: verify"
+      ],
+      "lens": "mass",
+      "websiteProvisionalSourceIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ],
+      "sourceRequirementIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ]
+    },
+    {
+      "id": "retro-hardware-09",
+      "diagram": "retro-hardware",
+      "vehicle": "Retro module",
+      "kind": "Hardware",
+      "index": 9,
+      "title": "Capsule handover interface",
+      "lines": [
+        "Event history + state estimate",
+        "Entry-attitude confirmation",
+        "No cold jets after jettison"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "retro-software-01",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 1,
+      "title": "Boot + host separation gate",
+      "lines": [
+        "Validate state and power readiness",
+        "Confirm approved separation event",
+        "Latch host-release history"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "retro-software-02",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 2,
+      "title": "Maneuver 1: separation",
+      "lines": [
+        "Paired jets translate clear of host",
+        "Budget Δv + pulse allowance",
+        "Confirm clearance before slew"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-software-03",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 3,
+      "title": "Navigation + target planner",
+      "lines": [
+        "Ingest orbit / attitude estimates",
+        "Select permitted burn opportunity",
+        "Reject unqualified corridor"
+      ],
+      "lens": "gnc",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-software-04",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 4,
+      "title": "Maneuver 2: burn alignment",
+      "lines": [
+        "Rest-to-rest turn; default 90°",
+        "Closed-loop controller required",
+        "Pointing / health gate to ignition"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-software-05",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 5,
+      "title": "Retroburn state machine",
+      "lines": [
+        "Arm only through approved gates",
+        "Ignition → monitor → cutoff",
+        "A fixed-impulse / B sized model"
+      ],
+      "lens": "engine",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "retro-software-06",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 6,
+      "title": "Maneuver 3: entry alignment",
+      "lines": [
+        "Separate turn; default 180°",
+        "Retain gas and module until done",
+        "Confirm entry attitude"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-software-07",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 7,
+      "title": "Fault / inhibit supervisor",
+      "lines": [
+        "Watchdog and sensor consistency",
+        "Abort / safe-state authority",
+        "No software-only ignition credit"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "retro-software-08",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 8,
+      "title": "Mass + gas accounting",
+      "lines": [
+        "Book 3 withdrawals separately",
+        "Retain entry-turn gas during burn",
+        "Pressure reserve / deficit flags"
+      ],
+      "lens": "gas",
+      "websiteProvisionalSourceIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ],
+      "sourceRequirementIds": [
+        "GNC-002",
+        "GNC-003",
+        "GNC-004"
+      ]
+    },
+    {
+      "id": "retro-software-09",
+      "diagram": "retro-software",
+      "vehicle": "Retro module",
+      "kind": "Software",
+      "index": 9,
+      "title": "Handover + jettison",
+      "lines": [
+        "Commit state / confirmation history",
+        "Jettison after final turn + delay",
+        "Disable absent actuators"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "capsule-hardware-01",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 1,
+      "title": "Aeroshell + heat shield",
+      "lines": [
+        "Ø 0.8 m · 70° forebody half-angle",
+        "TPS / insulation / structural shell",
+        "Material and thickness: trades"
+      ],
+      "lens": "entry",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ]
+    },
+    {
+      "id": "capsule-hardware-02",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 2,
+      "title": "Entry sensing + avionics",
+      "lines": [
+        "Acceleration / temperature concept",
+        "Pressure / altitude estimation trade",
+        "Independent timing / health path"
+      ],
+      "lens": "entry",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ]
+    },
+    {
+      "id": "capsule-hardware-03",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 3,
+      "title": "Carrier restraint interface",
+      "lines": [
+        "Launch and entry load transfer",
+        "Loaded carrier packaging envelope",
+        "A: 3 / B: 7 source probes"
+      ],
+      "lens": "mass",
+      "websiteProvisionalSourceIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ],
+      "sourceRequirementIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ]
+    },
+    {
+      "id": "capsule-hardware-04",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 4,
+      "title": "Cover + release mechanism",
+      "lines": [
+        "Top opening / extraction clearance",
+        "Independent release inhibits",
+        "Latch and separation confirmation"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "capsule-hardware-05",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 5,
+      "title": "Passive entry configuration",
+      "lines": [
+        "Shield-forward attitude imposed",
+        "Low-CG / aerodynamic concept",
+        "Stability must be demonstrated"
+      ],
+      "lens": "entry",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ]
+    },
+    {
+      "id": "capsule-hardware-06",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 6,
+      "title": "Extraction chute interface",
+      "lines": [
+        "Canopy deployment / load paths",
+        "Pull carrier clear of shell",
+        "Opening loads not qualified"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "capsule-hardware-07",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 7,
+      "title": "Retro attachment plane",
+      "lines": [
+        "Defined expendable-module boundary",
+        "Harness separation + load transfer",
+        "No jet authority after removal"
+      ],
+      "lens": "mass",
+      "websiteProvisionalSourceIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ],
+      "sourceRequirementIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ]
+    },
+    {
+      "id": "capsule-hardware-08",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 8,
+      "title": "Power + event handover",
+      "lines": [
+        "Source of event history: define",
+        "Separate vehicle/carrier ownership",
+        "Do not duplicate mass allocations"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "capsule-hardware-09",
+      "diagram": "capsule-hardware",
+      "vehicle": "Capsule",
+      "kind": "Hardware",
+      "index": 9,
+      "title": "Discarded aeroshell",
+      "lines": [
+        "Separate descent / clearance path",
+        "Carrier and probes retain autonomy",
+        "No post-discard capsule solution"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "capsule-software-01",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 1,
+      "title": "Receive retro handover",
+      "lines": [
+        "Latch burn / entry-attitude state",
+        "Verify module-detached evidence",
+        "Retain time and event continuity"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "capsule-software-02",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 2,
+      "title": "Entry monitoring function",
+      "lines": [
+        "Acquire available flight sensors",
+        "Tag acceleration / temperatures",
+        "Track sensor and state validity"
+      ],
+      "lens": "entry",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ]
+    },
+    {
+      "id": "capsule-software-03",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 3,
+      "title": "Entry phase estimator",
+      "lines": [
+        "Time / altitude / condition gates",
+        "Use qualified navigation evidence",
+        "Do not trigger from animation time"
+      ],
+      "lens": "entry",
+      "websiteProvisionalSourceIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ],
+      "sourceRequirementIds": [
+        "STR-003",
+        "STR-005",
+        "STR-008"
+      ]
+    },
+    {
+      "id": "capsule-software-04",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 4,
+      "title": "Deployment inhibit logic",
+      "lines": [
+        "Approved deployment envelope",
+        "Cover / chute / carrier readiness",
+        "Independent hardware barriers"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "capsule-software-05",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 5,
+      "title": "Cover-release sequence",
+      "lines": [
+        "Command when gate is satisfied",
+        "Await clear / latch confirmation",
+        "Timeout → configured safe response"
+      ],
+      "lens": "safety",
+      "websiteProvisionalSourceIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ],
+      "sourceRequirementIds": [
+        "GNC-004",
+        "EDL-007",
+        "PCM-006"
+      ]
+    },
+    {
+      "id": "capsule-software-06",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 6,
+      "title": "Carrier extraction sequence",
+      "lines": [
+        "Command chute / extraction path",
+        "Confirm carrier separation event",
+        "Prevent conflicting actuation"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "capsule-software-07",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 7,
+      "title": "Event + diagnostic recorder",
+      "lines": [
+        "Commands and confirmations logged",
+        "Preserve fault / sensor snapshots",
+        "Transfer before interface loss"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "capsule-software-08",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 8,
+      "title": "Ownership / power boundary",
+      "lines": [
+        "Host avionics vs carrier: allocate",
+        "No assumed duplicate flight CPU",
+        "Software execution location open"
+      ],
+      "lens": "mass",
+      "websiteProvisionalSourceIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ],
+      "sourceRequirementIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ]
+    },
+    {
+      "id": "capsule-software-09",
+      "diagram": "capsule-software",
+      "vehicle": "Capsule",
+      "kind": "Software",
+      "index": 9,
+      "title": "End-of-service handling",
+      "lines": [
+        "Mark aeroshell discarded",
+        "No later capsule telemetry credit",
+        "Carrier operates independently"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "carrier-hardware-01",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 1,
+      "title": "Carrier frame + probe bays",
+      "lines": [
+        "Retained dry mass allocation",
+        "A: 3 / B: 7 probe positions",
+        "Restraints and center-of-mass trade"
+      ],
+      "lens": "mass",
+      "websiteProvisionalSourceIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ],
+      "sourceRequirementIds": [
+        "STR-004",
+        "STR-006",
+        "STR-007"
+      ]
+    },
+    {
+      "id": "carrier-hardware-02",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 2,
+      "title": "Release actuators + sensing",
+      "lines": [
+        "Independent probe release paths",
+        "Positive drop confirmations",
+        "Prevent adjacent-probe contact"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-hardware-03",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 3,
+      "title": "Carrier parachute + risers",
+      "lines": [
+        "Source A 1.5 m / B 2.0 m",
+        "Extraction and descent load paths",
+        "Inflation / opening loads: verify"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-hardware-04",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 4,
+      "title": "Altitude / descent sensing",
+      "lines": [
+        "Release-height estimate required",
+        "Motion / attitude health concept",
+        "Ground/contact indication trade"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-hardware-05",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 5,
+      "title": "Carrier MCU + event memory",
+      "lines": [
+        "Inherit upstream confirmation bits",
+        "Latch each probe-drop event",
+        "Reset-safe cumulative history"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "carrier-hardware-06",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 6,
+      "title": "Radio + antenna",
+      "lines": [
+        "High-peak, low-duty UHF concept",
+        "Carrier status word / framing",
+        "Receiver and access assumptions"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "carrier-hardware-07",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 7,
+      "title": "Independent power + buffer",
+      "lines": [
+        "Separate post-extraction supply",
+        "Pulse buffer + regulated rails",
+        "Peak energy and lifetime: size"
+      ],
+      "lens": "energy",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-009"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-009"
+      ]
+    },
+    {
+      "id": "carrier-hardware-08",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 8,
+      "title": "Harness + data handover",
+      "lines": [
+        "Capsule event-history transfer",
+        "Power/interface disconnect boundary",
+        "Avoid duplicated mass accounting"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "carrier-hardware-09",
+      "diagram": "carrier-hardware",
+      "vehicle": "Carrier",
+      "kind": "Hardware",
+      "index": 9,
+      "title": "Released independent probes",
+      "lines": [
+        "Each retains canopy and antenna",
+        "Independent science power / control",
+        "No required carrier-to-probe relay"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-software-01",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 1,
+      "title": "Boot + history reconciliation",
+      "lines": [
+        "Receive capsule event history",
+        "Verify checksum / sequence / ID",
+        "Recover retained state on reset"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "carrier-software-02",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 2,
+      "title": "Descent / release estimator",
+      "lines": [
+        "Monitor altitude and health",
+        "Wait for approved release gate",
+        "Source model: first gate + cadence"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-software-03",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 3,
+      "title": "Release scheduler",
+      "lines": [
+        "Address one probe at a time",
+        "Command → confirm → advance",
+        "Timeout / jam handling required"
+      ],
+      "lens": "descent",
+      "websiteProvisionalSourceIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ],
+      "sourceRequirementIds": [
+        "EDL-004",
+        "EDL-005",
+        "EDL-006"
+      ]
+    },
+    {
+      "id": "carrier-software-04",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 4,
+      "title": "Cumulative status machine",
+      "lines": [
+        "Preserve bit 8: carrier landed",
+        "Bits 5–7: probe drops 1–3",
+        "Append bits 9–12: drops 4–7"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "carrier-software-05",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 5,
+      "title": "Confirmation / fault journal",
+      "lines": [
+        "Log command and sensed evidence",
+        "Never latch drop from command only",
+        "Retain cause and timing metadata"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    },
+    {
+      "id": "carrier-software-06",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 6,
+      "title": "Packet and retry service",
+      "lines": [
+        "Nominal 60 s status cadence",
+        "Add framing / error detection",
+        "Tx attempt is not reception"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "carrier-software-07",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 7,
+      "title": "Power + peak-buffer manager",
+      "lines": [
+        "Gate bursts on stored energy",
+        "Brownout protection / watchdog",
+        "Separate local carrier lifetime"
+      ],
+      "lens": "energy",
+      "websiteProvisionalSourceIds": [
+        "PRB-003",
+        "PRB-009"
+      ],
+      "sourceRequirementIds": [
+        "PRB-003",
+        "PRB-009"
+      ]
+    },
+    {
+      "id": "carrier-software-08",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 8,
+      "title": "Contact / blackout policy",
+      "lines": [
+        "Queue during blocked link periods",
+        "Use qualified access assumptions",
+        "Do not promise continuous relay"
+      ],
+      "lens": "data",
+      "websiteProvisionalSourceIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ],
+      "sourceRequirementIds": [
+        "SYS-001",
+        "SYS-002",
+        "COM-01"
+      ]
+    },
+    {
+      "id": "carrier-software-09",
+      "diagram": "carrier-software",
+      "vehicle": "Carrier",
+      "kind": "Software",
+      "index": 9,
+      "title": "Surface status operations",
+      "lines": [
+        "Latch landing if confirmed",
+        "Repeat latest valid status",
+        "End gracefully at energy limit"
+      ],
+      "lens": "status",
+      "websiteProvisionalSourceIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ],
+      "sourceRequirementIds": [
+        "GNC-001",
+        "GNC-004",
+        "GNC-005"
+      ]
+    }
+  ],
+  "sourceRequirements": [
+    {
+      "id": "MIS-001",
+      "applies": "A",
+      "text": "The mission shall deliver three independent 2.00 kg probes to the Martian surface.  (Established)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-002",
+      "applies": "B",
+      "text": "The mission shall deliver two independent aeroshell vehicles, each carrying seven 2.00 kg probes.  (Established)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-003",
+      "applies": "Both",
+      "text": "Each vehicle shall remain mechanically and electrically compatible with the approved host upper-stage separation interface.  (Proposed)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-004",
+      "applies": "Both",
+      "text": "Each vehicle shall execute a defined separation, orbit determination, deorbit, entry, descent and probe-release sequence.  (Proposed)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-005",
+      "applies": "Both",
+      "text": "The mission shall document allowable launch, cruise, orbit and atmospheric entry environments before design freeze.  (Proposed)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-006",
+      "applies": "Both",
+      "text": "The mission shall define target landing regions, delivery dispersion and science-site acceptance criteria.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume an initial 100 km-radius target region for A and 50 km-radius for each B vehicle, with 95% of Monte Carlo landings within the respective region; exclude scientifically prohibited terrain.",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-007",
+      "applies": "Both",
+      "text": "The program shall maintain independent mass, power, volume, thermal and delta-v budgets with margins approved at PDR.  (Proposed)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "MIS-008",
+      "applies": "Both",
+      "text": "The flight system shall implement autonomous safe-state and abort/inhibit logic for premature motor ignition and pyrotechnic deployment.  (Proposed)",
+      "section": "Mission and interfaces",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-001",
+      "applies": "A",
+      "text": "The nominal aeroshell outer diameter shall be 800 mm.  (Established)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-002",
+      "applies": "A",
+      "text": "The assembled aeroshell height shall be 600 mm, subject to confirmation of datum and inclusion of the upper cover.  (Established / clarify)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-003",
+      "applies": "A",
+      "text": "The lower heat shield shall retain the current baseline contour and include a nominal 70 mm radius transition to the upper-shell profile.  (Established / drawing needed)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-004",
+      "applies": "A",
+      "text": "The upper shell shall use aluminum alloy; grade, thickness, insulation and joint design shall be selected by structural and aerothermal analysis.  (Established / derived)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-005",
+      "applies": "A",
+      "text": "The lower heat shield shall use a qualified ablative thermal-protection system, with material and thickness verified for the orbital-entry trajectory.  (Proposed)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-006",
+      "applies": "Both",
+      "text": "The carrier and all stowed probes shall fit within the aeroshell with verified deployment clearance and launch-load restraint.  (Proposed)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-007",
+      "applies": "A",
+      "text": "The upper cover opening shall provide unobstructed passage of the loaded probe carrier during ejection.  (Established)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-008",
+      "applies": "Both",
+      "text": "The aeroshell shall withstand launch, separation, deorbit, entry and deployment load cases with documented positive structural margins.  (Proposed)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "STR-009",
+      "applies": "Both",
+      "text": "All attachments across the heat shield shall preserve TPS integrity; sacrificial external DOM connections shall not require through-holes in the heat shield.  (Established / derived)",
+      "section": "Geometry and structures",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-001",
+      "applies": "A",
+      "text": "The deorbit module shall use one J-class solid rocket motor in the baseline configuration.  (Established)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-002",
+      "applies": "A",
+      "text": "The vehicle shall provide four reaction wheels for attitude control, with wheel-axis geometry and independent controllability verified.  (Established / verify)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-003",
+      "applies": "A",
+      "text": "The attitude solution shall fuse inertial MEMS gyro measurements with camera-derived Mars limb or feature observations and available Sun observations.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-004",
+      "applies": "Both",
+      "text": "The vehicle shall inhibit deorbit firing unless attitude, estimated orbit state, predicted entry corridor and propulsion readiness satisfy approved limits.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-005",
+      "applies": "Both",
+      "text": "The deorbit propulsion system shall provide the trajectory-specific required impulse and delta-v with defined dispersions and margin.  (Proposed assumption; verify by analysis and test) Planning baseline: For the assumed 300 km orbit and 50 km vacuum-periapsis proxy, use 60.3 m/s ideal delta-v, with 25% planning margin (75.4 m/s). At 50 kg B wet mass, the impulse-equivalent planning value is 3.77 kN s; actual delivered impulse must be calculated with rocket equation and a motor thrust curve.",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-006",
+      "applies": "A",
+      "text": "The sacrificial DOM shall mount beneath the heat shield without compromising the thermal-protection barrier.  (Established)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-007",
+      "applies": "B",
+      "text": "The hybrid-engine trade shall evaluate paraffin fuel, N2O oxidizer, tankage, feed system and ignition against the A solid-motor architecture.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-008",
+      "applies": "B",
+      "text": "If selected, the cold-gas attitude system shall include all thrusters, valves, plumbing, regulator and usable N2O/N2 gas mass in the budget.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-009",
+      "applies": "Both",
+      "text": "Attitude control shall account for momentum buildup, wheel saturation, deorbit disturbances and the absence or availability of desaturation actuators.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-010",
+      "applies": "Both",
+      "text": "Orbit and attitude estimation shall demonstrate observability during camera occultation, low-light conditions and changing Mars viewing geometry.  (Proposed)",
+      "section": "Deorbit and guidance",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-001",
+      "applies": "A",
+      "text": "The reference entry trajectory shall originate from approximately 300 km Mars orbit; actual entry interface and flight-path angle shall be determined by trajectory design.  (Established / derived)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-002",
+      "applies": "Both",
+      "text": "The aeroshell shall maintain a thermally and dynamically acceptable entry attitude throughout peak heating and deceleration.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-003",
+      "applies": "Both",
+      "text": "TPS sizing shall use trajectory-dependent convective and radiative heating, heat soak, ablation and aluminum-shell temperature limits.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-004",
+      "applies": "Both",
+      "text": "Parachute deployment shall occur only within verified Mach number, dynamic pressure and altitude envelopes.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-005",
+      "applies": "A",
+      "text": "The PCM recovery parachute shall have nominal 1.5 m diameter, pending Mars deployment and descent qualification.  (Established / verify)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-006",
+      "applies": "B",
+      "text": "The PCM recovery parachute shall use the 2.0 m candidate diameter pending vehicle-level mass and deployment analysis.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-007",
+      "applies": "Both",
+      "text": "The system shall safely separate the heat shield and upper cover in the commanded sequence without collision with the PCM or probes.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-008",
+      "applies": "Both",
+      "text": "The descent system shall determine probe release altitude using a qualified sensing and estimation method with defined uncertainty.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-009",
+      "applies": "Both",
+      "text": "Each probe shall deploy a nominal 0.5 m parachute, subject to terminal-speed and stability verification.  (Established / verify)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "EDL-010",
+      "applies": "Both",
+      "text": "The EDL analysis shall account for the low density and variability of the Martian atmosphere, winds, and landing-site elevation.  (Proposed)",
+      "section": "Entry and descent",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-001",
+      "applies": "A",
+      "text": "The PCM shall restrain three probes in vertical stowage until commanded release.  (Established)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-002",
+      "applies": "B",
+      "text": "Each PCM shall restrain seven probes in vertical stowage until commanded release.  (Established probe count; assumed packaging envelope) Planning baseline: Assume seven vertically stowed probes in a 3+3+1 arrangement. Verify fit inside the 800 mm diameter shell with a CAD swept-volume extraction study and positive clearance at maximum tolerance.",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-003",
+      "applies": "Both",
+      "text": "The PCM shall release probes individually, without mechanical interference, following an altitude-gated release schedule.  (Established / derived)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-004",
+      "applies": "Both",
+      "text": "The PCM shall remain retained through entry until its extraction conditions are met.  (Proposed)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-005",
+      "applies": "Both",
+      "text": "The carrier ejection system shall demonstrate cover clearance, parachute extraction and no contact with critical spacecraft elements.  (Proposed)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-006",
+      "applies": "Both",
+      "text": "Any pyrotechnic separation device shall have independent electrical inhibits and ground-safe handling provisions.  (Proposed)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PCM-007",
+      "applies": "Both",
+      "text": "Release sequencing shall provide an adjustable interval and shall be validated against descent rate, wind drift and probe separation.  (Proposed)",
+      "section": "Probe carrier and deployment",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-001",
+      "applies": "Both",
+      "text": "Each probe shall have a nominal overall length of 200 mm and main-body diameter of 50 mm.  (Established)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-002",
+      "applies": "Both",
+      "text": "Each probe shall include an upper shoulder of nominal 75 mm diameter over approximately the upper third of its length.  (Established)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-003",
+      "applies": "Both",
+      "text": "Each probe flight mass shall be 2.00 kg including science payload, power, structure, radio, parachute and consumables.  (Established)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-004",
+      "applies": "Both",
+      "text": "Each probe shall retain a pointed lower penetration head and deploy in an attitude that supports near-vertical surface penetration.  (Established / derived)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-005",
+      "applies": "Both",
+      "text": "Each probe shall provide a tether-integrated antenna connection from the center of its upper end.  (Established)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-006",
+      "applies": "Both",
+      "text": "The probe shall protect the science sample and sample pathway from contamination introduced by spacecraft materials or entry heating.  (Proposed)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-007",
+      "applies": "B",
+      "text": "The science system shall execute a documented life-detection measurement protocol with controls, blanks and decision thresholds.  (Proposed)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-008",
+      "applies": "B",
+      "text": "The science system shall obtain, transfer and analyze Martian material with demonstrated sample mass, depth, integrity and instrument sensitivity.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a 0.5 g minimum collected sample from 20-100 mm below the local surface per probe, with 80% transfer efficiency and duplicate blank/control measurements. These are science-planning targets requiring laboratory validation.",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-009",
+      "applies": "Both",
+      "text": "The probe shall provide energy storage and environmental protection sufficient for the approved post-landing operating duration.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume 24 h A and 72 h B surface operation, with a 20% usable energy margin after temperature derating and communications duty cycle.",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-010",
+      "applies": "Both",
+      "text": "The science and communications system shall operate under defined dust deposition, temperature and illumination cases.  (Proposed)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "PRB-011",
+      "applies": "Both",
+      "text": "The probe shall demonstrate survival of the predicted impact loads across the defined regolith and ice mechanical-property envelope.  (Proposed)",
+      "section": "Probe and science",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-001",
+      "applies": "Both",
+      "text": "The mission shall define an end-to-end telecommunications path, link budget, data storage and expected data return to Earth.  (Proposed assumption; verify by analysis and test) Planning baseline: Assume a Mars-orbit relay link using a UHF compatible transceiver, onboard buffering of at least 64 MB A / 256 MB B per probe, and at least 95% data retention until relay opportunity; final interoperability depends on relay provider agreement.",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-002",
+      "applies": "Both",
+      "text": "Each probe shall provide unique identification, health telemetry and time-tagged science data.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-003",
+      "applies": "Both",
+      "text": "The program shall determine applicable Mars planetary-protection classification with the responsible authority before flight hardware processing.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-004",
+      "applies": "B",
+      "text": "Life-detection sample-contacting hardware shall meet the approved biological contamination and recontamination prevention requirements.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-005",
+      "applies": "Both",
+      "text": "The program shall maintain bidirectional traceability from mission objectives through requirements, design, test evidence and anomalies.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-006",
+      "applies": "Both",
+      "text": "Each flight-critical release, ignition, attitude and descent function shall be verified by analysis and representative integrated testing.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-007",
+      "applies": "Both",
+      "text": "The program shall perform thermal-vacuum, vibration, shock, deployment and impact qualification at documented environments.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "SYS-008",
+      "applies": "Both",
+      "text": "The program shall approve a fault tree and hazard controls for propulsion, pressure vessels, pyrotechnics and inadvertent Mars impact.  (Proposed)",
+      "section": "Communications, protection and verification",
+      "verification": "See source requirement and Section 9; evidence pending"
+    },
+    {
+      "id": "GNC-01",
+      "applies": "Both; independently scale B",
+      "text": "Provide calibrated camera measurements of the Mars limb/horizon, apparent disk size and identifiable large-scale surface features when visible; estimate attitude and orbital/ground-track state with uncertainty.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Hardware-in-the-loop image sequences, camera calibration and navigation-error budget."
+    },
+    {
+      "id": "GNC-02",
+      "applies": "Both; independently scale B",
+      "text": "Observe the Sun when within the camera field of view and safe sensor exposure limits; fuse Sun-direction observations with Mars observations and inertial data.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Illumination, occultation and Sun-avoidance simulation; attitude observability analysis."
+    },
+    {
+      "id": "GNC-03",
+      "applies": "Both; independently scale B",
+      "text": "Use a MEMS gyroscope/IMU to propagate attitude between optical observations; estimate gyro bias and bound drift when Mars and Sun are temporarily unavailable.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Sensor calibration, thermal drift tests and outage simulations."
+    },
+    {
+      "id": "GNC-04",
+      "applies": "Both; independently scale B",
+      "text": "Run deterministic guidance, navigation and control on a Raspberry Pi-class processor, with ML-assisted Mars limb / landmark detection; safety-critical control shall not rely solely on unverified ML output.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Processor latency, worst-case execution time, fault injection and independently checked state-estimation performance."
+    },
+    {
+      "id": "GNC-05",
+      "applies": "Both; independently scale B",
+      "text": "Control spacecraft attitude using six independently commanded cold-gas thrusters, with verified torque authority about three axes and fault-tolerant command inhibits.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Thruster geometry and torque matrix, impulse-bit, propellant budget and closed-loop simulations."
+    },
+    {
+      "id": "GNC-06",
+      "applies": "Both; independently scale B",
+      "text": "Verify attitude and orbital-state confidence before deorbit ignition; inhibit ignition if navigation confidence, pointing error or thruster health is outside approved limits.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Monte Carlo deorbit targeting, timing, safe-mode and inhibit tests."
+    },
+    {
+      "id": "GNC-07",
+      "applies": "Both; independently scale B",
+      "text": "Define six-thruster implementation as a proposed architecture change. Reconcile against the existing four-reaction-wheel baseline and Configuration B hybrid oxidizer / cold-gas supply; do not assume N2O thrusters share a tank without regulator, phase-state and compatibility qualification.",
+      "section": "7A.1 Camera / MEMS / onboard ML navigation and attitude",
+      "verification": "Signed trade study and updated P&ID, mass, power and propulsion interface control documents."
+    },
+    {
+      "id": "EDL-01",
+      "applies": "Both; independently scale B",
+      "text": "Establish the entry corridor, worst-case heating rate, integrated heat load, dynamic pressure, deceleration, aero-moments and center-of-pressure movement for dispersions in Mars atmosphere and vehicle properties.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Trajectory/CFD/aerothermal analyses with stated margins and uncertainties."
+    },
+    {
+      "id": "EDL-02",
+      "applies": "Both; independently scale B",
+      "text": "Size and qualify the ablative heat shield, insulation and aluminum backshell for peak and integrated heat exposure; maintain internal electronics, batteries, PCM and probe temperatures within qualified limits.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Thermal network model, material response, thermal-vacuum and representative heating tests."
+    },
+    {
+      "id": "EDL-03",
+      "applies": "Both; independently scale B",
+      "text": "Maintain positive structural margins for peak aerodynamic pressure, deceleration, vibration, thermal gradients, fastener and joint loads, including the 70 mm heat-shield-to-backshell transition.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Finite-element load cases, structural proof and coupled thermal-stress assessment."
+    },
+    {
+      "id": "EDL-04",
+      "applies": "Both; independently scale B",
+      "text": "Ensure the external deorbit/hybrid propulsion module does not penetrate the heat shield and that sacrificial attachments cannot cause unacceptable TPS damage, destabilization or debris impact during entry.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Interface drawings, separation dynamics and TPS continuity inspection."
+    },
+    {
+      "id": "EDL-05",
+      "applies": "Both; independently scale B",
+      "text": "Demonstrate stable heat-shield-forward entry and adequate control authority before atmospheric interface; prohibit reliance on active cold-gas control after its external hardware is sacrificed.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Six-degree-of-freedom entry stability and control-transition simulations."
+    },
+    {
+      "id": "EDL-06",
+      "applies": "Both; independently scale B",
+      "text": "Verify cover release, parachute deployment and PCM ejection only after thermal, dynamic-pressure and deceleration conditions are inside qualified release envelopes.",
+      "section": "7A.2 Reentry aerothermal and structural load management",
+      "verification": "Event sequencing tests, entry/descent Monte Carlo and separation tests."
+    },
+    {
+      "id": "COM-01",
+      "applies": "Both; independently scale B",
+      "text": "Integrate a low-average-duty-cycle, high-peak-power radio transmitter and energy buffer within the probe carrier, with a defined antenna, receiver/relay target and link budget.",
+      "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+      "verification": "RF link analysis including Mars distance, geometry, antenna pointing and peak power draw."
+    },
+    {
+      "id": "COM-02",
+      "applies": "Both; independently scale B",
+      "text": "Transmit the nine-bit cumulative mission-status payload nominally once per 60 seconds; queue events between transmissions and repeat the latest status until carrier power is exhausted or mission complete.",
+      "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+      "verification": "Packet encoding and timing tests, outage and reset tests."
+    },
+    {
+      "id": "COM-03",
+      "applies": "Both; independently scale B",
+      "text": "Provide independent energy storage sized for transmitter peak power without browning out avionics or release actuators; limit average consumption by duty cycling.",
+      "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+      "verification": "Power integrity, pulse load and battery thermal tests."
+    },
+    {
+      "id": "COM-04",
+      "applies": "Both; independently scale B",
+      "text": "Record event time and confidence locally, protect the latched status word against resets, and distinguish command issuance from sensor-confirmed completion.",
+      "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+      "verification": "Fault injection and event confirmation tests."
+    },
+    {
+      "id": "COM-05",
+      "applies": "Both; independently scale B",
+      "text": "Do not credit reception during entry plasma blackout, antenna occlusion or carrier tumbling without validated link analysis; store and retransmit status when a link becomes available.",
+      "section": "7A.3 Probe-carrier low-data-rate high-peak-power transmitter",
+      "verification": "End-to-end link availability and missed-pass analysis."
+    },
+    {
+      "id": "DER-001",
+      "applies": "Both",
+      "text": "The program shall produce a 6-DOF Mars orbit-to-surface trajectory Monte Carlo, including atmospheric dispersions, prior to propulsion selection. Verification: Analysis.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Analysis."
+    },
+    {
+      "id": "DER-002",
+      "applies": "A",
+      "text": "The propulsion design shall demonstrate delivered delta-v and pointing error with a 20 kg initial mass and explicit propulsion margin. Verification: Analysis + test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Analysis + test."
+    },
+    {
+      "id": "DER-003",
+      "applies": "Both",
+      "text": "The aeroshell shall have a validated coupled aerothermal and structural model including 600 mm upper shell, aluminum thermal limits, and 70 mm transition. Verification: Analysis + test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Analysis + test."
+    },
+    {
+      "id": "DER-004",
+      "applies": "Both",
+      "text": "The descent system shall meet qualified deployment Mach, dynamic-pressure, altitude and inflation-load limits; nominal chute diameters alone are not acceptance criteria. Verification: Analysis + test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Analysis + test."
+    },
+    {
+      "id": "DER-005",
+      "applies": "Both",
+      "text": "Each probe shall meet defined impact speed, attitude, penetration-depth and survival envelopes over specified soil/ice conditions. Verification: Test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Test."
+    },
+    {
+      "id": "DER-006",
+      "applies": "Both",
+      "text": "The navigation system shall quantify covariance and observability across periods without camera or Sun visibility. Verification: Simulation + test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Simulation + test."
+    },
+    {
+      "id": "DER-007",
+      "applies": "B",
+      "text": "Each life-detection measurement shall have documented blanks, contamination budgets, calibration, detection limits and false-positive controls. Verification: Test + review.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Test + review."
+    },
+    {
+      "id": "DER-008",
+      "applies": "Both",
+      "text": "The spacecraft shall demonstrate positive power and communication margins for the selected operating duration and geometry. Verification: Analysis + test.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Analysis + test."
+    },
+    {
+      "id": "DER-009",
+      "applies": "Both",
+      "text": "The program shall approve an end-to-end planetary protection implementation plan before hardware exposure to flight environments. Verification: Review.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Review."
+    },
+    {
+      "id": "DER-010",
+      "applies": "Both",
+      "text": "A complete requirement verification matrix shall define objective pass/fail criteria, owners and evidence for every MIS/STR/GNC/EDL/PCM/PRB/SYS/DER item. Verification: Inspection.",
+      "section": "9 Verification qualification and acceptance",
+      "verification": "Inspection."
+    }
+  ]
+}

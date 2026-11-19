@@ -1,0 +1,513 @@
+[
+  {
+    "before": "4. Mission operations and host interface",
+    "title": "3.1 Revision 5.1 simulation assumptions and authority",
+    "body": [
+      "This supplement records the implemented simulation model as of 15 November 2026. FDS-001 Rev0.9 remains the governing baseline. The supplement adds explicit analysis assumptions and software requirements; it does not select flight hardware or close the original qualification gates. Original source text, figures and numbered requirements are retained. Original statements about the earlier browser-only simulator describe that earlier implementation; this supplement governs the added calculated-flight panel.",
+      "Authority: Rev09 supplies the A/B wet masses, probe counts, geometry, nominal canopy sizes, 300 km orbit, 50 km vacuum-periapsis proxy, and 25% delta-v planning allowance [SIM-R1]. The user requested attitude-jet separation, heat-shield-forward alignment followed by main-engine firing, gas-versus-tank accounting, a 3–20 orbit targeting search, A/B engine calculations, center/shoulder temperatures, and every-step descent outputs on 15 November 2026 [SIM-R2]. The 10-slide FREYA presentation supplies the phase ordering and proposed science alternatives [SIM-R3].",
+      "All other values below are engineering trade assumptions unless attributed to Rev09. NASA sources support the stated physical relations, not the FREYA engine performance, tank selection, parachute qualification, material constants or target accuracy. The separate Freya Pathfinder Aeolus 2028 reference is excluded.",
+      "Mass boundaries: total wet mass includes initial cold gas and main propellant. Conservative separation/alignment gas demand including pulse allowance is removed before ignition. Module dry mass and remaining cold gas are removed before atmospheric entry. Carrier retained dry mass includes its retained chute and electronics; each 2 kg probe includes its own chute. Entry mass minus loaded carrier mass is the discarded shell/TPS/remaining hardware allocation. These assumed partitions require component-level closure against Section 6. No additional mass is added on top of wet mass for a reserve."
+    ],
+    "rows": [
+      [
+        "Environment",
+        "Spherical Mars, R=3,389,500 m; μ=4.2828×10^13 m³/s²; sidereal rotation period 88,642.6848 s; g0=9.80665 m/s². Rounded screening constants retained; not an ephemeris solution."
+      ],
+      [
+        "Orbit / target",
+        "300 km circular orbit, 50 km vacuum-periapsis proxy, 125 km entry interface; 30° inclination; initial argument and longitude 0°; target latitude/longitude 0°/0°. Search from 3 through 20 elapsed orbits. Tolerance 100 km by default in this shared comparison; Rev09 A/B source goals remain 100/50 km."
+      ],
+      [
+        "A propulsion",
+        "Fixed rectangular thrust 100 N, total impulse 1,280 N s, assumed Isp 225 s. No vendor motor or measured thrust curve is specified. Full burn, no arbitrary solid-motor cutoff."
+      ],
+      [
+        "B propulsion",
+        "Hybrid trade alternative: burn time 12.8 s; assumed Isp 250 s; oxidizer/fuel mass ratio 4.0; paraffin / N2O concept. Required thrust is solved. Scaled-solid versus hybrid architecture remains open."
+      ],
+      [
+        "Cold gas",
+        "Separate N2 supply; 6 conceptual jets, each 0.1 N; balanced pairs for translation and torque; lever 0.25 m; Isp 65 s; inertia A/B 1.5/3.75 kg m²; separation Δv 0.2 m/s; 20 m clearance; 90° rest-to-rest slew; 20% consumption allowance."
+      ],
+      [
+        "Tank",
+        "1.0 L internal volume, 200 bar absolute initial, 20 bar absolute minimum, 293 K, R_N2=296.8 J/(kg K), ideal-gas approximation; default leakage 0%/day. Pressure vessel/regulator mass is part of the module allocation. Not a selected or qualified tank."
+      ],
+      [
+        "Atmosphere / entry",
+        "ρ(h)=0.015 exp(−h/11,000) kg/m³; h in m; zero lift; Cd=1.5, 0.8 m shell diameter; atmosphere corotates with Mars projected into the orbital plane. Constant exponential atmosphere is an assumption, not a Mars weather model."
+      ],
+      [
+        "Discard / retained masses",
+        "External dry module A/B 1.5/3.0 kg; retained dry carrier A/B 3.0/8.0 kg. Entry masses and mass differences are calculated, not measured."
+      ],
+      [
+        "Descent",
+        "Extraction at 10,000 m above flat ground; first probe release at 5,000 m; subsequent releases every 2 s; carrier canopy starts inflating after 1 s and reaches full area over 2 s. Probe delay 1.5 s, then 2 s inflation; Cd=0.75, carrier canopy A/B 1.5/2.0 m, probe canopy 0.5 m; wind 0 m/s."
+      ],
+      [
+        "Thermal material proxy",
+        "Density 250 kg/m³; cp 1,200 J/(kg K); k 0.15 W/(m K); total thickness 0.015 m; surface layer 0.002 m; emissivity 0.85; initial/background temperature 210 K. These generic constants do not identify SLA-561V or PICA."
+      ],
+      [
+        "Thermal shape proxy",
+        "Center nose radius 0.20 m (assumed); shoulder local radius 0.07 m (Rev09 contour reference used as proxy); shoulder flow multiplier 0.45 (assumed). Side-radius temperature means shoulder surface temperature."
+      ],
+      [
+        "Integration / playback",
+        "RK4: main burn 0.05 s, vacuum coast 1 s, entry 0.25 s, descent 0.25 s; thermal explicit substeps ≤0.025 s. Step is shortened at altitude, release and ground events. Physical phase intervals have equal compressed playback length; displayed mission time is real elapsed seconds."
+      ]
+    ],
+    "headers": [
+      "Parameter",
+      "Value / interpretation"
+    ],
+    "anchor": "simulation-assumptions"
+  },
+  {
+    "before": "5. Subsystem design descriptions and interface constraints",
+    "title": "4.1 Simulation sequence and physical event timing",
+    "body": [
+      "The physical sequence is paired-jet separation, clearance coast, orbital opportunity search, attitude alignment, ignition, complete main-engine burn, external-module discard, passive coast, shield-forward atmospheric entry, cover/chute/carrier extraction, individual probe releases, overlapping probe/carrier descents, impact and later proposed science/data return. The seven delivery phases from presentation slide 7 remain in the separate presentation walkthrough.",
+      "After the 90° alignment, the shield outward normal is parallel to the forward velocity/reentry trajectory. Main-engine thrust is antiparallel to velocity; exhaust exits forward from the external module ahead of the shield. This is a schematic mounting assumption requiring plume and TPS-interface validation. The module is discarded five seconds after cutoff; no active cold-gas credit is taken after discard. The animation uses a balanced-pair attitude maneuver. It does not demonstrate full six-axis controllability.",
+      "Orbital dwell lasts until the selected search opportunity. The model neglects the small orbital perturbation due to the 0.2 m/s separation maneuver and omits active station keeping during the dwell. Alignment completes five seconds before ignition. Navigation and ignition gates in GNC-004/GNC-06 remain mandatory; the simulator does not model sensor confidence or authorize ignition.",
+      "Physical-flight time starts at separation command. The presentation walkthrough retains a separate synthetic review clock and conceptual science timing. Science counts, life detection, relay reception, soil penetration and survival are not generated by the flight solver."
+    ],
+    "rows": [
+      [
+        "Host clearance",
+        "110.00",
+        "125.00"
+      ],
+      [
+        "Alignment starts",
+        "85,816.20",
+        "41,279.52"
+      ],
+      [
+        "Main ignition",
+        "85,834.93",
+        "41,306.23"
+      ],
+      [
+        "Main cutoff",
+        "85,847.73",
+        "41,319.03"
+      ],
+      [
+        "External module detached",
+        "85,852.73",
+        "41,324.03"
+      ],
+      [
+        "125 km interface",
+        "87,802.26",
+        "43,384.21"
+      ],
+      [
+        "10 km carrier extraction",
+        "88,526.22",
+        "44,225.17"
+      ],
+      [
+        "Last probe impact",
+        "88,635.12",
+        "44,331.05"
+      ],
+      [
+        "Carrier reaches ground",
+        "88,706.01",
+        "44,371.87"
+      ]
+    ],
+    "headers": [
+      "Event",
+      "A elapsed seconds",
+      "B elapsed seconds"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "7B.2 Electronics and command authority",
+    "title": "7B.1.1 Paired-jet separation, alignment and tank calculation",
+    "body": [
+      "With two same-direction jets, F_sep=2F_j and a_sep=F_sep/m. For assumed separation Δv, t_sep=mΔv/F_sep; powered clearance d_power=0.5Δv t_sep. Additional coast time=max[0,(d_clear−d_power)/Δv]. The translation is a first-order constant-mass estimate. A produces 2 m powered travel then 90 s coast; B produces 5 m then 75 s coast.",
+      "With an opposed pair, torque τ=2F_j l. Angular acceleration α=τ/I. For rest-to-rest bang-bang rotation through θ=π/2, t_slew=2 sqrt(θ/α). Accelerate for half the time, reverse torque, and brake for the other half. A/B torque is 0.050 N m. This differs from the original one-jet 0.025 N m / 19.4 s A example, which is retained as an independent source screen.",
+      "Consumption follows m_gas=integral(F_total dt)/(Isp g0) [SIM-R4]. Multiply each maneuver by 1.20 for the assumed pulse allowance. Translation: mΔv/(Isp g0) ×1.20. Rotation: 2F_j t_slew/(Isp g0) ×1.20. The allowance is conservatively counted as expended mass; it is not a closed-loop impulse-bit simulation.",
+      "Ideal tank mass is m0=P0 V/(R_N2 T). Unavailable residual is m_min=P_min V/(R_N2 T); usable=m0−m_min. Remaining mass=m0−m_sep−m_slew−m_leak; remaining pressure=m_remaining R_N2 T/V. Optional leakage law m_leak=m0[1−exp(−L t_wait/86400)], with L expressed as fractional loss/day; default zero. The optional leakage does not feed back into the trajectory mass propagation, so nonzero-leak cases are only gas-budget sensitivity cases.",
+      "Real-gas compressibility at 200 bar, blowdown cooling, regulator dropout, line volumes, leakage qualification, minimum impulse bit, plume impingement and momentum disturbances are omitted. The source 0.15 kg usable +0.05 kg trapped gas example is not the same as the new ideal 1 L tank assumption; do not combine them. Tank comparison is per vehicle, so the two-vehicle B mission requires two complete supplies."
+    ],
+    "rows": [
+      [
+        "Initial / usable gas (g)",
+        "229.98 / 206.99",
+        "229.98 / 206.99"
+      ],
+      [
+        "Separation pulse / total clearance (s)",
+        "20.00 / 110.00",
+        "50.00 / 125.00"
+      ],
+      [
+        "Separation gas (g)",
+        "7.530",
+        "18.826"
+      ],
+      [
+        "Slew duration (s)",
+        "13.729",
+        "21.708"
+      ],
+      [
+        "Slew gas (g)",
+        "5.169",
+        "8.173"
+      ],
+      [
+        "Total gas used (g)",
+        "12.699",
+        "26.999"
+      ],
+      [
+        "Remaining gas / pressure",
+        "217.285 g / 188.96 bar",
+        "202.986 g / 176.52 bar"
+      ],
+      [
+        "Reserve above minimum (g)",
+        "194.287",
+        "179.987"
+      ]
+    ],
+    "headers": [
+      "Quantity",
+      "A",
+      "B per vehicle"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "7B.6 Verification gates and engineering limitations",
+    "title": "7B.5.1 Calculated-flight software requirements",
+    "body": [
+      "The following SIM requirements apply to the Revision 5.1 engineering simulation. They supplement the original 91 source requirements and do not replace flight-system acceptance criteria. Software verification is analysis and executable tests; hardware acceptance still follows Section 9.",
+      "SIM-001: The simulation shall show attitude-jet translation away from the second stage and report relative speed, powered duration and clearance time. Trace MIS-003/004 and GNC-05. Verify impulse/translation identity and phase display.",
+      "SIM-002: The simulation shall align the heat shield with the reentry trajectory, brake the slew to rest, and fire the main engine retrograde only after alignment. It shall remove cold-gas credit after module discard. Trace GNC-004/006, EDL-05. Verify event ordering and displayed vectors.",
+      "SIM-003: The simulation shall report separation and alignment gas separately for A and B, tank initial/usable/residual gas, remaining gas and pressure, with every assumed gas/tank parameter. Trace GNC-008 and MIS-007. Verify gas/pressure mass closure.",
+      "SIM-004: The simulation shall search 3–20 elapsed orbits for a target opportunity, report the closest miss, orbit phase and elapsed wait, and explicitly report a tolerance miss or inaccessible latitude. Trace MIS-006 and DER-001. Verify search bounds and unreachable-target tests.",
+      "SIM-005: A shall burn the full assumed fixed thrust and impulse, showing duration, evolving mass and velocity. B shall calculate thrust for a selected duration and separate fuel, oxidizer and planning-reserve quantities. Trace GNC-001/005/007 and DER-002. Verify the gravity-free rocket equation, full-impulse identity and mixture mass closure.",
+      "SIM-006: The simulation shall plot center and shoulder surface temperatures versus entry time, identify local-radius and material assumptions, and label the preliminary nonablating model. Trace EDL-003, EDL-01/02/03 and DER-003. Verify equilibrium, finite values and time-step refinement; qualified material-response validation remains pending.",
+      "SIM-007: The simulation shall retain and expose altitude and velocity at every integration step for carrier and every probe, in a common time frame. It shall remove probe mass from the carrier at release and preserve inherited release position and velocity. Trace PCM-003/007, EDL-008/009 and SYS-002. Verify mass conservation, release continuity, monotonic time and zero-altitude ground interpolation.",
+      "SIM-008: The simulation shall provide complete JSON and all-descent CSV exports, physical-time labels, reproducible defaults, source citations and links from the website to this supplement. It shall distinguish the physical clock from compressed presentation playback. Trace SYS-005 and DER-010. Verify exports, configuration switching and document links."
+    ],
+    "rows": null,
+    "headers": [
+      "Parameter",
+      "Value / interpretation"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "8.2 Propulsion implication",
+    "title": "8.1.1 Orbit targeting equations and search method",
+    "body": [
+      "Let r_a=R+300,000 m and r_p=R+50,000 m. Semi-major axis a=(r_a+r_p)/2. Circular speed v_c=sqrt(μ/r_a); retrograde transfer speed v_a=sqrt[μ(2/r_a−1/a)]; required nominal Δv=v_c−v_a=60.272620 m/s. Planning value is 1.25Δv=75.340775 m/s. Orbital period T=2πsqrt(r_a³/μ)=6,804.046036 s. The actual finite burn is propagated rather than instantaneously applying this ideal impulse.",
+      "In each orbit interval [j,j+1), j=3…19, sample 720 phases f=k/720. Also evaluate exactly 20 elapsed orbits. Wait=(j+f)T. The solver adds burn/coast/entry angular travel and first-probe downrange to initial argument u0+2πf. With inclination i, latitude φ=asin(sin i sin u); longitude λ=λ0+atan2(cos i sin u,cos u)−ω(wait+t_flight), wrapped to ±180°. First-probe descent downrange is approximated by x/R.",
+      "Target miss is great-circle distance d=R acos[sinφ sinφ_target+cosφ cosφ_target cos(λ−λ_target)]. The minimum sampled d is returned even if it exceeds tolerance. A target latitude outside the orbital inclination band is flagged unreachable. Search interval is a user-requested planning assumption, not evidence that 3–20 orbits guarantees a match.",
+      "Assumed plane and datum replace actual orbit epoch/RAAN and delivery geometry. No J2 precession, third bodies, maneuver dispersions, three-dimensional winds, crossrange lift or terrain are included. No 95% landing probability or flight corridor compliance can be inferred. The source 100/50 km A/B statistical objectives require a separate 6-DOF Monte Carlo."
+    ],
+    "rows": [
+      [
+        "Selected elapsed orbits",
+        "12.615278",
+        "6.070833"
+      ],
+      [
+        "Ignition wait (h)",
+        "23.8430",
+        "11.4740"
+      ],
+      [
+        "First-probe miss (km)",
+        "9.526",
+        "8.902"
+      ],
+      [
+        "First-probe latitude / longitude (deg)",
+        "0.0622 / 0.1485",
+        "0.0671 / -0.1347"
+      ]
+    ],
+    "headers": [
+      "Quantity",
+      "A",
+      "B"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "8.3 Entry heating and structure",
+    "title": "8.2.1 Finite engine burn and A/B propellant calculation",
+    "body": [
+      "At ignition m_burn=m_wet−m_separation−m_slew. Effective exhaust speed v_e=Isp g0. Mass flow is mdot=F/v_e; main propellant consumed=m_burn[1−exp(−Δv/v_e)] [SIM-R4, SIM-R5]. Ideal delivered Δv=v_e ln(m_start/m_end). For A, t_burn=I_total/F and consumed propellant=I_total/v_e. For B, compute nominal propellant then F=m_prop v_e/t_burn. At oxidizer/fuel ratio O/F, fuel=m_prop/(1+O/F), oxidizer=m_prop−fuel.",
+      "RK4 integrates inertial Cartesian position, velocity and mass: dr/dt=v; dv/dt=−μr/|r|³−(F/m)v/|v|; dm/dt=−F/(Isp g0). Thrust continuously follows negative velocity, an ideal steering assumption requiring real pointing authority. A solid motor still burns completely. The osculating vacuum periapsis is obtained from cutoff specific energy and angular momentum. The ballistic coast uses only central gravity to the descending 125 km interface.",
+      "The planning propellant value is separately computed using 1.25Δv; it is not extra nominal commanded impulse. B additional reserve propellant equals planning demand minus nominal consumed propellant and is assumed carried within the 50 kg wet allocation. A fixed impulse at these defaults reaches entry but does not supply the 25% planning allowance. Hardware selection requires a measured thrust curve, qualified ignition, dispersion, thrust alignment and tank/feed budgets."
+    ],
+    "rows": [
+      [
+        "Thrust / duration",
+        "100.000 N / 12.800 s",
+        "232.444 N / 12.800 s"
+      ],
+      [
+        "Delivered impulse (N s)",
+        "1,280.000",
+        "2,975.281"
+      ],
+      [
+        "Ideal Δv (m/s)",
+        "64.988",
+        "60.273"
+      ],
+      [
+        "Initial / cutoff inertial speed (m/s)",
+        "3,407.063 / 3,342.077",
+        "3,407.063 / 3,346.793"
+      ],
+      [
+        "Main propellant consumed (kg)",
+        "0.580105",
+        "1.213577"
+      ],
+      [
+        "Planning propellant / additional reserve (kg)",
+        "0.670946 / 0.132363",
+        "1.512338 / 0.298761"
+      ],
+      [
+        "Fuel / oxidizer consumed (kg)",
+        "Solid blend unspecified",
+        "0.242715 / 0.970862"
+      ],
+      [
+        "Achieved vacuum periapsis (km)",
+        "31.334",
+        "50.001"
+      ],
+      [
+        "Coast after cutoff (s)",
+        "1,954.532",
+        "2,065.178"
+      ],
+      [
+        "Entry speed / flight-path angle",
+        "3,510.766 m/s / -2.0639 deg",
+        "3,515.255 m/s / -1.8420 deg"
+      ],
+      [
+        "Entry mass after module discard (kg)",
+        "17.689910",
+        "45.556439"
+      ]
+    ],
+    "headers": [
+      "Quantity",
+      "A fixed reference",
+      "B sized hybrid alternative"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "8.4 Parachute descent screening",
+    "title": "8.3.1 Entry and center/shoulder temperature calculation",
+    "body": [
+      "Entry uses radial state [r,θ,v_r,v_t], with zero lift. Atmospheric relative tangential speed w_t=v_t−ωr cos i; V=sqrt(v_r²+w_t²). Drag acceleration D=ρV² Cd A/(2m), with A=πD_shell²/4 and Cd=1.5. Equations: rdot=v_r; θdot=v_t/r; v_rdot=v_t²/r−μ/r²−D v_r/V; v_tdot=−v_r v_t/r−D w_t/V. Density is the explicit exponential assumption in 3.1. Inertial speed and air-relative speed are retained separately.",
+      "Stagnation-region convective heat flux is q_c=1.9027×10^−4 sqrt(ρ/R_n) V³ W/m², with SI density, radius and speed. The Sutton–Graves functional form comes from [SIM-R6]; the Mars coefficient is used as in the SHERPA engineering model [SIM-R7]. This is a preliminary correlation, extrapolated by the software outside hypersonic conditions without a flow-regime switch; rarefied/low-speed validity is not established. Updated Mars correlations are described in [SIM-R8] but are not implemented. Their published accuracy is not an uncertainty bound for this simulator.",
+      "Shoulder heat flux q_s=q_c f_s sqrt(R_n/R_s), with f_s=0.45, R_n=0.20 m and R_s=0.07 m. This correction is an assumed shoulder-flow proxy. A 70 mm contour radius alone cannot predict the actual shoulder distribution. Both center and shoulder require CFD and material-response analysis.",
+      "Each location has a surface node T_s and backing node T_b. Areal capacities C_s=ρ_TPS cp δ_s and C_b=ρ_TPS cp(L−δ_s). Conductance G=k/(L/2). Surface equation: C_s dT_s/dt=q−εσ(T_s^4−T_env^4)−G(T_s−T_b). Backing equation: C_b dT_b/dt=G(T_s−T_b). σ=5.670374419×10^−8 W/(m² K^4); initial/environment T=210 K. Plot temperature is T_s−273.15 °C. Radiation here is outward surface emission; incoming shock-layer radiation is omitted.",
+      "No ablation, pyrolysis, recession, temperature-dependent properties, bondline/shell model, gas radiation or structural coupling is included. Backing nodes are generic thermal lumps, not certified bondline temperatures. A real ablative TPS needs the validated material response and flight/test evidence exemplified by [SIM-R9]. Neither peak surface temperature nor these generic properties constitutes a TPS material selection or acceptance limit."
+    ],
+    "rows": [
+      [
+        "Peak center surface (°C)",
+        "752.63",
+        "879.75"
+      ],
+      [
+        "Peak shoulder surface (°C)",
+        "680.29",
+        "800.79"
+      ],
+      [
+        "Peak center convective flux (kW/m²)",
+        "57.422",
+        "88.640"
+      ],
+      [
+        "125 km to extraction time (s)",
+        "723.956",
+        "840.966"
+      ],
+      [
+        "10 km inertial / air-relative speed (m/s)",
+        "355.066 / 200.332",
+        "591.466 / 403.187"
+      ]
+    ],
+    "headers": [
+      "Preliminary result",
+      "A",
+      "B"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "8.5 Ballistic coefficient",
+    "title": "8.4.1 Time-resolved carrier and probe descent",
+    "body": [
+      "At extraction the carrier inherits entry radial velocity and the tangential velocity relative to the corotating atmosphere. The local model uses flat coordinates x,h with state [x,h,vx,vy]. Let relative air velocity w=[vx−wind,vy], speed |w|, ρ=ρ0 exp(−h/H), and effective drag area C_A. Then xdot=vx, hdot=vy, vxdot=−ρ C_A |w|(vx−wind)/(2m), vydot=−μ/(R+h)²−ρ C_A |w|vy/(2m). Curvature and Coriolis acceleration are omitted after extraction.",
+      "Carrier mass=m_dry+N_remaining m_probe. Effective carrier C_A=0.4×0.12 m²+Cd πD_carrier²/4 ×f_inflate. The first term is a fixed assumed carrier body Cd-area product. Carrier inflation fraction=max[0,min(1,(t−1 s)/2 s)]. For a probe, C_A=0.45π(0.05 m)²/4+Cd πD_probe²/4 ×f_inflate, where f_inflate ramps over 2 s after 1.5 s delay. Canopy area increases linearly, with no separate opening-shock or supersonic inflation model.",
+      "First release occurs when the carrier crosses 5,000 m; later releases are two seconds apart. Each probe inherits exactly the carrier position and velocity at its release, then integrates independently. Carrier mass drops by 2 kg per release. No artificial sequencing waits for one probe to land before releasing the next. Carrier and probe clocks share t=0 at carrier extraction; absolute mission time is added in exports.",
+      "Altitude is above an assumed zero-elevation flat ground datum. Total ground-relative speed=sqrt(vx²+vy²), downward speed=−vy; horizontal speed=vx. Every nominal 0.25 s RK4 output is retained, including shortened release/ground event steps. Ground intersection is interpolated to h=0. The UI paginates every row and exports all entities to CSV; full JSON also retains burn, entry, temperatures, targeting and parameters.",
+      "Default deployment heights are assumptions, not verified release gates. Carrier starts at approximately 200 m/s air-relative for A and 403 m/s for B; Mach, inflation loads and canopy survival are not checked. Impact speeds near 85 m/s do not imply safe landing, stable attitude, penetration depth, successful sampling or instrument survival. DER-004/005 and EDL-004 remain open."
+    ],
+    "rows": [
+      [
+        "Loaded / empty carrier mass (kg)",
+        "9.00 / 3.00",
+        "22.00 / 8.00"
+      ],
+      [
+        "Carrier descent duration (s)",
+        "179.788",
+        "146.694"
+      ],
+      [
+        "First / last probe release after extraction (s)",
+        "50.836 / 54.836",
+        "46.609 / 58.609"
+      ],
+      [
+        "First probe release-to-ground (s)",
+        "55.568",
+        "54.092"
+      ],
+      [
+        "First / last probe impact speed (m/s)",
+        "85.500 / 85.331",
+        "85.587 / 85.099"
+      ],
+      [
+        "Carrier output samples",
+        "721",
+        "589"
+      ]
+    ],
+    "headers": [
+      "Quantity",
+      "A",
+      "B"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "9. Verification and validation",
+    "title": "8.4.2 Live mission trades and preliminary ground-impact calculation",
+    "anchor": "sim-live-impact",
+    "headers": [
+      "Input",
+      "Source default or assumption"
+    ],
+    "body": [
+      "The main mission review now maps each phase onto the calculated flight clock. Long orbital waits are compressed. Carrier and all probes share a common physical time; their releases and descents overlap. Review-event focus and latched status confirmations are scripted review markers, not a new sensor model. The calculated-flight panel retains its independent physical playback clock. Discarded capsule altitude, speed and load are unavailable rather than extrapolated beyond extraction; its last calculated surface temperatures are retained.",
+      "The panel displays all 13 labeled positions: 0 health check, 1 host separation, 2 attitude confirmation, 3 burn confirmation, 4 carrier extraction, 5–7 probe 1–3 release, 8 carrier landing, and 9–12 probe 4–7 release. Source A transmits nine bits and shows the B-only positions as N/A. Source B transmits all 13. These are simulated latched confirmations, not live hardware telemetry.",
+      "Capsule proper load is thrust/mass/g0 during the main burn and q Cd A/mass/g0 during entry. Orbital free fall reads zero proper load. Chute loads use relative-air dynamic pressure and the instantaneous canopy inflation fraction. Capsule speed is inertial before discard; descent speeds are ground-relative. Grounded objects show zero current speed and retain a separate at-impact speed. Each probe can be selected; the expanded table shows all probes at the same mission time.",
+      "Ground-impact screening uses the Poncelet functional form F(v)=a+b v² [SIM-R13]. Let A=π D²/4, a=A R, b=0.5 ρ Cd A, and v=|vertical velocity| cos(θ), where θ is an additional assumed obliquity. For positive a,b: penetration z=m/(2b) ln(1+b v²/a), initial peak deceleration=(a+b v²)/(m g0), mean deceleration=v²/(2 z g0), and stopping time=m/√(ab) atan(v√(b/a)). For b=0 use z=m v²/(2a) and t=m v/a. Zero speed gives zero impact outputs. The model neglects gravity over the short impact, rebounding, crushing, fracture and changing contact geometry.",
+      "The table is pending before release. During descent it evaluates hypothetical impact at the current downward velocity; after landing it retains the actual modeled pre-impact downward velocity. The predicted eventual descent impact speed is separately labeled. Plots sweep downward input velocity from 0 to 200 m/s; obliquity is applied inside the model. Depth exceeding the 0.20 m body length is explicitly flagged as an extrapolation. No survival or hardware shock response is inferred.",
+      "Effective bearing resistances 0.2, 3 and 25 MPa and material densities/inertial coefficients below are exploratory assumptions, not measured Mars soil properties or values extracted from the cited reports. R is effective resistance rather than unconfined compressive strength. NASA/USGS supports the force-law context; Sandia provides penetration-calibration context [SIM-R14]. The Sandia empirical equation is not implemented. Laboratory drop/penetration tests and site-specific material characterization are required for qualification.",
+      "Mission, flight and material inputs have paired sliders and numeric fields. Rev09 values initialize source-controlled mass, geometry, orbit and canopy inputs; supplemental flight and material values remain labeled assumptions. Restore mission/flight defaults and restore impact assumptions are separate actions. Invalid flight solutions suppress live results. Exported scenario JSON includes the complete flight and impact assumptions."
+    ],
+    "rows": [
+      [
+        "Geometry",
+        "Effective impact diameter 0.050 m; body length 0.200 m: Rev09 main body. Shoulder diameter 0.075 m is not used as the contact diameter."
+      ],
+      [
+        "Soft sand",
+        "Assumed R=0.20 MPa; ρ=1600 kg/m³; inertial Cd=0.8."
+      ],
+      [
+        "Hard soil",
+        "Assumed R=3.00 MPa; ρ=2000 kg/m³; inertial Cd=1.0."
+      ],
+      [
+        "Sandstone",
+        "Assumed R=25.00 MPa; ρ=2300 kg/m³; inertial Cd=1.2."
+      ],
+      [
+        "Impact posture",
+        "Additional obliquity 0°; downward-speed screen; horizontal energy excluded."
+      ],
+      [
+        "Entry drag trade",
+        "Default Cd=1.5. Additional slider changes entry drag, deceleration, thermal history and subsequent descent initial state."
+      ],
+      [
+        "Display changes",
+        "Entry steps 10–12 supersede prior entry flips: a continuous space-to-Mars curve supplies capsule position and local tangent. The heat-shield outward normal follows that tangent; its plane is perpendicular to descent. Other requested orientations remain. Step slider is directly below animation. Display geometry does not change flight equations."
+      ]
+    ]
+  },
+  {
+    "before": "10. Design risks, limitations and review actions",
+    "title": "9.1 Simulation verification evidence and unresolved gates",
+    "body": [
+      "Executed checks: paired-jet translation impulse and rest-to-rest rotation; gas/tank mass closure; gravity-free finite-burn agreement with the ideal rocket equation; A full-impulse identity; B fuel-plus-oxidizer closure; 3–20-orbit bounds and unreachable-latitude rejection; no-input thermal equilibrium; finite entry states; release position/velocity continuity; carrier mass removal; monotonic probe time; and ground interpolation.",
+      "Time-step refinement compares the nominal entry/descent 0.25 s steps with 0.125 s. Acceptance for software consistency is <2 °C change in peak center temperature and <0.2 m/s change in first-probe impact speed for each default A/B case. These checks verify implementation consistency, not physical accuracy. Baseline outputs are reproducible from flight-model.mjs and saved flight_baseline_A/B.json; the offline HTML contains the same model.",
+      "Before flight-design use: obtain host state/epoch and separation limits; fit qualified motor thrust curves; model pointing/dispersions and navigation covariance; complete real-gas/regulator/P&ID and pressure-vessel budgets; replace the assumed atmosphere with site/season ensembles; run 6-DOF targeting and stability; qualify canopy Mach/q/inflation loads and release clearance; validate center/shoulder CFD heating and ablative material response; close component masses; and qualify impact/sample performance. Existing Rev09 verification requirements remain open."
+    ],
+    "rows": null,
+    "headers": [
+      "Parameter",
+      "Value / interpretation"
+    ],
+    "anchor": null
+  },
+  {
+    "before": "12. Illustration and drawing register - Revision 0.9",
+    "title": "11.1 Simulation sources and calculation provenance",
+    "body": [
+      "References below are additional to the original Section 11 citations. In-text SIM-R identifiers identify the supporting relation or project authority. Numerical trade assumptions remain identified in 3.1; a NASA citation does not validate a FREYA-specific choice. Source illustrations and original references remain unchanged.",
+      "[SIM-R1] FREYA design leadership: Robert Zubrin and Robert Mills. FREYA Mission Vehicle Design Specification, FDS-001 Revision 0.9, 10 November 2026. User-supplied DOCX; governing project source. Sections 3–9 and Appendix D. https://chatgpt.com/library?file_id=libfile_a103c82d897c8191ada94ed38925bc53&account_id=personal",
+      "[SIM-R2] FREYA project user. Simulation direction, 15 November 2026, this FREYA project conversation: attitude-jet separation, shield-forward retrograde burn, gas/tank budget, 3–20 orbits, A/B thrust/fuel, temperature and descent telemetry. Internal design instruction; no public URL.",
+      "[SIM-R3] FREYA. FREYA Pitch Expanded Science Three Categories, 10-slide user-provided presentation, file FREYA_Pitch_Expanded_Science_Three_Categories.pptx, undated. Slide 7 delivery phases; slides 3–4 proposed science alternatives. Internal project artifact; no public URL.",
+      "[SIM-R4] NASA Glenn Research Center. Specific Impulse. Beginner’s Guide to Aeronautics, undated webpage. Relations between thrust, impulse, mass flow and specific impulse. Accessed 15 November 2026. https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/specific-impulse/",
+      "[SIM-R5] NASA Glenn Research Center. Ideal Rocket Equation. Beginner’s Guide to Aeronautics, undated webpage. Variable-mass rocket sizing relation. Accessed 15 November 2026. https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/ideal-rocket-equation/",
+      "[SIM-R6] Sutton, K., and Graves, R. A., Jr. A General Stagnation-Point Convective Heating Equation for Arbitrary Gas Mixtures. NASA Technical Report NASA-TR-R-376, November 1971. NTRS document 19720003329. Accessed 15 November 2026. https://ntrs.nasa.gov/citations/19720003329",
+      "[SIM-R7] Esper, Jaime, and Aldrin, Buzz. Mars Small-Spacecraft Human Exploration Resource Prospector with Aero-braking (SHERPA): Demonstrating an End-to-End Mission to Phobos Distant Retrograde Orbit. NASA-hosted manuscript, NTRS document 20190032243. Engineering Mars convective heating coefficient; no FREYA validation. Accessed 15 November 2026. https://ntrs.nasa.gov/api/citations/20190032243/downloads/20190032243.pdf?attachment=true",
+      "[SIM-R8] West, Thomas K., IV, and Brandis, A. M. Updated Stagnation-Point Aeroheating Correlations for Mars Entry. Journal of Spacecraft and Rockets 57(2), 2020. DOI 10.2514/1.A34602. NTRS document 20200003079. Context for required improved correlations; not implemented here. Accessed 15 November 2026. https://ntrs.nasa.gov/citations/20200003079",
+      "[SIM-R9] Meurisse, Jeremie B. E.; Monk, Joshua D.; Borner, Arnaud; Ferguson, Joseph; Panerai, Francesco; and Mansour, Nagi N. Towards the Prediction of the Mars 2020 Heatshield Material Response. Ablation Workshop, Burlington, Vermont, 17–18 September 2018. NASA report ARC-E-DAA-TN61346, NTRS document 20190003886. Context for material-response validation; no material constants borrowed. Accessed 15 November 2026. https://ntrs.nasa.gov/citations/20190003886",
+      "[SIM-R10] NASA Glenn Research Center. Mars Atmosphere Equation (Metric). Beginner’s Guide to Aeronautics, undated webpage. Reviewed atmosphere context; its piecewise temperature profile is not implemented or extrapolated by this simulator. Accessed 15 November 2026. https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/mars-atmosphere-equation-metric/",
+      "[SIM-R11] NASA Glenn Research Center. Rocket Thrust Equation. Beginner’s Guide to Aeronautics, undated webpage. Reviewed thrust and mass-flow relation. Accessed 15 November 2026. https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/rocket-thrust-equation/",
+      "[SIM-R12] NASA Jet Propulsion Laboratory, Solar System Dynamics. Astrodynamic Parameters, webpage. Reviewed reference-parameter context; simulator retains the rounded Rev09 screening constants and an assumed rotation period. Accessed 15 November 2026. https://ssd.jpl.nasa.gov/astro_par.html",
+      "Implementation provenance: src/flight-model.mjs (physics), src/flight-ui.mjs (plots/physical playback), test/flight-model.test.mjs (independent identities and consistency checks), data/revision51/flight_baseline_A.json and flight_baseline_B.json (default complete outputs), and data/revision51/simulation_spec_sections.json (this shared supplement). All quantities use SI internally; output temperatures are °C and elapsed times are seconds. Full citations and URLs are included here so the engineering basis can be reviewed offline."
+    ],
+    "rows": [
+      [
+        "SIM-R13",
+        "Moore, H. J. (1970). Estimates of the Mechanical Properties of Lunar Surface Using Tracks and Secondary Impact Craters Produced by Blocks and Boulders. USGS Interagency Report: Astrogeology 22. NASA contract R-66. July 1970. Poncelet resistance context; no Mars parameter calibration. Accessed 16 November 2026.",
+        "https://ntrs.nasa.gov/api/citations/19700031586/downloads/19700031586.pdf"
+      ],
+      [
+        "SIM-R14",
+        "Sandia National Laboratories (1997). Penetration Equations. SAND97-2426. 1 October 1997. DOI: 10.2172/562498. Calibration context only; empirical Sandia equation is not implemented. Accessed 16 November 2026.",
+        "https://www.sandia.gov/research/publications/details/penetration-equations-1997-10-01/"
+      ]
+    ],
+    "headers": [
+      "Parameter",
+      "Value / interpretation"
+    ],
+    "anchor": null
+  }
+]

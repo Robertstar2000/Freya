@@ -1,0 +1,203 @@
+{
+  "revision": "4.0",
+  "reference": "steep 125km 3450m/s -13deg (independent of 250km deorbit)",
+  "baseline": {
+    "totalMass": 45,
+    "probeCount": 6,
+    "probeMass": 4,
+    "shieldD": 1.1,
+    "shieldCd": 1.5,
+    "entrySpeed": 3450,
+    "entryAngle": -13,
+    "entryHeight": 125000,
+    "rho0": 0.025,
+    "scaleH": 11000,
+    "releaseAlt": 10000,
+    "releaseGap": 2,
+    "deployDelay": 1.5,
+    "chuteAttached": true,
+    "cutAlt": 100,
+    "probeD": 0.035,
+    "probeCd": 0.45,
+    "chuteCd": 0.55,
+    "depth": 1.5,
+    "kd": 0.5,
+    "eta": 1,
+    "material": "ice",
+    "chuteMode": "auto",
+    "manualChute": 0.7,
+    "heatLimit": 15,
+    "peakGLimit": 8,
+    "releaseSpeedLimit": 185,
+    "iceStrength": 12,
+    "dryStrength": 70,
+    "dampStrength": 40,
+    "iceDensity": 920,
+    "dryDensity": 2300,
+    "dampDensity": 2200
+  },
+  "orbit": {
+    "orbitAltKm": 250,
+    "periapsisKm": 0,
+    "thrustN": 100,
+    "ispS": 225,
+    "burnMassKg": 450,
+    "entryInterfaceKm": 125,
+    "deltaV": 61.55673249575966,
+    "circularSpeed": 3430.401164590026,
+    "burnSpeed": 3368.8444320942663,
+    "entrySpeed": 3490.872597559051,
+    "entryAngleDeg": -2.0382652696642,
+    "coastSeconds": 1617.2356718111835,
+    "propellantKg": 12.380580226297454,
+    "durationS": 273.1770384214948,
+    "mdot": 0.04532072057679682,
+    "periodS": 6666.174545860458,
+    "accelStart": 0.2222222222222222,
+    "accelEnd": 0.22850905485801115,
+    "burnFraction": 0.04097958079887534,
+    "warning": "Idealized impulsive-transfer orbit; finite-burn steering and Mars J2 not modeled."
+  },
+  "entryComparison": [
+    {
+      "case": "Legacy Rev 2 5kg cutaway",
+      "entrySpeed": 3450,
+      "entryAngle": -13,
+      "releaseAlt": 8000,
+      "releaseSpeed": 155.58270019006756,
+      "releaseTime": 252.19927404328487,
+      "peakHeat": 14.24640663259782,
+      "heatLoadMJm2": 9.581909274924946,
+      "peakG": 5.031742183550361,
+      "peakQ": 1557.7044451729753,
+      "nonProbeMassKg": 15
+    },
+    {
+      "case": "Rev4 steep 4kg attached",
+      "entrySpeed": 3450,
+      "entryAngle": -13,
+      "releaseAlt": 10000,
+      "releaseSpeed": 173.06093765213976,
+      "releaseTime": 238.8862515156705,
+      "peakHeat": 14.24640663259782,
+      "heatLoadMJm2": 9.579675949711316,
+      "peakG": 5.031742183550361,
+      "peakQ": 1557.7044451729753,
+      "nonProbeMassKg": 21
+    },
+    {
+      "case": "Rev4 orbit shallow 4kg attached",
+      "entrySpeed": 3490.872597559051,
+      "entryAngle": -2.0382652696642,
+      "releaseAlt": 10000,
+      "releaseSpeed": 175.71074222695154,
+      "releaseTime": 700.0621751103305,
+      "peakHeat": 6.670882095253916,
+      "heatLoadMJm2": 20.601760425595185,
+      "peakG": 1.8118132206807642,
+      "peakQ": 560.8931071437008,
+      "nonProbeMassKg": 21
+    }
+  ],
+  "shock": [
+    {
+      "material": "ice",
+      "impact_speed_ms": 101.27190618859078,
+      "initial_g": 409.6588947316844,
+      "average_g": 348.60770378030634,
+      "pulse_proxy_ms": 29.623220426140037,
+      "force_150g_module_N": 602.6072100030709,
+      "force_250g_battery_N": 1004.3453500051182,
+      "energy_kJ": 20.51199796614146,
+      "nominal_chute_m": 0.5524367332458495
+    },
+    {
+      "material": "dry",
+      "impact_speed_ms": 280.50087263888736,
+      "initial_g": 3935.792361123257,
+      "average_g": 2674.420562372617,
+      "pulse_proxy_ms": 10.695153893022484,
+      "force_150g_module_N": 5789.5407237314075,
+      "force_250g_battery_N": 9649.234539552346,
+      "energy_kJ": 157.36147910235462,
+      "nominal_chute_m": 0.1468573570251465
+    },
+    {
+      "material": "damp",
+      "impact_speed_ms": 209.86245291861542,
+      "initial_g": 2168.952608676907,
+      "average_g": 1497.0454693337745,
+      "pulse_proxy_ms": 14.295077362711465,
+      "force_150g_module_N": 3190.523864982208,
+      "force_250g_battery_N": 5317.539774970347,
+      "energy_kJ": 88.08449829003615,
+      "nominal_chute_m": 0.2726546287536621
+    }
+  ],
+  "mass": [
+    {
+      "item": "Six complete penetrators",
+      "mass_kg": 24,
+      "basis": "6 x 4 kg with canopies, avionics, batteries, and rigging"
+    },
+    {
+      "item": "PICA + backing (illustrative)",
+      "mass_kg": 7.468427348741763,
+      "basis": "15 mm PICA plus 3.5 kg backing; not qualified"
+    },
+    {
+      "item": "Transferred aeroshell structural/TPS reserve",
+      "mass_kg": 6,
+      "basis": "Design allocation of all recovered probe mass"
+    },
+    {
+      "item": "Release dispenser/mechanisms",
+      "mass_kg": 3,
+      "basis": "Placeholder, optimistic"
+    },
+    {
+      "item": "Parent avionics and power",
+      "mass_kg": 2,
+      "basis": "Placeholder, optimistic"
+    },
+    {
+      "item": "Harness and wiring",
+      "mass_kg": 1,
+      "basis": "Placeholder"
+    },
+    {
+      "item": "Assembly interfaces",
+      "mass_kg": 1,
+      "basis": "Placeholder"
+    },
+    {
+      "item": "Unallocated contingency",
+      "mass_kg": 0.5315726512582373,
+      "basis": "Very small; still requires formal mass closure"
+    }
+  ],
+  "perProbe": [
+    {
+      "element": "Scientific payload",
+      "mass_kg": 1,
+      "basis": "Complete science instruments, sensors, and internal instrument support"
+    },
+    {
+      "element": "Retained parachute + integrated antenna",
+      "mass_kg": 0.5,
+      "basis": "Canopy, risers, RF antenna and impact-compatible tether / feed"
+    },
+    {
+      "element": "Batteries, heaters + microcontroller",
+      "mass_kg": 0.5,
+      "basis": "Battery cells, battery protection, heaters, controller, memory, power/thermal interfaces"
+    },
+    {
+      "element": "Penetrating structure + protective potting",
+      "mass_kg": 2,
+      "basis": "Nose, shell, shock cage, seal and protective potting/encapsulation"
+    }
+  ],
+  "risks": 22,
+  "blockers": 17
+}

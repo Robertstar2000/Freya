@@ -1,10 +1,21 @@
-# FREYA Revision 8
+# FREYA Mars Exploration Lab
 
-[Live mission simulator](https://freya-revision-4.abuzzpixie66.chatgpt.site)
+Published release: Sites version 38 · 19 November 2026.
+
+- [Live FREYA website](https://freya-revision-4.mifecoinc.chatgpt.site)
+- [Current website source and published build](website/)
+- [FREYA Requirements Specification Rev 10 (PDF)](website/documents/FREYA_Requirements_Specification_Rev10.pdf)
+- [FREYA Requirements Specification Rev 10 (editable Word document)](website/documents/FREYA_Requirements_Specification_Rev10.docx)
+
+The current website snapshot comes from Sites source commit `3cfc0963ce3f424376d20c2605a0b80b829906b5`. Run `npm test` or `npm run dev` from `website/`. Serve `website/dist/` with a static HTTP server to view the published build. The lab includes trade studies, the Benner science package, requirements traceability, the optimizer, and annotated calculation dialogs.
+
+## Revision 8 archive
+
+[Archived Revision 8 simulator](https://freya-revision-4.abuzzpixie66.chatgpt.site)
 
 [Revision 8 source, reports and original package](revision8/)
 
-Latest release: 3D-style mission visualization with automatic release zoom and numeric telemetry. PDF and editable Word reports are retained alongside searchable Markdown copies and SHA-256 checksums. The original imported package is preserved unchanged. The published HTML adds report links and retains access to the Revision 7 website and evidence reader.
+Revision 8 release: 3D-style mission visualization with automatic release zoom and numeric telemetry. PDF and editable Word reports are retained alongside searchable Markdown copies and SHA-256 checksums. The original imported package is preserved unchanged. The published HTML adds report links and retains access to the Revision 7 website and evidence reader.
 
 This is a preliminary concept simulator. Mission timing and engineering screens are illustrative, not calibrated flight predictions or hardware qualification.
 

@@ -1,0 +1,49 @@
+
+> freya-mars-penetrator-lab@5.1.0 test
+> node --test test/revision51.test.mjs test/presentation-phases.test.mjs test/flight-model.test.mjs test/mission-trade.test.mjs test/calculation-inspector.test.mjs test/requirement-evidence.test.mjs
+
+✔ every source-defined mission, flight and impact input has an explicit calculation (4.255598ms)
+✔ all declared variables resolve in A and B; dynamic probe labels have coverage (3.485832ms)
+✔ modal snapshots reflect changed values, preserve zero, escape content and tolerate no solution (41.763113ms)
+✔ paired jets supply translation, rest-to-rest slew, and tank mass closure (1.163866ms)
+✔ finite burn agrees with ideal rocket equation without gravity (0.932151ms)
+✔ A burns its entire impulse; B nominal sizing closes fuel and oxidizer (0.334128ms)
+✔ target search respects 3–20 orbit window and rejects unreachable latitude (4.895724ms)
+✔ thermal no-input equilibrium and finite entry trajectories (10.652371ms)
+✔ carrier sheds mass, probes inherit release state, ground altitude is interpolated to zero (0.98464ms)
+✔ half-step refinement keeps peak temperatures and impact speeds stable (115.779283ms)
+✔ penetration model reproduces constant-force work and stopping identities (2.382492ms)
+✔ Poncelet screen closes work and monotonically responds to velocity and material resistance (0.654962ms)
+✔ review time is monotonic and live telemetry follows actual releases and ground arrival (7.086997ms)
+✔ requested flips outside entry remain intact; entry has a geometry-derived attitude (2.85089ms)
+✔ entry curve descends from space toward Mars with shield normal tangent and shield plane perpendicular (3.072875ms)
+✔ both configurations traverse all seven delivery phases and science/data return in order (4.437491ms)
+✔ module jettison, passive entry, cover, canopy and extraction are distinct ordered events (0.460843ms)
+✔ every probe has individual release, chute, descent, impact and activation (0.570286ms)
+✔ science phases do not set extra carrier status bits (0.69009ms)
+✔ timeline exposes continuous segment motion, deterministic seeking and final completion (0.334428ms)
+✔ proposed science protocols remain distinct and include controls before data return (2.51457ms)
+✔ all scenes render without invalid numeric coordinates, including final B probe and both science routes (20.167331ms)
+✔ UI includes phase navigation, progress scrubber, protocol selector and source map (0.982079ms)
+✔ all 91 original requirements have distinct, complete evidence assessments and remain open (4.297761ms)
+✔ every support mark links to a recorded check or a primary flight reference (2.777463ms)
+✔ assumed geometry, scripted stability, navigation truth and failed penetrators never become flight proof (0.449532ms)
+✔ evidence filters count overlapping categories correctly and search references and open gaps (11.45232ms)
+✔ archived source fingerprints and baseline outcomes match the current unchanged calculation models (137.918977ms)
+✔ offline bundle initializes evidence summary and filter as well as source UI (2.46506ms)
+✔ source allocations close arithmetically without adding reserve twice (4.518842ms)
+✔ Rev09 orbit and terminal-speed screening examples reproduce stated rounded outputs (0.323606ms)
+✔ RF link budget and doubled range are consistent (0.210286ms)
+✔ cold gas and guidance energy sizing reproduce independent calculations (0.353431ms)
+✔ A and B cumulative events have unique bits and preserve core landing bit (1.925568ms)
+✔ all source requirements are preserved with distinct identifiers (0.43578ms)
+✔ current pages and report links resolve; historical defaults are explicitly separate (0.898995ms)
+✔ invalid physical domains are rejected (0.417896ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 495.55785

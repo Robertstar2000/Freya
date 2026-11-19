@@ -1,0 +1,9 @@
+item,mass_kg,basis
+Six complete penetrators,24,"6 x 4 kg with canopies, avionics, batteries, and rigging"
+PICA + backing (illustrative),7.468427348741763,15 mm PICA plus 3.5 kg backing; not qualified
+Transferred aeroshell structural/TPS reserve,6,Design allocation of all recovered probe mass
+Release dispenser/mechanisms,3,"Placeholder, optimistic"
+Parent avionics and power,2,"Placeholder, optimistic"
+Harness and wiring,1,Placeholder
+Assembly interfaces,1,Placeholder
+Unallocated contingency,0.5315726512582373,Very small; still requires formal mass closure

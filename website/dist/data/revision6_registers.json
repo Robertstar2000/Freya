@@ -1,0 +1,526 @@
+{
+  "requirements": [
+    [
+      "SCI01",
+      "Retain 1.000 kg science mass as a user-directed trade assumption",
+      "Weigh instrument assembly; record included\nelectronics, reagents and interfaces"
+    ],
+    [
+      "SCI02",
+      "Define measured signal, detection limit and abiotic alternatives before\ninstrument freeze",
+      "Science review and assay validation with blinded\nanalogs"
+    ],
+    [
+      "SCI03",
+      "Separate sample depth from forebody burial depth",
+      "Acquisition drawings and sample provenance\ndemonstration"
+    ],
+    [
+      "SCI04",
+      "Compare shallow skin with buried sensing without assuming liquid water",
+      "Site pressure, temperature, salt and water-actviity\nmodel"
+    ],
+    [
+      "SCI05",
+      "Allocate blanks, treated controls, reagent controls and replication",
+      "Statistical analysis and contamination budget"
+    ],
+    [
+      "SCI06",
+      "Define incubation temperature and duration including delayed recovery",
+      "Time-series analog experiments; no assumed rapid\nrevival; energy closure per \u00a78"
+    ],
+    [
+      "SCI07 (new)",
+      "State the hypothesis and operatnig mode (A, B or C) that the energy ledger\nsupports",
+      "Decision record D-02"
+    ],
+    [
+      "SYS01",
+      "Maintain forebody, tether and surface aftbody reference architecture",
+      "Interface control drawing and deployment test"
+    ],
+    [
+      "SYS02",
+      "Close nominal mass and volume before adding contingency",
+      "Measured bill of materials and CAD envelope"
+    ],
+    [
+      "SYS03",
+      "Apply 25 % preliminary mass contingency in this study",
+      "Ledger audit; replace with project-approved growth\npolicy"
+    ],
+    [
+      "SYS04 (new)",
+      "Carry growth allowance per component by maturity, with 30 % as the concept\ndefault",
+      "Ledger audit against AIAA S-120 practcie [42]"
+    ],
+    [
+      "MECH01",
+      "Verify steel heat treatment, toughness and joining at operatnig temperature",
+      "Coupons, NDE, cold impact tests and structural\nanalysis"
+    ],
+    [
+      "MECH02",
+      "Keep a physical tether path and release without damaging science hardware",
+      "Full-speed deployment and pull tests"
+    ],
+    [
+      "MECH03",
+      "Prevent potting from blocking sampling ports and optical or fluid paths",
+      "Manufacturing drawing and folw or optical tests"
+    ],
+    [
+      "MECH04",
+      "Qualify instrument shock response using local acceleratoin histories",
+      "Instrumented drop tests and post-impact calibration"
+    ],
+    [
+      "MECH05 (new)",
+      "Show buckling and bending margin for the selected geometry under oblique\nimpact",
+      "Finite-element analysis and cold oblique impact tests"
+    ],
+    [
+      "MECH06 (new)",
+      "If a composite body is pursued, qualify the steel-to-composite joint for impact\nshock and cold",
+      "Coupon and drop tests of the joint at Mars-night\ntemperature; NDE for delamination"
+    ],
+    [
+      "PWR01",
+      "Close energy for every operatnig mode with cold, aging and conversion losses",
+      "Time-resolved power model and battery\ncharacterizatoin"
+    ],
+    [
+      "PWR02 (new)",
+      "Schedule receiver windows from predicted overfilghts and include listening\nand transmit energy",
+      "Power model with pass schedule"
+    ],
+    [
+      "THERM01",
+      "Model shell, soil, sample and electronics as separate thermal nodes",
+      "Vacuum cold-chamber correlation and transient\nthermal analysis"
+    ],
+    [
+      "THERM02 (new)",
+      "Keep aftbody electronics within their qualified range through the Martian night",
+      "Cold-soak test; heater power in the ledger"
+    ],
+    [
+      "COM01",
+      "Transmit through an exposed antenna via a verified tether interface",
+      "Link budget and end-to-end post-impact\ndemonstration"
+    ],
+    [
+      "COM02 (new)",
+      "Use a radio that interoperates with the selected relay (Proximity-1 for NASA\nand ESA orbiters)",
+      "Interoperability test with the relay operator"
+    ],
+    [
+      "COM03 (new)",
+      "Close the return link with at least 3 dB margin at the minimum usable elevatoin",
+      "Link budget with measured antenna patetrn"
+    ],
+    [
+      "EDL01",
+      "Analyze each delivery scenario with its own entry boundary conditions",
+      "Trajectory dispersions and aerodynamic database"
+    ],
+    [
+      "EDL02",
+      "Qualify drogue inflation stability and forebody\u2013aftbody separation",
+      "Mars-relevant deployment tests"
+    ],
+    [
+      "EDL03 (new)",
+      "Define the impact-speed envelope and show the drogue delivers it across the\ndensity range",
+      "Terminal-speed analysis and drop tests"
+    ],
+    [
+      "PP01",
+      "Obtain applicable planetary-protection classifciation and endpoints",
+      "Mission authority concurrence"
+    ],
+    [
+      "PP02",
+      "Validate a compatible reductoin process with residues and assay blanks",
+      "Microbial reduction and materials compatibility\nevidence"
+    ],
+    [
+      "PP03",
+      "Maintain barriers and cleanliness after treatment",
+      "Integration controls and witness monitoring"
+    ],
+    [
+      "PP04 (new)",
+      "Record maximum temperature, humidity and time above Special Region\nthresholds for every wetetd or humid volume",
+      "Thermal and humidity analysis; authority review"
+    ],
+    [
+      "VER01",
+      "Keep data provenance, model version and assumptions with every result",
+      "Shared model tests and exported scenario record"
+    ],
+    [
+      "VER02 (new)",
+      "Maintain the source register with verifciation status",
+      "Section 18 reviewed at each gate"
+    ]
+  ],
+  "constraints": [
+    [
+      "C01",
+      "Science mass fixed at 1 kg for this trade; science volume is unknown"
+    ],
+    [
+      "C02",
+      "Baseline packaging assumes 0.500 L science envelope and 0.120 L other forebody hardware (both challenged in PR-31, PR-32)"
+    ],
+    [
+      "C03",
+      "Potting occupies 25 % and reserved space 10 % of cavity volume"
+    ],
+    [
+      "C04",
+      "Steel density 7,850 kg/m\u00b3; hemisphere and cap mass retained; no hidden structural allocatoin"
+    ],
+    [
+      "C05",
+      "Cable allocatoin assumes 5 m at 10 g/m; spool and strain relief are additional"
+    ],
+    [
+      "C06",
+      "Batetry allocation 0.450 kg is a short-duratoin case, not a mission requirement"
+    ],
+    [
+      "C07",
+      "No flight survival probability or qualifeid wall thickness follows from this trade"
+    ],
+    [
+      "C08",
+      "No mandatory 1.5 m sample depth, six-probe count or 450 kg delivery bus"
+    ],
+    [
+      "C09",
+      "No selected assembled-probe irradiation or ethylene oxide procedure"
+    ],
+    [
+      "C10",
+      "Low-conductivity dry soil assumptoins cannot represent ice or competent rock"
+    ],
+    [
+      "C11",
+      "Contingency covers mass growth; it cannot replace missing power or experiment subsystems"
+    ],
+    [
+      "C12",
+      "Existing public website audience is retained; no private-access claim is made"
+    ],
+    [
+      "C13 (new)",
+      "All penetration, link, structural and thermal results in Rev 5 are screens, not predictoins; none qualifeis hardware"
+    ]
+  ],
+  "risks": [
+    [
+      "R01",
+      "Sample misses relevant biology",
+      "Compare shallow and buried samples\nin analog trials",
+      "Skin depth 3.2 cm supports shallow sampling\n(\u00a76.1).",
+      "G3"
+    ],
+    [
+      "R02",
+      "False biological signal",
+      "Blinded abiotci controls and multpile\nindependent measurements",
+      "Include perchlorate-spiked blanks for heated\nsteps (\u00a76.3).",
+      "G3"
+    ],
+    [
+      "R03",
+      "Incubation exceeds energy",
+      "Demonstrate tmi e series at credible\nsample conditions",
+      "Quantifeid in \u00a78; see R23.",
+      "G1"
+    ],
+    [
+      "R04",
+      "Science envelope does not fti",
+      "Obtain CAD and measure package bulk\ndensity",
+      "Raised: density and ancillary volume unsourced\n(PR-31, PR-32).",
+      "G0"
+    ],
+    [
+      "R05",
+      "Narrow chassis buckles or bends",
+      "Cold oblique impact tests and finite\nelement analysis",
+      "35 mm fails Euler screen; others pass at\naverage load (\u00a75.3).",
+      "G2"
+    ],
+    [
+      "R06",
+      "Hard steel fractures in cold\nimpact",
+      "Toughness and heat-treatment\nqualificatoin",
+      "Strength\u2013toughness data in [45]; no cold data.",
+      "G2"
+    ],
+    [
+      "R07",
+      "Potting cracks or contaminates\nassay",
+      "Thermal cycling, shock and chemical\nblanks",
+      "Analog resin only (PR-27).",
+      "G2"
+    ],
+    [
+      "R08",
+      "Batetry failure after impact",
+      "Cold shock capacity and safety testing",
+      "DS2 reviewers listed batetry failure on impact\nas plausible [17].",
+      "G2"
+    ],
+    [
+      "R09",
+      "Tether snags or severs",
+      "Dynamic payout and penetration\ndemonstration",
+      "",
+      "G3"
+    ],
+    [
+      "R10",
+      "Antenna remains buried or\nmisoriented",
+      "Surface emplacement and RF tests",
+      "DS2 candidate failure: lands on its side [17].",
+      "G3"
+    ],
+    [
+      "R11",
+      "Relay link or access unavailable",
+      "Selected service agreement and pass-\nbased link budget",
+      "MAVEN ended; four aging orbiters; new\nnetwork by about 2030 (PR-11).",
+      "G1"
+    ],
+    [
+      "R12",
+      "Drogue or separation fails",
+      "Rarefied-atmosphere deployment tests",
+      "Sizing in \u00a711.2.",
+      "G3"
+    ],
+    [
+      "R13",
+      "Entry scenario transferred\nincorrectly",
+      "Independent trajectory review",
+      "Entry state from orbit now tabulated (\u00a711.1).",
+      "G1"
+    ],
+    [
+      "R14",
+      "Heat shield undersized",
+      "CFD, thermal response, margins and\narcjet evidence",
+      "Orbit entry about 3.5 km/s; direct entry differs.",
+      "G3"
+    ],
+    [
+      "R15",
+      "Treatment damages\nmeasurements",
+      "Residue and compatbiility validation",
+      "",
+      "G3"
+    ],
+    [
+      "R16",
+      "Recontaminatoin during\nassembly",
+      "Barrier and witness verifciation",
+      "",
+      "G3"
+    ],
+    [
+      "R17",
+      "Local geology prevents\nemplacement",
+      "Site analog impact matrix and targetnig\nreview",
+      "Penetratoin scaling is relative only (\u00a710.3).",
+      "G3"
+    ],
+    [
+      "R18",
+      "Heated probe changes habitat",
+      "Coupled soil and sample thermal\nmodel and untreated reference",
+      "Link to R27.",
+      "G2"
+    ],
+    [
+      "R19",
+      "Incomplete hardware allowances",
+      "Vendor BOM and measured assembly",
+      "Aftbody 0.87 kg versus 5.6 kg in a 2005 study\n(scope unverifeid).",
+      "G1"
+    ],
+    [
+      "R20",
+      "Carrier mass no longer closes",
+      "Re-size capsule, dispenser and TPS",
+      "Closure condition f \u2264 26.8 % for six probes\n(\u00a711.3).",
+      "G1"
+    ],
+    [
+      "R21",
+      "Insufcfiient replicatoin",
+      "Power analysis with spatial\nheterogeneity",
+      "",
+      "G1"
+    ],
+    [
+      "R22",
+      "Model used as filght qualification",
+      "Independent expert review and\ndocumented model limits",
+      "This review is by an AI and is not that\nindependent review.",
+      "G4"
+    ],
+    [
+      "R23 (new)",
+      "Energy and duratoin cannot test\nthe science hypothesis (delayed\nrecovery)",
+      "State hypothesis; demonstrate\ndetectable response within the energy\nledger",
+      "PR-05; timescales 20\u2013160 days [35].",
+      "G0"
+    ],
+    [
+      "R24 (new)",
+      "Soil heat loss exceeds available\npower",
+      "Thermal model across k = 0.02\u20132 W/m\nK; insulation design",
+      "PR-04; 1.32 W at k 0.039.",
+      "G1"
+    ],
+    [
+      "R25 (new)",
+      "Radio and relay protocol\nmismatch",
+      "Interoperability test; Proximity-1 radio\nselected",
+      "PR-10.",
+      "G3"
+    ],
+    [
+      "R26 (new)",
+      "Relay network degrades before\narrival",
+      "Service agreement; backup relay on\ncarrier",
+      "PR-11.",
+      "G1"
+    ],
+    [
+      "R27 (new)",
+      "Warmed assay triggers Special\nRegion or Category IVc questions",
+      "Authority determinatoin; PP04 record",
+      "PR-20.",
+      "G0"
+    ],
+    [
+      "R28 (new)",
+      "Schedule does not support the\nchosen launch window",
+      "Gate plan with exit criteria; host\nagreement",
+      "PR-28; Section 13.3.",
+      "G0"
+    ],
+    [
+      "R29 (new)",
+      "Shock loads underestimated\n(peak much larger than average)",
+      "Instrumented drop tests; load spectra",
+      "DS2 design load about 10\u00d7 mean [18].",
+      "G2"
+    ],
+    [
+      "R30 (new)",
+      "Penetratoin depth outside the\nuseful range",
+      "Analog target tests; speed and drogue\nrequirement",
+      "About 0.3\u20130.5 m at 100 m/s (relative scaling,\n\u00a710.3).",
+      "G3"
+    ],
+    [
+      "R31 (new)",
+      "Evidence base is narrow (one\nauthor group, preprint, unread\naddendum)",
+      "Independent sources; addendum text;\nreviewer named",
+      "PR-21, PR-22.",
+      "G0"
+    ],
+    [
+      "R32 (new)",
+      "Aftbody allowance incomplete",
+      "Bottom-up aftbody design",
+      "See R19.",
+      "G1"
+    ],
+    [
+      "R33 (new)",
+      "Planetary-protectoin policy\ninstrument status uncertain",
+      "Confirm current NPR 8715.24 and\nCOSPAR edition",
+      "Listed expiratoin 24 Sep 2026 (PR-20).",
+      "G0"
+    ],
+    [
+      "R34 (new)",
+      "Carrier does not enter Mars orbit",
+      "Carrier trajectory and decision from\nhost",
+      "PR-34.",
+      "G1"
+    ],
+    [
+      "R35 (new)",
+      "Composite body delaminates or\nthe steel-to-composite joint fails\nunder impact or cold",
+      "Joint coupon and drop tests; NDE;\nfibre-metal-laminate fallback",
+      "New with the \u00a75.9 architecture trade (D-09).",
+      "G2"
+    ]
+  ],
+  "decisions": [
+    [
+      "D-01",
+      "Mission class: pathfinder (no life\ndetection) or life-detection",
+      "Decide frist. It sets the planetary-protection category and\nprocess, the instrument set, the schedule and the battery.\nSectoin 12.",
+      "Any instrument or process\nselectoin"
+    ],
+    [
+      "D-02",
+      "Operating mode and duration",
+      "Choose among (a) brief sensing at about 1.5 W for up to about\n42 h, (b) insulated, warmed assay for up to about 5 days (\u22480.5\u2013\n0.9 kg battery), (c) long incubation of 30 days or more (needs\n\u22640.25 W average). Recommend (b) with a stated hypothesis and\ntime series. Sections 6\u20138.",
+      "Battery and thermal design"
+    ],
+    [
+      "D-03",
+      "Geometry carried into CAD and\ndrop test",
+      "Carry 60/2 and 70/2.5; keep 50/1.5 as comparator; reject\n35/1.5; hold 50/2 and 80/3. Section 5.8.",
+      "Gate G1"
+    ],
+    [
+      "D-04",
+      "Science package defniition",
+      "Obtain supplier concept designs and measured bulk density for\nthe \u22480.31 kg and 1 kg envelopes. If density is below 1.5 kg/L,\nreopen D-03.",
+      "Gate G0"
+    ],
+    [
+      "D-05",
+      "Delivery architecture and probe\ncount",
+      "Orbit-delivered entry stack with its own kick stage, up to fvie\nprobes in 45 kg; confirm the carrier enters Mars orbit. Section\n11 and 13.",
+      "Carrier selectoin"
+    ],
+    [
+      "D-06",
+      "Radio and relay",
+      "Select a Proximity-1-compatible UHF radio, or confrim the\ncarrier relays. Open dialogue with relay operators. Sectoin 9.",
+      "Gate G1"
+    ],
+    [
+      "D-07",
+      "Margin policy",
+      "Adopt component-level growth allowance with 30 % as the\nconcept default. Sectoin 5.4.",
+      "Next ledger issue"
+    ],
+    [
+      "D-08",
+      "Evidence base",
+      "Provide the expert addendum text and reviewer name; treat [5]\nas a motviatnig hypothesis; add independent sources. Section 6,\n18.",
+      "Science requirements freeze"
+    ],
+    [
+      "D-09",
+      "Forebody structural architecture",
+      "Carry unibody steel as the baseline; carry the\nsteel-head/composite-body hybrid and a fibre-metal-laminate\nvariant as a parallel mass-reduction study. Section 5.9.",
+      "Gate G1"
+    ]
+  ]
+}
