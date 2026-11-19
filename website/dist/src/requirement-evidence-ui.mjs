@@ -1,4 +1,4 @@
-import {EVIDENCE_REVIEW} from './requirement-evidence.mjs?v=373144b22b36';
+import {EVIDENCE_REVIEW} from './requirement-evidence.mjs?v=45af70b8d000';
 const evidenceById=Object.fromEntries(EVIDENCE_REVIEW.requirements.map(r=>[r.id,r]));
 const evidenceEscape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const simNames={supported:'SIM · numerical support',partial:'SIM · partial support',shortfall:'SIM · shortfall',none:'SIM · not demonstrated'};

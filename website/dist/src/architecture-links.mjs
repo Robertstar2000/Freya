@@ -1,4 +1,4 @@
-import {ARCHITECTURE_DIAGRAMS} from './architecture-data.mjs?v=373144b22b36';
+import {ARCHITECTURE_DIAGRAMS} from './architecture-data.mjs?v=45af70b8d000';
 // Lenses link conceptual blocks to implemented screens, never invent component values.
 export const BLOCK_LENSES={
  sample:{groups:['impact'],m:['probeKg'],s:['impactDiameterM','probeLengthM'],family:'PRB',pattern:'sampl|penetrat',bio:['BIO-P01','BIO-P05','BIO-08']},

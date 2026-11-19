@@ -1,5 +1,5 @@
-import {ALLOCATIONS} from './revision51-model.mjs?v=373144b22b36';
-import {FLIGHT_DEFAULTS,MARS} from './flight-model.mjs?v=373144b22b36';
+import {ALLOCATIONS} from './revision51-model.mjs?v=45af70b8d000';
+import {FLIGHT_DEFAULTS,MARS} from './flight-model.mjs?v=45af70b8d000';
 // Retain 20 kg (or the chosen wet mass), replace propulsion, scale all other allocations.
 export function precursorMassPlan(wetKg=20,options={}){
  const o={...FLIGHT_DEFAULTS,...options};

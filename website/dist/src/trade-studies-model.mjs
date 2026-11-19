@@ -1,9 +1,9 @@
-import {FLIGHT_DEFAULTS, interpolateRows, gasBudget} from './flight-model.mjs?v=373144b22b36';
-import {runFlight} from './flight-sampling.mjs?v=373144b22b36';
-import {precursorMassPlan} from './precursor-mass.mjs?v=373144b22b36';
-import {cgScreen, thermalReplay} from './entry-design-model.mjs?v=373144b22b36';
-import {impactEstimate} from './mission-telemetry.mjs?v=373144b22b36';
-import {INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=373144b22b36';
+import {FLIGHT_DEFAULTS, interpolateRows, gasBudget} from './flight-model.mjs?v=45af70b8d000';
+import {runFlight} from './flight-sampling.mjs?v=45af70b8d000';
+import {precursorMassPlan} from './precursor-mass.mjs?v=45af70b8d000';
+import {cgScreen, thermalReplay} from './entry-design-model.mjs?v=45af70b8d000';
+import {impactEstimate} from './mission-telemetry.mjs?v=45af70b8d000';
+import {INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=45af70b8d000';
 
 const input = (label, value, min, max, step) => ({label, value, min, max, step});
 const extraction = input('Extraction altitude (m)', 10000, 6000, 20000, 100);

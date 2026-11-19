@@ -1,5 +1,5 @@
-import {defaults} from './trade-studies-model.mjs?v=373144b22b36';
-import {SOIL_DEFAULTS} from './mission-telemetry.mjs?v=373144b22b36';
+import {defaults} from './trade-studies-model.mjs?v=45af70b8d000';
+import {SOIL_DEFAULTS} from './mission-telemetry.mjs?v=45af70b8d000';
 
 const mission=key=>['configuration',key,'#mission-inputs','Mission settings'];
 const flight=key=>['flightOptions',key,'#flight-analysis','Flight settings'];

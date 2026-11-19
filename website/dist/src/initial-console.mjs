@@ -1,13 +1,13 @@
-import {aeroshellHeight} from './aeroshell-geometry.mjs?v=373144b22b36';
-import {heatShieldInstrument,firingInstrument} from './thermal-propulsion-instruments.mjs?v=373144b22b36';
-import {presentationEvents} from './mission-review.mjs?v=373144b22b36';
-import {missionScene} from './presentation-scenes.mjs?v=373144b22b36';
-import {runFlight} from './flight-sampling.mjs?v=373144b22b36';
-import {timelineState,DEFAULTS,CONFIGS} from './revision51-model.mjs?v=373144b22b36';
-import {INITIAL_ORBIT_KM,INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=373144b22b36';
-import {precursorMassPlan} from './precursor-mass.mjs?v=373144b22b36';
-import {missionTelemetry} from './mission-telemetry.mjs?v=373144b22b36';
-import {trajectoryConsole,gasInstrument} from './console-instruments.mjs?v=373144b22b36';
+import {aeroshellHeight} from './aeroshell-geometry.mjs?v=45af70b8d000';
+import {heatShieldInstrument,firingInstrument} from './thermal-propulsion-instruments.mjs?v=45af70b8d000';
+import {presentationEvents} from './mission-review.mjs?v=45af70b8d000';
+import {missionScene} from './presentation-scenes.mjs?v=45af70b8d000';
+import {runFlight} from './flight-sampling.mjs?v=45af70b8d000';
+import {timelineState,DEFAULTS,CONFIGS} from './revision51-model.mjs?v=45af70b8d000';
+import {INITIAL_ORBIT_KM,INITIAL_FLIGHT_OPTIONS} from './mission-settings.mjs?v=45af70b8d000';
+import {precursorMassPlan} from './precursor-mass.mjs?v=45af70b8d000';
+import {missionTelemetry} from './mission-telemetry.mjs?v=45af70b8d000';
+import {trajectoryConsole,gasInstrument} from './console-instruments.mjs?v=45af70b8d000';
 // A complete first frame is built into the HTML; mobile users see the console before JS.
 export function initialConsole(){
  const mass=precursorMassPlan(20,INITIAL_FLIGHT_OPTIONS);

@@ -1,4 +1,4 @@
-import {STUDIES, evaluateStudy, improve} from './trade-studies-model.mjs?v=373144b22b36';
+import {STUDIES, evaluateStudy, improve} from './trade-studies-model.mjs?v=45af70b8d000';
 
 self.onmessage = ({data}) => {
   try {

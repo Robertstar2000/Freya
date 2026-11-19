@@ -1,4 +1,4 @@
-import {cgScreen,thermalReplay,thicknessSweep} from './entry-design-model.mjs?v=373144b22b36';
+import {cgScreen,thermalReplay,thicknessSweep} from './entry-design-model.mjs?v=45af70b8d000';
 const num=(v,n=2)=>Number.isFinite(v)?v.toFixed(n):'—';
 export function initEntryDesign(getSnapshot,onChange){
  const root=document.getElementById('entry-design-trades');if(!root)return;

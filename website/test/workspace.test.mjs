@@ -73,7 +73,15 @@ test('the trade lab, science package and final optimizer live in the main worksp
   assert.equal([...h.matchAll(/\sid="([^"]+)"/g)].filter(([,actual])=>actual===id).length,1,id);
  }
  assert.match(panel,/<section id="optimizer"[\s\S]*?<\/section>\s*<\/div>$/);
- assert.match(h,/href="#screen-trades"/);
+ const toc=h.match(/<nav id="workspaceContents"[^>]*>[\s\S]*?<\/nav>/)?.[0];
+ assert.ok(toc);
+ assert.match(toc,/aria-labelledby="workspaceContentsTitle"/);
+ const tradeGroup=toc.match(/data-sidebar-group="screen-trades"[\s\S]*$/)?.[0];
+ for(const id of ['screen-trades','studies','science-package','closure','trace','optimizer'])
+  assert.ok(tradeGroup?.includes('href="#'+id+'"'),id);
+ const requirementsPage=fs.readFileSync('current-requirements.html','utf8');
+ assert.match(requirementsPage,/<nav id="workspaceContents"/);
+ assert.match(requirementsPage,/href="index\.html#screen-trades"/);
  const doc={getElementById:()=>null};
  for(const id of ['study-clock','study-mission','FR-BIO-010','FR-PRB-HW-001','TBD-18'])
   assert.equal(screenForTarget(id,doc),'screen-trades',id);

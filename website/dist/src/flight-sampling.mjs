@@ -1,4 +1,4 @@
-import {runFlight as propagate,MARS} from './flight-model.mjs?v=373144b22b36';
+import {runFlight as propagate,MARS} from './flight-model.mjs?v=45af70b8d000';
 // Preserve the propagator's exact coast endpoint in the displayed sample table.
 // The archived propagator stores intermediate coast rows every ten seconds.
 export function runFlight(...args){

@@ -1,10 +1,10 @@
-import {STUDIES} from './trade-studies-model.mjs?v=373144b22b36';
-import {MODEL_CALCULATIONS,MODELED_SEARCH,EVIDENCE_CALCULATIONS} from './trade-calculations.mjs?v=373144b22b36';
-import {linkedTradeInputs,ENTRY_IDS} from './trade-inputs.mjs?v=373144b22b36';
-import {getFlightInspection} from './flight-ui.mjs?v=373144b22b36';
-import {getSoilInputs} from './mission-trade-ui.mjs?v=373144b22b36';
-import {screenForTarget} from './workspace-ui.mjs?v=373144b22b36';
-import {CLOSURE_CRITERIA, compareEvidence, requirementStudies, searchEvidence} from './trade-evidence.mjs?v=373144b22b36';
+import {STUDIES} from './trade-studies-model.mjs?v=45af70b8d000';
+import {MODEL_CALCULATIONS,MODELED_SEARCH,EVIDENCE_CALCULATIONS} from './trade-calculations.mjs?v=45af70b8d000';
+import {linkedTradeInputs,ENTRY_IDS} from './trade-inputs.mjs?v=45af70b8d000';
+import {getFlightInspection} from './flight-ui.mjs?v=45af70b8d000';
+import {getSoilInputs} from './mission-trade-ui.mjs?v=45af70b8d000';
+import {screenForTarget} from './workspace-ui.mjs?v=45af70b8d000';
+import {CLOSURE_CRITERIA, compareEvidence, requirementStudies, searchEvidence} from './trade-evidence.mjs?v=45af70b8d000';
 
 const byId=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -71,7 +71,7 @@ function sourceContext(study,linked){
 }
 
 function workerRequest(payload,onComplete) {
-  const worker=new Worker(new URL('./trade-studies-worker.mjs?v=373144b22b36',import.meta.url),{type:'module'});
+  const worker=new Worker(new URL('./trade-studies-worker.mjs?v=45af70b8d000',import.meta.url),{type:'module'});
   worker.onmessage=({data})=>{worker.terminate();onComplete(data);};
   worker.onerror=()=>{worker.terminate();onComplete({error:'The model worker could not run.'});};
   worker.postMessage(payload);

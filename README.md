@@ -1,13 +1,13 @@
 # FREYA Mars Exploration Lab
 
-Published release: Sites version 38 · 19 November 2026.
+Published release: Sites version 39 · 19 November 2026.
 
 - [Live FREYA website](https://freya-revision-4.mifecoinc.chatgpt.site)
 - [Current website source and published build](website/)
 - [FREYA Requirements Specification Rev 10 (PDF)](website/documents/FREYA_Requirements_Specification_Rev10.pdf)
 - [FREYA Requirements Specification Rev 10 (editable Word document)](website/documents/FREYA_Requirements_Specification_Rev10.docx)
 
-The current website snapshot comes from Sites source commit `3cfc0963ce3f424376d20c2605a0b80b829906b5`. Run `npm test` or `npm run dev` from `website/`. Serve `website/dist/` with a static HTTP server to view the published build. The lab includes trade studies, the Benner science package, requirements traceability, the optimizer, and annotated calculation dialogs.
+The current website snapshot comes from Sites source commit `f2d0c2d369177d9f8796b207eaba7b5381a289f4`. Run `npm test` or `npm run dev` from `website/`. Serve `website/dist/` with a static HTTP server to view the published build. The lab includes trade studies, the Benner science package, requirements traceability, the optimizer, and annotated calculation dialogs.
 
 ## Revision 8 archive
 

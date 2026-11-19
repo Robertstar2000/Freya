@@ -21,7 +21,7 @@ for name,title in pages.items():
   for group in side.xpath('.//*[@id="requirementsNav"]'):group.set('class','sidebar-group requirements-nav section-active')
   for a in side.xpath('.//*[@data-requirements-link]'):a.set('class','active');a.set('aria-current','page')
  body.insert(0,side)
- top=html.fragment_fromstring(f'<div class="workspace-topbar"><button id="sidebarToggle" aria-controls="workspaceSidebar" aria-expanded="false" aria-label="Open section navigation">☰ Sections</button><span>FREYA / <b>{title}</b></span><a href="index.html#screen-{screenkey}">Return to workspace ↗</a></div>');body.insert(1,top)
+ top=html.fragment_fromstring(f'<div class="workspace-topbar"><button id="sidebarToggle" aria-controls="workspaceSidebar" aria-expanded="false" aria-label="Table of contents">☰ Contents</button><span>FREYA / <b>{title}</b></span><a href="index.html#screen-{screenkey}">Return to workspace ↗</a></div>');body.insert(1,top)
  for m in body.findall('main'):m.set('id','workspaceMain')
  if not doc.xpath('.//link[@href="src/workspace.css"]'):etree.SubElement(doc.find('head'),'link',{'rel':'stylesheet','href':'src/workspace.css'})
  if not doc.xpath('.//script[@src="src/document-navigation.mjs"]'):

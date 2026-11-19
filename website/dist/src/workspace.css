@@ -15,3 +15,11 @@
 .mount-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.mount-options article{border:1px solid #38536a;border-radius:12px;padding:1rem}.mount-options svg{width:100%;max-height:260px;color:#b9cddd}.mount-table{overflow-x:auto}.mount-table th p{font-weight:normal;max-width:650px}.mount-table input{width:5rem}.mount-inputs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}.mount-inputs label{display:grid;gap:.5rem}.mount-inputs input{width:100%;box-sizing:border-box}#mountResult,#mountAlignment{padding:1rem;border-left:3px solid #72dfca;background:#142738}@media(max-width:760px){.mount-options,.mount-inputs{grid-template-columns:1fr}}
 
 #cgResult,#tpsResult{padding:1rem;border-left:3px solid #72dfca;background:#142738}#tpsStudyChart svg{width:100%;color:#b9cddd}#entry-design-trades article{margin:2rem 0;padding:1.2rem;border:1px solid #38536a;border-radius:12px}#cg-stability-study,#tps-thickness-study{scroll-margin-top:2rem}
+
+.workspace-sidebar .sidebar-contents-title {
+  margin: .45rem .65rem .1rem;
+  font-size: .875rem;
+  font-weight: 650;
+  letter-spacing: normal;
+  color: #bdd0d6;
+}

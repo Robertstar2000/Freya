@@ -1,4 +1,4 @@
-import {interpolateRows,gasUsage} from './flight-model.mjs?v=373144b22b36';
+import {interpolateRows,gasUsage} from './flight-model.mjs?v=45af70b8d000';
 const num=(v,d=1)=>Number.isFinite(v)?v.toFixed(d):'—';
 const R=3389500;
 const polar=(r,a,cx=180,cy=175)=>[cx+r*Math.cos(a),cy+r*Math.sin(a)];
